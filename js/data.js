@@ -8536,8 +8536,7 @@ var CONNECTIONS = [
 ];
 
 // ============================================================
-// Qualia Algebra Data
-// QA Data — Expanded (45 nodes, ~100 connections)
+// Qualia Algebra Data — 45 nodes, 6 rings, ~120 connections
 // ============================================================
 
 var QA_RINGS = {
