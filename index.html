@@ -1,105 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Disclosure Files</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Disclosure Files — Transformation Map</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="intro-overlay" id="intro">
-  <div class="intro-title">The Disclosure Files</div>
-  <div class="intro-sub">Mapping what was hidden in plain sight</div>
+  <!-- SVG Canvas -->
+  <svg id="map-svg" xmlns="http://www.w3.org/2000/svg"></svg>
 
-  <button class="intro-enter" id="enter-btn">Enter the Map</button>
-</div>
-
-<div class="top-bar">
-  <div>
-    <div class="main-title-block" id="main-title-block"><div class="site-title">The Disclosure Files</div></div><div class="qa-title-block" id="qa-title-block"><div class="site-title" style="color:#e8d5a0">Qualia Algebra</div></div>
-    <div class="site-subtitle">An interactive knowledge map</div>
+  <!-- Header -->
+  <div class="map-header">
+    <h1>The Disclosure Files</h1>
+    <p>Mapping what was hidden in plain sight &mdash; 114 nodes &middot; 8 branches</p>
   </div>
-  <div class="nav-controls">
-    <button class="nav-btn" id="search-toggle">⌕ Search</button>
-    <button class="nav-btn" id="reset-view">Reset View</button>
-    <button class="nav-btn" id="toggle-connections">Connections</button>
+
+  <!-- Evidence Tier Legend -->
+  <div class="legend">
+    <div class="legend-title">Evidence Tiers</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#34d399"></span> Documented</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#fbbf24"></span> Credible</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#fb923c"></span> Inference</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#f87171"></span> Speculative</div>
   </div>
-</div>
 
-<div class="search-container" id="search-container">
-  <input type="text" class="search-input" id="search-input" placeholder="Search nodes...">
-  <div class="search-results" id="search-results"></div>
-</div>
-
-<div class="branch-legend" id="legend"></div>
-<button class="legend-toggle" id="legend-toggle">☰</button>
-
-<div id="canvas-container">
-  <canvas id="graph"></canvas>
-</div>
-
-<div class="info-panel" id="info-panel">
-  <div class="panel-header">
-    <button class="panel-close" id="panel-close">✕</button>
-    <div class="panel-branch-tag" id="panel-branch"></div>
-    <div class="panel-title" id="panel-title"></div>
-    <div class="panel-status" id="panel-status"></div>
+  <!-- QA Legend (hidden by default) -->
+  <div class="qa-legend" style="display:none;">
+    <div class="legend-title">Qualia Algebra</div>
+    <div class="qa-legend-item" data-ring="center">
+      <span class="legend-dot" style="background:#c9a84c"></span> Pure Observer
+    </div>
+    <div class="qa-legend-item" data-ring="theorems">
+      <span class="legend-dot" style="background:#e8d5a0"></span> Core Theorems
+    </div>
+    <div class="qa-legend-item" data-ring="spaces">
+      <span class="legend-dot" style="background:#7a5aa0"></span> Reality-Spaces
+    </div>
+    <div class="qa-legend-item" data-ring="convergence">
+      <span class="legend-dot" style="background:#4a7c9b"></span> Convergent Frameworks
+    </div>
+    <div class="qa-legend-item" data-ring="applications">
+      <span class="legend-dot" style="background:#5a8a6a"></span> Applications
+    </div>
+    <div class="qa-legend-item" data-ring="disclosure">
+      <span class="legend-dot" style="background:#a63d40"></span> Disclosure Connections
+    </div>
   </div>
-  <div class="panel-body" id="panel-body"></div>
-</div>
 
-
-<div id="qa-canvas-container">
-  <canvas id="qa-graph"></canvas>
-</div>
-
-<div class="qa-legend" id="qa-legend">
-  <div class="qa-legend-item" data-ring="center" onclick="qaFocusRing('center')">
-    <div class="qa-legend-ring" style="background:#c9a84c; box-shadow: 0 0 8px rgba(201,168,76,0.5);"></div>
-    <div class="qa-legend-label">Pure Observer</div>
+  <!-- Search -->
+  <div class="search-container">
+    <div class="search-input-wrap">
+      <span class="search-icon">&#x1F50D;</span>
+      <input type="text" placeholder="Search nodes... (press / to open)" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="search-results"></div>
   </div>
-  <div class="qa-legend-item" data-ring="theorems" onclick="qaFocusRing('theorems')">
-    <div class="qa-legend-ring" style="background:#e8d5a0; box-shadow: 0 0 6px rgba(232,213,160,0.3);"></div>
-    <div class="qa-legend-label">Core Theorems</div>
-  </div>
-  <div class="qa-legend-item" data-ring="spaces" onclick="qaFocusRing('spaces')">
-    <div class="qa-legend-ring" style="background:#7a5aa0; box-shadow: 0 0 6px rgba(122,90,160,0.3);"></div>
-    <div class="qa-legend-label">Reality-Spaces</div>
-  </div>
-  <div class="qa-legend-item" data-ring="convergence" onclick="qaFocusRing('convergence')">
-    <div class="qa-legend-ring" style="background:#4a7c9b; box-shadow: 0 0 6px rgba(74,124,155,0.3);"></div>
-    <div class="qa-legend-label">Convergent Frameworks</div>
-  </div>
-  <div class="qa-legend-item" data-ring="applications" onclick="qaFocusRing('applications')">
-    <div class="qa-legend-ring" style="background:#5a8a6a; box-shadow: 0 0 6px rgba(90,138,106,0.3);"></div>
-    <div class="qa-legend-label">Applications</div>
-  </div>
-  <div class="qa-legend-item" data-ring="disclosure" onclick="qaFocusRing('disclosure')">
-    <div class="qa-legend-ring" style="background:#a63d40; box-shadow: 0 0 6px rgba(166,61,64,0.3);"></div>
-    <div class="qa-legend-label">Disclosure Connections</div>
-  </div>
-</div>
 
-<div class="tab-bar" id="tab-bar">
-  <button class="tab-btn active" data-tab="disclosure" onclick="switchTab('disclosure')">
-    <span class="tab-dot"></span>Disclosure Map
-  </button>
-  <button class="tab-btn" data-tab="qa" onclick="switchTab('qa')">
-    <span class="tab-dot"></span>Qualia Algebra
-  </button>
-</div>
+  <!-- Content Panel -->
+  <div class="panel">
+    <button class="panel-close">&times;</button>
+    <div class="panel-inner"></div>
+  </div>
 
-<div class="zoom-controls">
-  <button class="zoom-btn" id="zoom-in">+</button>
-  <button class="zoom-btn" id="zoom-out">−</button>
-</div>
+  <!-- Tab Bar -->
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="disclosure">
+      <span class="tab-dot disclosure-dot"></span>Disclosure Map
+    </button>
+    <button class="tab-btn" data-tab="qa">
+      <span class="tab-dot qa-dot"></span>Qualia Algebra
+    </button>
+  </div>
 
-<div class="node-tooltip" id="tooltip">
-  <div class="tooltip-name" id="tooltip-name"></div>
-  <div class="tooltip-desc" id="tooltip-desc"></div>
-</div>
+  <!-- Bottom Toolbar -->
+  <div class="toolbar">
+    <button id="btn-reset"><span class="btn-label">Reset View</span></button>
+    <div class="separator"></div>
+    <button id="btn-zoom-in"><span class="btn-label">Zoom In</span></button>
+    <button id="btn-zoom-out"><span class="btn-label">Zoom Out</span></button>
+    <div class="separator"></div>
+    <button id="btn-toggle-connections"><span class="btn-label">Connections</span></button>
+    <div class="separator"></div>
+    <button id="btn-search"><span class="btn-label">Search</span></button>
+  </div>
 
-<script src="app.js"></script>
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
