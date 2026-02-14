@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Disclosure Files</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500;600;700&display=swap');
+
+  :root {
+    --bg-deep: #0a0a0f;
+    --bg-surface: #12121a;
+    --bg-card: #1a1a26;
+    --bg-card-hover: #222233;
+    --border-dim: rgba(255,255,255,0.06);
+    --border-glow: rgba(255,255,255,0.12);
+    --text-primary: #e8e6e1;
+    --text-secondary: #8a8a9a;
+    --text-dim: #5a5a6a;
+    --accent-gold: #c9a84c;
+    --accent-gold-dim: rgba(201,168,76,0.15);
+    --accent-red: #a63d40;
+    --accent-blue: #4a7c9b;
+    --accent-green: #5a8a6a;
+    --accent-purple: #7a5aa0;
+    --accent-orange: #b8763a;
+    --accent-cyan: #4a8a8a;
+    --accent-rose: #9a5a6a;
+    --accent-teal: #3a7a7a;
+    --node-power: #a63d40;
+    --node-history: #b8763a;
+    --node-consciousness: #7a5aa0;
+    --node-science: #4a7c9b;
+    --node-ritual: #9a5a6a;
+    --node-health: #5a8a6a;
+    --node-media: #4a8a8a;
+    --node-cosmology: #c9a84c;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: 'Outfit', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  /* ── CANVAS LAYER ── */
+  #canvas-container {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    cursor: grab;
+  }
+  #canvas-container.dragging { cursor: grabbing; }
+  canvas#graph { width:100%; height:100%; }
+
+  /* ── TOP BAR ── */
+  .top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 28px;
+    background: linear-gradient(180deg, rgba(10,10,15,0.95) 0%, rgba(10,10,15,0.7) 80%, transparent 100%);
+    pointer-events: none;
+  }
+  .top-bar > * { pointer-events: auto; }
+
+  .site-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    text-shadow: 0 0 30px rgba(201,168,76,0.3);
+  }
+  .site-subtitle {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: var(--text-dim);
+    margin-top: 2px;
+  }
+
+  .nav-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .nav-btn {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border-dim);
+    color: var(--text-secondary);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .nav-btn:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: var(--border-glow);
+    color: var(--text-primary);
+  }
+  .nav-btn.active {
+    background: var(--accent-gold-dim);
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+  }
+
+  /* ── BRANCH LEGEND ── */
+  .branch-legend {
+    position: fixed;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: rgba(10,10,15,0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid transparent;
+  }
+  .legend-item:hover {
+    background: rgba(255,255,255,0.05);
+    border-color: var(--border-dim);
+  }
+  .legend-item.active {
+    background: rgba(255,255,255,0.08);
+  }
+  .legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .legend-label {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    white-space: nowrap;
+  }
+  .legend-item:hover .legend-label { color: var(--text-primary); }
+
+  /* ── INFO PANEL ── */
+  .info-panel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 420px;
+    z-index: 200;
+    background: var(--bg-surface);
+    border-left: 1px solid var(--border-dim);
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .info-panel.open { transform: translateX(0); }
+
+  .panel-header {
+    padding: 24px 28px 20px;
+    border-bottom: 1px solid var(--border-dim);
+    flex-shrink: 0;
+  }
+  .panel-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 20px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  .panel-close:hover { color: var(--text-primary); background: rgba(255,255,255,0.05); }
+
+  .panel-branch-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 3px;
+  }
+  .panel-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+  }
+  .panel-status {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+  }
+
+  .panel-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px 28px;
+  }
+  .panel-body::-webkit-scrollbar { width: 4px; }
+  .panel-body::-webkit-scrollbar-track { background: transparent; }
+  .panel-body::-webkit-scrollbar-thumb { background: var(--border-dim); border-radius: 2px; }
+
+  .panel-section {
+    margin-bottom: 28px;
+  }
+  .panel-section-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 12px;
+  }
+  .panel-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    font-weight: 300;
+  }
+
+  .sub-nodes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .sub-node-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border-dim);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  .sub-node-item:hover {
+    background: rgba(255,255,255,0.05);
+    border-color: var(--border-glow);
+  }
+  .sub-node-bullet {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .sub-node-name {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-primary);
+    flex: 1;
+  }
+  .sub-node-status {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+  }
+
+  .connections-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .connection-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border-dim);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .connection-tag:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: var(--border-glow);
+  }
+
+  /* ── SOURCE LINKS ── */
+  .source-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .source-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px 12px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border-dim);
+    border-radius: 5px;
+    transition: all 0.2s;
+  }
+  .source-item:hover {
+    background: rgba(255,255,255,0.04);
+    border-color: var(--border-glow);
+  }
+  .source-icon {
+    flex-shrink: 0;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  .source-label {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    font-weight: 300;
+  }
+  .source-item a {
+    color: var(--accent-gold);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    word-break: break-all;
+  }
+  .source-item a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+
+  /* ── KEY EVIDENCE ── */
+  .key-evidence-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .key-evidence-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 12px;
+    background: rgba(201,168,76,0.04);
+    border: 1px solid rgba(201,168,76,0.12);
+    border-radius: 5px;
+    transition: all 0.2s;
+  }
+  .key-evidence-item:hover {
+    background: rgba(201,168,76,0.07);
+    border-color: rgba(201,168,76,0.2);
+  }
+  .key-evidence-dot {
+    flex-shrink: 0;
+    font-size: 11px;
+    margin-top: 3px;
+  }
+  .key-evidence-body {
+    flex: 1;
+  }
+  .key-evidence-claim {
+    font-size: 12.5px;
+    line-height: 1.55;
+    color: var(--text-primary);
+    font-weight: 300;
+  }
+  .key-evidence-source {
+    font-size: 10.5px;
+    color: var(--text-dim);
+    margin-top: 3px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 300;
+  }
+
+  /* ── TAB NAVIGATION ── */
+  .tab-bar {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 150;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    background: rgba(10,10,15,0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-dim);
+    border-radius: 24px;
+    padding: 4px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  .tab-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    background: transparent;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    position: relative;
+  }
+  .tab-btn:hover {
+    color: var(--text-secondary);
+    background: rgba(255,255,255,0.04);
+  }
+  .tab-btn.active {
+    color: var(--accent-gold);
+    background: var(--accent-gold-dim);
+    text-shadow: 0 0 12px rgba(201,168,76,0.3);
+  }
+  .tab-btn .tab-dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+    background: var(--text-dim);
+    transition: all 0.3s;
+  }
+  .tab-btn.active .tab-dot {
+    background: var(--accent-gold);
+    box-shadow: 0 0 8px rgba(201,168,76,0.5);
+  }
+
+  /* ── QA CANVAS ── */
+  #qa-canvas-container {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    cursor: grab;
+    display: none;
+  }
+  #qa-canvas-container.dragging { cursor: grabbing; }
+  canvas#qa-graph { width:100%; height:100%; }
+
+  /* ── QA LEGEND ── */
+  .qa-legend {
+    position: fixed;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .qa-legend.visible {
+    display: flex;
+  }
+  .qa-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: rgba(10,10,15,0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid transparent;
+  }
+  .qa-legend-item:hover {
+    background: rgba(255,255,255,0.05);
+    border-color: var(--border-dim);
+  }
+  .qa-legend-ring {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .qa-legend-label {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    white-space: nowrap;
+  }
+  .qa-legend-item:hover .qa-legend-label { color: var(--text-primary); }
+
+  /* ── QA TITLE (replaces main title when on QA tab) ── */
+  .qa-title-block { display: none; }
+  .qa-title-block.visible { display: block; }
+  .main-title-block.hidden { display: none; }
+
+  /* ── DEPTH INDICATOR (hidden, replaced by tab-bar) ── */
+  .depth-indicator { display: none !important; 
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 8px 16px;
+    background: rgba(10,10,15,0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-dim);
+    border-radius: 20px;
+  }
+  .depth-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--text-dim);
+    transition: all 0.3s;
+  }
+  .depth-dot.active { background: var(--accent-gold); box-shadow: 0 0 8px rgba(201,168,76,0.4); }
+  .depth-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+    margin-left: 8px;
+  }
+
+  /* ── ZOOM CONTROLS ── */
+  .zoom-controls {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .zoom-btn {
+    width: 36px;
+    height: 36px;
+    background: rgba(10,10,15,0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-dim);
+    color: var(--text-secondary);
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  .zoom-btn:first-child { border-radius: 6px 6px 0 0; }
+  .zoom-btn:last-child { border-radius: 0 0 6px 6px; }
+  .zoom-btn:hover { background: rgba(255,255,255,0.08); color: var(--text-primary); }
+
+  /* ── SEARCH ── */
+  .search-container {
+    position: fixed;
+    top: 70px;
+    right: 28px;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: all 0.3s;
+  }
+  .search-container.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  .search-input {
+    width: 280px;
+    padding: 10px 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-glow);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    outline: none;
+  }
+  .search-input::placeholder { color: var(--text-dim); }
+  .search-results {
+    margin-top: 4px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-dim);
+    border-radius: 6px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+  }
+  .search-results.has-results { display: block; }
+  .search-result-item {
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-bottom: 1px solid var(--border-dim);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .search-result-item:last-child { border-bottom: none; }
+  .search-result-item:hover { background: rgba(255,255,255,0.04); }
+  .search-result-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+  .search-result-name { font-size: 13px; color: var(--text-primary); }
+  .search-result-branch { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--text-dim); }
+
+  /* ── INTRO OVERLAY ── */
+  .intro-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    background: var(--bg-deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: opacity 1s;
+  }
+  .intro-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .intro-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    text-shadow: 0 0 60px rgba(201,168,76,0.3);
+    margin-bottom: 12px;
+    animation: fadeInUp 1.5s ease both;
+  }
+  .intro-sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: var(--text-dim);
+    margin-bottom: 48px;
+    animation: fadeInUp 1.5s ease 0.3s both;
+  }
+  .intro-enter {
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    background: none;
+    border: 1px solid rgba(201,168,76,0.3);
+    padding: 14px 40px;
+    cursor: pointer;
+    transition: all 0.4s;
+    animation: fadeInUp 1.5s ease 0.6s both;
+  }
+  .intro-enter:hover {
+    background: rgba(201,168,76,0.1);
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 30px rgba(201,168,76,0.15);
+  }
+
+  @keyframes fadeInUp {
+    from { opacity:0; transform: translateY(20px); }
+    to { opacity:1; transform: translateY(0); }
+  }
+
+  /* ── TOOLTIP ── */
+  .node-tooltip {
+    position: fixed;
+    z-index: 300;
+    background: var(--bg-card);
+    border: 1px solid var(--border-glow);
+    border-radius: 6px;
+    padding: 10px 14px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+    max-width: 220px;
+  }
+  .node-tooltip.visible { opacity: 1; }
+  .tooltip-name { font-size: 13px; font-weight: 500; margin-bottom: 3px; }
+  .tooltip-desc { font-size: 11px; color: var(--text-secondary); line-height: 1.4; }
+
+  /* ── MOBILE LEGEND TOGGLE ── */
+  .legend-toggle {
+    display: none;
+    position: fixed;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 51;
+    width: 36px;
+    height: 36px;
+    background: rgba(10,10,15,0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-dim);
+    border-radius: 6px;
+    color: var(--text-secondary);
+    font-size: 18px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+  }
+  .legend-toggle:hover, .legend-toggle.active {
+    background: rgba(255,255,255,0.08);
+    border-color: var(--border-glow);
+    color: var(--text-primary);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .info-panel { width: 100%; }
+    .intro-title { font-size: 28px; letter-spacing: 6px; }
+
+    /* Top bar */
+    .top-bar { padding: 10px 14px; }
+    .site-title { font-size: 16px; letter-spacing: 2px; }
+    .site-subtitle { font-size: 8px; letter-spacing: 2px; }
+    .nav-controls { gap: 4px; }
+    .nav-btn { font-size: 10px; padding: 5px 10px; }
+
+    /* Legend: hidden by default, toggled by hamburger */
+    .branch-legend {
+      display: none !important;
+      left: 12px;
+      top: auto;
+      bottom: 80px;
+      transform: none;
+      background: rgba(10,10,15,0.92);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--border-dim);
+      border-radius: 8px;
+      padding: 6px;
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+    .branch-legend.mobile-open {
+      display: flex !important;
+    }
+    .legend-toggle { display: flex; }
+
+    /* QA legend same treatment */
+    .qa-legend {
+      display: none !important;
+      left: 12px;
+      top: auto;
+      bottom: 80px;
+      transform: none;
+      background: rgba(10,10,15,0.92);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--border-dim);
+      border-radius: 8px;
+      padding: 6px;
+    }
+    .qa-legend.mobile-open {
+      display: flex !important;
+    }
+
+    /* Tab bar */
+    .tab-bar {
+      bottom: 12px;
+      border-radius: 18px;
+      padding: 3px;
+    }
+    .tab-btn { font-size: 9px; padding: 7px 14px; letter-spacing: 1px; }
+
+    /* Zoom controls */
+    .zoom-controls { bottom: 68px; right: 12px; }
+    .zoom-btn { width: 40px; height: 40px; font-size: 20px; }
+
+    /* Search */
+    .search-container { top: 54px; right: 12px; }
+    .search-input { width: 220px; font-size: 14px; }
+
+    /* Panel */
+    .panel-header { padding: 16px 18px 14px; }
+    .panel-title { font-size: 22px; }
+    .panel-body { padding: 16px 18px; }
+    .panel-close { top: 12px; right: 12px; width: 40px; height: 40px; font-size: 24px; }
+
+    /* Intro */
+    .intro-sub { font-size: 10px; letter-spacing: 3px; margin-bottom: 36px; }
+    .intro-enter { font-size: 12px; padding: 12px 32px; }
+
+    /* Tooltip: disable on mobile (use tap instead) */
+    .node-tooltip { display: none !important; }
+  }
+
+  @media (max-width: 420px) {
+    .site-title { font-size: 14px; letter-spacing: 1px; }
+    .nav-btn { font-size: 9px; padding: 4px 8px; }
+    .tab-btn { font-size: 8px; padding: 6px 10px; }
+    .intro-title { font-size: 22px; letter-spacing: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="intro-overlay" id="intro">
+  <div class="intro-title">The Disclosure Files</div>
+  <div class="intro-sub">Mapping what was hidden in plain sight</div>
+
+  <button class="intro-enter" id="enter-btn">Enter the Map</button>
+</div>
+
+<div class="top-bar">
+  <div>
+    <div class="main-title-block" id="main-title-block"><div class="site-title">The Disclosure Files</div></div><div class="qa-title-block" id="qa-title-block"><div class="site-title" style="color:#e8d5a0">Qualia Algebra</div></div>
+    <div class="site-subtitle">An interactive knowledge map</div>
+  </div>
+  <div class="nav-controls">
+    <button class="nav-btn" id="search-toggle">⌕ Search</button>
+    <button class="nav-btn" id="reset-view">Reset View</button>
+    <button class="nav-btn" id="toggle-connections">Connections</button>
+  </div>
+</div>
+
+<div class="search-container" id="search-container">
+  <input type="text" class="search-input" id="search-input" placeholder="Search nodes...">
+  <div class="search-results" id="search-results"></div>
+</div>
+
+<div class="branch-legend" id="legend"></div>
+<button class="legend-toggle" id="legend-toggle">☰</button>
+
+<div id="canvas-container">
+  <canvas id="graph"></canvas>
+</div>
+
+<div class="info-panel" id="info-panel">
+  <div class="panel-header">
+    <button class="panel-close" id="panel-close">✕</button>
+    <div class="panel-branch-tag" id="panel-branch"></div>
+    <div class="panel-title" id="panel-title"></div>
+    <div class="panel-status" id="panel-status"></div>
+  </div>
+  <div class="panel-body" id="panel-body"></div>
+</div>
+
+
+<div id="qa-canvas-container">
+  <canvas id="qa-graph"></canvas>
+</div>
+
+<div class="qa-legend" id="qa-legend">
+  <div class="qa-legend-item" data-ring="center" onclick="qaFocusRing('center')">
+    <div class="qa-legend-ring" style="background:#c9a84c; box-shadow: 0 0 8px rgba(201,168,76,0.5);"></div>
+    <div class="qa-legend-label">Pure Observer</div>
+  </div>
+  <div class="qa-legend-item" data-ring="theorems" onclick="qaFocusRing('theorems')">
+    <div class="qa-legend-ring" style="background:#e8d5a0; box-shadow: 0 0 6px rgba(232,213,160,0.3);"></div>
+    <div class="qa-legend-label">Core Theorems</div>
+  </div>
+  <div class="qa-legend-item" data-ring="spaces" onclick="qaFocusRing('spaces')">
+    <div class="qa-legend-ring" style="background:#7a5aa0; box-shadow: 0 0 6px rgba(122,90,160,0.3);"></div>
+    <div class="qa-legend-label">Reality-Spaces</div>
+  </div>
+  <div class="qa-legend-item" data-ring="convergence" onclick="qaFocusRing('convergence')">
+    <div class="qa-legend-ring" style="background:#4a7c9b; box-shadow: 0 0 6px rgba(74,124,155,0.3);"></div>
+    <div class="qa-legend-label">Convergent Frameworks</div>
+  </div>
+  <div class="qa-legend-item" data-ring="applications" onclick="qaFocusRing('applications')">
+    <div class="qa-legend-ring" style="background:#5a8a6a; box-shadow: 0 0 6px rgba(90,138,106,0.3);"></div>
+    <div class="qa-legend-label">Applications</div>
+  </div>
+  <div class="qa-legend-item" data-ring="disclosure" onclick="qaFocusRing('disclosure')">
+    <div class="qa-legend-ring" style="background:#a63d40; box-shadow: 0 0 6px rgba(166,61,64,0.3);"></div>
+    <div class="qa-legend-label">Disclosure Connections</div>
+  </div>
+</div>
+
+<div class="tab-bar" id="tab-bar">
+  <button class="tab-btn active" data-tab="disclosure" onclick="switchTab('disclosure')">
+    <span class="tab-dot"></span>Disclosure Map
+  </button>
+  <button class="tab-btn" data-tab="qa" onclick="switchTab('qa')">
+    <span class="tab-dot"></span>Qualia Algebra
+  </button>
+</div>
+
+<div class="depth-indicator" id="depth-indicator">
+  <div class="depth-dot active"></div>
+  <div class="depth-dot"></div>
+  <div class="depth-dot"></div>
+  <div class="depth-dot"></div>
+  <div class="depth-label">OVERVIEW</div>
+</div>
+
+<div class="zoom-controls">
+  <button class="zoom-btn" id="zoom-in">+</button>
+  <button class="zoom-btn" id="zoom-out">−</button>
+</div>
+
+<div class="node-tooltip" id="tooltip">
+  <div class="tooltip-name" id="tooltip-name"></div>
+  <div class="tooltip-desc" id="tooltip-desc"></div>
+</div>
+
+<script>
+(async function() {
+// ═══════════════════════════════════════
+// DATA: LOAD FROM EXTERNAL JSON
+// ═══════════════════════════════════════
+
+const [BRANCHES, QA_RINGS] = await Promise.all([
+  fetch('data/disclosure-data.json').then(r => r.json()),
+  fetch('data/qa-data.json').then(r => r.json())
+]);
+// Build flat node index
+const ALL_NODES = {};
+const BRANCH_LIST = Object.values(BRANCHES);
+
+BRANCH_LIST.forEach(branch => {
+  ALL_NODES[branch.id] = { ...branch, type: 'branch', branch: branch.id };
+  branch.children.forEach(child => {
+    ALL_NODES[child.id] = { ...child, type: 'child', branch: branch.id, branchColor: branch.color };
+  });
+});
+
+// ═══════════════════════════════════════
+// CANVAS RENDERING
+// ═══════════════════════════════════════
+
+const canvas = document.getElementById('graph');
+const ctx = canvas.getContext('2d');
+let W, H, dpr;
+let panX = 0, panY = 0, zoom = 1;
+let isDragging = false, dragStart = { x:0, y:0 }, panStart = { x:0, y:0 };
+let hoveredNode = null;
+let showConnections = true;
+let animFrame;
+let time = 0;
+
+// Node positions
+const nodePositions = {};
+const nodeVelocities = {};
+
+function resize() {
+  dpr = window.devicePixelRatio || 1;
+  W = window.innerWidth;
+  H = window.innerHeight;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  canvas.style.width = W + 'px';
+  canvas.style.height = H + 'px';
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+
+function initPositions() {
+  const cx = W / 2, cy = H / 2;
+  const branchRadius = Math.min(W, H) * 0.3;
+
+  BRANCH_LIST.forEach((branch, i) => {
+    const angle = (i / BRANCH_LIST.length) * Math.PI * 2 - Math.PI / 2;
+    const bx = cx + Math.cos(angle) * branchRadius;
+    const by = cy + Math.sin(angle) * branchRadius;
+
+    nodePositions[branch.id] = { x: bx, y: by, targetX: bx, targetY: by, radius: 28 };
+    nodeVelocities[branch.id] = { x: 0, y: 0 };
+
+    const childRadius = 100;
+    branch.children.forEach((child, j) => {
+      const cAngle = angle + ((j - (branch.children.length-1)/2) * 0.3);
+      const cx2 = bx + Math.cos(cAngle) * childRadius;
+      const cy2 = by + Math.sin(cAngle) * childRadius;
+      nodePositions[child.id] = { x: cx2, y: cy2, targetX: cx2, targetY: cy2, radius: 10 };
+      nodeVelocities[child.id] = { x: 0, y: 0 };
+    });
+  });
+}
+
+function worldToScreen(wx, wy) {
+  return {
+    x: (wx + panX) * zoom + W/2,
+    y: (wy + panY) * zoom + H/2
+  };
+}
+
+function screenToWorld(sx, sy) {
+  return {
+    x: (sx - W/2) / zoom - panX,
+    y: (sy - H/2) / zoom - panY
+  };
+}
+
+function drawConnection(fromId, toId, alpha) {
+  const from = nodePositions[fromId];
+  const to = nodePositions[toId];
+  if (!from || !to) return;
+
+  const p1 = worldToScreen(from.x, from.y);
+  const p2 = worldToScreen(to.x, to.y);
+
+  ctx.beginPath();
+  ctx.moveTo(p1.x, p1.y);
+
+  // Curved connection
+  const mx = (p1.x + p2.x) / 2;
+  const my = (p1.y + p2.y) / 2;
+  const dx = p2.x - p1.x;
+  const dy = p2.y - p1.y;
+  const cx1 = mx - dy * 0.15;
+  const cy1 = my + dx * 0.15;
+
+  ctx.quadraticCurveTo(cx1, cy1, p2.x, p2.y);
+  ctx.strokeStyle = `rgba(201,168,76,${alpha * 0.12})`;
+  ctx.lineWidth = 1;
+  ctx.stroke();
+}
+
+function drawNode(id, node, branchData) {
+  const pos = nodePositions[id];
+  if (!pos) return;
+  const sp = worldToScreen(pos.x, pos.y);
+  const r = pos.radius * zoom;
+
+  if (sp.x < -100 || sp.x > W+100 || sp.y < -100 || sp.y > H+100) return;
+
+  const isBranch = node.type === 'branch';
+  const color = isBranch ? node.color : (branchData ? branchData.color : '#666');
+  const isHovered = hoveredNode === id;
+  const isResearched = node.status === 'researched';
+
+  // Glow
+  if (isBranch || isHovered || isResearched) {
+    const glow = ctx.createRadialGradient(sp.x, sp.y, 0, sp.x, sp.y, r * (isBranch ? 3 : isResearched ? 2.8 : 2.5));
+    glow.addColorStop(0, color + (isHovered ? '30' : isResearched ? '28' : '18'));
+    glow.addColorStop(1, color + '00');
+    ctx.fillStyle = glow;
+    ctx.beginPath();
+    ctx.arc(sp.x, sp.y, r * (isBranch ? 3 : isResearched ? 2.8 : 2.5), 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // Pulse ring for branch nodes and researched nodes
+  if (isBranch) {
+    const pulseR = r * (1.4 + Math.sin(time * 0.02 + BRANCH_LIST.indexOf(node) * 0.8) * 0.15);
+    ctx.beginPath();
+    ctx.arc(sp.x, sp.y, pulseR, 0, Math.PI * 2);
+    ctx.strokeStyle = color + '25';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+  if (isResearched && !isBranch) {
+    const pulseR = r * (1.6 + Math.sin(time * 0.03 + id.length * 0.5) * 0.2);
+    ctx.beginPath();
+    ctx.arc(sp.x, sp.y, pulseR, 0, Math.PI * 2);
+    ctx.strokeStyle = '#c9a84c44';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  // Node circle
+  ctx.beginPath();
+  ctx.arc(sp.x, sp.y, r, 0, Math.PI * 2);
+
+  if (isBranch) {
+    const grad = ctx.createRadialGradient(sp.x - r*0.3, sp.y - r*0.3, 0, sp.x, sp.y, r);
+    grad.addColorStop(0, color + 'cc');
+    grad.addColorStop(1, color + '88');
+    ctx.fillStyle = grad;
+  } else if (isResearched) {
+    ctx.fillStyle = isHovered ? color + 'ee' : color + 'aa';
+  } else {
+    ctx.fillStyle = isHovered ? color + 'cc' : color + '66';
+  }
+  ctx.fill();
+
+  ctx.strokeStyle = isResearched ? '#c9a84c' : (isHovered ? color : color + '55');
+  ctx.lineWidth = isResearched ? 2 : (isHovered ? 2 : 1);
+  ctx.stroke();
+
+  // Label
+  if (isBranch && zoom > 0.4) {
+    ctx.font = `${Math.max(10, 13 * zoom)}px 'Outfit', sans-serif`;
+    ctx.fillStyle = isHovered ? '#fff' : 'rgba(232,230,225,0.9)';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    const label = node.label;
+    const words = label.split(' ');
+    if (words.length > 1 && r > 15) {
+      ctx.fillText(words[0], sp.x, sp.y - 6 * zoom);
+      ctx.fillText(words.slice(1).join(' '), sp.x, sp.y + 8 * zoom);
+    } else {
+      ctx.fillText(label, sp.x, sp.y);
+    }
+  } else if (!isBranch && zoom > 0.7) {
+    ctx.font = `${Math.max(8, 10 * zoom)}px 'Outfit', sans-serif`;
+    ctx.fillStyle = isHovered ? '#fff' : 'rgba(232,230,225,0.6)';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'top';
+    ctx.fillText(node.label, sp.x, sp.y + r + 4);
+  }
+}
+
+function draw() {
+  if (currentTab !== 'disclosure') return;
+  time++;
+  ctx.clearRect(0, 0, W, H);
+
+  // Background particles
+  ctx.fillStyle = 'rgba(201,168,76,0.03)';
+  for (let i = 0; i < 40; i++) {
+    const px = ((i * 137.508 + time * 0.1) % W);
+    const py = ((i * 97.31 + time * 0.07) % H);
+    ctx.beginPath();
+    ctx.arc(px, py, 1, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // Draw branch-to-child lines
+  BRANCH_LIST.forEach(branch => {
+    const bp = nodePositions[branch.id];
+    if (!bp) return;
+    const bScreen = worldToScreen(bp.x, bp.y);
+
+    branch.children.forEach(child => {
+      const cp = nodePositions[child.id];
+      if (!cp) return;
+      const cScreen = worldToScreen(cp.x, cp.y);
+
+      ctx.beginPath();
+      ctx.moveTo(bScreen.x, bScreen.y);
+      ctx.lineTo(cScreen.x, cScreen.y);
+      ctx.strokeStyle = branch.color + '22';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    });
+  });
+
+  // Draw cross-branch connections
+  if (showConnections) {
+    BRANCH_LIST.forEach(branch => {
+      branch.children.forEach(child => {
+        if (child.connections) {
+          child.connections.forEach(targetId => {
+            drawConnection(child.id, targetId, 1);
+          });
+        }
+      });
+    });
+  }
+
+  // Draw nodes
+  BRANCH_LIST.forEach(branch => {
+    branch.children.forEach(child => {
+      drawNode(child.id, ALL_NODES[child.id], branch);
+    });
+  });
+  BRANCH_LIST.forEach(branch => {
+    drawNode(branch.id, ALL_NODES[branch.id], null);
+  });
+
+  animFrame = requestAnimationFrame(draw);
+}
+
+// ═══════════════════════════════════════
+// INTERACTION
+// ═══════════════════════════════════════
+
+function getNodeAtPosition(sx, sy) {
+  const world = screenToWorld(sx, sy);
+
+  // Check child nodes first (smaller, need priority)
+  for (const branch of BRANCH_LIST) {
+    for (const child of branch.children) {
+      const pos = nodePositions[child.id];
+      if (!pos) continue;
+      const dx = world.x - pos.x;
+      const dy = world.y - pos.y;
+      const hitR = pos.radius * 1.5;
+      if (dx*dx + dy*dy < hitR*hitR) return child.id;
+    }
+  }
+  // Check branch nodes
+  for (const branch of BRANCH_LIST) {
+    const pos = nodePositions[branch.id];
+    if (!pos) continue;
+    const dx = world.x - pos.x;
+    const dy = world.y - pos.y;
+    const hitR = pos.radius * 1.2;
+    if (dx*dx + dy*dy < hitR*hitR) return branch.id;
+  }
+  return null;
+}
+
+const canvasContainer = document.getElementById('canvas-container');
+
+canvasContainer.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  dragStart = { x: e.clientX, y: e.clientY };
+  panStart = { x: panX, y: panY };
+  canvasContainer.classList.add('dragging');
+});
+
+window.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    panX = panStart.x + (e.clientX - dragStart.x) / zoom;
+    panY = panStart.y + (e.clientY - dragStart.y) / zoom;
+  }
+
+  const nodeId = getNodeAtPosition(e.clientX, e.clientY);
+  hoveredNode = nodeId;
+  canvasContainer.style.cursor = nodeId ? 'pointer' : (isDragging ? 'grabbing' : 'grab');
+
+  // Tooltip
+  const tooltip = document.getElementById('tooltip');
+  if (nodeId && !isDragging) {
+    const node = ALL_NODES[nodeId];
+    document.getElementById('tooltip-name').textContent = node.label;
+    document.getElementById('tooltip-desc').textContent = node.type === 'branch'
+      ? `${node.children ? node.children.length : 0} sub-topics`
+      : (node.description || '').substring(0, 100) + '...';
+    tooltip.style.left = (e.clientX + 16) + 'px';
+    tooltip.style.top = (e.clientY - 10) + 'px';
+    tooltip.classList.add('visible');
+  } else {
+    tooltip.classList.remove('visible');
+  }
+});
+
+window.addEventListener('mouseup', () => {
+  isDragging = false;
+  canvasContainer.classList.remove('dragging');
+});
+
+canvasContainer.addEventListener('click', (e) => {
+  const nodeId = getNodeAtPosition(e.clientX, e.clientY);
+  if (nodeId) {
+    openPanel(nodeId);
+  }
+});
+
+canvasContainer.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  const zoomFactor = e.deltaY > 0 ? 0.92 : 1.08;
+  zoom = Math.max(0.3, Math.min(3, zoom * zoomFactor));
+}, { passive: false });
+
+// ── TOUCH EVENTS (Main Canvas) ──
+let touchStartDist = 0;
+let touchStartZoom = 1;
+let touchStartTime = 0;
+let touchStartPos = { x: 0, y: 0 };
+let isTouchDragging = false;
+
+canvasContainer.addEventListener('touchstart', (e) => {
+  if (e.touches.length === 2) {
+    // Pinch-to-zoom start
+    const dx = e.touches[0].clientX - e.touches[1].clientX;
+    const dy = e.touches[0].clientY - e.touches[1].clientY;
+    touchStartDist = Math.sqrt(dx * dx + dy * dy);
+    touchStartZoom = zoom;
+    e.preventDefault();
+  } else if (e.touches.length === 1) {
+    const t = e.touches[0];
+    touchStartTime = Date.now();
+    touchStartPos = { x: t.clientX, y: t.clientY };
+    dragStart = { x: t.clientX, y: t.clientY };
+    panStart = { x: panX, y: panY };
+    isTouchDragging = false;
+  }
+}, { passive: false });
+
+canvasContainer.addEventListener('touchmove', (e) => {
+  e.preventDefault();
+  if (e.touches.length === 2) {
+    // Pinch-to-zoom
+    const dx = e.touches[0].clientX - e.touches[1].clientX;
+    const dy = e.touches[0].clientY - e.touches[1].clientY;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    if (touchStartDist > 0) {
+      zoom = Math.max(0.3, Math.min(3, touchStartZoom * (dist / touchStartDist)));
+    }
+  } else if (e.touches.length === 1) {
+    // Pan
+    const t = e.touches[0];
+    const dx = t.clientX - dragStart.x;
+    const dy = t.clientY - dragStart.y;
+    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) isTouchDragging = true;
+    panX = panStart.x + dx / zoom;
+    panY = panStart.y + dy / zoom;
+  }
+}, { passive: false });
+
+canvasContainer.addEventListener('touchend', (e) => {
+  if (e.touches.length === 0 && !isTouchDragging) {
+    const elapsed = Date.now() - touchStartTime;
+    if (elapsed < 300) {
+      // Tap — open node
+      const nodeId = getNodeAtPosition(touchStartPos.x, touchStartPos.y);
+      if (nodeId) openPanel(nodeId);
+    }
+  }
+  if (e.touches.length < 2) touchStartDist = 0;
+});
+
+// ═══════════════════════════════════════
+// INFO PANEL
+// ═══════════════════════════════════════
+
+function openPanel(nodeId) {
+  const node = ALL_NODES[nodeId];
+  if (!node) return;
+
+  const panel = document.getElementById('info-panel');
+  const branchData = BRANCHES[node.branch || node.id];
+  const color = node.type === 'branch' ? node.color : branchData.color;
+
+  // Branch tag
+  const branchTag = document.getElementById('panel-branch');
+  branchTag.textContent = branchData.label;
+  branchTag.style.background = color + '20';
+  branchTag.style.color = color;
+
+  // Title
+  document.getElementById('panel-title').textContent = node.label;
+
+  // Status
+  const statusEl = document.getElementById('panel-status');
+  statusEl.textContent = node.status === 'scaffold' ? '◯ SCAFFOLD — Content pending' :
+                         node.status === 'researched' ? '● RESEARCHED — Cross-referenced with source documents' :
+                         node.status === 'draft' ? '◐ DRAFT — In progress' :
+                         '● PUBLISHED';
+  if (node.status === 'researched') statusEl.style.color = '#c9a84c';
+  else statusEl.style.color = '';
+
+  // Body
+  const body = document.getElementById('panel-body');
+  let html = '';
+
+  // Description
+  html += `<div class="panel-section">
+    <div class="panel-section-title">Overview</div>
+    <div class="panel-text">${node.description}</div>
+  </div>`;
+
+  // Sub-nodes (for branch nodes)
+  if (node.type === 'branch' && node.children) {
+    const researched = node.children.filter(c => c.status === 'researched').length;
+    html += `<div class="panel-section">
+      <div class="panel-section-title">Sub-Topics (${node.children.length}) — ${researched} researched</div>
+      <div class="sub-nodes-list">`;
+    node.children.forEach(child => {
+      const statusIcon = child.status === 'researched' ? '●' : '◯';
+      const statusColor = child.status === 'researched' ? '#c9a84c' : '';
+      html += `<div class="sub-node-item" onclick="openPanel('${child.id}')">
+        <div class="sub-node-bullet" style="background:${child.status === 'researched' ? '#c9a84c' : color}"></div>
+        <div class="sub-node-name">${child.label}</div>
+        <div class="sub-node-status" style="color:${statusColor}">${statusIcon} ${child.status || 'scaffold'}</div>
+      </div>`;
+    });
+    html += `</div></div>`;
+  }
+
+  // Connections (for child nodes)
+  if (node.connections && node.connections.length > 0) {
+    html += `<div class="panel-section">
+      <div class="panel-section-title">Connected To</div>
+      <div class="connections-list">`;
+    node.connections.forEach(connId => {
+      const connNode = ALL_NODES[connId];
+      if (connNode) {
+        const connBranch = BRANCHES[connNode.branch || connNode.id];
+        const connColor = connBranch ? connBranch.color : '#666';
+        html += `<div class="connection-tag" style="border-color:${connColor}44" onclick="openPanel('${connId}')">${connNode.label}</div>`;
+      }
+    });
+    html += `</div></div>`;
+  }
+
+  // Key Evidence (if node has keyEvidence array)
+  if (node.keyEvidence && node.keyEvidence.length > 0) {
+    html += `<div class="panel-section">
+      <div class="panel-section-title">Key Evidence</div>
+      <div class="key-evidence-list">`;
+    node.keyEvidence.forEach(ev => {
+      html += `<div class="key-evidence-item">
+        <span class="key-evidence-dot">${ev.classification}</span>
+        <div class="key-evidence-body">
+          <div class="key-evidence-claim">${ev.claim}</div>
+          <div class="key-evidence-source">${ev.source}</div>
+        </div>
+      </div>`;
+    });
+    html += `</div></div>`;
+  }
+
+  // Sources (if node has sources array)
+  if (node.sources && node.sources.length > 0) {
+    html += `<div class="panel-section">
+      <div class="panel-section-title">Primary Sources & Documents</div>
+      <div class="source-list">`;
+    node.sources.forEach(src => {
+      const icon = src.type === 'congressional' ? '🏛️' :
+                   src.type === 'court' ? '⚖️' :
+                   src.type === 'foia' ? '📄' :
+                   src.type === 'academic' ? '📚' :
+                   src.type === 'journalism' ? '📰' :
+                   src.type === 'archive' ? '🗃️' :
+                   src.type === 'government' ? '🏛️' :
+                   src.type === 'data' ? '📊' : '🔗';
+      if (src.url) {
+        html += `<div class="source-item">
+          <span class="source-icon">${icon}</span>
+          <div>
+            <div class="source-label">${src.label}</div>
+            <a href="${src.url}" target="_blank" rel="noopener">${src.url}</a>
+          </div>
+        </div>`;
+      } else {
+        html += `<div class="source-item">
+          <span class="source-icon">${icon}</span>
+          <div class="source-label">${src.label}</div>
+        </div>`;
+      }
+    });
+    html += `</div></div>`;
+  }
+
+  // Key Questions / Evidence Assessment
+  if (node.status === 'researched') {
+    html += `<div class="panel-section">
+      <div class="panel-section-title">Evidence Classification</div>
+      <div class="panel-text">
+        <span style="color:#5a8a6a">🟢 Documented</span> — Court records, official releases, DOJ documents<br>
+        <span style="color:#4a7c9b">🔵 Strong Evidence</span> — Sworn testimony, corroborated journalism, FOIA<br>
+        <span style="color:#c9a84c">🟡 Credible Allegation</span> — Named sources, partial corroboration<br>
+        <span style="color:#b8763a">🟠 Circumstantial</span> — Pattern analysis, unnamed sources<br>
+        <span style="color:#a63d40">🔴 Speculative</span> — Theory, inference, unverified
+      </div>
+    </div>`;
+    html += `<div class="panel-section">
+      <div class="panel-section-title">Sources</div>
+      <div class="panel-text" style="font-family:'JetBrains Mono',monospace; font-size:11px; color: var(--text-secondary);">
+        DOJ Epstein Library (justice.gov/epstein) • FBI Vault • House Oversight Committee • Community Archive (epstein-docs.github.io) • INSLAW/PROMIS court records • Congressional reports (Church Committee 1976, Kerry Committee 1989, BCCI Report 1992) • Whitney Webb/MintPress News/Unlimited Hangout (PROMIS→Palantir pipeline, Unit 8200, Carbyne) • BCCI Senate Report via FAS (irp.fas.org) • Investigative journalism (Al Jazeera, Drop Site News, CBS, CNN, AP, NPR, Middle East Eye, The Telegraph)
+      </div>
+    </div>`;
+  } else {
+    html += `<div class="panel-section">
+      <div class="panel-section-title">Key Questions</div>
+      <div class="panel-text" style="font-style:italic; color: var(--text-dim);">
+        Content will be populated here — key questions this node seeks to answer, evidence, sources, and deeper analysis.
+      </div>
+    </div>`;
+    html += `<div class="panel-section">
+      <div class="panel-section-title">Sources & Evidence</div>
+      <div class="panel-text" style="font-style:italic; color: var(--text-dim);">
+        Hard data, documents, whistleblower testimony, and primary sources to be compiled here.
+      </div>
+    </div>`;
+  }
+
+  body.innerHTML = html;
+  panel.classList.add('open');
+}
+
+document.getElementById('panel-close').addEventListener('click', () => {
+  document.getElementById('info-panel').classList.remove('open');
+});
+
+// ═══════════════════════════════════════
+// LEGEND
+// ═══════════════════════════════════════
+
+function buildLegend() {
+  const legend = document.getElementById('legend');
+  legend.innerHTML = BRANCH_LIST.map(b => `
+    <div class="legend-item" data-branch="${b.id}">
+      <div class="legend-dot" style="background:${b.color}; box-shadow: 0 0 6px ${b.color}55;"></div>
+      <div class="legend-label">${b.label}</div>
+    </div>
+  `).join('');
+
+  legend.querySelectorAll('.legend-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const branchId = item.dataset.branch;
+      const pos = nodePositions[branchId];
+      if (pos) {
+        panX = -pos.x + 100;
+        panY = -pos.y;
+        zoom = 1.3;
+        openPanel(branchId);
+      }
+    });
+  });
+}
+
+// ═══════════════════════════════════════
+// SEARCH
+// ═══════════════════════════════════════
+
+const searchToggle = document.getElementById('search-toggle');
+const searchContainer = document.getElementById('search-container');
+const searchInput = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
+
+searchToggle.addEventListener('click', () => {
+  searchContainer.classList.toggle('open');
+  if (searchContainer.classList.contains('open')) {
+    searchInput.focus();
+  }
+});
+
+searchInput.addEventListener('input', () => {
+  const q = searchInput.value.toLowerCase().trim();
+  if (q.length < 2) {
+    searchResults.classList.remove('has-results');
+    return;
+  }
+
+  const matches = Object.values(ALL_NODES).filter(n =>
+    n.label.toLowerCase().includes(q) ||
+    (n.description && n.description.toLowerCase().includes(q))
+  ).slice(0, 8);
+
+  if (matches.length === 0) {
+    searchResults.classList.remove('has-results');
+    return;
+  }
+
+  searchResults.innerHTML = matches.map(n => {
+    const branch = BRANCHES[n.branch || n.id];
+    const color = branch ? branch.color : '#666';
+    return `<div class="search-result-item" data-id="${n.id}">
+      <div class="search-result-dot" style="background:${color}"></div>
+      <div>
+        <div class="search-result-name">${n.label}</div>
+        <div class="search-result-branch">${branch ? branch.label : ''}</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  searchResults.classList.add('has-results');
+
+  searchResults.querySelectorAll('.search-result-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const id = item.dataset.id;
+      const pos = nodePositions[id];
+      if (pos) {
+        panX = -pos.x;
+        panY = -pos.y;
+        zoom = 1.5;
+      }
+      openPanel(id);
+      searchContainer.classList.remove('open');
+      searchInput.value = '';
+      searchResults.classList.remove('has-results');
+    });
+  });
+});
+
+// ═══════════════════════════════════════
+// CONTROLS
+// ═══════════════════════════════════════
+
+document.getElementById('reset-view').addEventListener('click', () => {
+  panX = 0; panY = 0; zoom = 1;
+});
+
+document.getElementById('toggle-connections').addEventListener('click', function() {
+  showConnections = !showConnections;
+  this.classList.toggle('active');
+});
+
+document.getElementById('zoom-in').addEventListener('click', () => {
+  zoom = Math.min(3, zoom * 1.2);
+});
+document.getElementById('zoom-out').addEventListener('click', () => {
+  zoom = Math.max(0.3, zoom * 0.8);
+});
+
+// ═══════════════════════════════════════
+// INTRO
+// ═══════════════════════════════════════
+
+document.getElementById('enter-btn').addEventListener('click', () => {
+  document.getElementById('intro').classList.add('hidden');
+  setTimeout(() => {
+    document.getElementById('intro').style.display = 'none';
+  }, 1000);
+});
+
+
+// ═══════════════════════════════════════
+// QUALIA ALGEBRA — TAB SYSTEM + RADIAL MAP
+// ═══════════════════════════════════════
+
+let currentTab = 'disclosure';
+
+function switchTab(tab) {
+  currentTab = tab;
+  
+  // Update tab buttons
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === tab);
+  });
+  
+  // Toggle canvases
+  document.getElementById('canvas-container').style.display = tab === 'disclosure' ? 'block' : 'none';
+  document.getElementById('qa-canvas-container').style.display = tab === 'qa' ? 'block' : 'none';
+  
+  // Toggle legends
+  document.getElementById('legend').style.display = tab === 'disclosure' ? 'flex' : 'none';
+  document.getElementById('qa-legend').classList.toggle('visible', tab === 'qa');
+  
+  // Toggle titles
+  document.querySelectorAll('.main-title-block').forEach(el => el.classList.toggle('hidden', tab !== 'disclosure'));
+  document.querySelectorAll('.qa-title-block').forEach(el => el.classList.toggle('visible', tab === 'qa'));
+  
+  // Close panel
+  document.getElementById('info-panel').classList.remove('open');
+  
+  if (tab === 'qa') {
+    qaResize();
+    if (!qaInitialized) { qaInitPositions(); qaInitialized = true; }
+    qaDraw();
+  } else if (tab === 'disclosure') {
+    draw();
+  }
+}
+
+// Build flat QA node index
+const QA_ALL_NODES = {};
+Object.entries(QA_RINGS).forEach(([ringId, ring]) => {
+  ring.nodes.forEach(node => {
+    QA_ALL_NODES[node.id] = { ...node, ring: ringId, ringColor: ring.color, ringLabel: ring.label };
+  });
+});
+
+// ═══════════════════════════════════════
+// QA CANVAS RENDERING
+// ═══════════════════════════════════════
+
+const qaCanvas = document.getElementById('qa-graph');
+const qaCtx = qaCanvas.getContext('2d');
+let qaW, qaH;
+let qaPanX = 0, qaPanY = 0, qaZoom = 1;
+let qaIsDragging = false, qaDragStart = {x:0,y:0}, qaPanStart = {x:0,y:0};
+let qaHoveredNode = null;
+let qaPrecomputedConnections = [];
+let qaInitialized = false;
+let qaTime = 0;
+
+const qaNodePositions = {};
+
+function qaResize() {
+  const dpr = window.devicePixelRatio || 1;
+  qaW = window.innerWidth;
+  qaH = window.innerHeight;
+  qaCanvas.width = qaW * dpr;
+  qaCanvas.height = qaH * dpr;
+  qaCanvas.style.width = qaW + 'px';
+  qaCanvas.style.height = qaH + 'px';
+  qaCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+
+function qaInitPositions() {
+  const cx = qaW / 2, cy = qaH / 2;
+  
+  Object.entries(QA_RINGS).forEach(([ringId, ring]) => {
+    const count = ring.nodes.length;
+    ring.nodes.forEach((node, i) => {
+      let nx, ny, radius;
+      
+      if (ring.radius === 0) {
+        // Center node
+        nx = cx; ny = cy; radius = 36;
+      } else {
+        const angle = (i / count) * Math.PI * 2 - Math.PI / 2;
+        const scaledRadius = ring.radius * Math.min(qaW, qaH) / 1200;
+        nx = cx + Math.cos(angle) * scaledRadius;
+        ny = cy + Math.sin(angle) * scaledRadius;
+        radius = ringId === 'theorems' ? 20 : 
+                 ringId === 'spaces' ? 18 : 
+                 ringId === 'convergence' ? 14 : 
+                 ringId === 'applications' ? 14 : 12;
+      }
+      
+      qaNodePositions[node.id] = { x: nx, y: ny, radius: radius };
+    });
+  });
+
+  // Pre-compute ring connections (positions are static, no need to recalculate per frame)
+  qaPrecomputedConnections = [];
+  const ringOrder = ['theorems', 'spaces', 'convergence', 'applications', 'disclosure'];
+  for (let ri = 0; ri < ringOrder.length - 1; ri++) {
+    const innerRing = QA_RINGS[ringOrder[ri]];
+    const outerRing = QA_RINGS[ringOrder[ri + 1]];
+    innerRing.nodes.forEach(innerNode => {
+      const innerPos = qaNodePositions[innerNode.id];
+      if (!innerPos) return;
+      const closest = outerRing.nodes.map(n => ({
+        id: n.id,
+        dist: Math.hypot(qaNodePositions[n.id].x - innerPos.x, qaNodePositions[n.id].y - innerPos.y)
+      })).sort((a, b) => a.dist - b.dist).slice(0, 2);
+      closest.forEach(({ id: outerId }) => {
+        qaPrecomputedConnections.push({ fromId: innerNode.id, toId: outerId, color: innerRing.color });
+      });
+    });
+  }
+}
+
+function qaWorldToScreen(wx, wy) {
+  return {
+    x: (wx - qaW/2 + qaPanX) * qaZoom + qaW/2,
+    y: (wy - qaH/2 + qaPanY) * qaZoom + qaH/2
+  };
+}
+
+function qaScreenToWorld(sx, sy) {
+  return {
+    x: (sx - qaW/2) / qaZoom + qaW/2 - qaPanX,
+    y: (sy - qaH/2) / qaZoom + qaH/2 - qaPanY
+  };
+}
+
+function qaDraw() {
+  if (currentTab !== 'qa') return;
+  
+  qaCtx.clearRect(0, 0, qaW, qaH);
+  qaTime += 0.005;
+  
+  // Draw ring guides
+  const cx = qaW / 2, cy = qaH / 2;
+  Object.entries(QA_RINGS).forEach(([ringId, ring]) => {
+    if (ring.radius === 0) return;
+    const scaledR = ring.radius * Math.min(qaW, qaH) / 1200;
+    const screenCenter = qaWorldToScreen(cx, cy);
+    const r = scaledR * qaZoom;
+    
+    qaCtx.beginPath();
+    qaCtx.arc(screenCenter.x, screenCenter.y, r, 0, Math.PI * 2);
+    qaCtx.strokeStyle = ring.color + '18';
+    qaCtx.lineWidth = 1;
+    qaCtx.setLineDash([4, 8]);
+    qaCtx.stroke();
+    qaCtx.setLineDash([]);
+  });
+  
+  // Draw connections from center to theorems
+  const centerPos = qaNodePositions['qa-observer'];
+  if (centerPos) {
+    QA_RINGS.theorems.nodes.forEach(node => {
+      const pos = qaNodePositions[node.id];
+      if (!pos) return;
+      const from = qaWorldToScreen(centerPos.x, centerPos.y);
+      const to = qaWorldToScreen(pos.x, pos.y);
+      
+      qaCtx.beginPath();
+      qaCtx.moveTo(from.x, from.y);
+      qaCtx.lineTo(to.x, to.y);
+      const grad = qaCtx.createLinearGradient(from.x, from.y, to.x, to.y);
+      grad.addColorStop(0, '#c9a84c44');
+      grad.addColorStop(1, '#e8d5a022');
+      qaCtx.strokeStyle = grad;
+      qaCtx.lineWidth = 1.5;
+      qaCtx.stroke();
+    });
+  }
+  
+  // Draw pre-computed connections between rings
+  qaPrecomputedConnections.forEach(({ fromId, toId, color }) => {
+    const fromPos = qaNodePositions[fromId];
+    const toPos = qaNodePositions[toId];
+    if (!fromPos || !toPos) return;
+    const from = qaWorldToScreen(fromPos.x, fromPos.y);
+    const to = qaWorldToScreen(toPos.x, toPos.y);
+
+    qaCtx.beginPath();
+    qaCtx.moveTo(from.x, from.y);
+    const midX = (from.x + to.x) / 2 + (from.y - to.y) * 0.1;
+    const midY = (from.y + to.y) / 2 + (to.x - from.x) * 0.1;
+    qaCtx.quadraticCurveTo(midX, midY, to.x, to.y);
+    qaCtx.strokeStyle = color + '12';
+    qaCtx.lineWidth = 0.8;
+    qaCtx.stroke();
+  });
+  
+  // Draw nodes (back to front — outer rings first)
+  const drawOrder = ['disclosure', 'applications', 'convergence', 'spaces', 'theorems', 'center'];
+  drawOrder.forEach(ringId => {
+    const ring = QA_RINGS[ringId];
+    if (!ring) return;
+    
+    ring.nodes.forEach(node => {
+      const pos = qaNodePositions[node.id];
+      if (!pos) return;
+      
+      const screen = qaWorldToScreen(pos.x, pos.y);
+      const r = pos.radius * qaZoom;
+      const isHovered = qaHoveredNode === node.id;
+      
+      // Glow
+      const glowR = r * (isHovered ? 3.5 : 2.5);
+      const glow = qaCtx.createRadialGradient(screen.x, screen.y, r * 0.5, screen.x, screen.y, glowR);
+      glow.addColorStop(0, ring.color + (isHovered ? '40' : '20'));
+      glow.addColorStop(1, ring.color + '00');
+      qaCtx.beginPath();
+      qaCtx.arc(screen.x, screen.y, glowR, 0, Math.PI * 2);
+      qaCtx.fillStyle = glow;
+      qaCtx.fill();
+      
+      // Node body
+      qaCtx.beginPath();
+      qaCtx.arc(screen.x, screen.y, r, 0, Math.PI * 2);
+      qaCtx.fillStyle = isHovered ? ring.color + 'cc' : ring.color + '88';
+      qaCtx.fill();
+      qaCtx.strokeStyle = ring.color;
+      qaCtx.lineWidth = isHovered ? 2 : 1;
+      qaCtx.stroke();
+      
+      // Center node pulse
+      if (ringId === 'center') {
+        const pulseR = r * (1.3 + 0.2 * Math.sin(qaTime * 2));
+        qaCtx.beginPath();
+        qaCtx.arc(screen.x, screen.y, pulseR, 0, Math.PI * 2);
+        qaCtx.strokeStyle = '#c9a84c' + Math.round(40 + 20 * Math.sin(qaTime * 2)).toString(16).padStart(2, '0');
+        qaCtx.lineWidth = 1;
+        qaCtx.stroke();
+      }
+      
+      // Label
+      if (qaZoom > 0.4) {
+        qaCtx.font = `${isHovered ? 600 : 400} ${Math.max(9, 12 * qaZoom)}px Outfit`;
+        qaCtx.textAlign = 'center';
+        qaCtx.fillStyle = isHovered ? '#fff' : '#e8e6e1cc';
+        qaCtx.fillText(node.label, screen.x, screen.y + r + 16 * qaZoom);
+        
+        if (node.subtitle && qaZoom > 0.6) {
+          qaCtx.font = `300 ${Math.max(7, 9 * qaZoom)}px "JetBrains Mono"`;
+          qaCtx.fillStyle = '#8a8a9a88';
+          qaCtx.fillText(node.subtitle, screen.x, screen.y + r + 28 * qaZoom);
+        }
+      }
+    });
+  });
+  
+  // Attribution
+  qaCtx.font = '300 10px "JetBrains Mono"';
+  qaCtx.fillStyle = '#5a5a6a44';
+  qaCtx.textAlign = 'right';
+  qaCtx.fillText('Vanhorn (2025) · DOI: 10.5281/zenodo.17785676', qaW - 20, qaH - 14);
+  
+  requestAnimationFrame(qaDraw);
+}
+
+// QA mouse/touch interaction
+const qaContainer = document.getElementById('qa-canvas-container');
+
+qaContainer.addEventListener('mousedown', (e) => {
+  qaIsDragging = true;
+  qaDragStart = { x: e.clientX, y: e.clientY };
+  qaPanStart = { x: qaPanX, y: qaPanY };
+  qaContainer.classList.add('dragging');
+});
+
+window.addEventListener('mousemove', (e) => {
+  if (currentTab !== 'qa') return;
+  
+  if (qaIsDragging) {
+    qaPanX = qaPanStart.x + (e.clientX - qaDragStart.x) / qaZoom;
+    qaPanY = qaPanStart.y + (e.clientY - qaDragStart.y) / qaZoom;
+    return;
+  }
+  
+  // Hit test
+  const world = qaScreenToWorld(e.clientX, e.clientY);
+  let found = null;
+  
+  Object.entries(qaNodePositions).forEach(([id, pos]) => {
+    const dx = world.x - pos.x;
+    const dy = world.y - pos.y;
+    if (Math.sqrt(dx*dx + dy*dy) < pos.radius * 1.5) {
+      found = id;
+    }
+  });
+  
+  qaHoveredNode = found;
+  qaContainer.style.cursor = found ? 'pointer' : 'grab';
+});
+
+window.addEventListener('mouseup', (e) => {
+  if (currentTab !== 'qa') return;
+  
+  qaIsDragging = false;
+  qaContainer.classList.remove('dragging');
+  
+  if (Math.abs(e.clientX - qaDragStart.x) < 5 && Math.abs(e.clientY - qaDragStart.y) < 5) {
+    // Click — open panel
+    if (qaHoveredNode) {
+      qaOpenPanel(qaHoveredNode);
+    }
+  }
+});
+
+qaContainer.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  const factor = e.deltaY > 0 ? 0.9 : 1.1;
+  qaZoom = Math.max(0.3, Math.min(3, qaZoom * factor));
+}, { passive: false });
+
+// ── TOUCH EVENTS (QA Canvas) ──
+let qaTouchStartDist = 0;
+let qaTouchStartZoom = 1;
+let qaTouchStartTime = 0;
+let qaTouchStartPos = { x: 0, y: 0 };
+let qaIsTouchDragging = false;
+
+qaContainer.addEventListener('touchstart', (e) => {
+  if (currentTab !== 'qa') return;
+  if (e.touches.length === 2) {
+    const dx = e.touches[0].clientX - e.touches[1].clientX;
+    const dy = e.touches[0].clientY - e.touches[1].clientY;
+    qaTouchStartDist = Math.sqrt(dx * dx + dy * dy);
+    qaTouchStartZoom = qaZoom;
+    e.preventDefault();
+  } else if (e.touches.length === 1) {
+    const t = e.touches[0];
+    qaTouchStartTime = Date.now();
+    qaTouchStartPos = { x: t.clientX, y: t.clientY };
+    qaDragStart = { x: t.clientX, y: t.clientY };
+    qaPanStart = { x: qaPanX, y: qaPanY };
+    qaIsTouchDragging = false;
+  }
+}, { passive: false });
+
+qaContainer.addEventListener('touchmove', (e) => {
+  if (currentTab !== 'qa') return;
+  e.preventDefault();
+  if (e.touches.length === 2) {
+    const dx = e.touches[0].clientX - e.touches[1].clientX;
+    const dy = e.touches[0].clientY - e.touches[1].clientY;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    if (qaTouchStartDist > 0) {
+      qaZoom = Math.max(0.3, Math.min(3, qaTouchStartZoom * (dist / qaTouchStartDist)));
+    }
+  } else if (e.touches.length === 1) {
+    const t = e.touches[0];
+    const dx = t.clientX - qaDragStart.x;
+    const dy = t.clientY - qaDragStart.y;
+    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) qaIsTouchDragging = true;
+    qaPanX = qaPanStart.x + dx / qaZoom;
+    qaPanY = qaPanStart.y + dy / qaZoom;
+  }
+}, { passive: false });
+
+qaContainer.addEventListener('touchend', (e) => {
+  if (currentTab !== 'qa') return;
+  if (e.touches.length === 0 && !qaIsTouchDragging) {
+    const elapsed = Date.now() - qaTouchStartTime;
+    if (elapsed < 300) {
+      const world = qaScreenToWorld(qaTouchStartPos.x, qaTouchStartPos.y);
+      let found = null;
+      Object.entries(qaNodePositions).forEach(([id, pos]) => {
+        const dx = world.x - pos.x;
+        const dy = world.y - pos.y;
+        if (Math.sqrt(dx * dx + dy * dy) < pos.radius * 1.8) found = id;
+      });
+      if (found) qaOpenPanel(found);
+    }
+  }
+  if (e.touches.length < 2) qaTouchStartDist = 0;
+});
+
+// QA Panel
+function qaOpenPanel(nodeId) {
+  const node = QA_ALL_NODES[nodeId];
+  if (!node) return;
+  
+  const panel = document.getElementById('info-panel');
+  const tag = document.getElementById('panel-branch');
+  const title = document.getElementById('panel-title');
+  const status = document.getElementById('panel-status');
+  const body = document.getElementById('panel-body');
+  
+  tag.textContent = node.ringLabel;
+  tag.style.background = node.ringColor + '22';
+  tag.style.color = node.ringColor;
+  title.textContent = node.label;
+  status.textContent = node.subtitle || '';
+  
+  let html = '';
+  
+  // Description
+  if (node.description) {
+    html += `<div class="panel-section">
+      <div class="panel-section-title">Description</div>
+      <div class="panel-text">${node.description.replace(/\n/g, '<br>')}</div>
+    </div>`;
+  }
+  
+  // Connections to disclosure map
+  if (node.connections && node.connections.length > 0) {
+    html += `<div class="panel-section">
+      <div class="panel-section-title">Disclosure Map Connections</div>
+      <div class="connections-list">`;
+    node.connections.forEach(connId => {
+      const connNode = ALL_NODES[connId];
+      if (connNode) {
+        const connColor = connNode.branchColor || '#666';
+        html += `<div class="connection-tag" style="border-color:${connColor}44" onclick="switchTab('disclosure'); setTimeout(() => openPanel('${connId}'), 300);">${connNode.label}</div>`;
+      }
+    });
+    html += `</div></div>`;
+  }
+  
+  // Source
+  html += `<div class="panel-section">
+    <div class="panel-section-title">Source</div>
+    <div class="panel-text" style="font-family:'JetBrains Mono',monospace; font-size:11px; color: var(--text-secondary);">
+      Vanhorn, J. (2025). <em>Qualia Algebra v2.2</em>. Zenodo.<br>
+      DOI: <a href="https://doi.org/10.5281/zenodo.17785676" target="_blank" style="color:var(--accent-gold);">10.5281/zenodo.17785676</a><br>
+      Paper: <a href="https://github.com/QAv2/qualia-algebra/blob/main/papers/Qualia_Algebra_Comprehensive.md" target="_blank" style="color:var(--accent-gold);">github.com/QAv2/qualia-algebra</a><br>
+      License: CC-BY-4.0
+    </div>
+  </div>`;
+  
+  // Evidence classification
+  html += `<div class="panel-section">
+    <div class="panel-section-title">Evidence Classification</div>
+    <div class="panel-text">
+      <span style="color:#5a8a6a">🟢 Documented</span> — Published, peer-reviewed, or established fact<br>
+      <span style="color:#c9a84c">🟡 Credible</span> — Computational validation, published non-mainstream<br>
+      <span style="color:#b8763a">🟠 Well-argued inference</span> — Derived from axioms, pattern analysis<br>
+      <span style="color:#a63d40">🔴 Speculative</span> — Untested predictions, theoretical<br><br>
+      <em style="color:var(--text-dim);">EXPLORATORY: Author's own theoretical framework.<br>Not extracted third-party evidence.</em>
+    </div>
+  </div>`;
+  
+  body.innerHTML = html;
+  panel.classList.add('open');
+}
+
+function qaFocusRing(ringId) {
+  const ring = QA_RINGS[ringId];
+  if (!ring || !ring.nodes.length) return;
+  
+  if (ringId === 'center') {
+    qaPanX = 0; qaPanY = 0; qaZoom = 1.5;
+    qaOpenPanel('qa-observer');
+    return;
+  }
+  
+  // Calculate center of ring's nodes
+  let sumX = 0, sumY = 0;
+  ring.nodes.forEach(node => {
+    const pos = qaNodePositions[node.id];
+    if (pos) { sumX += pos.x; sumY += pos.y; }
+  });
+  const avgX = sumX / ring.nodes.length;
+  const avgY = sumY / ring.nodes.length;
+  
+  qaPanX = qaW/2 - avgX;
+  qaPanY = qaH/2 - avgY;
+  qaZoom = ringId === 'theorems' ? 1.8 : 
+           ringId === 'spaces' ? 1.3 : 
+           ringId === 'convergence' ? 1.0 : 0.85;
+}
+
+// Handle resize for QA tab
+window.addEventListener('resize', () => {
+  if (currentTab === 'qa') {
+    qaResize();
+    qaInitPositions();
+  }
+});
+
+// Handle zoom controls for QA tab
+document.getElementById('zoom-in').addEventListener('click', () => {
+  if (currentTab === 'qa') qaZoom = Math.min(3, qaZoom * 1.2);
+});
+document.getElementById('zoom-out').addEventListener('click', () => {
+  if (currentTab === 'qa') qaZoom = Math.max(0.3, qaZoom * 0.8);
+});
+document.getElementById('reset-view').addEventListener('click', () => {
+  if (currentTab === 'qa') { qaPanX = 0; qaPanY = 0; qaZoom = 1; }
+});
+
+// ═══════════════════════════════════════
+// MOBILE: LEGEND TOGGLE + PANEL SWIPE
+// ═══════════════════════════════════════
+
+const legendToggle = document.getElementById('legend-toggle');
+const legendEl = document.getElementById('legend');
+const qaLegendEl = document.getElementById('qa-legend');
+
+legendToggle.addEventListener('click', () => {
+  const isQA = currentTab === 'qa';
+  const target = isQA ? qaLegendEl : legendEl;
+  const other = isQA ? legendEl : qaLegendEl;
+  other.classList.remove('mobile-open');
+  target.classList.toggle('mobile-open');
+  legendToggle.classList.toggle('active', target.classList.contains('mobile-open'));
+});
+
+// Close legend when clicking outside on mobile
+document.addEventListener('click', (e) => {
+  if (window.innerWidth > 768) return;
+  if (!e.target.closest('.branch-legend') && !e.target.closest('.qa-legend') && !e.target.closest('.legend-toggle')) {
+    legendEl.classList.remove('mobile-open');
+    qaLegendEl.classList.remove('mobile-open');
+    legendToggle.classList.remove('active');
+  }
+});
+
+// Panel swipe-to-close on mobile
+const infoPanel = document.getElementById('info-panel');
+let panelTouchStartX = 0;
+let panelTouchStartY = 0;
+
+infoPanel.addEventListener('touchstart', (e) => {
+  panelTouchStartX = e.touches[0].clientX;
+  panelTouchStartY = e.touches[0].clientY;
+}, { passive: true });
+
+infoPanel.addEventListener('touchend', (e) => {
+  const dx = e.changedTouches[0].clientX - panelTouchStartX;
+  const dy = Math.abs(e.changedTouches[0].clientY - panelTouchStartY);
+  // Swipe right to close (> 80px horizontal, not too much vertical)
+  if (dx > 80 && dy < 60) {
+    infoPanel.classList.remove('open');
+  }
+}, { passive: true });
+
+// ═══════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════
+
+// Expose functions needed by inline onclick handlers
+window.openPanel = openPanel;
+window.switchTab = switchTab;
+window.qaOpenPanel = qaOpenPanel;
+
+window.addEventListener('resize', resize);
+resize();
+initPositions();
+buildLegend();
+draw();
+
+})(); // end async IIFE
+</script>
+</body>
+</html>
