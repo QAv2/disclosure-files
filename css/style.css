@@ -593,6 +593,11 @@ html, body {
     padding: 6px 10px;
   }
 
+  .toolbar #btn-zoom-in,
+  .toolbar #btn-zoom-out {
+    display: none;
+  }
+
   .search-input-wrap {
     width: 300px;
   }
@@ -606,11 +611,17 @@ html, body {
   .qa-legend {
     display: none !important;
   }
-  .toolbar button span.btn-label {
-    display: none;
-  }
   .tab-bar .tab-btn {
     font-size: 11px;
     padding: 6px 12px;
+  }
+  .toolbar {
+    bottom: 12px;
+    padding: 5px 8px;
+    gap: 3px;
+  }
+  .toolbar button {
+    font-size: 10px;
+    padding: 5px 10px;
   }
 }
