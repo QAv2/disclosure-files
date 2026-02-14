@@ -213,7 +213,8 @@ function disclosureHitTest(ctrl, sx, sy) {
       const pos = ctrl.nodePositions[child.id];
       if (!pos) continue;
       const dx = world.x - pos.x, dy = world.y - pos.y;
-      const hitR = pos.radius * 1.5;
+      const childMult = window.innerWidth < 600 ? 3 : 1.5;
+      const hitR = pos.radius * childMult;
       if (dx * dx + dy * dy < hitR * hitR) return child.id;
     }
   }
@@ -221,7 +222,8 @@ function disclosureHitTest(ctrl, sx, sy) {
     const pos = ctrl.nodePositions[branch.id];
     if (!pos) continue;
     const dx = world.x - pos.x, dy = world.y - pos.y;
-    const hitR = pos.radius * 1.2;
+    const branchMult = window.innerWidth < 600 ? 1.8 : 1.2;
+    const hitR = pos.radius * branchMult;
     if (dx * dx + dy * dy < hitR * hitR) return branch.id;
   }
   return null;
@@ -258,21 +260,45 @@ let time = 0;
 
 function initPositions() {
   const cx = disclosureCtrl.W / 2, cy = disclosureCtrl.H / 2;
-  const branchRadius = Math.min(disclosureCtrl.W, disclosureCtrl.H) * 0.3;
+  const minDim = Math.min(disclosureCtrl.W, disclosureCtrl.H);
+  const branchRadius = minDim * 0.3;
+  const isMobile = minDim < 600;
 
   BRANCH_LIST.forEach((branch, i) => {
     const angle = (i / BRANCH_LIST.length) * Math.PI * 2 - Math.PI / 2;
     const bx = cx + Math.cos(angle) * branchRadius;
     const by = cy + Math.sin(angle) * branchRadius;
-    disclosureCtrl.nodePositions[branch.id] = { x: bx, y: by, targetX: bx, targetY: by, radius: 28 };
+    const branchNodeRadius = isMobile ? 20 : 28;
+    disclosureCtrl.nodePositions[branch.id] = { x: bx, y: by, targetX: bx, targetY: by, radius: branchNodeRadius };
 
-    const childRadius = 100;
-    branch.children.forEach((child, j) => {
-      const cAngle = angle + ((j - (branch.children.length - 1) / 2) * 0.3);
-      const cx2 = bx + Math.cos(cAngle) * childRadius;
-      const cy2 = by + Math.sin(cAngle) * childRadius;
-      disclosureCtrl.nodePositions[child.id] = { x: cx2, y: cy2, targetX: cx2, targetY: cy2, radius: 10 };
-    });
+    if (isMobile) {
+      // Multi-ring layout: keeps children within their branch's sector
+      const maxPerRing = 10;
+      const baseR = minDim * 0.1;
+      const ringGap = minDim * 0.06;
+      const maxArc = Math.PI; // 180° spread
+      const childNodeRadius = 6;
+      branch.children.forEach((child, j) => {
+        const ring = Math.floor(j / maxPerRing);
+        const idxInRing = j % maxPerRing;
+        const countInRing = Math.min(maxPerRing, branch.children.length - ring * maxPerRing);
+        const r = baseR + ring * ringGap;
+        const arcStep = countInRing > 1 ? maxArc / (countInRing - 1) : 0;
+        const cAngle = angle + (idxInRing - (countInRing - 1) / 2) * arcStep;
+        const cx2 = bx + Math.cos(cAngle) * r;
+        const cy2 = by + Math.sin(cAngle) * r;
+        disclosureCtrl.nodePositions[child.id] = { x: cx2, y: cy2, targetX: cx2, targetY: cy2, radius: childNodeRadius };
+      });
+    } else {
+      // Desktop: original layout unchanged
+      const childRadius = 100;
+      branch.children.forEach((child, j) => {
+        const cAngle = angle + ((j - (branch.children.length - 1) / 2) * 0.3);
+        const cx2 = bx + Math.cos(cAngle) * childRadius;
+        const cy2 = by + Math.sin(cAngle) * childRadius;
+        disclosureCtrl.nodePositions[child.id] = { x: cx2, y: cy2, targetX: cx2, targetY: cy2, radius: 10 };
+      });
+    }
   });
 }
 
@@ -1075,6 +1101,7 @@ infoPanel.addEventListener('touchend', (e) => {
 
 window.addEventListener('resize', () => {
   disclosureCtrl.resize();
+  initPositions();
   if (currentTab === 'qa') {
     qaCtrl.resize();
     qaInitPositions();
@@ -1088,9 +1115,13 @@ window.addEventListener('resize', () => {
 window.openPanel = openPanel;
 window.switchTab = switchTab;
 window.qaOpenPanel = qaOpenPanel;
+window.qaFocusRing = qaFocusRing;
 
 disclosureCtrl.resize();
 initPositions();
+if (Math.min(disclosureCtrl.W, disclosureCtrl.H) < 600) {
+  disclosureCtrl.zoom = 0.75;
+}
 buildLegend();
 draw();
 
