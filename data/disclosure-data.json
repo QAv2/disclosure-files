@@ -3447,6 +3447,90 @@
           "cointelpro-full",
           "media-narrative-coordination"
         ]
+      },
+      {
+        "id": "operation-paperclip",
+        "label": "Operation Paperclip",
+        "description": "Operation Paperclip, originally known as Operation Overcast, was a secret United States government program initiated in 1945 to recruit scientists, engineers, and technicians from Nazi Germany for employment in American military and civilian research programs. Approximately 1,600 German specialists and their families were ultimately brought to the United States under the program. [🟢 Declassified program records, National Archives]\n\nPresident Harry Truman authorized the recruitment effort but explicitly prohibited the inclusion of active Nazi Party members or individuals who had been more than nominal participants in Nazi activities. The Joint Intelligence Objectives Agency (JIOA), which administered the program, systematically circumvented this presidential directive by altering, sanitizing, and rewriting the personnel dossiers of recruited scientists to conceal or minimize their Nazi affiliations, SS memberships, and involvement in war crimes. [🟢 Declassified JIOA records, National Archives]\n\nAmong the most prominent recruits were Wernher von Braun, a former SS officer who had exploited slave labor from the Mittelbau-Dora concentration camp in V-2 rocket production and who went on to become director of NASA's Marshall Space Flight Center and chief architect of the Saturn V rocket; Hubertus Strughold, later called the \"Father of Space Medicine,\" who was linked to human experiments conducted at the Dachau concentration camp; Kurt Blome, a biological weapons researcher who experimented on concentration camp prisoners; and Walter Schreiber, a military physician linked to human experimentation programs. [🟢 Declassified personnel files; Nuremberg trial records]\n\nThe program directly supplied personnel to NASA, the US Army's rocket development programs at Fort Bliss and Redstone Arsenal, and chemical and biological weapons research at Edgewood Arsenal and Fort Detrick. [🟢 Declassified records] Declassified documents confirm that American intelligence agencies knowingly recruited individuals who had participated in war crimes, human experimentation, and the systematic exploitation of concentration camp slave labor, prioritizing their technical expertise over accountability for atrocities. [🟢 National Archives declassifications; Nazi War Crimes Disclosure Act records]\n\nThe full scope of Operation Paperclip was concealed from the American public and Congress for decades. Comprehensive disclosure only began through declassification efforts mandated by the Nazi War Crimes Disclosure Act of 1998, which compelled the release of millions of pages of previously classified records documenting the program's breadth and the backgrounds of its participants. [🟢]",
+        "keyEvidence": [
+          {
+            "claim": "Operation Paperclip (originally Operation Overcast) was a secret US program begun in 1945 to recruit approximately 1,600 German scientists, engineers, and technicians from Nazi Germany to work in American rocketry, aerospace, chemical weapons, and medical research programs.",
+            "classification": "🟢",
+            "source": "Declassified program records, National Archives"
+          },
+          {
+            "claim": "President Truman approved the program but ordered exclusion of active Nazi Party members. The Joint Intelligence Objectives Agency (JIOA) circumvented this directive by scrubbing and rewriting scientists' records to remove evidence of Nazi affiliations and war crimes involvement.",
+            "classification": "🟢",
+            "source": "Declassified JIOA records, National Archives"
+          },
+          {
+            "claim": "Key recruits included Wernher von Braun (SS officer, used Mittelbau-Dora slave labor, became NASA Marshall Space Flight Center director and Saturn V architect), Hubertus Strughold (linked to Dachau human experiments), Kurt Blome (biological weapons experiments on prisoners), and Walter Schreiber (linked to human experiments).",
+            "classification": "🟢",
+            "source": "Declassified personnel files; Nuremberg trial records"
+          },
+          {
+            "claim": "The program directly fed personnel into NASA, US Army rocket programs at Fort Bliss and Redstone Arsenal, and chemical/biological weapons programs at Edgewood Arsenal and Fort Detrick.",
+            "classification": "🟢",
+            "source": "Declassified program records, National Archives"
+          },
+          {
+            "claim": "US intelligence agencies knowingly recruited individuals who had participated in war crimes, human experimentation, and the use of concentration camp slave labor.",
+            "classification": "🟢",
+            "source": "National Archives declassifications; Nazi War Crimes Disclosure Act records"
+          },
+          {
+            "claim": "The program was kept secret from the public and Congress for decades. Full scope only became clear through declassification under the Nazi War Crimes Disclosure Act of 1998.",
+            "classification": "🟢",
+            "source": "Nazi War Crimes Disclosure Act of 1998 (P.L. 105-246); subsequent National Archives declassifications"
+          }
+        ],
+        "sources": [
+          {
+            "label": "National Archives: Operation Paperclip Records",
+            "url": "https://www.archives.gov/iwg/research-papers/operation-paperclip",
+            "type": "government"
+          },
+          {
+            "label": "Nazi War Crimes Disclosure Act of 1998 (P.L. 105-246)",
+            "url": "https://www.congress.gov/105/plaws/publ246/PLAW-105publ246.htm",
+            "type": "congressional"
+          },
+          {
+            "label": "National Archives: Interagency Working Group Final Report to Congress",
+            "url": "https://www.archives.gov/iwg/reports/final-report-2007.html",
+            "type": "government"
+          },
+          {
+            "label": "CIA FOIA Reading Room: Operation Paperclip Documents",
+            "url": "https://www.cia.gov/readingroom/collection/operation-paperclip",
+            "type": "government"
+          },
+          {
+            "label": "Nuremberg Trial Records: NMT Case Files",
+            "url": "https://www.loc.gov/rr/frd/Military_Law/NTs_war-criminals.html",
+            "type": "court"
+          },
+          {
+            "label": "Hunt, Linda. Secret Agenda: The United States Government, Nazi Scientists, and Project Paperclip (1991)",
+            "url": "https://archive.org/details/secretagendaunit0000hunt",
+            "type": "investigative"
+          },
+          {
+            "label": "Jacobsen, Annie. Operation Paperclip: The Secret Intelligence Program (2014)",
+            "url": "https://archive.org/details/operationpapercl0000jaco",
+            "type": "investigative"
+          }
+        ],
+        "status": "researched",
+        "connections": [
+          "intelligence",
+          "experiment-mkultra-full",
+          "experiment-radiation",
+          "experiment-biological",
+          "military-industrial",
+          "history-wars",
+          "area-51-groom-lake"
+        ]
       }
     ]
   },
@@ -3773,6 +3857,196 @@
           "consciousness-psi",
           "consciousness-nature",
           "health-pharma-funding"
+        ]
+      },
+      {
+        "id": "stargate-remote-viewing",
+        "label": "Stargate Program / Remote Viewing",
+        "description": "From 1972 to 1995, the U.S. intelligence community funded a sustained research and operational program investigating remote viewing — the claimed ability to perceive distant targets using anomalous cognition. The effort operated under a succession of classified codenames: SCANATE (1972), GONDOLA WISH (1977), GRILL FLAME (1978), CENTER LANE (1983), SUN STREAK (1986), and finally STARGATE (1991) [🟢]. Research was conducted primarily at Stanford Research Institute (SRI International) in Menlo Park, California, by laser physicists Dr. Harold Puthoff and Russell Targ, under contract to the CIA and later the Defense Intelligence Agency (DIA). Over the program's lifetime, approximately $20 million was expended [🟢].\n\nThe program produced several notable remote viewers. Ingo Swann, widely credited as the co-developer of the Coordinate Remote Viewing (CRV) protocol, conducted a 1973 session on Jupiter in which he described features — including a planetary ring — that were not confirmed until Voyager 1 arrived in 1979 [🟡]. Pat Price, a former police commissioner, reportedly described structural details of a Soviet weapons research facility at Semipalatinsk from map coordinates alone, producing sketches of a large gantry crane and a spherical containment vessel that correlated with later intelligence [🟢]. Army Chief Warrant Officer Joseph McMoneagle (Remote Viewer #001) was awarded the Legion of Merit upon retirement; his declassified citation credits him with providing \"critical intelligence unavailable from any other source\" to the DIA, NSA, CIA, Secret Service, and Joint Chiefs of Staff [🟢].\n\nHundreds of operational intelligence collection sessions were conducted for multiple agencies, including CIA, DIA, NSA, DEA, and the U.S. Secret Service [🟢]. The program was terminated in 1995 after Congress directed a formal evaluation. The American Institutes for Research (AIR) review, led by Dr. Michael Mumford, included independent assessments by statistician Jessica Utts and psychologist Ray Hyman. Utts concluded the statistical evidence was robust, writing that the results \"would be widely accepted if it pertained to something more mundane.\" Hyman agreed the effects were statistically anomalous but argued the methodology was insufficient to establish a paranormal explanation [🟢].\n\nThe CIA subsequently declassified approximately 89,000 pages of Stargate records, now accessible through the CIA FOIA Electronic Reading Room (CREST) [🟢]. Despite the program's official closure, multiple former participants and program managers — including McMoneagle and former program director Dale Graff — have publicly stated that operational remote viewing capability continued under different organizational auspices after 1995 [🟡].",
+        "keyEvidence": [
+          {
+            "claim": "The U.S. intelligence community funded remote viewing research and operations for over two decades (1972-1995) under successive codenames: SCANATE, GONDOLA WISH, GRILL FLAME, CENTER LANE, SUN STREAK, and STARGATE, spending approximately $20 million.",
+            "classification": "🟢",
+            "source": "Declassified CIA and DIA program records; CIA FOIA Reading Room STARGATE collection"
+          },
+          {
+            "claim": "Research was conducted at Stanford Research Institute (SRI International) by physicists Harold Puthoff and Russell Targ under CIA and DIA contracts.",
+            "classification": "🟢",
+            "source": "Declassified CIA contracts and SRI reports; Puthoff, H.E., 'CIA-Initiated Remote Viewing At Stanford Research Institute' (1996)"
+          },
+          {
+            "claim": "Remote Viewer #001 Joseph McMoneagle was awarded the Legion of Merit for providing 'critical intelligence unavailable from any other source' to DIA, NSA, CIA, Secret Service, and the Joint Chiefs of Staff.",
+            "classification": "🟢",
+            "source": "Declassified Legion of Merit citation; McMoneagle service records, Rice University Archives"
+          },
+          {
+            "claim": "Pat Price remotely described structural details of a Soviet weapons facility at Semipalatinsk from coordinates alone, including a large gantry crane and spherical containment vessel, details later corroborated by other intelligence.",
+            "classification": "🟢",
+            "source": "Declassified CIA operational session records (1974); FOIA release 1995"
+          },
+          {
+            "claim": "Ingo Swann described a ring around Jupiter during a 1973 SRI session, six years before Voyager 1 confirmed the existence of Jupiter's rings in 1979.",
+            "classification": "🟡",
+            "source": "SRI session transcript (April 27, 1973); Puthoff and Targ reports. Classification is yellow because independent verification of the session's provenance and chain of custody remains debated."
+          },
+          {
+            "claim": "The 1995 AIR evaluation included statistician Jessica Utts concluding the statistical evidence for remote viewing was significant and 'would be widely accepted if it pertained to something more mundane,' while psychologist Ray Hyman agreed results were statistically anomalous but questioned the methodology.",
+            "classification": "🟢",
+            "source": "Mumford, M.D., Rose, A.M., & Goslin, D.A., 'An Evaluation of Remote Viewing: Research and Applications,' American Institutes for Research (1995); CIA-RDP96-00791R000200180006-4"
+          },
+          {
+            "claim": "The CIA declassified approximately 89,000 pages of Stargate program documents, now available through the CIA FOIA Electronic Reading Room (CREST).",
+            "classification": "🟢",
+            "source": "CIA FOIA Reading Room, STARGATE collection"
+          },
+          {
+            "claim": "Multiple former program participants and managers have stated that operational remote viewing continued under different auspices after the program's official termination in 1995.",
+            "classification": "🟡",
+            "source": "Public statements by Joseph McMoneagle, Dale Graff, and other former program personnel; investigative reporting by Jim Schnabel and others"
+          }
+        ],
+        "sources": [
+          {
+            "label": "CIA FOIA Reading Room — STARGATE Collection",
+            "url": "https://www.cia.gov/readingroom/collection/stargate",
+            "type": "government"
+          },
+          {
+            "label": "AIR Evaluation of Remote Viewing (1995) — CIA FOIA",
+            "url": "https://www.cia.gov/readingroom/document/cia-rdp96-00791r000200180006-4",
+            "type": "government"
+          },
+          {
+            "label": "AIR Evaluation of Remote Viewing (1995) — National Security Archive, GWU",
+            "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB438/docs/doc_57.pdf",
+            "type": "archive"
+          },
+          {
+            "label": "FAS Intelligence Resource Program — STAR GATE Overview",
+            "url": "https://irp.fas.org/program/collect/stargate.htm",
+            "type": "archive"
+          },
+          {
+            "label": "Puthoff, H.E., 'CIA-Initiated Remote Viewing At Stanford Research Institute'",
+            "url": "https://www.newdualism.org/papers/H.Puthoff/CIA-Initiated%20Remote%20Viewing%20At%20Stanford%20Research%20Institute.htm",
+            "type": "academic"
+          },
+          {
+            "label": "McMoneagle Commendations and Legion of Merit — Rice University Archives",
+            "url": "http://archives.library.rice.edu/repositories/2/archival_objects/326191",
+            "type": "archive"
+          },
+          {
+            "label": "DIA Declassified Sourcebook (NSAEBB534) — National Security Archive, GWU",
+            "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB534-DIA-Declassified-Sourcebook/documents/DIA-21.pdf",
+            "type": "government"
+          },
+          {
+            "label": "Utts, J., 'An Assessment of the Evidence for Psychic Functioning' (1995)",
+            "url": "https://ics.uci.edu/~jutts/may.pdf",
+            "type": "academic"
+          }
+        ],
+        "status": "researched",
+        "connections": [
+          "consciousness-psi",
+          "intelligence",
+          "experiment-mkultra-full",
+          "uap-program-history",
+          "consciousness-nature"
+        ]
+      },
+      {
+        "id": "cia-gateway-process",
+        "label": "CIA Gateway Process",
+        "description": "On June 9, 1983, Lieutenant Colonel Wayne M. McDonnell of the US Army Intelligence and Security Command (INSCOM) submitted a report titled \"Analysis and Assessment of The Gateway Process\" to his commanding officer. The report was commissioned to evaluate the Monroe Institute's Gateway Experience program — a set of audio-guided meditation exercises using patented \"Hemi-Sync\" binaural beat technology designed to synchronize left and right brain hemispheres and induce altered states of consciousness. [🟢 Declassified CIA document, CIA-RDP96-00788R001700210016-5]\n\nMcDonnell's 29-page analysis constructed an ambitious theoretical framework drawing on quantum mechanics, neurophysiology, biomedical engineering concepts from Itzhak Bentov, David Bohm's holographic universe model, and Eastern transcendental meditation traditions. He concluded that the Gateway technique could, in principle, enable out-of-body experiences, remote information access across space and time, and interaction with non-physical dimensions of reality — all framed through the Army's own analytical methodology rather than mystical belief. [🟢 Content of declassified report]\n\nThe Monroe Institute, founded by Robert Monroe (author of \"Journeys Out of the Body\"), maintained documented operational relationships with US military and intelligence agencies. Under programs such as CENTER LANE, Army personnel were sent to the Institute in Virginia for advanced training in Hemi-Sync techniques applied to intelligence collection, and INSCOM explored using the technology for accelerated foreign language acquisition and personnel screening. [🟢 Declassified INSCOM and CIA records]\n\nThe report was declassified in 2003, but the version released through FOIA was missing page 25 — a notable omission that fueled years of speculation and repeated FOIA requests. The CIA stated they never possessed the page. It was ultimately recovered from the Monroe Institute's own archives around 2023 after sustained public pressure. [🟢 FOIA records; 🟡 Vice, The Black Vault reporting]\n\nIn early 2021, the report went viral on TikTok and other social media platforms, with users like Abigail Carey breaking down the document for millions of viewers, introducing a new generation to the US government's consciousness research. [🟡 Media reporting] The Gateway Process sits within a broader pattern of government interest in consciousness manipulation and psychic phenomena — from MKULTRA's behavioral modification experiments in the 1950s-60s, to the Stargate remote viewing program that directly evolved from the same INSCOM projects, to the DIA's later AAWSAP program investigating anomalous phenomena at Skinwalker Ranch. [🟢 Declassified program records]",
+        "keyEvidence": [
+          {
+            "claim": "LTC Wayne M. McDonnell authored \"Analysis and Assessment of The Gateway Process\" on June 9, 1983, for US Army Intelligence and Security Command (INSCOM). The full report is available in the CIA's FOIA Electronic Reading Room.",
+            "classification": "🟢",
+            "source": "CIA FOIA Reading Room, document CIA-RDP96-00788R001700210016-5"
+          },
+          {
+            "claim": "The report analyzed the Monroe Institute's Hemi-Sync binaural beat technology, concluding that the Gateway Experience could potentially enable out-of-body experiences, remote information access, and interaction with non-physical reality dimensions.",
+            "classification": "🟢",
+            "source": "Declassified report content, \"Analysis and Assessment of The Gateway Process\" (1983)"
+          },
+          {
+            "claim": "McDonnell's theoretical framework drew on quantum physics, David Bohm's holographic universe model, Itzhak Bentov's biomedical engineering concepts, neurophysiology, and Eastern meditation traditions.",
+            "classification": "🟢",
+            "source": "Declassified report content, \"Analysis and Assessment of The Gateway Process\" (1983)"
+          },
+          {
+            "claim": "The Monroe Institute had documented operational relationships with US military and intelligence agencies. Under CENTER LANE and related INSCOM programs, Army personnel received Hemi-Sync training at the Institute for intelligence collection applications.",
+            "classification": "🟢",
+            "source": "Declassified INSCOM and CIA records; CIA-RDP96-00788R001500030001-3"
+          },
+          {
+            "claim": "Page 25 of the report was missing from the initial FOIA release. The CIA stated they never possessed it. The page was ultimately recovered from the Monroe Institute's archives around 2023 after years of public pressure and FOIA litigation.",
+            "classification": "🟢",
+            "source": "FOIA records; Vice (2023); The Black Vault; MuckRock FOIA request #82871"
+          },
+          {
+            "claim": "The report went viral on TikTok and social media in early 2021, with millions of views introducing a new generation to the government's consciousness research programs.",
+            "classification": "🟡",
+            "source": "Gaia, Vice, Boing Boing, The US Sun (February-March 2021 reporting)"
+          },
+          {
+            "claim": "The Gateway Process connects to a broader pattern of US government consciousness research including MKULTRA, the Stargate remote viewing program (which evolved from the same INSCOM projects), and the DIA's AAWSAP program at Skinwalker Ranch.",
+            "classification": "🟢",
+            "source": "Declassified program records; Stargate Project archive; AAWSAP documentation"
+          }
+        ],
+        "sources": [
+          {
+            "label": "CIA FOIA Reading Room — Analysis and Assessment of Gateway Process",
+            "url": "https://www.cia.gov/readingroom/docs/cia-rdp96-00788r001700210016-5.pdf",
+            "type": "government"
+          },
+          {
+            "label": "CIA FOIA Reading Room — The Monroe Institute of Applied Sciences",
+            "url": "https://www.cia.gov/readingroom/document/cia-rdp96-00788r001700270004-2",
+            "type": "government"
+          },
+          {
+            "label": "CIA FOIA Reading Room — The Monroe Institute's Hemisync Process",
+            "url": "https://www.cia.gov/readingroom/document/cia-rdp96-00788r001700210004-8",
+            "type": "government"
+          },
+          {
+            "label": "The Black Vault — Stargate Collection: Analysis and Assessment of Gateway Process",
+            "url": "https://www.theblackvault.com/documentarchive/stargate-collection-analysis-and-assessment-of-gateway-process-9-june-1983/",
+            "type": "archive"
+          },
+          {
+            "label": "MuckRock FOIA Request — Missing Content and Related Documents",
+            "url": "https://www.muckrock.com/foi/united-states-of-america-10/missing-content-and-related-documents-82871/",
+            "type": "government"
+          },
+          {
+            "label": "Vice — Found: Page 25 of the CIA's Gateway Report on Astral Projection",
+            "url": "https://www.vice.com/en/article/found-page-25-of-the-cias-gateway-report-on-astral-projection/",
+            "type": "investigative"
+          },
+          {
+            "label": "The Monroe Institute and the Army — Declassified Document Collection",
+            "url": "https://archive.org/details/tmi-army-documents-toc",
+            "type": "archive"
+          },
+          {
+            "label": "Vice — The US Army Funded Astral Projection and Hypnosis Research in the 80s",
+            "url": "https://www.vice.com/en_us/article/pad4a9/the-us-army-funded-astral-projection-and-hypnosis-research-in-the-80s",
+            "type": "investigative"
+          }
+        ],
+        "status": "researched",
+        "connections": [
+          "consciousness-nature",
+          "consciousness-meditation",
+          "stargate-remote-viewing",
+          "intelligence",
+          "experiment-mkultra-full",
+          "uap-skinwalker"
         ]
       }
     ]
@@ -6511,6 +6785,119 @@
           "smith-mundt-modernization",
           "cointelpro-full",
           "operation-chaos"
+        ]
+      },
+      {
+        "id": "pentagon-analyst-program",
+        "label": "Pentagon Military Analyst Program",
+        "description": "From 2002 to 2008, the Pentagon operated a covert domestic influence campaign that recruited more than 75 retired military officers — generals and colonels — to appear on major television and radio networks (CNN, Fox News, NBC, CBS, ABC, MSNBC) as ostensibly independent military analysts, while secretly coordinating their messaging with the Department of Defense. [🟢 Pentagon internal documents obtained via FOIA; NYT investigation]\n\nThe program was launched in early 2002 under Secretary of Defense Donald Rumsfeld by Assistant Secretary of Defense for Public Affairs Victoria Clarke and her senior aide Brent T. Krueger. Internal Pentagon documents, obtained through a New York Times FOIA lawsuit that yielded over 8,000 pages of emails, transcripts, and briefing records, described the analysts as \"message force multipliers\" and \"surrogates\" who could deliver administration talking points on the Iraq and Afghanistan wars through the guise of independent expert analysis. [🟢 FOIA-released Pentagon emails and memos]\n\nOn April 20, 2008, New York Times reporter David Barstow published the Pulitzer Prize-winning investigation \"Behind TV Analysts, Pentagon's Hidden Hand,\" revealing the full scope of the operation. The investigation documented that many analysts simultaneously held undisclosed financial ties to defense contractors — companies that stood to profit directly from the wars they were promoting on television — creating severe conflicts of interest that were never disclosed to viewers. [🟢 financial disclosures; NYT investigation]\n\nThe DOD Inspector General released Report No. IE-2009-004 in January 2009, largely exonerating the program, but Deputy Inspector General Donald M. Horstman repudiated the report, stating it \"did not meet accepted quality standards\" and \"relied on a body of testimonial evidence that was insufficient or inconclusive.\" The report was withdrawn in May 2009 under pressure from Senator Carl Levin. A separate GAO investigation in July 2009 confirmed that retired officers had been given special access for the purpose of influencing public opinion. [🟢 DOD IG reports; GAO report]\n\nDespite the Pulitzer Prize, no major television network conducted an on-air investigation of its own participation in the program. The FCC received formal complaints — including from Representatives Rosa DeLauro and John Dingell — but took no enforcement action. Critics argued the program violated the spirit and potentially the letter of federal prohibitions on using appropriated funds for domestic propaganda. [🟢 FCC records; Congressional correspondence] [🟡 legal analysis; media criticism]",
+        "keyEvidence": [
+          {
+            "claim": "The Pentagon recruited more than 75 retired military officers to serve as TV/radio military analysts while secretly providing them with talking points, private briefings, and coordinated messaging beginning in 2002.",
+            "classification": "🟢",
+            "source": "David Barstow, 'Behind TV Analysts, Pentagon's Hidden Hand,' New York Times, April 20, 2008; 8,000+ pages of Pentagon documents obtained via FOIA lawsuit"
+          },
+          {
+            "claim": "Internal Pentagon documents described the analysts as 'message force multipliers' and 'surrogates' who could deliver administration themes through the appearance of independent analysis.",
+            "classification": "🟢",
+            "source": "FOIA-released Pentagon emails and memos published by the New York Times"
+          },
+          {
+            "claim": "The program was launched by Assistant Secretary of Defense for Public Affairs Victoria Clarke and her aide Brent T. Krueger under Secretary of Defense Donald Rumsfeld.",
+            "classification": "🟢",
+            "source": "Pentagon records; New York Times investigation"
+          },
+          {
+            "claim": "Many analysts held simultaneous financial ties to defense contractors that profited from the wars they advocated on television, creating undisclosed conflicts of interest.",
+            "classification": "🟢",
+            "source": "Financial disclosures; David Barstow, New York Times, 2008 (cited in Pulitzer Prize award)"
+          },
+          {
+            "claim": "The DOD Inspector General's January 2009 report (IE-2009-004) exonerating the program was repudiated by Deputy IG Donald M. Horstman as failing to meet quality standards and was formally withdrawn in May 2009.",
+            "classification": "🟢",
+            "source": "DOD IG Report IE-2009-004; Deputy IG Horstman statement; Senator Carl Levin correspondence with Secretary Gates"
+          },
+          {
+            "claim": "The GAO confirmed in July 2009 that retired officers were given special access to military briefings and facilities for the purpose of influencing public opinion through media appearances.",
+            "classification": "🟢",
+            "source": "Government Accountability Office report, July 2009"
+          },
+          {
+            "claim": "No major TV network conducted an on-air investigation of its own role in the program despite the story winning a Pulitzer Prize.",
+            "classification": "🟡",
+            "source": "Media criticism from FAIR, PR Watch, Columbia Journalism Review; documented absence of network self-investigation"
+          },
+          {
+            "claim": "The FCC received formal complaints from members of Congress including Representatives DeLauro and Dingell but took no enforcement action.",
+            "classification": "🟢",
+            "source": "Congressional correspondence to FCC Chairman Kevin J. Martin, May 6, 2008; FCC records"
+          },
+          {
+            "claim": "The program arguably violated federal prohibitions on using appropriated funds for domestic propaganda.",
+            "classification": "🟡",
+            "source": "Legal analyses citing restrictions on covert propaganda and domestic use of appropriated funds; GAO findings"
+          }
+        ],
+        "sources": [
+          {
+            "label": "David Barstow, 'Behind TV Analysts, Pentagon's Hidden Hand,' New York Times (April 20, 2008)",
+            "url": "https://www.nytimes.com/2008/04/20/washington/20generals.html",
+            "type": "investigative"
+          },
+          {
+            "label": "Pulitzer Prize for Investigative Reporting — David Barstow (2009)",
+            "url": "https://www.pulitzer.org/winners/david-barstow",
+            "type": "archive"
+          },
+          {
+            "label": "Pentagon Military Analyst Program — SourceWatch documentation",
+            "url": "https://www.sourcewatch.org/index.php/Pentagon_military_analyst_program",
+            "type": "archive"
+          },
+          {
+            "label": "Pentagon Military Analyst Program — Wikipedia (with primary source citations)",
+            "url": "https://en.wikipedia.org/wiki/Pentagon_military_analyst_program",
+            "type": "archive"
+          },
+          {
+            "label": "NPR: Pentagon Used Military Analysts to Deliver Message (May 1, 2008)",
+            "url": "https://www.npr.org/2008/05/01/90111757/pentagon-used-military-analysts-to-deliver-message",
+            "type": "investigative"
+          },
+          {
+            "label": "Democracy Now: Pentagon Pundits — David Barstow interview (May 8, 2009)",
+            "url": "https://www.democracynow.org/2009/5/8/pentagons_pundits_ny_times_reporter_david",
+            "type": "investigative"
+          },
+          {
+            "label": "FAIR: Pentagon Investigates Pentagon Pundits Scandal",
+            "url": "https://fair.org/uncategorized/pentagon-investigates-pentagon-pundits-scandal/",
+            "type": "investigative"
+          },
+          {
+            "label": "Raw Story: Senior official in Bush domestic propaganda program remains Obama's Pentagon spokesman",
+            "url": "https://www.rawstory.com/2009/09/bryan-whitman-part-1/",
+            "type": "investigative"
+          },
+          {
+            "label": "Project Censored: Lying About War — Deliberate Propaganda and Spin by the Pentagon",
+            "url": "https://www.projectcensored.org/lying-about-war-deliberate-propaganda-and-spin-by-the-pentagon/",
+            "type": "investigative"
+          },
+          {
+            "label": "Jansen, S.C. (2014) 'The Pentagon's Military Analyst Program,' Policy Futures in Education 12(4)",
+            "url": "https://journals.sagepub.com/doi/pdf/10.2304/pfie.2014.12.4.572",
+            "type": "academic"
+          }
+        ],
+        "status": "researched",
+        "connections": [
+          "media-narrative-coordination",
+          "media-cia",
+          "military-industrial",
+          "smith-mundt-modernization",
+          "intelligence",
+          "media-propaganda"
         ]
       }
     ]
