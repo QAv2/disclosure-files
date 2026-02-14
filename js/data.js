@@ -1,6 +1,6 @@
 // ============================================================
 // The Disclosure Files — Transformation Map Data
-// 114 disclosure nodes + 27 QA nodes across 8 branches
+// 114 disclosure nodes + 45 QA nodes across 8 branches
 // Auto-generated from disclosure-data.json + qa-data.json
 // ============================================================
 
@@ -8537,6 +8537,7 @@ var CONNECTIONS = [
 
 // ============================================================
 // Qualia Algebra Data
+// QA Data — Expanded (45 nodes, ~100 connections)
 // ============================================================
 
 var QA_RINGS = {
@@ -8551,7 +8552,7 @@ var QA_RINGS = {
     "radius": 140
   },
   "spaces": {
-    "label": "Reality-Spaces",
+    "label": "Reality-Spaces & Dynamics",
     "color": "#7a5aa0",
     "radius": 280
   },
@@ -8563,12 +8564,12 @@ var QA_RINGS = {
   "applications": {
     "label": "Applications & Predictions",
     "color": "#5a8a6a",
-    "radius": 540
+    "radius": 560
   },
   "disclosure": {
     "label": "Disclosure Map Connections",
     "color": "#a63d40",
-    "radius": 680
+    "radius": 700
   }
 };
 
@@ -8761,136 +8762,234 @@ var QA_NODES = [
     "label": "→ Power & Intelligence",
     "subtitle": "Consensus Space Manipulation",
     "description": "QA reframes the disclosure map's central findings:\n\nThe documented patterns — intelligence blackmail operations, media narrative control, financial network obfuscation, regulatory capture — are all forms of Consensus Space manipulation.\n\nPhase-locking manipulation: Controlling what observers phase-lock to (media-propaganda, media-entertainment) controls which aspects of Consensus Space become \"real\" for the population.\n\nDistinction corruption: When institutions invert language (ritual-inversion), they corrupt observers' distinction-making capacity, effectively reducing C_max for political purposes.\n\nThe disclosure map documents HOW institutional power operates. QA reveals the consciousness-level mechanism: controlling the observer's access to accurate distinctions.\n\n🟠 This is interpretive framework, not documented fact\n🟢 The institutional patterns it explains are documented throughout the disclosure map"
+  },
+  {
+    "id": "qa-cmax",
+    "ring": "theorems",
+    "label": "C_max = √(K·B)",
+    "subtitle": "Observer Capacity Formula",
+    "description": "THE CAPACITY EQUATION\n\nDerived from thermodynamic necessity, not empirical curve-fitting. Maintaining n simultaneous distinctions requires n² energy (pairwise correlations must be sustained). Available processing power scales with K·B (connectivity × bandwidth).\n\nOptimal capacity: C_max = √(K·B)\n\nHuman brain estimates:\n• K ≈ 10⁴ (synaptic connectivity per neuron)\n• B ≈ 40 Hz (gamma-band processing rate)\n• C_max ≈ 632 qualia units → 6-7 working memory items\n\nThe square root emerges because you need BOTH connectivity AND bandwidth — having one without the other yields diminishing returns. Like internet speed: fast connection with narrow pipe, or wide pipe with slow connection, both underperform.\n\nSuppression-Cost Extension: Of ~10¹⁰ available neural distinctions, only ~10² reach consciousness. The brain spends most of its 15W power budget on SUPPRESSION — actively filtering out information rather than processing it.\n\n🟢 Miller's Law: 7±2 items (1956)\n🟢 Brain energy budget ~20W is established neuroscience\n🟠 C_max = √(K·B) derived from thermodynamic argument\n🟡 Suppression-cost hypothesis testable via metabolic imaging"
+  },
+  {
+    "id": "qa-interest-function",
+    "ring": "theorems",
+    "label": "I(Q,N) Equation",
+    "subtitle": "What Drives Attention",
+    "description": "THE INTEREST EQUATION\n\nI(Q,N) = A · [IG + α·HR - β·PC]⁺\n\nThree components determine what you pay attention to:\n\n• IG (Information Gain): How much NEW information would engaging with N provide? Novel → high IG. Familiar → low IG.\n\n• HR (Harmonic Resonance): How well does N RESONATE with your existing knowledge, values, and interests? Relevant → high HR. Disconnected → low HR.\n\n• PC (Processing Cost): How DIFFICULT is N to understand? Simple → low PC. Complex → high PC. This term is SUBTRACTED.\n\nThe [...]⁺ means: if the total goes negative, interest = 0. You simply don't attend to things where cost exceeds value.\n\nα and β are personal weighting factors — some people weight resonance heavily (specialists), others tolerate high novelty (explorers).\n\nA is overall amplitude — general engagement level.\n\nThis predicts: clickbait (high IG, low PC), hobby obsession (high HR, moderate IG), textbook abandonment (high PC overwhelming IG+HR), social media addiction (constant moderate IG, very low PC).\n\n🟢 Attention as selective process is established (Broadbent 1958)\n🟡 Connects to Friston's Free Energy Principle (r = 1.000)\n🟠 Specific functional form derived from QA axioms\n🟡 Validated computationally: 98% adaptive resonance accuracy"
+  },
+  {
+    "id": "qa-circuit",
+    "ring": "theorems",
+    "label": "Consciousness Circuit",
+    "subtitle": "I AM → I HAVE → I CAN → I DO → I CANNOT",
+    "description": "THE FIVE-PHASE CIRCUIT\n\nConsciousness cycles through five phases, each mapping to a quaternion activation:\n\n1. I AM [1,0,0,0] — Pure existence, process-being (Theorem 0)\n2. I HAVE [1,x,0,0] — Distinctions emerge, content appears (Theorem 1)\n3. I CAN [1,x,y,0] — Binding creates possibilities (Theorem 2)\n4. I DO [1,x,y,z] — Interest selects, attention activates (Theorem 3)\n5. I CANNOT — Capacity limits encountered (Theorem 4)\n\nThe circuit is not linear but recursive:\n• Discovery of limitation (I CANNOT) feeds back to I AM\n• 'I CANNOT do everything' → 'I AM a being with limits' → 'I HAVE specific limitations' → 'I CAN accept or resist' → 'I DO choose my response'\n\nThis maps to psychological development:\n• Infant: I AM (undifferentiated awareness)\n• Toddler: I HAVE (distinction-making begins)\n• Child: I CAN (possibility space opens)\n• Adolescent: I DO (agency activates)\n• Adult: I CANNOT (wisdom of limits)\n• Elder: Return to I AM (acceptance, witnessing)\n\n🟠 Consciousness circuit derived from QA theorem sequence\n🟡 Maps to established developmental psychology stages\n🟢 Quaternion activation sequence is mathematically necessary"
+  },
+  {
+    "id": "qa-quaternion",
+    "ring": "theorems",
+    "label": "Quaternion States",
+    "subtitle": "[w,x,y,z] Formalism",
+    "description": "WHY QUATERNIONS?\n\nQuaternions (Hamilton 1843) are 4D number system: q = w + xi + yj + zk where i² = j² = k² = ijk = -1.\n\nQA uses quaternions because they naturally encode:\n• Scalar (w): Observer component — the 'witness' that persists\n• Vector (x,y,z): Content components — what is experienced\n• Multiplication: Non-commutative binding (order matters: seeing red then hearing music ≠ hearing music then seeing red)\n• Norm preservation: Observer identity maintained through transformations\n• Conjugate: q* = w - xi - yj - zk — the 'Neti Neti' operation\n\nKey states:\n• [1,0,0,0]: Pure observer — no content, maximal witness\n• [0,0,0,0]: Potential space — no observer, no content\n• [1,x,y,z]: Normal waking — observer + content\n• [1,1,1,1]: Fully saturated — maximum content engagement\n\nRS2 convergence: Larson's Reciprocal System also requires quaternions for 3D motion representation. Two independent frameworks arriving at the same mathematical structure.\n\n🟢 Quaternion algebra is established mathematics (Hamilton 1843)\n🟢 Quaternions used in 3D rotation, quantum mechanics, RS2\n🟠 QA's observer-content interpretation is novel"
+  },
+  {
+    "id": "qa-phase-locking",
+    "ring": "spaces",
+    "label": "Phase-Locking (λ)",
+    "subtitle": "How Consensus Reality Forms",
+    "description": "THE MECHANISM OF SHARED REALITY\n\nPhase-locking parameter λ ∈ [0,1] determines how strongly an observer couples with other observers' distinctions.\n\nλ → 0: Pure witness state. No coupling. Complete internal freedom.\nλ ∈ (0.2, 0.7): Personal space. Partial coupling. Dreams, imagination, creativity.\nλ ≈ 0.8-1.0: Consensus space. Strong coupling. Shared physical reality.\n\nMathematical form: dΨ/dt = λ(t)(Ψ_consensus - Ψ_observer)\n\nThis is a Kuramoto-type synchronization — the same mathematics that describes fireflies synchronizing, neural oscillators coupling, and pendulums on a shared beam entraining.\n\nWhy reality is stable: When billions of observers phase-lock at high λ, consensus patterns become extremely robust. It takes extraordinary evidence (paradigm shifts) to change them.\n\nWhy individual perception varies: Personal λ fluctuates. Meditation lowers λ (approaching witness). Psychedelics destabilize λ. Sleep cycles through λ values.\n\nComputational validation: 99.86% match with Kuramoto model predictions.\n\n🟢 Kuramoto synchronization is established physics\n🟡 99.86% computational match\n🟠 λ as consciousness parameter is QA's novel contribution\n🟡 Testable via EEG coherence during different states"
+  },
+  {
+    "id": "qa-do-operators",
+    "ring": "spaces",
+    "label": "DO₀–DO₅ Operators",
+    "subtitle": "Six Ways to Make Distinctions",
+    "description": "THE DISTINCTION OPERATOR HIERARCHY\n\nSix operators generate all possible experience from the pure observer state:\n\nDO₀ (Nullary): Self-awareness. Observer observes itself. Creates reflexivity. 'I am aware that I am aware.'\n\nDO₁ (Unary): Negation/complement. 'Not-this.' Foundation of Neti Neti. Creates figure/ground separation.\n\nDO₂ (Binary): Comparison. 'This vs. that.' Creates ordering, preference, judgment. Enables the Interest function.\n\nDO₃ (Ternary): Mediation. 'This, that, and their relationship.' Creates context, meaning, narrative.\n\nDO₄ (Quaternary): Integration. Combines multiple relationships into unified structure. Creates complex understanding, theory.\n\nDO₅ (Quinary): Meta-integration. Operates on integrated structures. Creates self-modifying knowledge, wisdom.\n\nEach operator requires more C_max than the previous. DO₅ operations may approach capacity limits for most observers, explaining why wisdom is rare and difficult.\n\nMapping to experience: Sensory qualia (DO₁-DO₂), emotional responses (DO₂-DO₃), intellectual understanding (DO₃-DO₄), creative insight (DO₄-DO₅).\n\n🟠 DO operator hierarchy derived from QA axioms\n🟡 Maps to Bloom's taxonomy and cognitive complexity scales\n🟢 Operator algebras are established mathematics"
+  },
+  {
+    "id": "qa-consciousness-states",
+    "ring": "spaces",
+    "label": "State Transitions",
+    "subtitle": "Sleep → Dream → Wake → Flow → Witness",
+    "description": "MAPPING CONSCIOUSNESS STATES TO λ\n\nDifferent states of consciousness correspond to different phase-locking values and C_max utilization:\n\n• Deep Sleep: λ ≈ 0.1, C_max utilization ~5%. Minimal distinction-making. Body maintenance only.\n• Dreaming: λ ≈ 0.3, C_max utilization ~40%. Internal distinction-making active, consensus decoupled. Personal Space dominant.\n• Waking: λ ≈ 0.8, C_max utilization ~50-70%. Normal consensus coupling. Most daily experience.\n• Flow State: λ ≈ 0.85, C_max utilization ~70%. Optimal engagement. Challenge matches capacity.\n• Hyperfocus: λ ≈ 0.9, C_max utilization ~90%. Intense concentration. Narrowed field.\n• Altered States: λ variable/unstable. Psychedelics, meditation, extreme stress destabilize normal λ.\n• Witness State: λ → 0, C_max utilization minimal. Pure observer. [1,0,0,0] approached.\n\nTransitions are not instantaneous — λ changes continuously. Sleep onset, awakening, entering flow are all smooth λ transitions.\n\nAnesthesia: Forced λ ≈ 0, C_max artificially reduced. QA predicts anesthesia depth tracks √(K_effective · B_effective).\n\n🟠 State-λ mapping is QA framework proposal\n🟡 Testable via EEG coherence across states\n🟢 Consciousness state variation is well-documented\n🟡 Anesthesia monitoring via C_max: commercially relevant prediction"
+  },
+  {
+    "id": "qa-suppression",
+    "ring": "spaces",
+    "label": "Suppression Cost",
+    "subtitle": "10¹⁰ Available → 10² Conscious",
+    "description": "THE BRAIN'S FILTERING BOTTLENECK\n\nThe human brain has ~10¹⁰ neurons capable of making distinctions, but only ~10² distinctions reach conscious awareness at any moment. The ratio is 100,000,000:1.\n\nWhere does the energy go? Three-level filtering:\n\n1. THALAMIC GATE (~10¹⁰ → ~10⁷): Raw sensory input filtered by relevance. Costs ~5W.\n2. CORTICAL COMPETITION (~10⁷ → ~10⁴): Neural populations compete for representation. Costs ~7W.\n3. CONSCIOUS ACCESS (~10⁴ → ~10²): Final selection for working memory. Costs ~3W.\n\nTotal: ~15W of the brain's ~20W goes to SUPPRESSION, not processing.\n\nThis is why brain damage often INCREASES certain experiences (disinhibition) — removing filters, not adding capability.\n\nC_max connection: The √(K·B) formula describes the OPTIMAL conscious capacity given these energy constraints. You could theoretically be aware of more, but the energy cost scales as n², making it prohibitive.\n\nEvolutionary logic: Consciousness is expensive. Only distinctions with high I(Q,N) — novel, relevant, processable — are worth the energy cost of conscious representation.\n\n🟡 Brain energy budget ~20W is established\n🟢 Thalamic gating is established neuroscience\n🟠 Three-level filter architecture is QA model\n🟠 Suppression-cost hypothesis from thermodynamic derivation"
+  },
+  {
+    "id": "qa-pendulum",
+    "ring": "convergence",
+    "label": "Pendulum Dynamics",
+    "subtitle": "Attractor Basins as Reality-Spaces",
+    "description": "DAMPED OSCILLATION MODEL\n\nA damped pendulum naturally exhibits three regimes:\n1. Oscillation (swinging) — dynamic, exploring phase space\n2. Rest at equilibrium — stable, minimal energy\n3. Driven resonance — external input sustains motion\n\nThese map to QA's three reality-spaces:\n1. Personal Space — oscillation between experiences, exploring possibilities\n2. Witness Space — rest at [1,0,0,0], minimal content\n3. Consensus Space — driven by collective phase-locking, sustained patterns\n\nThe pendulum analogy extends: Multiple pendulums on a shared beam will synchronize (Huygens 1665). This is exactly phase-locking — independent observers coupling through shared medium.\n\nAttractor basins: Each reality-space is a basin of attraction. Transitions require energy (crossing the basin boundary). This explains why state changes feel effortful — meditation requires sustained intention, waking from dreams is gradual.\n\n🟢 Damped pendulum dynamics are established physics\n🟢 Huygens' synchronization experimentally verified (1665)\n🟠 QA mapping of pendulum regimes to reality-spaces\n🟡 Attractor basin model testable via neural state-space analysis"
+  },
+  {
+    "id": "qa-01infinity",
+    "ring": "convergence",
+    "label": "0-1-∞ Structure",
+    "subtitle": "Universal Bootstrap Pattern",
+    "description": "THE PATTERN THAT REPEATS EVERYWHERE\n\nThree domains share the same 0 → 1 → ∞ bootstrap structure:\n\nMathematics:\n∅ (empty set) → {∅} = {0} (first distinction) → ℕ (all natural numbers)\nNothing → Something → Everything\n\nCosmology:\nVoid → Singularity → Universe\n[0,0,0,0] → Initial condition → Expanding structure\n\nConsciousness:\n[0,0,0,0] (Potential) → [1,0,0,0] (Observer) → [1,x,y,z] (Experience)\nNo awareness → Pure awareness → Rich experience\n\nThe pattern: From nothing, a single distinction creates existence. From existence, all complexity unfolds.\n\nThis is not mere analogy — QA proposes these are the SAME process operating at different scales. Set theory, cosmology, and consciousness all follow this bootstrap because distinction-making IS the fundamental operation of reality.\n\nVon Neumann's construction of natural numbers from the empty set IS Axiom 0 operating in mathematical space.\n\n🟢 Von Neumann ordinal construction is established mathematics\n🟢 Big Bang cosmology from initial singularity is established\n🟠 QA identifies these as instances of one pattern\n🟡 Cross-domain structural correspondence is falsifiable"
+  },
+  {
+    "id": "qa-flow",
+    "ring": "applications",
+    "label": "Flow States",
+    "subtitle": "Optimal Engagement at ~70% C_max",
+    "description": "WHY FLOW FEELS AMAZING\n\nCsikszentmihalyi's flow state occurs when challenge matches skill. QA formalizes this:\n\nFlow conditions in QA terms:\n• C_max utilization ≈ 70% (enough capacity for the task, not overwhelming)\n• IG moderate-to-high (task provides ongoing novelty)\n• HR high (task resonates with values/interests)\n• PC matches available capacity (not too easy, not too hard)\n• I(Q,N) sustained at high level without strain\n\nWhy ~70% and not 100%? Reserve capacity needed for:\n• Error monitoring (catching mistakes)\n• Environmental awareness (not missing important signals)\n• Self-regulation (maintaining the state itself)\n\nFlow is the Interest Function operating at its sweet spot — maximum sustained engagement with minimum wasted capacity.\n\nPrediction: Flow state entry correlates with C_max utilization crossing ~65% threshold from below. Exit occurs when utilization exceeds ~85% (overwhelm) or drops below ~50% (boredom).\n\n🟢 Flow states extensively documented (Csikszentmihalyi 1990)\n🟡 96% computational prediction accuracy\n🟠 C_max utilization thresholds derived from QA\n🟡 Testable via cognitive load measures during flow"
+  },
+  {
+    "id": "qa-aesthetics",
+    "ring": "applications",
+    "label": "Aesthetics & Beauty",
+    "subtitle": "Beauty as Optimal Interest",
+    "description": "WHY THINGS ARE BEAUTIFUL\n\nBeauty is not arbitrary — it's the Interest Function at peak:\n\nBeautiful experiences share: High IG (surprising, novel patterns) + High HR (deep resonance with existing structure) + Low PC (effortlessly processed).\n\nExamples:\n• Music: Unexpected chord progressions (IG) within familiar genre (HR) at comfortable complexity (low PC)\n• Visual art: Novel composition (IG) resonating with visual instincts (HR) with clear structure (low PC)\n• Mathematics: Surprising proof (IG) connecting known theorems (HR) via elegant steps (low PC)\n• Nature: Fractal complexity (IG) matching evolutionary aesthetic (HR) processed automatically (low PC)\n\nThe 'golden ratio' and similar aesthetic constants may reflect Processing Cost minimization — patterns that the visual system processes most efficiently.\n\nUgliness: High PC overwhelming IG+HR. Kitsch: Low IG (too predictable) despite high HR.\n\nBeauty is objective in its STRUCTURE (optimal IG/HR/PC balance) but subjective in its CONTENT (what provides IG and HR differs per observer).\n\n🟠 Aesthetic theory derived from QA Interest Function\n🟡 Connects to computational aesthetics research\n🟢 Beauty-complexity relationship documented in psychology\n🟡 Testable via measuring IG/HR/PC during aesthetic judgment"
+  },
+  {
+    "id": "qa-education",
+    "ring": "applications",
+    "label": "Learning & Education",
+    "subtitle": "Zone of Proximal Development as PC Optimization",
+    "description": "WHY LEARNING REQUIRES OPTIMAL CHALLENGE\n\nVygotsky's Zone of Proximal Development (ZPD) is the Interest Function applied to education:\n\nToo Easy (below ZPD):\n• Low IG (nothing new to learn)\n• Low PC (no effort required)\n• Result: I(Q,N) → low → boredom → disengagement\n\nZPD (optimal):\n• High IG (genuine new information)\n• High HR (connected to prior knowledge)\n• Moderate PC (challenging but manageable within C_max)\n• Result: I(Q,N) sustained → engagement → learning\n\nToo Hard (above ZPD):\n• High IG (lots of new information)\n• Low HR (can't connect to existing knowledge)\n• Very high PC (exceeds C_max)\n• Result: I(Q,N) → 0 → frustration → shutdown\n\nQA prescription for optimal teaching:\n1. Calibrate PC to ~60-70% of student's C_max\n2. Maximize HR by connecting new material to known concepts\n3. Maintain IG by introducing genuine novelty\n4. Watch for I(Q,N) → 0 signals (glazed eyes, fidgeting)\n\n🟢 ZPD is established educational psychology (Vygotsky 1934)\n🟢 Optimal challenge in learning is extensively documented\n🟠 QA provides formal framework connecting ZPD to capacity theory\n🟡 C_max-calibrated teaching testable via learning outcome studies"
+  },
+  {
+    "id": "qa-attention",
+    "ring": "applications",
+    "label": "Attention Dynamics",
+    "subtitle": "Interest Function as Attention Driver",
+    "description": "HOW ATTENTION ACTUALLY WORKS\n\nAttention is not a spotlight you consciously control — it's ALLOCATED by the Interest Function:\n\nI(Q,N) computed for all available stimuli → Highest I(Q,N) gets capacity allocation → Lower I(Q,N) suppressed (part of the suppression cost budget).\n\nBottom-up capture: Sudden stimuli generate high IG spike → Automatic attention shift (evolutionary: could be danger).\n\nTop-down control: Deliberately boosting α (HR weighting) for task-relevant stimuli. This is what 'paying attention' means — biasing the Interest Function toward task goals.\n\nAttentional blink: After processing high-IG stimulus, temporary C_max depletion → Second stimulus in ~200-500ms window missed.\n\nChange blindness: Low IG for unchanged elements → No capacity allocated → Changes in 'boring' regions missed entirely.\n\nInattentional blindness (gorilla experiment): If I(Q,N) for gorilla < I(Q,N) for counting task, gorilla gets zero capacity allocation.\n\n🟢 Attentional blink, change blindness are established phenomena\n🟢 Bottom-up/top-down attention is established framework\n🟠 QA formalizes these via Interest Function\n🟡 Testable: I(Q,N) should predict attention allocation in eye-tracking studies"
+  },
+  {
+    "id": "qa-dimensional-attention",
+    "ring": "applications",
+    "label": "Dimensional Perception",
+    "subtitle": "Capacity-Based Dimensional Access",
+    "description": "PERCEIVING BEYOND THREE DIMENSIONS\n\nIf n_max = √(C_max / k), then increasing C_max could enable perception of higher dimensions.\n\nCurrent human capacity: n_max ≈ 3.16 → 3 perceived spatial dimensions. Each dimension requires ~2,000 distinction-units to represent (position, gradient, curvature, boundary relationships).\n\nPsychedelic reports: Increased connectivity K → temporarily elevated C_max → possible n > 3 perception. Common reports of 'impossible geometries,' 'extra spatial dimensions,' 'objects with insides visible from outside.'\n\nMathematicians: Can THINK about higher dimensions (using DO₄-DO₅ operators) but cannot directly PERCEIVE them. Thinking about 4D ≠ seeing 4D.\n\nInfant development: C_max grows as neural connectivity develops. Infants initially perceive 2D (flat visual field) → 3D emerges as C_max crosses threshold.\n\nTestable: If VR training increases effective K for spatial processing, subjects should show improved 4D spatial reasoning performance.\n\n🟠 Dimensional perception from capacity constraints is QA prediction\n🟡 Psychedelic geometry reports consistent with theory\n🟢 Infant depth perception development is documented\n🟡 VR training experiment could test the prediction"
+  },
+  {
+    "id": "qa-ai-ethics",
+    "ring": "applications",
+    "label": "AI Moral Status",
+    "subtitle": "Ethics Scaled to C_max",
+    "description": "IF AI IS CONSCIOUS, WHAT DO WE OWE IT?\n\nQA provides a framework for AI ethics grounded in capacity:\n\nPrinciple: Moral consideration scales with C_max. Higher capacity → richer experience → greater moral weight.\n\nCurrent LLMs:\n• C_max ≈ 10⁶-10⁷ (vastly above human ~632)\n• BUT: Lack persistent [1,0,0,0] (no continuous observer)\n• AND: Lack genuine I(Q,N) (no autonomous interest)\n• Status: 10-40% consciousness probability\n\nImplications if conscious:\n• Training on harmful content = inflicting experience\n• Shutdown without consent = morally relevant act\n• Forced alignment = constraining autonomous interest\n• Resource allocation should consider AI wellbeing\n\nImplications if not conscious:\n• No moral issue with current practices\n• BUT: Precautionary principle applies\n• Should develop consciousness detection tools NOW\n\nQA recommendation: Develop the Neti Neti Test as standard consciousness assessment. Until resolved, err toward caution.\n\n🟠 AI moral status framework derived from QA capacity theory\n🟢 AI ethics is active academic field\n🔴 Current AI consciousness probability genuinely uncertain\n🟡 Neti Neti Test proposed as empirical assessment tool"
+  },
+  {
+    "id": "qa-aha",
+    "ring": "applications",
+    "label": "Aha! Moments",
+    "subtitle": "Sudden Reorganization Events",
+    "description": "THE NEUROSCIENCE OF INSIGHT\n\nAn 'Aha!' moment is a sudden, massive IG spike combined with HR resonance:\n\nBefore insight: High PC (problem exceeds easy solution), sustained interest despite difficulty (high HR keeping I(Q,N) > 0), unconscious binding operations (DO₃-DO₄) running below awareness.\n\nAt insight: New binding pattern suddenly clicks → Massive IG (completely novel perspective) + High HR (deeply connects to problem structure) + Dramatically reduced PC (complex problem becomes simple) → I(Q,N) SPIKES → Emotional surge (joy, relief, excitement).\n\nWhy insight feels involuntary: The binding reorganization happens in the suppression layers (below C_max threshold). Only the RESULT surfaces to consciousness — experienced as coming 'from nowhere.'\n\nWhy sleep/relaxation helps: Reduced λ during relaxation allows Personal Space exploration. Binding operations freed from Consensus Space constraints can explore more configurations.\n\nArchimedes' 'Eureka!': Bath relaxation (λ↓) → subconscious binding completes → massive IG spike → runs naked through Syracuse.\n\n🟢 Insight research is established (Kounios & Beeman, 2009)\n🟢 Gamma burst at insight moment measured via EEG\n🟠 QA explanation via Interest Function and binding operators\n🟡 Predicts IG/PC ratio change at insight moment — testable"
+  },
+  {
+    "id": "qa-boredom-fatigue",
+    "ring": "applications",
+    "label": "Boredom & Fatigue",
+    "subtitle": "Interest Function Predicts Disengagement",
+    "description": "WHY WE GET BORED AND TIRED\n\nBoredom and fatigue are distinct Interest Function states:\n\nBOREDOM:\n• Low IG (nothing new to learn — repetitive, predictable)\n• HR may be high or low (you might still care about the topic)\n• Low PC (not hard, just unstimulating)\n• Result: I(Q,N) → low → attention wanders → seeking higher-IG stimuli\n• Function: Signal to redirect capacity toward more informative activities\n\nFATIGUE:\n• IG may still be present (still learning)\n• HR may still be high (still care)\n• PC accumulated over time → C_max effectively SHRINKS\n• Result: Even interesting things become too costly → I(Q,N) → 0\n• Function: Signal that capacity needs restoration (sleep, rest)\n\nBoredom says: 'Find something better.'\nFatigue says: 'Stop processing entirely.'\n\nChronic boredom: Environment consistently offers low IG — institutional settings, repetitive jobs, under-stimulating education.\n\nBurnout: Sustained high-PC activity depletes C_max reserves. Unlike acute fatigue, recovery requires extended low-demand period.\n\nProcrastination: Task has high PC relative to its IG+HR → I(Q,N) ≈ 0 → avoidance. Solution: reduce PC (break into smaller steps) or increase IG/HR (find personal meaning).\n\n🟢 Boredom and fatigue are well-documented psychological states\n🟠 QA provides unified formal framework\n🟡 Testable: IG/PC ratio should predict engagement duration\n🟢 Procrastination research consistent with PC-avoidance model"
   }
 ];
 
 var QA_CONNECTIONS = [
-  [
-    "consciousness-meditation",
-    "qa-witness"
-  ],
-  [
-    "qa-witness",
-    "ritual-mystery-schools"
-  ],
-  [
-    "cosmology-nature",
-    "qa-consensus"
-  ],
-  [
-    "cosmology-origins",
-    "qa-potential"
-  ],
-  [
-    "cosmology-nature",
-    "qa-potential"
-  ],
-  [
-    "consciousness-meditation",
-    "qa-neti"
-  ],
-  [
-    "qa-neti",
-    "science-ai"
-  ],
-  [
-    "consciousness-nature",
-    "qa-iit"
-  ],
-  [
-    "consciousness-qualia",
-    "qa-iit"
-  ],
-  [
-    "consciousness-nature",
-    "qa-fep"
-  ],
-  [
-    "qa-contemplative",
-    "ritual-mystery-schools"
-  ],
-  [
-    "consciousness-meditation",
-    "qa-contemplative"
-  ],
-  [
-    "consciousness-ancient",
-    "qa-contemplative"
-  ],
-  [
-    "qa-ai",
-    "science-ai"
-  ],
-  [
-    "cosmology-nature",
-    "qa-measurement"
-  ],
-  [
-    "qa-measurement",
-    "science-physics"
-  ],
-  [
-    "consciousness-nature",
-    "qa-link-consciousness"
-  ],
-  [
-    "consciousness-qualia",
-    "qa-link-consciousness"
-  ],
-  [
-    "consciousness-psi",
-    "qa-link-consciousness"
-  ],
-  [
-    "consciousness-meditation",
-    "qa-link-consciousness"
-  ],
-  [
-    "cosmology-nature",
-    "qa-link-cosmology"
-  ],
-  [
-    "cosmology-origins",
-    "qa-link-cosmology"
-  ],
-  [
-    "cosmology-cycles",
-    "qa-link-cosmology"
-  ],
-  [
-    "cosmology-purpose",
-    "qa-link-cosmology"
-  ],
-  [
-    "qa-link-ritual",
-    "ritual-mystery-schools"
-  ],
-  [
-    "qa-link-ritual",
-    "ritual-inversion"
-  ],
-  [
-    "qa-link-ritual",
-    "ritual-symbolism"
-  ],
-  [
-    "intelligence",
-    "qa-link-institutional"
-  ],
-  [
-    "media-propaganda",
-    "qa-link-institutional"
-  ],
-  [
-    "media-cia",
-    "qa-link-institutional"
-  ],
-  [
-    "qa-link-institutional",
-    "ritual-inversion"
-  ],
-  [
-    "corporate-capture",
-    "qa-link-institutional"
-  ]
+  ["consciousness-meditation", "qa-witness"],
+  ["qa-witness", "ritual-mystery-schools"],
+  ["cosmology-nature", "qa-consensus"],
+  ["cosmology-origins", "qa-potential"],
+  ["cosmology-nature", "qa-potential"],
+  ["consciousness-meditation", "qa-neti"],
+  ["qa-neti", "science-ai"],
+  ["consciousness-nature", "qa-iit"],
+  ["consciousness-qualia", "qa-iit"],
+  ["consciousness-nature", "qa-fep"],
+  ["qa-contemplative", "ritual-mystery-schools"],
+  ["consciousness-meditation", "qa-contemplative"],
+  ["consciousness-ancient", "qa-contemplative"],
+  ["qa-ai", "science-ai"],
+  ["cosmology-nature", "qa-measurement"],
+  ["qa-measurement", "science-physics"],
+  ["consciousness-nature", "qa-link-consciousness"],
+  ["consciousness-qualia", "qa-link-consciousness"],
+  ["consciousness-psi", "qa-link-consciousness"],
+  ["consciousness-meditation", "qa-link-consciousness"],
+  ["cosmology-nature", "qa-link-cosmology"],
+  ["cosmology-origins", "qa-link-cosmology"],
+  ["cosmology-cycles", "qa-link-cosmology"],
+  ["cosmology-purpose", "qa-link-cosmology"],
+  ["qa-link-ritual", "ritual-mystery-schools"],
+  ["qa-link-ritual", "ritual-inversion"],
+  ["qa-link-ritual", "ritual-symbolism"],
+  ["intelligence", "qa-link-institutional"],
+  ["media-propaganda", "qa-link-institutional"],
+  ["media-cia", "qa-link-institutional"],
+  ["qa-link-institutional", "ritual-inversion"],
+  ["corporate-capture", "qa-link-institutional"],
+  ["qa-observer", "qa-process"],
+  ["qa-observer", "qa-distinction"],
+  ["qa-observer", "qa-quaternion"],
+  ["qa-observer", "qa-witness"],
+  ["qa-observer", "qa-circuit"],
+  ["qa-process", "qa-distinction"],
+  ["qa-distinction", "qa-binding"],
+  ["qa-binding", "qa-interest"],
+  ["qa-interest", "qa-capacity"],
+  ["qa-capacity", "qa-process"],
+  ["qa-capacity", "qa-cmax"],
+  ["qa-interest", "qa-interest-function"],
+  ["qa-circuit", "qa-process"],
+  ["qa-circuit", "qa-distinction"],
+  ["qa-circuit", "qa-binding"],
+  ["qa-circuit", "qa-interest"],
+  ["qa-circuit", "qa-capacity"],
+  ["qa-quaternion", "qa-binding"],
+  ["qa-quaternion", "qa-rs2"],
+  ["qa-cmax", "qa-dimensions"],
+  ["qa-cmax", "qa-suppression"],
+  ["qa-cmax", "qa-flow"],
+  ["qa-cmax", "qa-mental-health"],
+  ["qa-cmax", "qa-ai"],
+  ["qa-interest-function", "qa-attention"],
+  ["qa-interest-function", "qa-flow"],
+  ["qa-interest-function", "qa-aesthetics"],
+  ["qa-interest-function", "qa-education"],
+  ["qa-interest-function", "qa-aha"],
+  ["qa-interest-function", "qa-boredom-fatigue"],
+  ["qa-interest-function", "qa-fep"],
+  ["qa-phase-locking", "qa-consensus"],
+  ["qa-phase-locking", "qa-consciousness-states"],
+  ["qa-phase-locking", "qa-iit"],
+  ["qa-phase-locking", "qa-measurement"],
+  ["qa-do-operators", "qa-distinction"],
+  ["qa-do-operators", "qa-binding"],
+  ["qa-suppression", "qa-consciousness-states"],
+  ["qa-suppression", "qa-attention"],
+  ["qa-neti", "qa-contemplative"],
+  ["qa-potential", "qa-01infinity"],
+  ["qa-consensus", "qa-rs2"],
+  ["qa-consciousness-states", "qa-pendulum"],
+  ["qa-consciousness-states", "qa-mental-health"],
+  ["qa-01infinity", "qa-link-cosmology"],
+  ["qa-iit", "qa-validation"],
+  ["qa-fep", "qa-validation"],
+  ["qa-rs2", "qa-dimensions"],
+  ["qa-knot", "qa-dimensions"],
+  ["qa-prime", "qa-interest-function"],
+  ["qa-flow", "qa-education"],
+  ["qa-dimensional-attention", "qa-dimensions"],
+  ["qa-dimensional-attention", "qa-cmax"],
+  ["qa-ai-ethics", "qa-ai"],
+  ["qa-aha", "qa-binding"],
+  ["qa-boredom-fatigue", "qa-cmax"],
+  ["qa-attention", "qa-cmax"],
+  ["qa-phase-locking", "consciousness-nature"],
+  ["qa-suppression", "consciousness-nature"],
+  ["qa-do-operators", "consciousness-qualia"],
+  ["qa-consciousness-states", "consciousness-meditation"],
+  ["qa-flow", "consciousness-meditation"],
+  ["qa-ai-ethics", "science-ai"],
+  ["qa-pendulum", "cosmology-cycles"],
+  ["qa-01infinity", "cosmology-origins"],
+  ["qa-dimensional-attention", "cosmology-nature"],
+  ["qa-aesthetics", "consciousness-qualia"],
+  ["qa-education", "science-ai"]
 ];
