@@ -1410,13 +1410,33 @@
         return;
       }
 
-      // Mode-aware search
-      var searchData = state.currentTab === "qa" ? (typeof QA_NODES !== "undefined" ? QA_NODES : []) : NODES;
-      var matches = searchData.filter(function (n) {
-        var title = n.title || n.label || "";
-        var desc = n.description || "";
-        return title.toLowerCase().indexOf(q) >= 0 || desc.toLowerCase().indexOf(q) >= 0 || n.id.toLowerCase().indexOf(q) >= 0;
-      }).slice(0, 12);
+      // Search both tabs — disclosure nodes + QA nodes
+      var disclosureMatches = NODES.filter(function (n) {
+        var title = (n.title || n.label || "").toLowerCase();
+        var desc = (n.description || "").toLowerCase();
+        var full = (n.fullDescription || "").toLowerCase();
+        var sub = (n.subtitle || "").toLowerCase();
+        if (title.indexOf(q) >= 0 || desc.indexOf(q) >= 0 || full.indexOf(q) >= 0 || sub.indexOf(q) >= 0 || n.id.toLowerCase().indexOf(q) >= 0) return true;
+        // Search evidence text
+        if (n.evidence) {
+          for (var i = 0; i < n.evidence.length; i++) {
+            if ((n.evidence[i].text || "").toLowerCase().indexOf(q) >= 0) return true;
+          }
+        }
+        return false;
+      }).map(function (n) { return { node: n, tab: "disclosure" }; });
+
+      var qaData = typeof QA_NODES !== "undefined" ? QA_NODES : [];
+      var qaMatches = qaData.filter(function (n) {
+        var title = (n.title || n.label || "").toLowerCase();
+        var desc = (n.description || "").toLowerCase();
+        var sub = (n.subtitle || "").toLowerCase();
+        return title.indexOf(q) >= 0 || desc.indexOf(q) >= 0 || sub.indexOf(q) >= 0 || n.id.toLowerCase().indexOf(q) >= 0;
+      }).map(function (n) { return { node: n, tab: "qa" }; });
+
+      // Show current tab results first, then other tab
+      var currentFirst = state.currentTab === "qa" ? qaMatches.concat(disclosureMatches) : disclosureMatches.concat(qaMatches);
+      var matches = currentFirst.slice(0, 12);
 
       if (matches.length === 0) {
         results.innerHTML = '<div style="padding:14px 16px;color:rgba(255,255,255,0.4);font-size:13px;">No results found</div>';
@@ -1425,10 +1445,11 @@
       }
 
       var html = "";
-      matches.forEach(function (n) {
+      matches.forEach(function (m) {
+        var n = m.node;
         var dotColor;
         var tagLabel;
-        if (state.currentTab === "qa") {
+        if (m.tab === "qa") {
           var ringDef = (typeof QA_RINGS !== "undefined" && QA_RINGS[n.ring]) ? QA_RINGS[n.ring] : { color: "#888888", label: n.ring };
           dotColor = ringDef.color;
           tagLabel = ringDef.label || n.ring;
@@ -1438,9 +1459,10 @@
           tagLabel = b.label;
         }
         var displayTitle = n.title || n.label || n.id;
-        html += '<div class="search-result-item" data-id="' + n.id + '">' +
+        var tabBadge = m.tab !== state.currentTab ? ' <span style="opacity:0.4;font-size:10px;margin-left:4px;">(' + (m.tab === "qa" ? "QA" : "Disclosure") + ')</span>' : "";
+        html += '<div class="search-result-item" data-id="' + n.id + '" data-tab="' + m.tab + '">' +
           '<span class="search-result-dot" style="background:' + dotColor + '"></span>' +
-          '<span class="search-result-title">' + escapeHtml(displayTitle) + '</span>' +
+          '<span class="search-result-title">' + escapeHtml(displayTitle) + tabBadge + '</span>' +
           '<span class="search-result-branch">' + escapeHtml(tagLabel) + '</span>' +
           '</div>';
       });
@@ -1450,23 +1472,32 @@
       results.querySelectorAll(".search-result-item").forEach(function (item) {
         item.addEventListener("click", function () {
           var id = item.getAttribute("data-id");
-          if (state.currentTab === "qa") {
-            selectQANode(id);
-          } else {
-            selectNode(id);
-          }
+          var targetTab = item.getAttribute("data-tab");
+
           container.classList.remove("open");
           input.value = "";
           results.innerHTML = "";
           results.classList.remove("has-results");
 
-          // Pan to node
-          var pos = state.nodePositions[id];
-          if (pos) {
-            state.viewBox.x = pos.x - state.viewBox.w / 2;
-            state.viewBox.y = pos.y - state.viewBox.h / 2;
-            updateViewBox();
+          // Switch tab if needed, then select node
+          if (targetTab !== state.currentTab) {
+            switchTab(targetTab);
           }
+          if (targetTab === "qa") {
+            selectQANode(id);
+          } else {
+            selectNode(id);
+          }
+
+          // Pan to node after brief delay to allow render
+          setTimeout(function () {
+            var pos = state.nodePositions[id];
+            if (pos) {
+              state.viewBox.x = pos.x - state.viewBox.w / 2;
+              state.viewBox.y = pos.y - state.viewBox.h / 2;
+              updateViewBox();
+            }
+          }, 50);
         });
       });
     });
