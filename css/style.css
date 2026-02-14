@@ -514,6 +514,18 @@ html, body {
   border-bottom: none;
 }
 
+/* Description auto-links (keyword cross-references) */
+.desc-link {
+  color: #c9a84c;
+  cursor: pointer;
+  border-bottom: 1px dotted rgba(201, 168, 76, 0.4);
+  transition: border-color 0.2s, color 0.2s;
+}
+.desc-link:hover {
+  color: #e8d5a0;
+  border-bottom-color: rgba(232, 213, 160, 0.7);
+}
+
 /* ---- Scrollbar ---- */
 .panel::-webkit-scrollbar {
   width: 6px;

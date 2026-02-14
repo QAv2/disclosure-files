@@ -928,7 +928,7 @@
       '<div class="panel-branch-tag" style="background:' + ringDef.color + '22;color:' + ringDef.color + '">' + escapeHtml(ringDef.label || node.ring) + '</div>' +
       '<h2 class="panel-title">' + escapeHtml(node.label || node.id) + '</h2>' +
       subtitleHtml +
-      '<p class="panel-description">' + escapeHtml(desc) + '</p>' +
+      '<p class="panel-description">' + linkifyDescription(desc, nodeId) + '</p>' +
       chipsHtml;
 
     panel.classList.add("open");
@@ -1107,6 +1107,54 @@
       e.stopPropagation();
       deselectAll();
     });
+
+    // Delegated click handler for auto-linked keywords in descriptions
+    panelInner.addEventListener("click", function (e) {
+      var link = e.target.closest ? e.target.closest(".desc-link") : null;
+      // Fallback for browsers without .closest()
+      if (!link) {
+        var el = e.target;
+        while (el && el !== panelInner) {
+          if (el.classList && el.classList.contains("desc-link")) {
+            link = el;
+            break;
+          }
+          el = el.parentNode;
+        }
+      }
+      if (!link) return;
+
+      var targetId = link.getAttribute("data-target");
+      if (!targetId) return;
+
+      e.stopPropagation();
+
+      // Determine which tab this target belongs to and navigate
+      var isQA = targetId.indexOf("qa-") === 0;
+      var targetTab = isQA ? "qa" : "disclosure";
+
+      // Switch tab if needed
+      if (targetTab !== state.currentTab) {
+        switchTab(targetTab);
+      }
+
+      // Select the node
+      if (isQA) {
+        selectQANode(targetId);
+      } else {
+        selectNode(targetId);
+      }
+
+      // Pan to the node after a brief delay to allow render
+      setTimeout(function () {
+        var pos = state.nodePositions[targetId];
+        if (pos) {
+          state.viewBox.x = pos.x - state.viewBox.w / 2;
+          state.viewBox.y = pos.y - state.viewBox.h / 2;
+          updateViewBox();
+        }
+      }, 50);
+    });
   }
 
   function showPanel(nodeId) {
@@ -1151,7 +1199,7 @@
     panelInner.innerHTML =
       '<div class="panel-branch-tag" style="background:' + branch.color + '22;color:' + branch.color + '">' + escapeHtml(branch.label) + '</div>' +
       '<h2 class="panel-title">' + escapeHtml(node.title) + '</h2>' +
-      '<p class="panel-description">' + escapeHtml(desc) + '</p>' +
+      '<p class="panel-description">' + linkifyDescription(desc, nodeId) + '</p>' +
       evidenceHtml +
       chipsHtml +
       sourcesHtml;
@@ -1182,7 +1230,7 @@
     panelInner.innerHTML =
       '<div class="panel-branch-tag" style="background:' + branch.color + '22;color:' + branch.color + '">' + escapeHtml(branch.label) + '</div>' +
       '<h2 class="panel-title">' + escapeHtml(branch.label) + '</h2>' +
-      '<p class="panel-description">' + escapeHtml(branchDesc) + '</p>' +
+      '<p class="panel-description">' + linkifyDescription(branchDesc, "branch-" + bKey) + '</p>' +
       nodesHtml;
 
     panel.classList.add("open");
@@ -1217,7 +1265,7 @@
     panelInner.innerHTML =
       '<div class="panel-branch-tag" style="background:#0065F222;color:#0065F2">Overview</div>' +
       '<h2 class="panel-title">' + escapeHtml(center.title) + '</h2>' +
-      '<p class="panel-description">' + escapeHtml(desc) + '</p>' +
+      '<p class="panel-description">' + linkifyDescription(desc, "center") + '</p>' +
       branchChips +
       sourcesHtml;
 
@@ -1239,6 +1287,84 @@
     var div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
+  }
+
+  // ---- Description Auto-Linking ----
+  // Scans description text for keywords from KEYWORD_LINKS and wraps them
+  // in clickable <span class="desc-link"> elements that navigate to target nodes.
+  function linkifyDescription(text, currentNodeId) {
+    // Graceful fallback if KEYWORD_LINKS is not defined or empty
+    if (typeof KEYWORD_LINKS === "undefined" || !KEYWORD_LINKS || !KEYWORD_LINKS.length) {
+      return escapeHtml(text);
+    }
+
+    // First, escape the full text to get safe HTML
+    var html = escapeHtml(text);
+
+    // Build an array of match regions to avoid double-linking.
+    // Each entry: { start: Number, end: Number, replacement: String }
+    var regions = [];
+
+    // KEYWORD_LINKS is pre-sorted longest-first, so we iterate in order.
+    for (var k = 0; k < KEYWORD_LINKS.length; k++) {
+      var keyword = KEYWORD_LINKS[k][0];
+      var targetId = KEYWORD_LINKS[k][1];
+
+      // Skip self-links
+      if (targetId === currentNodeId) continue;
+
+      // Build a case-insensitive regex for this keyword.
+      // Escape special regex characters in the keyword.
+      var escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      // Use word boundaries to avoid partial matches inside other words
+      var re = new RegExp("\\b" + escaped + "\\b", "gi");
+
+      var match;
+      while ((match = re.exec(html)) !== null) {
+        var mStart = match.index;
+        var mEnd = mStart + match[0].length;
+
+        // Check if this region overlaps with any already-claimed region
+        var overlaps = false;
+        for (var r = 0; r < regions.length; r++) {
+          if (mStart < regions[r].end && mEnd > regions[r].start) {
+            overlaps = true;
+            break;
+          }
+        }
+        if (overlaps) continue;
+
+        // Claim this region (preserve original case from the escaped HTML)
+        regions.push({
+          start: mStart,
+          end: mEnd,
+          original: match[0],
+          targetId: targetId
+        });
+      }
+    }
+
+    // If no regions matched, return the escaped HTML as-is
+    if (regions.length === 0) return html;
+
+    // Sort regions by start position ascending
+    regions.sort(function (a, b) { return a.start - b.start; });
+
+    // Build the final HTML by splicing in <span> wrappers
+    var result = "";
+    var cursor = 0;
+    for (var i = 0; i < regions.length; i++) {
+      var reg = regions[i];
+      // Append text before this match
+      result += html.substring(cursor, reg.start);
+      // Append the linked span
+      result += '<span class="desc-link" data-target="' + reg.targetId + '">' + reg.original + '</span>';
+      cursor = reg.end;
+    }
+    // Append remaining text after last match
+    result += html.substring(cursor);
+
+    return result;
   }
 
   // ---- Pan & Zoom ----
