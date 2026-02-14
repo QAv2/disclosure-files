@@ -272,23 +272,31 @@ function initPositions() {
     disclosureCtrl.nodePositions[branch.id] = { x: bx, y: by, targetX: bx, targetY: by, radius: branchNodeRadius };
 
     if (isMobile) {
-      // Multi-ring layout: keeps children within their branch's sector
-      const maxPerRing = 10;
-      const baseR = minDim * 0.1;
-      const ringGap = minDim * 0.06;
-      const maxArc = Math.PI; // 180° spread
-      const childNodeRadius = 6;
-      branch.children.forEach((child, j) => {
-        const ring = Math.floor(j / maxPerRing);
-        const idxInRing = j % maxPerRing;
-        const countInRing = Math.min(maxPerRing, branch.children.length - ring * maxPerRing);
+      // Sector-aware multi-ring layout: dynamically packs children within branch sector
+      const sectorAngle = (2 * Math.PI) / BRANCH_LIST.length;
+      const maxArc = sectorAngle * 0.85; // 85% of sector, small gap between branches
+      const baseR = minDim * 0.08;
+      const ringGap = minDim * 0.035;
+      const childNodeRadius = 4;
+      const minSpacing = childNodeRadius * 2.5;
+      let childIdx = 0;
+      let ring = 0;
+      while (childIdx < branch.children.length) {
         const r = baseR + ring * ringGap;
+        const arcLen = r * maxArc;
+        const fitCount = Math.max(1, Math.floor(arcLen / minSpacing) + 1);
+        const remaining = branch.children.length - childIdx;
+        const countInRing = Math.min(fitCount, remaining);
         const arcStep = countInRing > 1 ? maxArc / (countInRing - 1) : 0;
-        const cAngle = angle + (idxInRing - (countInRing - 1) / 2) * arcStep;
-        const cx2 = bx + Math.cos(cAngle) * r;
-        const cy2 = by + Math.sin(cAngle) * r;
-        disclosureCtrl.nodePositions[child.id] = { x: cx2, y: cy2, targetX: cx2, targetY: cy2, radius: childNodeRadius };
-      });
+        for (let k = 0; k < countInRing; k++) {
+          const child = branch.children[childIdx++];
+          const cAngle = angle + (k - (countInRing - 1) / 2) * arcStep;
+          const cx2 = bx + Math.cos(cAngle) * r;
+          const cy2 = by + Math.sin(cAngle) * r;
+          disclosureCtrl.nodePositions[child.id] = { x: cx2, y: cy2, targetX: cx2, targetY: cy2, radius: childNodeRadius };
+        }
+        ring++;
+      }
     } else {
       // Desktop: original layout unchanged
       const childRadius = 100;
