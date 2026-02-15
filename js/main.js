@@ -497,11 +497,17 @@
           circle.setAttribute("fill-opacity", "0.35");
           circle.setAttribute("r", r * 1.15);
         }
+        if (!state.selectedNode) {
+          highlightNodeConnections(node.id, branch.color);
+        }
       });
       group.addEventListener("mouseleave", function () {
         if (state.selectedNode !== node.id) {
           circle.setAttribute("fill-opacity", "0.15");
           circle.setAttribute("r", r);
+        }
+        if (!state.selectedNode) {
+          unhighlightHoverConnections();
         }
       });
     });
@@ -773,11 +779,17 @@
           circle.setAttribute("fill-opacity", "0.35");
           circle.setAttribute("r", r * 1.15);
         }
+        if (!state.selectedNode) {
+          highlightNodeConnections(node.id, ringDef.color);
+        }
       });
       group.addEventListener("mouseleave", function () {
         if (state.selectedNode !== node.id) {
           circle.setAttribute("fill-opacity", "0.18");
           circle.setAttribute("r", r);
+        }
+        if (!state.selectedNode) {
+          unhighlightHoverConnections();
         }
       });
     });
@@ -1089,6 +1101,27 @@
         s.setAttribute("stroke", "rgba(211,211,211,0.12)");
         s.setAttribute("stroke-opacity", "0.12");
       }
+    });
+  }
+
+  // ---- Hover connection highlighting ----
+  function highlightNodeConnections(nodeId, color) {
+    state.connectionPaths.forEach(function (path) {
+      var from = path.getAttribute("data-from");
+      var to = path.getAttribute("data-to");
+      if (from === nodeId || to === nodeId) {
+        path.setAttribute("stroke", color);
+        path.setAttribute("stroke-opacity", LINE_HIGHLIGHT_OPACITY);
+        path.setAttribute("stroke-width", "1.8");
+      }
+    });
+  }
+
+  function unhighlightHoverConnections() {
+    state.connectionPaths.forEach(function (path) {
+      path.setAttribute("stroke", "rgba(211,211,211," + LINE_DEFAULT_OPACITY + ")");
+      path.setAttribute("stroke-opacity", LINE_DEFAULT_OPACITY);
+      path.setAttribute("stroke-width", "1");
     });
   }
 
