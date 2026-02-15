@@ -1,16 +1,16 @@
 // ============================================================
 // The Disclosure Files — Transformation Map Data
-// 114 disclosure nodes + 45 QA nodes across 8 branches
+// 125 disclosure nodes + 45 QA nodes across 8 branches
 // Auto-generated from disclosure-data.json + qa-data.json
 // ============================================================
 
 var MAP_CONFIG = {
   "title": "The Disclosure Files",
-  "subtitle": "Mapping what was hidden in plain sight — 114 nodes · 8 branches",
+  "subtitle": "Mapping what was hidden in plain sight — 125 nodes · 8 branches",
   "centerNode": {
     "id": "center",
     "title": "The Disclosure Files",
-    "description": "A systematic research project mapping power networks through cross-referencing documentary evidence. 114 nodes across 8 branches: Power Structures, Hidden History, Consciousness & Metaphysics, Science & Technology, Ritual & Occult Systems, Health & Biological Control, Media & Narrative Control, Cosmology & Origins.",
+    "description": "A systematic research project mapping power networks through cross-referencing documentary evidence. 125 nodes across 8 branches: Power Structures, Hidden History, Consciousness & Metaphysics, Science & Technology, Ritual & Occult Systems, Health & Biological Control, Media & Narrative Control, Cosmology & Origins.",
     "sources": [
       {
         "label": "Church Committee Final Report (1976)",
@@ -6397,6 +6397,615 @@ var NODES = [
       }
     ],
     "status": "researched"
+  },
+  {
+    "id": "sept-11-pnac",
+    "branch": "power",
+    "ring": 1,
+    "title": "PNAC & the \"New Pearl Harbor\"",
+    "description": "The Project for the New American Century (PNAC), a neoconservative think tank founded in 1997 by William Kristol and Robert Kagan, published 'Rebuilding America's Defenses' in September 2000. The 90-page report called for a dramatic transformation of U.S. military posture — including regime change in Iraq, permanent forward basing, and global missile defense — but noted that 'the process of transformation, even if it brings revolutionary change, is likely to be a long one, absent some catastrophic and catalyzing event — like a new Pearl Harbor' [🟢 PNAC, 'Rebuilding America's Defenses,' p. 51, September 2000].",
+    "fullDescription": "The Project for the New American Century (PNAC), a neoconservative think tank founded in 1997 by William Kristol and Robert Kagan, published 'Rebuilding America's Defenses' in September 2000. The 90-page report called for a dramatic transformation of U.S. military posture — including regime change in Iraq, permanent forward basing, and global missile defense — but noted that 'the process of transformation, even if it brings revolutionary change, is likely to be a long one, absent some catastrophic and catalyzing event — like a new Pearl Harbor' [🟢 PNAC, 'Rebuilding America's Defenses,' p. 51, September 2000].\n\nPNAC's membership roster reads as a blueprint for the incoming Bush administration. Signatories and members who assumed senior government positions include: Dick Cheney (Vice President), Donald Rumsfeld (Secretary of Defense), Paul Wolfowitz (Deputy Secretary of Defense), I. Lewis 'Scooter' Libby (Chief of Staff to the VP), Richard Perle (Chairman, Defense Policy Board), John Bolton (Under Secretary of State for Arms Control), Dov Zakheim (Comptroller of the Pentagon), Elliott Abrams (NSC Senior Director), and Richard Armitage (Deputy Secretary of State) [🟢 PNAC membership and signatory records; public appointment records].\n\nPNAC's earlier open letter to President Clinton (January 26, 1998) explicitly called for military action to remove Saddam Hussein from power — three years before 9/11 provided the political conditions. The letter stated that 'the only acceptable strategy is one that eliminates the possibility that Iraq will be able to use or threaten to use weapons of mass destruction' [🟢 PNAC letter to Clinton, January 26, 1998].\n\nThe 'Full Spectrum Dominance' doctrine — articulated in the Pentagon's 'Joint Vision 2020' (published June 2000) — called for U.S. military superiority across all domains: land, sea, air, space, and information. This doctrine aligned with PNAC's vision and was accelerated dramatically after 9/11, with defense spending increasing from $316 billion (FY2001) to $693 billion (FY2010) [🟢 Joint Vision 2020, DOD; OMB historical budget tables].\n\nDov Zakheim, a PNAC member who became Pentagon Comptroller in May 2001, oversaw financial systems at the Department of Defense during the period when Rumsfeld announced $2.3 trillion in undocumentable accounting adjustments (September 10, 2001). Zakheim had previously been CEO of SPC International, a subsidiary of System Planning Corporation, which produced remote aircraft control technology [🟢 DOD appointment records; SPC corporate records].",
+    "evidence": [
+      {
+        "text": "PNAC's 'Rebuilding America's Defenses' (September 2000) stated transformation would be slow 'absent some catastrophic and catalyzing event — like a new Pearl Harbor' (p. 51).",
+        "tier": "documented",
+        "source": "PNAC, 'Rebuilding America's Defenses: Strategy, Forces and Resources For a New Century,' September 2000"
+      },
+      {
+        "text": "At least 9 PNAC signatories/members assumed senior positions in the Bush administration: Cheney, Rumsfeld, Wolfowitz, Libby, Perle, Bolton, Zakheim, Abrams, and Armitage.",
+        "tier": "documented",
+        "source": "PNAC signatory lists; White House appointment records (2001)"
+      },
+      {
+        "text": "PNAC's January 1998 open letter to Clinton called for military removal of Saddam Hussein three years before 9/11.",
+        "tier": "documented",
+        "source": "PNAC letter to President Clinton, January 26, 1998"
+      },
+      {
+        "text": "U.S. defense spending nearly doubled from $316B (FY2001) to $693B (FY2010) following the 'Full Spectrum Dominance' acceleration post-9/11.",
+        "tier": "documented",
+        "source": "Office of Management and Budget historical tables; DOD 'Joint Vision 2020' (June 2000)"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PNAC — Rebuilding America's Defenses (September 2000)",
+        "url": "https://web.archive.org/web/20130817122719/http://www.newamericancentury.org/RebsildingAmericasDefenses.pdf"
+      },
+      {
+        "label": "PNAC Letter to President Clinton (January 26, 1998)",
+        "url": "https://web.archive.org/web/20131010150727/http://www.newamericancentury.org/iraqclintonletter.htm"
+      },
+      {
+        "label": "DOD — Joint Vision 2020 (June 2000)",
+        "url": "https://web.archive.org/web/20100114050000/http://www.dtic.mil/jointvision/jvpub2.htm"
+      },
+      {
+        "label": "OMB Historical Budget Tables — National Defense",
+        "url": "https://www.whitehouse.gov/omb/historical-tables/"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "sept-11-foreknowledge",
+    "branch": "history",
+    "ring": 1,
+    "title": "Intelligence Warnings Ignored",
+    "description": "In the months preceding September 11, 2001, U.S. intelligence agencies received an extraordinary volume of warnings about an imminent al-Qaeda attack on American soil. The August 6, 2001 President's Daily Brief was titled 'Bin Laden Determined to Strike in US' and referenced FBI information indicating 'patterns of suspicious activity in this country consistent with preparations for hijackings' [🟢 PDB declassified April 2004]. Despite this and warnings from at least 11 foreign intelligence services, no effective defensive action was taken.",
+    "fullDescription": "In the months preceding September 11, 2001, U.S. intelligence agencies received an extraordinary volume of warnings about an imminent al-Qaeda attack on American soil. The August 6, 2001 President's Daily Brief was titled 'Bin Laden Determined to Strike in US' and referenced FBI information indicating 'patterns of suspicious activity in this country consistent with preparations for hijackings' [🟢 PDB declassified April 2004]. Despite this and warnings from at least 11 foreign intelligence services, no effective defensive action was taken.\n\nThe 'Phoenix Memo' (July 10, 2001): FBI agent Kenneth Williams in Phoenix sent a memorandum to FBI headquarters and the New York field office warning that Osama bin Laden may be sending students to U.S. civil aviation schools. The memo recommended a nationwide survey of flight schools — it was never acted upon [🟢 9/11 Commission Report, Chapter 8; Congressional Joint Inquiry].\n\nThe Able Danger program: A classified military intelligence data-mining operation under U.S. Special Operations Command identified Mohamed Atta and three other future hijackers as members of an al-Qaeda cell operating in the U.S. prior to 9/11. Lt. Col. Anthony Shaffer and other participants testified that attempts to share this information with the FBI were blocked by DOD lawyers citing legal restrictions on military intelligence sharing about persons in the U.S. [🟡 Shaffer testimony to Senate Judiciary Committee, September 2005; DOD IG report found insufficient evidence to confirm identification of Atta].\n\nThe CIA tracked two of the future hijackers — Nawaf al-Hazmi and Khalid al-Mihdhar — attending an al-Qaeda summit in Kuala Lumpur in January 2000. The CIA identified them as al-Qaeda operatives with valid U.S. visas but did not place them on watchlists or notify the FBI for over 18 months. The CIA Inspector General's 2005 report found this constituted a systemic breakdown in information sharing [🟢 CIA OIG Report, June 2005, declassified 2007].\n\nFBI translator Sibel Edmonds, hired after 9/11, discovered that the Bureau had received specific intelligence about the use of airplanes as weapons against major U.S. cities — dating back to April 2001 — which was not translated or acted upon before the attacks. Her testimony was classified under a rare retroactive State Secrets privilege invocation by Attorney General Ashcroft [🟢 Edmonds public statements and 60 Minutes interview, October 2002; State Secrets invocation, 2002]. The DOJ Inspector General found her allegations 'credible' and 'serious' [🟢 DOJ IG Report, January 2005].\n\nNSA intercepted communications on September 10, 2001 containing the phrases 'the match begins tomorrow' and 'tomorrow is zero hour' — but the intercepts were not translated until September 12 [🟢 Congressional Joint Inquiry; public reporting]. At least 11 countries — including the UK, France, Germany, Israel, Egypt, Jordan, and Russia — provided warnings to U.S. intelligence about imminent attacks in the summer of 2001 [🟢 press reporting compiled from multiple government acknowledgments].",
+    "evidence": [
+      {
+        "text": "August 6, 2001 PDB titled 'Bin Laden Determined to Strike in US' warned of hijacking preparations — no defensive action taken.",
+        "tier": "documented",
+        "source": "President's Daily Brief, August 6, 2001 (declassified April 10, 2004)"
+      },
+      {
+        "text": "FBI Phoenix Memo (July 10, 2001) warned bin Laden may be sending students to U.S. flight schools — never acted upon by FBI headquarters.",
+        "tier": "documented",
+        "source": "9/11 Commission Report, Chapter 8; Congressional Joint Inquiry (2002)"
+      },
+      {
+        "text": "CIA tracked al-Mihdhar and al-Hazmi as al-Qaeda operatives with U.S. visas at Kuala Lumpur summit (Jan 2000) but failed to notify FBI for 18+ months.",
+        "tier": "documented",
+        "source": "CIA OIG Report, June 2005 (declassified 2007)"
+      },
+      {
+        "text": "Sibel Edmonds discovered pre-9/11 intelligence about planes as weapons (April 2001) — untranslated. DOJ IG found her allegations 'credible' and 'serious.'",
+        "tier": "documented",
+        "source": "DOJ IG Report, January 2005; 60 Minutes interview, October 2002"
+      },
+      {
+        "text": "NSA intercepted 'the match begins tomorrow' and 'tomorrow is zero hour' on September 10, 2001 — not translated until September 12.",
+        "tier": "documented",
+        "source": "Congressional Joint Inquiry (2002); public reporting"
+      }
+    ],
+    "sources": [
+      {
+        "label": "President's Daily Brief — August 6, 2001 (declassified 2004)",
+        "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB116/pdb8-6-2001.pdf"
+      },
+      {
+        "label": "9/11 Commission Report — Chapter 8: 'The System Was Blinking Red'",
+        "url": "https://www.govinfo.gov/content/pkg/GPO-911REPORT/pdf/GPO-911REPORT.pdf"
+      },
+      {
+        "label": "CIA OIG Report on 9/11 Accountability (2005, declassified 2007)",
+        "url": "https://www.cia.gov/library/reports/Executive%20Summary_OIG%20Report.pdf"
+      },
+      {
+        "label": "DOJ IG Report on FBI Whistleblower Sibel Edmonds (January 2005)",
+        "url": "https://oig.justice.gov/reports/2005/FBI0501.htm"
+      },
+      {
+        "label": "Congressional Joint Inquiry — Final Report (December 2002)",
+        "url": "https://www.intelligence.senate.gov/publications/joint-inquiry-intelligence-community-activities-and-after-terrorist-attacks"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "sept-11-iraq-war",
+    "branch": "history",
+    "ring": 1,
+    "title": "Iraq War: Manufactured Justification",
+    "description": "The U.S. invasion of Iraq in March 2003 was justified to the public and Congress primarily on two claims: that Iraq possessed weapons of mass destruction (WMD) and that Saddam Hussein had operational ties to al-Qaeda and the 9/11 attacks. Both claims were subsequently shown to be false. No WMD stockpiles were found by the Iraq Survey Group [🟢 Duelfer Report, CIA, 2004], and the 9/11 Commission found 'no credible evidence that Iraq and al-Qaeda cooperated on attacks against the United States' [🟢 9/11 Commission Report, 2004].",
+    "fullDescription": "The U.S. invasion of Iraq in March 2003 was justified to the public and Congress primarily on two claims: that Iraq possessed weapons of mass destruction (WMD) and that Saddam Hussein had operational ties to al-Qaeda and the 9/11 attacks. Both claims were subsequently shown to be false. No WMD stockpiles were found by the Iraq Survey Group [🟢 Duelfer Report, CIA, 2004], and the 9/11 Commission found 'no credible evidence that Iraq and al-Qaeda cooperated on attacks against the United States' [🟢 9/11 Commission Report, 2004].\n\nThe primary human intelligence source for Iraq's alleged mobile biological weapons labs was an Iraqi defector codenamed 'Curveball' (Rafid Ahmed Alwan al-Janabi). German intelligence (BND) had warned the CIA that Curveball was unreliable and possibly fabricating. The CIA's own European division chief wrote a cable warning that Curveball had not been vetted. Despite this, his claims became central to the case for war [🟢 Senate Select Committee on Intelligence, Phase II Report, 2008; Curveball's own 2011 admission to The Guardian].\n\nThe Niger yellowcake uranium claim — that Iraq had sought to purchase uranium from Niger — was based on documents that the IAEA determined to be crude forgeries within hours of examination. Despite this, the claim appeared in President Bush's 2003 State of the Union address ('the sixteen words'), attributed to British intelligence [🟢 IAEA letter to UN Security Council, March 7, 2003; Bush State of the Union, January 28, 2003].\n\nSecretary of State Colin Powell's presentation to the UN Security Council on February 5, 2003 laid out the case for Iraqi WMD in detail, including satellite imagery, intercepted communications, and Curveball's claims. Powell later called it a 'blot' on his record and his 'greatest regret.' His chief of staff, Col. Lawrence Wilkerson, stated the intelligence had been deliberately 'cherry-picked' and that he had 'participated in a hoax on the American people' [🟢 Powell interviews; Wilkerson public statements].\n\nThe Downing Street Memo (July 23, 2002) — minutes of a meeting between Tony Blair and senior British officials — recorded that 'the intelligence and facts were being fixed around the policy' of regime change. MI6 chief Richard Dearlove reported that in Washington, 'military action was now seen as inevitable' and 'Bush wanted to remove Saddam, through military action, justified by the conjunction of terrorism and WMD' [🟢 Downing Street Memo, leaked to The Sunday Times, May 1, 2005].\n\nDespite the absence of any Iraq-9/11 connection, a September 2003 Washington Post poll found that 69% of Americans believed Saddam Hussein was personally involved in the 9/11 attacks — a belief cultivated by repeated rhetorical juxtaposition of Iraq and 9/11 by administration officials [🟢 Washington Post poll, September 2003]. The post-invasion de-Ba'athification policy, which dissolved the Iraqi military and banned Ba'ath Party members from government, is widely credited by military analysts as a direct contributor to the insurgency that eventually produced ISIS [🟢 RAND Corporation studies; multiple military analyses].",
+    "evidence": [
+      {
+        "text": "Iraq Survey Group (Duelfer Report) found no WMD stockpiles in Iraq; 9/11 Commission found 'no credible evidence' of Iraq-al-Qaeda cooperation on attacks.",
+        "tier": "documented",
+        "source": "CIA Duelfer Report (2004); 9/11 Commission Report (2004)"
+      },
+      {
+        "text": "Primary WMD source 'Curveball' was known to be unreliable; German intelligence warned CIA. He later admitted to The Guardian (2011) that he fabricated his claims.",
+        "tier": "documented",
+        "source": "Senate Intelligence Committee Phase II Report (2008); The Guardian, February 15, 2011"
+      },
+      {
+        "text": "Niger yellowcake documents determined to be crude forgeries by IAEA within hours of examination, yet the claim appeared in the 2003 State of the Union.",
+        "tier": "documented",
+        "source": "IAEA letter to UNSC, March 7, 2003; Bush State of the Union, January 28, 2003"
+      },
+      {
+        "text": "Downing Street Memo (July 23, 2002): 'the intelligence and facts were being fixed around the policy' of regime change in Iraq.",
+        "tier": "documented",
+        "source": "Downing Street Memo, leaked to The Sunday Times, May 1, 2005"
+      },
+      {
+        "text": "Colin Powell later called his UN presentation a 'blot' on his record; aide Wilkerson said he 'participated in a hoax on the American people.'",
+        "tier": "documented",
+        "source": "Powell public interviews (multiple); Wilkerson public statements and congressional testimony"
+      },
+      {
+        "text": "69% of Americans believed Saddam was personally involved in 9/11 (Sept 2003) despite no evidence — belief cultivated by rhetorical juxtaposition.",
+        "tier": "documented",
+        "source": "Washington Post/ABC News poll, September 6, 2003"
+      }
+    ],
+    "sources": [
+      {
+        "label": "CIA Duelfer Report — Comprehensive Report on Iraq WMD (2004)",
+        "url": "https://www.cia.gov/library/reports/general-reports-1/iraq_wmd_2004/"
+      },
+      {
+        "label": "Senate Intelligence Committee — Phase II Report on Pre-War Intelligence (2008)",
+        "url": "https://www.intelligence.senate.gov/publications/report-whether-public-statements-regarding-iraq-senior-administration-officials-were"
+      },
+      {
+        "label": "Downing Street Memo (July 23, 2002, leaked May 2005)",
+        "url": "https://web.archive.org/web/20090123060448/http://www.downingstreetmemo.com/memos.html"
+      },
+      {
+        "label": "Powell UN Presentation Transcript (February 5, 2003)",
+        "url": "https://2001-2009.state.gov/secretary/former/powell/remarks/2003/17300.htm"
+      },
+      {
+        "label": "9/11 Commission Final Report (2004)",
+        "url": "https://www.govinfo.gov/content/pkg/GPO-911REPORT/pdf/GPO-911REPORT.pdf"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "sept-11-pentagon",
+    "branch": "history",
+    "ring": 2,
+    "title": "Pentagon Attack Anomalies",
+    "description": "American Airlines Flight 77 struck the western face of the Pentagon at 9:37 AM on September 11, 2001, killing 125 people inside the building and all 64 aboard the aircraft. The day before, on September 10, Secretary of Defense Rumsfeld publicly disclosed that the Pentagon's financial systems could not track $2.3 trillion in cumulative accounting adjustments [🟢 C-SPAN broadcast, September 10, 2001]. The impact area included offices of the Army financial management and audit area, as well as the Office of Naval Intelligence.",
+    "fullDescription": "American Airlines Flight 77 struck the western face of the Pentagon at 9:37 AM on September 11, 2001, killing 125 people inside the building and all 64 aboard the aircraft. The day before, on September 10, Secretary of Defense Rumsfeld publicly disclosed that the Pentagon's financial systems could not track $2.3 trillion in cumulative accounting adjustments — a long-standing DOD bookkeeping deficiency documented across multiple Inspector General audits [🟢 C-SPAN broadcast, September 10, 2001; DOD OIG reports].\n\nThe impact area on the Pentagon's western face included offices of the Resource Services Washington (RSW), which handled Army financial management and audit functions, as well as the Office of Naval Intelligence. The strike killed 34 of the 40 Army budget analyst and accountant personnel in that section [🟢 Arlington County After-Action Report; Pentagon renovation records]. The section struck was the recently renovated 'Wedge 1,' which had been reinforced with blast-resistant windows and Kevlar-lined walls — the only section of the Pentagon to have undergone such upgrades [🟢 Pentagon Renovation Program records].\n\nThe FBI confiscated approximately 85 surveillance camera recordings from businesses surrounding the Pentagon, including a Citgo gas station and a Sheraton hotel. Only four frames from a single Pentagon security camera were initially released (in 2002), and a slightly longer clip was released in 2006 following FOIA litigation. Neither release clearly shows a Boeing 757 [🟢 FOIA litigation records; Judicial Watch FOIA, 2006].\n\nThe flight path of AA77 required what the NTSB flight data recorder analysis describes as a rapid descending spiral — a 330-degree clockwise turn losing approximately 7,000 feet of altitude in about three minutes, followed by a ground-level approach at approximately 530 mph. Hani Hanjour, identified as the pilot, had been documented as having significant difficulty controlling single-engine Cessna aircraft. His flight instructors at Freeway Airport in Bowie, Maryland (August 2001) declined to rent him a plane solo and described his skills as inadequate [🟢 9/11 Commission Report; NTSB data; instructor statements to press and FBI]. Professional pilots have noted the difficulty of the maneuver, though the NTSB data confirms the trajectory was flown [🟡 professional pilot analyses].\n\nPhotographic evidence from the immediate aftermath shows relatively limited large debris visible externally, though internal photographs and eyewitness accounts from first responders document aircraft components including landing gear, engine components, and fuselage sections inside the building [🟢 Arlington County Fire Department records; Pentagon Building Performance Study, ASCE 2003].",
+    "evidence": [
+      {
+        "text": "Rumsfeld announced $2.3T in undocumentable Pentagon accounting adjustments on September 10, 2001 — the day before the strike hit financial management offices.",
+        "tier": "documented",
+        "source": "C-SPAN broadcast, September 10, 2001; DOD OIG audit reports"
+      },
+      {
+        "text": "FBI confiscated ~85 surveillance camera recordings from Pentagon-area businesses; only 4 frames released initially (2002), a short clip in 2006 via FOIA.",
+        "tier": "documented",
+        "source": "Judicial Watch FOIA litigation and releases (2006)"
+      },
+      {
+        "text": "Hani Hanjour's flight instructors at Freeway Airport (Aug 2001) declined to rent him a single-engine plane solo due to inadequate skills.",
+        "tier": "documented",
+        "source": "9/11 Commission Report; instructor statements to FBI and press"
+      },
+      {
+        "text": "The strike hit the only recently renovated section (Wedge 1) with blast-resistant windows and Kevlar-lined walls, killing 34 of 40 Army budget analysts.",
+        "tier": "documented",
+        "source": "Pentagon Renovation Program records; Arlington County After-Action Report"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Rumsfeld Pentagon Briefing — September 10, 2001 (C-SPAN)",
+        "url": "https://www.c-span.org/video/?165947-1/defense-business-practices"
+      },
+      {
+        "label": "Pentagon Building Performance Report — ASCE (2003)",
+        "url": "https://www.asce.org/publications-and-news/civil-engineering-source/civil-engineering-magazine/article/2003/01/pentagon-building-performance-report"
+      },
+      {
+        "label": "9/11 Commission Report — Chapter 1",
+        "url": "https://www.govinfo.gov/content/pkg/GPO-911REPORT/pdf/GPO-911REPORT.pdf"
+      },
+      {
+        "label": "Judicial Watch — Pentagon FOIA Camera Releases (2006)",
+        "url": "https://www.judicialwatch.org/documents/dod-docs-september-2006/"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "sept-11-wtc-demolition",
+    "branch": "history",
+    "ring": 2,
+    "title": "WTC 1 & 2: Physical Evidence Questions",
+    "description": "The twin towers of the World Trade Center (WTC 1 and WTC 2) collapsed on September 11, 2001 following aircraft impacts and subsequent fires. NIST's final reports (NCSTAR 1, 2005) concluded that fire-induced weakening of floor trusses led to progressive collapse. However, NIST stated in its FAQ that it 'did not test for the residue of these compounds in the steel' when asked about explosives or thermite [🟢 NIST NCSTAR 1 FAQ]. Several lines of physical evidence have been raised by researchers questioning the completeness of the official fire-induced collapse hypothesis.",
+    "fullDescription": "The twin towers of the World Trade Center (WTC 1 and WTC 2) collapsed on September 11, 2001 following aircraft impacts and subsequent fires. NIST's final reports (NCSTAR 1, 2005) concluded that fire-induced weakening of floor trusses led to inward bowing of perimeter columns, initiating a progressive collapse. However, NIST stated in its FAQ that it 'did not test for the residue of these compounds in the steel' when asked about explosives or thermite [🟢 NIST NCSTAR 1 FAQ].\n\nFEMA's World Trade Center Building Performance Study (2002, Appendix C) documented a phenomenon described as 'evidence of a severe high temperature corrosion attack on the steel, including oxidation and sulfidation with subsequent intergranular melting.' The New York Times called this 'perhaps the deepest mystery uncovered in the investigation' [🟢 FEMA WTC Study, Appendix C, May 2002; New York Times, February 2, 2002]. NIST did not address FEMA Appendix C findings in its subsequent investigation.\n\nA 2009 peer-reviewed paper by Niels Harrit et al. published in The Open Chemical Physics Journal reported finding red-gray bi-layered chips in four independently collected WTC dust samples, which the authors identified as unreacted nanothermitic material based on energy-dispersive X-ray spectroscopy (EDS), differential scanning calorimetry (DSC), and other analyses [🟡 Harrit et al., Open Chemical Physics Journal, 2009; findings contested by some materials scientists; journal's editor-in-chief resigned over publication].\n\nThe New York City Fire Department compiled 503 oral history interviews with first responders in the months following 9/11, released in August 2005 following FOIA litigation by The New York Times. Of these, 118 contain descriptions of explosions — including descriptions of sequential explosions, flashes, and 'boom boom boom' sequences at or before the onset of collapse [🟢 FDNY oral histories, released August 2005 via NYT FOIA; number of explosion references per Graeme MacQueen analysis].\n\nBoth towers collapsed with rapid onset, near-symmetrical progression, and at rates that included periods approaching gravitational acceleration. NIST's analysis modeled the collapse initiation but explicitly stated it did not analyze the mechanics of the collapse progression itself, ending its analysis at the point of 'collapse initiation' [🟢 NIST NCSTAR 1, Section 6.14.4]. Multi-ton steel sections were ejected laterally hundreds of feet, embedding in neighboring buildings — a feature some engineers have noted is more consistent with explosive forces than gravity-driven progressive collapse [🟡 photographic and video evidence; engineering analyses].",
+    "evidence": [
+      {
+        "text": "NIST acknowledged it 'did not test for the residue of these compounds in the steel' regarding explosives or thermite.",
+        "tier": "documented",
+        "source": "NIST NCSTAR 1 FAQ — Frequently Asked Questions"
+      },
+      {
+        "text": "FEMA Appendix C documented 'severe high temperature corrosion attack' with 'oxidation and sulfidation with subsequent intergranular melting' — NYT called it 'perhaps the deepest mystery.'",
+        "tier": "documented",
+        "source": "FEMA WTC Building Performance Study, Appendix C (May 2002); New York Times, February 2, 2002"
+      },
+      {
+        "text": "118 of 503 FDNY oral histories describe explosions at or before collapse onset, including sequential 'boom boom boom' descriptions.",
+        "tier": "documented",
+        "source": "FDNY oral histories (released August 2005 via NYT FOIA litigation)"
+      },
+      {
+        "text": "Harrit et al. (2009) reported nanothermitic material in WTC dust samples — findings published in peer-reviewed journal but remain contested.",
+        "tier": "credible",
+        "source": "Harrit et al., The Open Chemical Physics Journal, Vol. 2, pp. 7-31, 2009"
+      },
+      {
+        "text": "NIST explicitly ended its collapse analysis at 'collapse initiation' — did not model or explain the mechanics of progressive collapse.",
+        "tier": "documented",
+        "source": "NIST NCSTAR 1, Section 6.14.4"
+      }
+    ],
+    "sources": [
+      {
+        "label": "NIST NCSTAR 1 — Final Report on WTC Towers (2005)",
+        "url": "https://www.nist.gov/publications/federal-building-and-fire-safety-investigation-world-trade-center-disaster-final-report"
+      },
+      {
+        "label": "FEMA — World Trade Center Building Performance Study (2002)",
+        "url": "https://www.fema.gov/media-library/assets/documents/3544"
+      },
+      {
+        "label": "FDNY Oral Histories — World Trade Center (released 2005)",
+        "url": "https://www.nytimes.com/interactive/2005/08/12/nyregion/20050812_WTC_GRAPHIC.html"
+      },
+      {
+        "label": "Harrit et al. — Active Thermitic Material in WTC Dust (2009)",
+        "url": "https://benthamopen.com/ABSTRACT/TOCPJ-2-7"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "sept-11-patriot-act",
+    "branch": "power",
+    "ring": 2,
+    "title": "The Patriot Act & Surveillance State",
+    "description": "The USA PATRIOT Act (Uniting and Strengthening America by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism) was signed into law on October 26, 2001 — just 45 days after 9/11. The 342-page bill passed the Senate 98-1 (Russ Feingold dissenting) and the House 357-66, with multiple members of Congress later acknowledging they had not read the legislation before voting [🟢 Congressional Record, October 25-26, 2001].",
+    "fullDescription": "The USA PATRIOT Act (Uniting and Strengthening America by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism) was signed into law on October 26, 2001 — just 45 days after 9/11. The 342-page bill passed the Senate 98-1 (Russ Feingold dissenting) and the House 357-66, with multiple members of Congress later acknowledging they had not read the legislation before voting [🟢 Congressional Record, October 25-26, 2001]. Rep. Jim Sensenbrenner, the bill's primary author, noted the legislation incorporated elements from multiple pre-existing proposals that had previously failed to gain congressional support.\n\nThe Foreign Intelligence Surveillance Court (FISC), established by the 1978 FISA Act, approved 99.97% of surveillance applications between 1979 and 2012 — out of 33,942 applications, only 11 were rejected outright [🟢 FISC annual reports to Congress]. The Patriot Act expanded FISC's authority to include 'roving wiretaps,' access to business records (Section 215), and 'lone wolf' provisions [🟢 Patriot Act text, Public Law 107-56].\n\nThe NSA's warrantless wiretapping program — codenamed Stellar Wind — was authorized by President Bush through a secret executive order shortly after 9/11, bypassing the FISA court entirely. The program collected domestic telephone metadata and email content of U.S. persons without individual warrants. Its existence was revealed by The New York Times in December 2005 (after holding the story for over a year at the administration's request). NSA whistleblower Thomas Tamm was later identified as a key source [🟢 NYT, December 16, 2005; DOJ OIG report on Stellar Wind, 2009].\n\nThe Total Information Awareness (TIA) program, led by convicted Iran-Contra figure Admiral John Poindexter at DARPA, sought to create a comprehensive surveillance system mining financial, medical, travel, and communications data. After public outcry, Congress defunded TIA in 2003 — but subsequent reporting and the Snowden revelations showed that many TIA components continued under different names within the NSA [🟢 Congressional defunding, 2003; Snowden documents, 2013].\n\nThe Department of Homeland Security (DHS) was created in November 2002, merging 22 federal agencies into the third-largest cabinet department with approximately 240,000 employees. The Transportation Security Administration (TSA), created in November 2001, implemented universal passenger screening. These institutional expansions represented the largest reorganization of the federal government since the National Security Act of 1947 [🟢 Homeland Security Act of 2002; public records].\n\nThe post-9/11 surveillance architecture built upon and dramatically expanded the pre-existing ECHELON signals intelligence network operated by the Five Eyes alliance (US, UK, Canada, Australia, New Zealand). The UKUSA Agreement (1946, declassified 2010) established the framework for shared signals intelligence that would later enable mass surveillance programs revealed by Edward Snowden in 2013 [🟢 UKUSA Agreement, declassified 2010; Snowden documents published by The Guardian and The Washington Post, 2013].",
+    "evidence": [
+      {
+        "text": "The 342-page Patriot Act passed 45 days after 9/11 — Senate 98-1, House 357-66 — with members acknowledging they had not read it.",
+        "tier": "documented",
+        "source": "Congressional Record, October 25-26, 2001; Public Law 107-56"
+      },
+      {
+        "text": "FISA Court approved 99.97% of surveillance applications (33,942 approved, 11 rejected) between 1979 and 2012.",
+        "tier": "documented",
+        "source": "FISC annual reports to Congress; Electronic Privacy Information Center (EPIC) analysis"
+      },
+      {
+        "text": "NSA's Stellar Wind program conducted warrantless domestic wiretapping under secret executive order, bypassing FISA court — revealed by NYT in December 2005.",
+        "tier": "documented",
+        "source": "New York Times, December 16, 2005; DOJ OIG Report on Stellar Wind (2009)"
+      },
+      {
+        "text": "Total Information Awareness was officially defunded in 2003 after public outcry but its components continued under different names within NSA, per Snowden documents.",
+        "tier": "documented",
+        "source": "Congressional defunding (2003); Snowden documents published by The Guardian (2013)"
+      },
+      {
+        "text": "DHS merged 22 agencies with ~240,000 employees — the largest federal reorganization since the National Security Act of 1947.",
+        "tier": "documented",
+        "source": "Homeland Security Act of 2002; DHS organizational records"
+      }
+    ],
+    "sources": [
+      {
+        "label": "USA PATRIOT Act — Public Law 107-56 (October 26, 2001)",
+        "url": "https://www.congress.gov/107/plaws/publ56/PLAW-107publ56.htm"
+      },
+      {
+        "label": "New York Times — Bush Authorized Domestic Spying (December 16, 2005)",
+        "url": "https://www.nytimes.com/2005/12/16/politics/bush-lets-us-spy-on-callers-without-courts.html"
+      },
+      {
+        "label": "Snowden Revelations — The Guardian Collection (2013)",
+        "url": "https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance"
+      },
+      {
+        "label": "FISC Annual Reports to Congress",
+        "url": "https://www.uscourts.gov/statistics-reports/analysis-reports/directors-annual-report"
+      },
+      {
+        "label": "Homeland Security Act of 2002",
+        "url": "https://www.congress.gov/107/plaws/publ296/PLAW-107publ296.htm"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "sept-11-war-profiteering",
+    "branch": "power",
+    "ring": 2,
+    "title": "War Profiteering & the Forever Wars",
+    "description": "The post-9/11 wars generated unprecedented financial flows to defense contractors. Halliburton subsidiary KBR received the largest share of Iraq war contracts, including a $7 billion no-bid logistics contract (LOGCAP III) awarded in 2001. Vice President Dick Cheney served as Halliburton CEO from 1995 to 2000 and retained deferred compensation and stock options upon entering office [🟢 SEC filings; Congressional Research Service reports].",
+    "fullDescription": "The post-9/11 wars generated unprecedented financial flows to defense contractors. Halliburton subsidiary KBR received the largest share of Iraq war contracts, including a $7 billion no-bid logistics contract (LOGCAP III) awarded in 2001. Vice President Dick Cheney served as Halliburton CEO from 1995 to 2000 and retained deferred compensation and stock options upon entering office [🟢 SEC filings; Congressional Research Service reports]. Halliburton's stock price rose from approximately $10 per share (2002) to over $50 by 2005 [🟢 NYSE records].\n\nBrown University's Costs of War Project, an academic research initiative tracking the financial and human costs of the post-9/11 wars, estimated total federal spending at approximately $8 trillion through FY2022, encompassing direct war appropriations, veterans' care obligations, interest on war borrowing, and homeland security spending [🟢 Brown University Watson Institute, Costs of War Project, 2022 update].\n\nPrivate military contractors expanded dramatically after 9/11. Blackwater USA (later Xe Services, then Academi) received over $2 billion in government contracts. At the peak of the Iraq war, private military contractors outnumbered uniformed troops — a first in American military history. The September 2007 Nisour Square massacre, in which Blackwater contractors killed 17 Iraqi civilians, exposed the lack of legal accountability frameworks for private military forces operating in war zones [🟢 Congressional Research Service; federal court proceedings, US v. Slatten et al.].\n\nDefense contractor stock prices surged in the years following 9/11. Lockheed Martin's stock rose from approximately $40 (Sept 2001) to over $380 by 2020. Raytheon, General Dynamics, Northrop Grumman, and Boeing's defense division all saw similar growth trajectories. The top five defense contractors collectively received over $2.1 trillion in DOD contracts between 2001 and 2021 [🟢 Federal Procurement Data System; SEC filings; Bloomberg analysis].\n\nThe Special Inspector General for Iraq Reconstruction (SIGIR) documented widespread waste, fraud, and abuse in reconstruction contracts, including $8.7 billion in Iraqi reconstruction funds that the DOD could not properly account for [🟢 SIGIR Final Report, March 2013]. The Commission on Wartime Contracting estimated $31-60 billion in waste and fraud across Iraq and Afghanistan operations [🟢 Commission on Wartime Contracting Final Report, August 2011].",
+    "evidence": [
+      {
+        "text": "Halliburton/KBR received $7B no-bid LOGCAP III contract; Cheney retained deferred compensation and stock options from his time as Halliburton CEO (1995-2000).",
+        "tier": "documented",
+        "source": "SEC filings; Congressional Research Service; Government Accountability Office"
+      },
+      {
+        "text": "Total cost of post-9/11 wars estimated at approximately $8 trillion through FY2022, including veterans' care and interest on war borrowing.",
+        "tier": "documented",
+        "source": "Brown University Watson Institute, Costs of War Project (2022 update)"
+      },
+      {
+        "text": "Blackwater received $2B+ in contracts; private contractors outnumbered troops in Iraq — a first. Nisour Square massacre (2007) killed 17 Iraqi civilians.",
+        "tier": "documented",
+        "source": "Congressional Research Service reports; US v. Slatten et al., federal court proceedings"
+      },
+      {
+        "text": "Commission on Wartime Contracting estimated $31-60 billion in waste and fraud across Iraq/Afghanistan operations.",
+        "tier": "documented",
+        "source": "Commission on Wartime Contracting Final Report, August 2011"
+      },
+      {
+        "text": "Top 5 defense contractors received $2.1T+ in DOD contracts (2001-2021); Lockheed Martin stock rose from ~$40 to $380+ over same period.",
+        "tier": "documented",
+        "source": "Federal Procurement Data System; SEC filings"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Brown University — Costs of War Project",
+        "url": "https://watson.brown.edu/costsofwar/"
+      },
+      {
+        "label": "Commission on Wartime Contracting — Final Report (August 2011)",
+        "url": "https://cybercemetery.unt.edu/archive/cwc/20110929213815/http:/www.wartimecontracting.gov/"
+      },
+      {
+        "label": "SIGIR — Final Report to Congress (March 2013)",
+        "url": "https://cybercemetery.unt.edu/archive/sigir/20131001080029/http://www.sigir.mil/files/learningfromiraq/Report_-_March_2013.pdf"
+      },
+      {
+        "label": "Federal Procurement Data System (FPDS)",
+        "url": "https://www.fpds.gov/"
+      },
+      {
+        "label": "CRS — Private Security Contractors in Iraq and Afghanistan (2010)",
+        "url": "https://www.everycrsreport.com/reports/R40835.html"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "sept-11-torture",
+    "branch": "history",
+    "ring": 3,
+    "title": "Black Sites, Rendition & Torture",
+    "description": "Following 9/11, the CIA operated a network of secret detention facilities ('black sites') in at least 54 countries, through which 119 known detainees were processed under the 'enhanced interrogation techniques' (EIT) program authorized by the Bush administration's Office of Legal Counsel 'torture memos' [🟢 Senate Select Committee on Intelligence, 'Committee Study of the CIA's Detention and Interrogation Program,' December 2014].",
+    "fullDescription": "Following 9/11, the CIA operated a network of secret detention facilities ('black sites') in at least 54 countries, through which 119 known detainees were processed under the 'enhanced interrogation techniques' (EIT) program authorized by the Bush administration's Office of Legal Counsel 'torture memos' [🟢 Senate Select Committee on Intelligence, 'Committee Study of the CIA's Detention and Interrogation Program,' December 2014; Open Society Justice Initiative, 'Globalizing Torture,' 2013].\n\nThe Senate Intelligence Committee's study — based on a review of more than 6.3 million pages of CIA records — concluded that the CIA's use of enhanced interrogation techniques 'was not an effective means of acquiring intelligence or gaining cooperation from detainees' and that the CIA had 'provided extensive inaccurate and misleading information' to Congress, the White House, and the public about the program's effectiveness [🟢 SSCI Executive Summary, December 9, 2014]. The full 6,700-page report remains classified.\n\nAbu Ghraib prison in Iraq became the public face of post-9/11 detention abuse when photographs of prisoner abuse by U.S. military personnel were published by CBS News and The New Yorker in April 2004. The Taguba Report (classified, later leaked) documented 'sadistic, blatant, and wanton criminal abuses' including sexual humiliation, physical violence, and the use of dogs to intimidate prisoners [🟢 Taguba Report, February 2004; Seymour Hersh, The New Yorker, May 10, 2004].\n\nGuantanamo Bay detention facility, established in January 2002, held approximately 780 detainees over its operational history. As of 2025, it continues to operate with 15 remaining detainees, despite executive orders from Presidents Obama and Biden pledging to close it. Many detainees were held for years without charges under the Authorization for Use of Military Force (AUMF) [🟢 DOD Guantanamo records; Human Rights First tracking].\n\nGina Haspel, who became CIA Director in 2018, oversaw the CIA's 'Cat's Eye' black site in Thailand in 2002, where detainee Abu Zubaydah was waterboarded 83 times. Haspel later drafted the cable ordering the destruction of 92 videotapes documenting CIA interrogation sessions [🟢 SSCI report; CIA declassified records; Senate confirmation hearing testimony, 2018].\n\nThe CIA's extraordinary rendition program used front companies and chartered aircraft to transport detainees to countries known to practice torture, including Egypt, Syria, Jordan, and Morocco. European Parliament investigations documented CIA rendition flights through European airspace and the complicity of European governments [🟢 European Parliament resolution, February 14, 2007; Council of Europe investigation, 2006].",
+    "evidence": [
+      {
+        "text": "CIA operated black sites in at least 54 countries, processing 119 known detainees under 'enhanced interrogation techniques.'",
+        "tier": "documented",
+        "source": "SSCI Study of CIA Detention and Interrogation Program (2014); Open Society Justice Initiative (2013)"
+      },
+      {
+        "text": "Senate Committee reviewed 6.3 million pages and concluded EIT 'was not an effective means of acquiring intelligence' and CIA 'provided extensive inaccurate information' to Congress.",
+        "tier": "documented",
+        "source": "SSCI Executive Summary, December 9, 2014"
+      },
+      {
+        "text": "Abu Ghraib: Taguba Report documented 'sadistic, blatant, and wanton criminal abuses' including sexual humiliation and use of dogs.",
+        "tier": "documented",
+        "source": "Taguba Report, February 2004; Seymour Hersh, The New Yorker, May 10, 2004"
+      },
+      {
+        "text": "Gina Haspel oversaw Thailand black site where Abu Zubaydah was waterboarded 83 times; later drafted cable ordering destruction of 92 interrogation tapes.",
+        "tier": "documented",
+        "source": "SSCI report; CIA declassified records; Senate confirmation hearings (2018)"
+      },
+      {
+        "text": "European Parliament documented CIA rendition flights through European airspace with complicity of European governments.",
+        "tier": "documented",
+        "source": "European Parliament resolution, February 14, 2007; Council of Europe investigation (2006)"
+      }
+    ],
+    "sources": [
+      {
+        "label": "SSCI — Study of CIA Detention and Interrogation Program, Executive Summary (December 2014)",
+        "url": "https://www.intelligence.senate.gov/publications/committee-study-central-intelligence-agencys-detention-and-interrogation-program"
+      },
+      {
+        "label": "Taguba Report — Investigation of Abu Ghraib (February 2004)",
+        "url": "https://www.thetorturedatabase.org/document/article-15-6-investigation-800th-military-police-brigade-taguba-report"
+      },
+      {
+        "label": "Open Society Justice Initiative — Globalizing Torture (2013)",
+        "url": "https://www.opensocietyfoundations.org/publications/globalizing-torture-cia-secret-detention-and-extraordinary-rendition"
+      },
+      {
+        "label": "European Parliament — Resolution on CIA Rendition (February 2007)",
+        "url": "https://www.europarl.europa.eu/doceo/document/TA-6-2007-0032_EN.html"
+      },
+      {
+        "label": "DOD — Guantanamo Bay Detainee Information",
+        "url": "https://www.defense.gov/Resources/Fact-Sheets/"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "sept-11-media-consent",
+    "branch": "media",
+    "ring": 2,
+    "title": "Manufacturing Consent for War",
+    "description": "In the aftermath of 9/11, a systematic media environment was constructed to build and maintain public support for the 'War on Terror' and the invasion of Iraq. President Bush's framing — 'Either you are with us, or you are with the terrorists' (September 20, 2001) — established a binary that marginalized dissent as unpatriotic [🟢 Bush Address to Joint Session of Congress, September 20, 2001]. The Pentagon's Military Analyst Program, revealed by the New York Times in 2008, placed retired military officers as 'independent' TV analysts while they were simultaneously being briefed and coached by the DOD.",
+    "fullDescription": "In the aftermath of 9/11, a systematic media environment was constructed to build and maintain public support for the 'War on Terror' and the invasion of Iraq. President Bush's framing — 'Either you are with us, or you are with the terrorists' (September 20, 2001) — established a binary that marginalized dissent as unpatriotic [🟢 Bush Address to Joint Session of Congress, September 20, 2001].\n\nThe Pentagon Military Analyst Program, revealed by a Pulitzer Prize-winning New York Times investigation in April 2008, documented how the Department of Defense recruited over 75 retired military officers who appeared as 'independent' analysts on television networks (CNN, Fox News, NBC, CBS, ABC) while simultaneously being briefed, coached, and provided with DOD talking points. Many of these analysts also had undisclosed financial ties to defense contractors with business before the Pentagon [🟢 David Barstow, New York Times, April 20, 2008; Barstow won the 2009 Pulitzer Prize for Investigative Reporting].\n\nThe embedded journalism program replaced the independent press pool system used in previous conflicts. Reporters were attached to military units, creating dependencies on military sources and perspectives that shaped coverage. A study by the Project for Excellence in Journalism found that embedded reporters produced coverage that was more favorable to the military and less likely to include Iraqi civilian perspectives [🟢 Project for Excellence in Journalism study, 2003].\n\nPhil Donahue, then the highest-rated host on MSNBC, was fired in February 2003 — three weeks before the Iraq invasion — despite having the network's best ratings. An internal NBC memo, later leaked, warned that Donahue presented 'a difficult public face for NBC in a time of war' and that the show could become 'a home for the liberal antiwar agenda at the same time that our competitors are waving the flag at every opportunity' [🟢 AllYourTV.com, leaked NBC memo; Donahue public statements].\n\nJudith Miller of The New York Times published a series of front-page articles amplifying Iraqi defectors' claims about WMD programs, sourced heavily from Ahmed Chalabi and the Iraqi National Congress. The Times later published an editors' note (May 26, 2004) acknowledging that 'information that was controversial then, and target-specific, has since turned out to be false' [🟢 New York Times editors' note, May 26, 2004].\n\nThe near-simultaneous anthrax letter attacks (beginning September 18, 2001) were initially attributed by multiple government officials and media commentators to Iraq, reinforcing the narrative linking 9/11 to Saddam Hussein. ABC News, citing 'well-placed sources,' reported that the anthrax contained bentonite — a chemical allegedly linked to Iraq's bioweapons program. This claim was false, and ABC never revealed its sources despite later acknowledging the error [🟡 Glenn Greenwald, Salon, analysis of ABC anthrax reporting].",
+    "evidence": [
+      {
+        "text": "Pentagon Military Analyst Program: 75+ retired officers placed as 'independent' TV analysts while briefed by DOD — NYT investigation won 2009 Pulitzer Prize.",
+        "tier": "documented",
+        "source": "David Barstow, New York Times, April 20, 2008; 2009 Pulitzer Prize for Investigative Reporting"
+      },
+      {
+        "text": "Phil Donahue (MSNBC's highest-rated host) fired three weeks before Iraq invasion; leaked memo warned he'd be 'a difficult public face for NBC in a time of war.'",
+        "tier": "documented",
+        "source": "Leaked NBC internal memo; AllYourTV.com; Donahue public statements"
+      },
+      {
+        "text": "NYT published editors' note (May 2004) acknowledging Judith Miller's WMD reporting based on Iraqi defector claims 'turned out to be false.'",
+        "tier": "documented",
+        "source": "New York Times editors' note, May 26, 2004"
+      },
+      {
+        "text": "Bush's 'either you are with us or with the terrorists' framing (Sept 20, 2001) established a binary that marginalized dissent as unpatriotic.",
+        "tier": "documented",
+        "source": "Bush Address to Joint Session of Congress, September 20, 2001"
+      },
+      {
+        "text": "ABC News falsely reported anthrax contained bentonite linked to Iraq, citing 'well-placed sources' — never revealed sources after retracting claim.",
+        "tier": "credible",
+        "source": "ABC News reporting (October 2001); Glenn Greenwald analysis, Salon"
+      }
+    ],
+    "sources": [
+      {
+        "label": "New York Times — Pentagon Military Analyst Program (April 20, 2008)",
+        "url": "https://www.nytimes.com/2008/04/20/us/20telecom.html"
+      },
+      {
+        "label": "New York Times — Editors' Note on WMD Coverage (May 26, 2004)",
+        "url": "https://www.nytimes.com/2004/05/26/world/from-the-editors-the-times-and-iraq.html"
+      },
+      {
+        "label": "Bush Address to Joint Session of Congress (September 20, 2001)",
+        "url": "https://georgewbush-whitehouse.archives.gov/news/releases/2001/09/20010920-8.html"
+      },
+      {
+        "label": "2009 Pulitzer Prize — Investigative Reporting (David Barstow)",
+        "url": "https://www.pulitzer.org/winners/david-barstow"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "sept-11-commission",
+    "branch": "media",
+    "ring": 3,
+    "title": "The 9/11 Commission: Design & Limits",
+    "description": "The National Commission on Terrorist Attacks Upon the United States was established on November 27, 2002 — 441 days after the attacks, following sustained resistance from the Bush administration. Henry Kissinger was initially appointed chairman but resigned within weeks over conflicts of interest related to his consulting firm's client list [🟢 Congressional records; Kissinger resignation, December 13, 2002]. The Commission received a budget of approximately $15 million, compared to over $70 million spent on the Clinton-Lewinsky investigation.",
+    "fullDescription": "The National Commission on Terrorist Attacks Upon the United States was established on November 27, 2002 — 441 days after the attacks, following sustained resistance from the Bush administration. Henry Kissinger was initially appointed chairman but resigned within weeks over conflicts of interest related to his consulting firm's client list, which he refused to disclose [🟢 Congressional records; Kissinger resignation, December 13, 2002].\n\nThe Commission received a budget of approximately $15 million — later characterized by co-chairs Kean and Hamilton as inadequate — compared to over $70 million spent on the Clinton-Lewinsky investigation and $80 million on the Columbia space shuttle disaster investigation [🟢 Kean & Hamilton, 'Without Precedent,' 2006; budget comparisons from public records].\n\nPhilip Zelikow, appointed as the Commission's executive director (effectively controlling the investigation's direction and staff), had significant conflicts of interest. He had served on the Bush transition team, co-authored a book with incoming National Security Advisor Condoleezza Rice ('Germany Unified and Europe Transformed,' 1995), and drafted the Bush administration's 2002 National Security Strategy document articulating the preemptive war doctrine. Despite these connections, he was not recused from the investigation [🟢 Zelikow appointment records; public biographical information; Shenon, 'The Commission,' 2008].\n\nThe Commission's co-chairs, Thomas Kean and Lee Hamilton, later wrote that the Commission was 'set up to fail' and described how they believed the CIA had obstructed the investigation and that NORAD and the FAA had provided 'false testimony.' They seriously considered referring the matter to the Department of Justice for possible perjury charges [🟢 Kean & Hamilton, 'Without Precedent,' 2006; public statements].\n\nThe 28 Pages of the Joint Congressional Inquiry — classified for 13 years until their declassification in July 2016 — documented Saudi government connections to the hijackers, including financial flows and logistical support. The Commission addressed Saudi Arabia in limited fashion, and the 28 Pages were not incorporated into the Commission's final report [🟢 Joint Inquiry Part IV, declassified July 2016].\n\nCommissioner Max Cleland publicly called the process a 'national scandal' and 'a scam on the American people,' accusing the White House of obstruction and the Commission of 'deliberately compromising' on access to documents. He departed the Commission in late 2003 [🟢 Cleland public statements, 2003; Boston Globe reporting].",
+    "evidence": [
+      {
+        "text": "Kissinger initially appointed chair, resigned within weeks over refusal to disclose his consulting firm's client list — potential conflicts of interest.",
+        "tier": "documented",
+        "source": "Congressional records; Kissinger resignation, December 13, 2002"
+      },
+      {
+        "text": "Commission budget of ~$15M vs. $70M+ for Clinton-Lewinsky investigation and $80M for Columbia shuttle investigation.",
+        "tier": "documented",
+        "source": "Kean & Hamilton, 'Without Precedent' (2006); public budget records"
+      },
+      {
+        "text": "Executive Director Zelikow had served on Bush transition team, co-authored book with Condoleezza Rice, and drafted the 2002 preemptive war doctrine.",
+        "tier": "documented",
+        "source": "Zelikow biographical records; Shenon, 'The Commission' (2008)"
+      },
+      {
+        "text": "Co-chairs Kean and Hamilton wrote the Commission was 'set up to fail' and considered criminal referrals for false testimony by NORAD/FAA.",
+        "tier": "documented",
+        "source": "Kean & Hamilton, 'Without Precedent' (2006)"
+      },
+      {
+        "text": "Commissioner Cleland called the process 'a scam on the American people' and a 'national scandal,' accusing the White House of obstruction.",
+        "tier": "documented",
+        "source": "Cleland public statements, 2003; Boston Globe, November 13, 2003"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Kean & Hamilton — Without Precedent (2006)",
+        "url": "https://www.penguinrandomhouse.com/books/99930/without-precedent-by-thomas-h-kean-and-lee-h-hamilton/"
+      },
+      {
+        "label": "Shenon — The Commission: An Uncensored History (2008)",
+        "url": "https://www.hachettebookgroup.com/titles/philip-shenon/the-commission/9780446580755/"
+      },
+      {
+        "label": "9/11 Commission Final Report (2004)",
+        "url": "https://www.govinfo.gov/content/pkg/GPO-911REPORT/pdf/GPO-911REPORT.pdf"
+      },
+      {
+        "label": "Joint Inquiry Declassified Part IV — 28 Pages (July 2016)",
+        "url": "https://intelligence.house.gov/uploadedfiles/declasspart4.pdf"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "sept-11-anthrax",
+    "branch": "health",
+    "ring": 2,
+    "title": "The Anthrax Letters",
+    "description": "Beginning on September 18, 2001 — one week after 9/11 — letters containing weaponized anthrax spores were mailed to several news media offices and two U.S. Senators: Tom Daschle (D-SD, Senate Majority Leader) and Patrick Leahy (D-VT, Chairman of the Senate Judiciary Committee). Both senators were key holdouts on the Patriot Act. The attacks killed 5 people and infected 17 others [🟢 FBI case files; CDC epidemiological records].",
+    "fullDescription": "Beginning on September 18, 2001 — one week after 9/11 — letters containing weaponized anthrax spores were mailed to several news media offices and two U.S. Senators: Tom Daschle (D-SD, Senate Majority Leader) and Patrick Leahy (D-VT, Chairman of the Senate Judiciary Committee). Both senators were key holdouts on the Patriot Act at the time of the mailings. The attacks killed 5 people and infected 17 others [🟢 FBI case files; CDC epidemiological records].\n\nThe anthrax was identified as the Ames strain — a highly virulent strain maintained at the U.S. Army Medical Research Institute of Infectious Diseases (USAMRIID) at Fort Detrick, Maryland. The spores were processed to a weapons-grade quality with a silicon coating that enhanced aerosolization, indicating sophisticated production capability [🟢 FBI Amerithrax investigation; USAMRIID records].\n\nThe attacks were initially attributed to Iraq and al-Qaeda by multiple government officials and media commentators, reinforcing the narrative linking 9/11 to Saddam Hussein. ABC News, citing 'well-placed sources,' reported the anthrax contained bentonite — a chemical allegedly linked to Iraq's bioweapons program. This was false [🟡 ABC News reporting, October 2001]. The anthrax-Iraq narrative contributed significantly to public support for the Iraq invasion and provided additional political pressure for rapid passage of the Patriot Act.\n\nThe FBI's Amerithrax investigation — one of the largest and most complex in Bureau history — initially focused on Dr. Steven Hatfill, whom Attorney General Ashcroft publicly called a 'person of interest.' Hatfill was later exonerated and received a $5.82 million settlement from the DOJ [🟢 DOJ settlement, June 2008]. The investigation then shifted to Dr. Bruce Ivins, a senior biodefense researcher at USAMRIID. Ivins died by suicide on July 29, 2008, shortly before the DOJ planned to seek indictment. No charges were ever filed [🟢 FBI Amerithrax investigative summary; DOJ press conference, August 6, 2008].\n\nThe National Academy of Sciences conducted an independent review of the FBI's scientific conclusions and found in its 2011 report that the Bureau's genetic analysis, while innovative, was 'not as definitive as stated' and that 'it is not possible to reach a definitive conclusion about the origins of the B. anthracis in the mailings based on the available scientific evidence alone' [🟢 NAS, 'Review of the Scientific Approaches Used During the FBI's Investigation of the 2001 Anthrax Letters,' 2011].\n\nThe anthrax attacks triggered a massive expansion in biodefense spending — from approximately $700 million annually before 9/11 to over $8 billion by 2005 — benefiting pharmaceutical companies and research institutions with biodefense contracts. Project BioShield, signed into law in 2004, allocated $5.6 billion for medical countermeasures against biological threats [🟢 Project BioShield Act, 2004; GAO biodefense spending reports].",
+    "evidence": [
+      {
+        "text": "Anthrax letters targeted Senators Daschle and Leahy — both key Patriot Act holdouts — using weaponized Ames strain from U.S. military lab at Fort Detrick.",
+        "tier": "documented",
+        "source": "FBI Amerithrax investigation; USAMRIID records; CDC epidemiological data"
+      },
+      {
+        "text": "Initial attribution to Iraq/al-Qaeda (including false ABC News bentonite claim) reinforced 9/11-Iraq narrative and pressured Patriot Act passage.",
+        "tier": "credible",
+        "source": "ABC News reporting (October 2001); media analysis"
+      },
+      {
+        "text": "FBI suspect Bruce Ivins died by suicide before charges; initial suspect Hatfill was exonerated and received $5.82M DOJ settlement.",
+        "tier": "documented",
+        "source": "FBI Amerithrax investigative summary; DOJ settlement (June 2008); DOJ press conference (August 6, 2008)"
+      },
+      {
+        "text": "National Academy of Sciences found FBI's genetic analysis 'not as definitive as stated' — scientific evidence alone could not determine the anthrax's origin.",
+        "tier": "documented",
+        "source": "NAS, 'Review of the Scientific Approaches Used During the FBI's Investigation of the 2001 Anthrax Letters,' 2011"
+      },
+      {
+        "text": "Biodefense spending surged from ~$700M/year pre-9/11 to $8B+ by 2005; Project BioShield allocated $5.6B for countermeasures.",
+        "tier": "documented",
+        "source": "Project BioShield Act (2004); GAO biodefense spending reports"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FBI — Amerithrax Investigation Summary (February 2010)",
+        "url": "https://www.justice.gov/archive/amerithrax/"
+      },
+      {
+        "label": "NAS — Review of FBI Anthrax Investigation Science (2011)",
+        "url": "https://nap.nationalacademies.org/catalog/13098/review-of-the-scientific-approaches-used-during-the-fbis-investigation-of-the-2001-anthrax-letters"
+      },
+      {
+        "label": "Project BioShield Act of 2004",
+        "url": "https://www.congress.gov/108/plaws/publ276/PLAW-108publ276.htm"
+      },
+      {
+        "label": "DOJ Settlement with Steven Hatfill (June 2008)",
+        "url": "https://www.washingtonpost.com/wp-dyn/content/article/2008/06/27/AR2008062701324.html"
+      }
+    ],
+    "status": "researched"
   }
 ];
 
@@ -8532,7 +9141,45 @@ var CONNECTIONS = [
   [
     "waco-ruby-ridge",
     "whistleblower-suppression"
-  ]
+  ],
+  ["sept-11-pnac", "sept-11-foreknowledge"],
+  ["sept-11-pnac", "sept-11-iraq-war"],
+  ["sept-11-pnac", "sept-11-war-profiteering"],
+  ["sept-11-foreknowledge", "sept-11-official"],
+  ["sept-11-foreknowledge", "sept-11-finance"],
+  ["sept-11-pentagon", "sept-11-official"],
+  ["sept-11-pentagon", "sept-11-wtc-demolition"],
+  ["sept-11-wtc-demolition", "sept-11-building7"],
+  ["sept-11-iraq-war", "sept-11-media-consent"],
+  ["sept-11-iraq-war", "sept-11-war-profiteering"],
+  ["sept-11-iraq-war", "sept-11-torture"],
+  ["sept-11-patriot-act", "sept-11-official"],
+  ["sept-11-patriot-act", "sept-11-anthrax"],
+  ["sept-11-media-consent", "sept-11-commission"],
+  ["sept-11-commission", "sept-11-official"],
+  ["sept-11-commission", "sept-11-foreknowledge"],
+  ["sept-11-anthrax", "sept-11-media-consent"],
+  ["sept-11-torture", "sept-11-patriot-act"],
+  ["sept-11-pnac", "military-industrial"],
+  ["sept-11-pnac", "operation-northwoods"],
+  ["sept-11-foreknowledge", "echelon-five-eyes"],
+  ["sept-11-foreknowledge", "operation-chaos"],
+  ["sept-11-pentagon", "unacknowledged-saps"],
+  ["sept-11-patriot-act", "echelon-five-eyes"],
+  ["sept-11-patriot-act", "media-digital-control"],
+  ["sept-11-war-profiteering", "military-industrial"],
+  ["sept-11-war-profiteering", "drug-trafficking-intel"],
+  ["sept-11-media-consent", "media-cia"],
+  ["sept-11-media-consent", "pentagon-analyst-program"],
+  ["sept-11-media-consent", "media-narrative-coordination"],
+  ["sept-11-iraq-war", "gulf-of-tonkin"],
+  ["sept-11-iraq-war", "operation-ajax-pbsuccess"],
+  ["sept-11-torture", "operation-phoenix"],
+  ["sept-11-torture", "experiment-mkultra-full"],
+  ["sept-11-anthrax", "experiment-biological"],
+  ["sept-11-commission", "media-narrative-coordination"],
+  ["sept-11-finance", "sept-11-war-profiteering"],
+  ["sept-11-finance", "sept-11-pnac"]
 ];
 
 // ============================================================
