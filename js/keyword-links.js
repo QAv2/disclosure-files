@@ -11,6 +11,8 @@
 var KEYWORD_LINKS = [
 
   // ── Very long phrases (6+ words) ─────────────────────────────
+  ["PCR cycle threshold", "covid-protocol-manipulation"],
+  ["death certificate coding", "covid-protocol-manipulation"],
   ["Emergency Use Authorization", "covid-pharma-eua"],
   ["Great Barrington Declaration", "covid-censorship"],
   ["Wuhan Institute of Virology", "covid-gain-of-function"],
@@ -105,6 +107,10 @@ var KEYWORD_LINKS = [
   ["Master Settlement Agreement", "tobacco-conspiracy"],
 
   // ── Named operations / programs (2–3 words) ──────────────────
+  ["natural immunity", "covid-protocol-manipulation"],
+  ["Cochrane Review", "covid-protocol-manipulation"],
+  ["Kary Mullis", "covid-protocol-manipulation"],
+  ["Neil Ferguson", "covid-protocol-manipulation"],
   ["Operation Mongoose", "jfk-anti-castro-ops"],
   ["Project BioShield", "covid-biodefense-complex"],
   ["Operation Mockingbird", "media-cia"],
