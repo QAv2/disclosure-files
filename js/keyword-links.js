@@ -11,6 +11,11 @@
 var KEYWORD_LINKS = [
 
   // ── Very long phrases (6+ words) ─────────────────────────────
+  ["Emergency Use Authorization", "covid-pharma-eua"],
+  ["Great Barrington Declaration", "covid-censorship"],
+  ["Wuhan Institute of Virology", "covid-gain-of-function"],
+  ["gain-of-function research", "covid-gain-of-function"],
+  ["Trusted News Initiative", "covid-censorship"],
   ["Unacknowledged Special Access Programs", "unacknowledged-saps"],
   ["Smith-Mundt Modernization Act", "smith-mundt-modernization"],
   ["Pentagon Military Analyst Program", "pentagon-analyst-program"],
@@ -36,6 +41,17 @@ var KEYWORD_LINKS = [
   ["Pearl Harbor Foreknowledge", "pearl-harbor-foreknowledge"],
 
   // ── Long phrases (4–5 words) ─────────────────────────────────
+  ["Executive Order 11110", "jfk-cui-bono"],
+  ["Fair Play for Cuba", "jfk-oswald-intelligence"],
+  ["single-bullet theory", "jfk-warren-commission"],
+  ["Warren Commission", "jfk-warren-commission"],
+  ["furin cleavage site", "covid-gain-of-function"],
+  ["EcoHealth Alliance", "covid-gain-of-function"],
+  ["gain of function", "covid-gain-of-function"],
+  ["WHO Pandemic Treaty", "covid-emergency-powers"],
+  ["biosecurity state", "covid-emergency-powers"],
+  ["Virality Project", "covid-censorship"],
+  ["JFK Records Act", "jfk-media-management"],
   ["Coordinated Narrative Management", "media-narrative-coordination"],
   ["Political Protection Pattern", "epstein-political-protection"],
   ["Integrated Information Theory", "qa-iit"],
@@ -89,6 +105,8 @@ var KEYWORD_LINKS = [
   ["Master Settlement Agreement", "tobacco-conspiracy"],
 
   // ── Named operations / programs (2–3 words) ──────────────────
+  ["Operation Mongoose", "jfk-anti-castro-ops"],
+  ["Project BioShield", "covid-biodefense-complex"],
   ["Operation Mockingbird", "media-cia"],
   ["Operation Paperclip", "operation-paperclip"],
   ["Operation Northwoods", "operation-northwoods"],
@@ -118,6 +136,14 @@ var KEYWORD_LINKS = [
   ["Disclosure Act", "uap-legislation"],
 
   // ── Named events / incidents ─────────────────────────────────
+  ["Lee Harvey Oswald", "jfk-oswald-intelligence"],
+  ["Bay of Pigs", "jfk-anti-castro-ops"],
+  ["magic bullet", "jfk-warren-commission"],
+  ["Zapruder film", "jfk-forensic-evidence"],
+  ["grassy knoll", "jfk-forensic-evidence"],
+  ["Dark Winter", "covid-biodefense-complex"],
+  ["Event 201", "covid-biodefense-complex"],
+  ["lab leak", "covid-origins-investigation"],
   ["Iraq War", "sept-11-iraq-war"],
   ["Business Plot", "business-plot-1933"],
   ["Wall Street Putsch", "business-plot-1933"],
@@ -140,6 +166,10 @@ var KEYWORD_LINKS = [
   ["Condon Committee", "uap-program-history"],
 
   // ── Named people ─────────────────────────────────────────────
+  ["Guy Banister", "jfk-oswald-intelligence"],
+  ["Allen Dulles", "jfk-cui-bono"],
+  ["Peter Daszak", "covid-gain-of-function"],
+  ["Ralph Baric", "covid-gain-of-function"],
   ["Smedley Butler", "business-plot-1933"],
   ["Sidney Gottlieb", "experiment-mkultra-full"],
   ["Ewen Cameron", "experiment-mkultra-full"],
@@ -183,6 +213,8 @@ var KEYWORD_LINKS = [
   ["Skull and Bones", "history-secret-societies"],
 
   // ── Acronyms and shorter terms ───────────────────────────────
+  ["PREP Act", "covid-pharma-eua"],
+  ["VAERS", "covid-pharma-eua"],
   ["COINTELPRO", "cointelpro-full"],
   ["Wilson-Davis", "uap-wilson-davis"],
   ["ECHELON", "echelon-five-eyes"],

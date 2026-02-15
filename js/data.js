@@ -1,16 +1,16 @@
 // ============================================================
 // The Disclosure Files — Transformation Map Data
-// 125 disclosure nodes + 45 QA nodes across 8 branches
+// 138 disclosure nodes + 45 QA nodes across 8 branches
 // Auto-generated from disclosure-data.json + qa-data.json
 // ============================================================
 
 var MAP_CONFIG = {
   "title": "The Disclosure Files",
-  "subtitle": "Mapping what was hidden in plain sight — 125 nodes · 8 branches",
+  "subtitle": "Mapping what was hidden in plain sight — 138 nodes · 8 branches",
   "centerNode": {
     "id": "center",
     "title": "The Disclosure Files",
-    "description": "A systematic research project mapping power networks through cross-referencing documentary evidence. 125 nodes across 8 branches: Power Structures, Hidden History, Consciousness & Metaphysics, Science & Technology, Ritual & Occult Systems, Health & Biological Control, Media & Narrative Control, Cosmology & Origins.",
+    "description": "A systematic research project mapping power networks through cross-referencing documentary evidence. 138 nodes across 8 branches: Power Structures, Hidden History, Consciousness & Metaphysics, Science & Technology, Ritual & Occult Systems, Health & Biological Control, Media & Narrative Control, Cosmology & Origins.",
     "sources": [
       {
         "label": "Church Committee Final Report (1976)",
@@ -7007,6 +7007,669 @@ var NODES = [
     ],
     "status": "researched"
   }
+  {
+    "id": "jfk-oswald-intelligence",
+    "branch": "history",
+    "ring": 3,
+    "title": "Oswald's Intelligence Connections",
+    "description": "Lee Harvey Oswald's documented ties to US intelligence — from ONI defection to USSR, to Fair Play for Cuba at Guy Banister's office, to CIA handlers de Mohrenschildt and David Atlee Phillips.",
+    "fullDescription": "Lee Harvey Oswald's biography reads less like a lone nut and more like an intelligence operative's legend. The pattern of institutional protection is unmistakable.\\n\\n🟢 DOCUMENTED: In October 1959, Oswald — a Marine with a security clearance who had worked at the U-2 spy plane base at Atsugi, Japan — defected to the Soviet Union through a process facilitated by the Office of Naval Intelligence (ONI). He renounced his US citizenship at the American Embassy in Moscow and offered to give the Soviets classified radar information. When he returned to the US in June 1962, he faced zero prosecution, zero debriefing by the FBI (officially), and was granted a loan from the State Department for travel expenses. No defector in the Cold War era received this treatment unless they were operating under intelligence cover.\\n\\n🟡 CREDIBLE: In Minsk, Oswald worked at the Minsk Radio Factory, a facility that multiple researchers have identified as a suspected CIA monitoring post. His life in Minsk was comfortable and surveilled by the KGB, who found him uninteresting — suggesting he may not have been a genuine defector.\\n\\n🟢 DOCUMENTED: Back in the US, Oswald established a one-man chapter of the Fair Play for Cuba Committee (FPCC) in New Orleans in 1963. His office address — 544 Camp Street — was the same building that housed Guy Banister's detective agency. Banister was a former FBI Special Agent in Charge who ran anti-Castro operations with CIA funding. The same building, the same floor — a pro-Castro activist sharing space with one of the most virulent anti-Castro operatives in the South.\\n\\n🟢 DOCUMENTED: George de Mohrenschildt, a petroleum geologist with extensive CIA connections (confirmed by CIA records and his own testimony), became Oswald's closest friend and handler in Dallas. De Mohrenschildt introduced the Oswalds to the White Russian community and guided Lee's movements. On March 29, 1977 — the very day an HSCA investigator came to interview him — de Mohrenschildt was found dead of a shotgun wound, ruled suicide. His personal address book contained the entry \"Bush, George H.W.\" with his CIA-linked Zapata Offshore address.\\n\\n🟡 CREDIBLE: David Atlee Phillips, the CIA officer who ran anti-Castro propaganda operations (including the DRE Cuban exile group that had contact with Oswald), was identified by multiple witnesses as \"Maurice Bishop\" — the intelligence handler seen meeting with Oswald in Dallas by Cuban exile leader Antonio Veciana. Phillips ran the CIA's Mexico City station operations when the agency photographed a man visiting the Soviet Embassy claiming to be Oswald — but the photo showed a completely different person.\\n\\n🟢 DOCUMENTED: The CIA opened a 201 personality file on Oswald in December 1960, confirming institutional interest. The Mexico City surveillance photos from October 1963 showed a heavyset, middle-aged man identified by the CIA as \"Oswald\" — bearing no resemblance to the real Oswald. This discrepancy has never been adequately explained.\\n\\n🟢 DOCUMENTED: In late September 1963, Sylvia Odio — a credible anti-Castro Cuban exile — was visited at her Dallas apartment by two Latino men and an American introduced as \"Leon Oswald.\" After the assassination, she identified the American as Lee Harvey Oswald. The Warren Commission attempted to discredit her but the HSCA found her testimony credible.\\n\\n🟡 CREDIBLE: The CIA withheld significant portions of Oswald's file from the Warren Commission. CIA Counter-Intelligence chief James Angleton controlled the \"Oswald file\" and what information reached investigators. The full scope of CIA knowledge about Oswald before the assassination remains classified or redacted decades later.",
+    "evidence": [
+      {
+        "text": "Oswald defected to USSR via ONI channels in 1959 and returned in 1962 with no prosecution, no debriefing, and a State Department loan — treatment unprecedented for Cold War defectors.",
+        "tier": "documented",
+        "source": "Warren Commission Exhibits; State Department records; HSCA Report Vol. XII"
+      },
+      {
+        "text": "Oswald's Fair Play for Cuba Committee office at 544 Camp Street, New Orleans, was in the same building as Guy Banister's anti-Castro/FBI-connected detective agency.",
+        "tier": "documented",
+        "source": "HSCA Investigation; New Orleans city records; FPCC pamphlets stamped with 544 Camp St address"
+      },
+      {
+        "text": "George de Mohrenschildt, confirmed CIA asset and Oswald's Dallas handler, was found dead of a shotgun wound on March 29, 1977 — the same day an HSCA investigator arrived to interview him.",
+        "tier": "documented",
+        "source": "HSCA Report (1979); CIA records on de Mohrenschildt; Palm Beach County death records"
+      },
+      {
+        "text": "CIA surveillance photos from Mexico City in October 1963 showed a man identified as 'Oswald' who was visibly a different person — heavyset, middle-aged, bearing no resemblance to Lee Harvey Oswald.",
+        "tier": "documented",
+        "source": "CIA Mexico City Station cables; HSCA Lopez Report; declassified surveillance photographs"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HSCA Final Report (1979)",
+        "url": "https://www.archives.gov/research/jfk/select-committee-report"
+      },
+      {
+        "label": "Warren Commission Report (1964)",
+        "url": "https://www.archives.gov/research/jfk/warren-commission-report"
+      },
+      {
+        "label": "John Newman — Oswald and the CIA (2008)",
+        "url": "https://www.maryferrell.org/pages/Featured_John_Newman_Oswald_and_the_CIA.html"
+      },
+      {
+        "label": "Jefferson Morley — The Ghost: The Secret Life of CIA Spymaster James Jesus Angleton (2017)",
+        "url": "https://www.jeffmorley.com"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "jfk-anti-castro-ops",
+    "branch": "history",
+    "ring": 3,
+    "title": "Anti-Castro Operations & the Assassination",
+    "description": "CIA-Mafia-Cuban exile nexus — Operation Mongoose, JM/WAVE station, assassination plots against Castro using the same networks later linked to Dallas.",
+    "fullDescription": "The infrastructure built to assassinate Fidel Castro provided the means, motive, and personnel for the assassination of President Kennedy. The same networks, the same operatives, the same methods — simply redirected.\\n\\n🟢 DOCUMENTED (Church Committee): Operation Mongoose was launched in November 1961 under the direct supervision of Attorney General Robert F. Kennedy, with CIA officer Edward Lansdale as chief of operations and William Harvey running the CIA's executive action program (ZR/RIFLE). The operation encompassed sabotage, propaganda, and assassination plots against Castro — including the infamous exploding cigar, poisoned wetsuit, and Mafia hit contracts.\\n\\n🟢 DOCUMENTED: JM/WAVE, located on the University of Miami campus, was the largest CIA station outside of Langley, Virginia. At its peak it employed over 400 CIA officers and maintained a network of approximately 15,000 Cuban exile assets. It operated a fleet of speedboats, aircraft, and front companies throughout South Florida. This was a paramilitary army operating on American soil.\\n\\n🟢 DOCUMENTED (Church Committee): The CIA recruited Mafia bosses Sam Giancana, Johnny Roselli, and Santos Trafficante to assassinate Castro. All three were later connected to the JFK assassination through various threads. All three were murdered before they could testify fully — Giancana shot seven times in the face in his kitchen (June 1975, days before scheduled Church Committee testimony), Roselli dismembered and stuffed in an oil drum found floating in Miami's Dumfoundling Bay (August 1976, after testifying but before recall), and Trafficante died of natural causes in 1987 but only after admitting to his attorney Frank Ragano: \"Carlos fucked up. We shouldn't have killed Giovanni. We should have killed Bobby.\"\\n\\n🟢 DOCUMENTED: Bay of Pigs veterans held deep fury toward JFK for withdrawing promised air support during the April 1961 invasion, which they blamed for the operation's catastrophic failure. Brigade 2506 survivors felt personally betrayed, and this resentment was shared by their CIA handlers.\\n\\n🟢/🟡 DOCUMENTED/CREDIBLE: Multiple anti-Castro groups operated with CIA funding and direction — Alpha 66 (led by Antonio Veciana, handled by \"Maurice Bishop\"/David Atlee Phillips), the DRE or Directorio Revolucionario Estudiantil (which had documented contact with Oswald in New Orleans and was run by CIA officer George Joannides), and Operation 40 (a CIA assassination squad that included figures later connected to Watergate and drug trafficking).\\n\\n🟡 CREDIBLE: David Sanchez Morales, the CIA's chief of operations at JM/WAVE, was described by colleagues as the agency's most effective assassin. According to his close friend Ruben Carbajal, Morales stated while drinking: \"Well, we took care of that son of a bitch, didn't we?\" — referring to JFK. Morales died suddenly in 1978, just as the HSCA was seeking his testimony.\\n\\n🟡 CREDIBLE: E. Howard Hunt — Watergate burglar, longtime CIA officer, Bay of Pigs veteran — made a deathbed confession to his son Saint John Hunt in 2007. He described a conspiracy involving LBJ as the prime mover, with Cord Meyer, David Morales, Bill Harvey, and French Corsican gunmen. Hunt called it \"the Big Event\" and placed himself as a \"benchwarmer\" in Dallas. The confession was recorded on audio and video.\\n\\n🟡 CREDIBLE: Antonio Veciana, founder of Alpha 66, testified to the HSCA's Gaeton Fonzi that he saw his CIA handler \"Maurice Bishop\" meeting with Lee Harvey Oswald in Dallas in September 1963. In 2017, Veciana finally confirmed publicly that Maurice Bishop was David Atlee Phillips.\\n\\n🟢 DOCUMENTED: George Joannides, the CIA case officer who ran the DRE in 1963, was pulled out of retirement in 1978 and assigned as the CIA's liaison to the HSCA — effectively placing the handler of an Oswald-connected group in charge of what the HSCA could learn from the CIA. This was the fox guarding the henhouse. HSCA Chief Counsel Robert Blakey later called it the single greatest act of obstruction he encountered.",
+    "evidence": [
+      {
+        "text": "The Church Committee documented CIA-Mafia assassination plots against Castro involving Sam Giancana, Johnny Roselli, and Santos Trafficante — all later connected to JFK assassination threads.",
+        "tier": "documented",
+        "source": "Church Committee — Alleged Assassination Plots Involving Foreign Leaders (1975)"
+      },
+      {
+        "text": "All three CIA-Mafia plot participants were killed or died before completing testimony: Giancana shot 7 times before Church Committee appearance, Roselli dismembered after partial testimony, Trafficante reportedly confessed to attorney.",
+        "tier": "documented",
+        "source": "Church Committee records; FBI investigative files; Frank Ragano testimony"
+      },
+      {
+        "text": "E. Howard Hunt made a deathbed confession in 2007 to his son Saint John Hunt, recorded on audio and video, naming LBJ, Cord Meyer, David Morales, and Bill Harvey as participants in the assassination conspiracy.",
+        "tier": "credible",
+        "source": "Saint John Hunt recordings; Rolling Stone article (April 2007); E. Howard Hunt memoir"
+      },
+      {
+        "text": "George Joannides, who ran the DRE (a group with documented Oswald contact) in 1963, was assigned as CIA liaison to the HSCA in 1978 — placing him in position to obstruct the investigation into his own operational activities.",
+        "tier": "documented",
+        "source": "HSCA records; Jefferson Morley FOIA litigation; Robert Blakey public statements"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Church Committee — Alleged Assassination Plots Involving Foreign Leaders (1975)",
+        "url": "https://www.intelligence.senate.gov/sites/default/files/94465.pdf"
+      },
+      {
+        "label": "Gaeton Fonzi — The Last Investigation (1993)",
+        "url": "https://www.maryferrell.org/pages/Featured_Gaeton_Fonzi_The_Last_Investigation.html"
+      },
+      {
+        "label": "David Talbot — The Devil's Chessboard (2015)",
+        "url": "https://www.simonandschuster.com/books/The-Devils-Chessboard/David-Talbot/9780062276179"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "jfk-secret-service",
+    "branch": "history",
+    "ring": 3,
+    "title": "Secret Service Anomalies",
+    "description": "Systematic security failures in Dallas — reassigned agents, changed motorcade route, slowed limousine, broken chain of custody, and a military autopsy that contradicted civilian doctors.",
+    "fullDescription": "The Secret Service failures in Dallas on November 22, 1963 were not random lapses — they formed a systematic pattern of reduced protection that is difficult to attribute to mere incompetence.\\n\\n🟢 DOCUMENTED: Multiple Secret Service agents were out drinking at The Cellar, a Fort Worth nightclub, until the early morning hours of November 22. This was confirmed by the Warren Commission's own investigation. The Cellar's owner, Pat Kirkwood, stated the agents were drinking \"pure Everclear\" — though agents later claimed they only had non-alcoholic beverages. Either way, they violated Secret Service regulations by being out until 3-5 AM before a presidential motorcade.\\n\\n🟢 DOCUMENTED (on film): Agent Emory Roberts, the shift leader of the follow-up car, ordered Secret Service Agent Henry Rybka off the rear of the presidential limousine as the motorcade departed Love Field. The Jefferies film clearly shows Rybka throwing his arms up in visible confusion and frustration as he is waved away from his protective position. This was a direct violation of standard protective protocol.\\n\\n🟢 DOCUMENTED: The motorcade route was changed to include Dealey Plaza, requiring a sharp turn from Main Street onto Houston Street and then a hairpin left onto Elm Street. This turn violated Secret Service protocols requiring the presidential vehicle to maintain speeds above 44 mph and avoid sharp turns. The revised route was published in the Dallas Morning News on November 19, giving potential assassins three days to prepare.\\n\\n🟢 DOCUMENTED: Multiple standard security protocols were reduced or eliminated: no agents were stationed on the rear bumper of the limousine (standard practice), buildings along the route were not secured or searched, manhole covers were not welded shut (standard practice for presidential motorcades), and the open stretch through Dealey Plaza created a textbook kill zone surrounded by elevated positions.\\n\\n🟢 DOCUMENTED: Driver William Greer slowed the limousine nearly to a complete stop after the first shots, rather than executing the standard emergency acceleration protocol. This is clearly visible in the Zapruder film. The car's deceleration kept the president in the kill zone for critical additional seconds.\\n\\n🟢 DOCUMENTED: At Parkland Memorial Hospital, doctors who treated JFK described a large wound at the rear of the head (occipital-parietal region) consistent with an exit wound from a frontal shot, and a small entry wound at the throat. Dr. Malcolm Perry described the throat wound as an \"entrance wound\" at the initial press conference — a statement he was later pressured to retract.\\n\\n🟢 DOCUMENTED: The Secret Service forcibly removed JFK's body from Parkland Hospital, violating Texas law which required that homicide autopsies be performed by the local medical examiner. When Dallas County Medical Examiner Dr. Earl Rose physically blocked the doorway citing Texas law, Secret Service agents drew their weapons and physically pushed past him, wheeling the casket out at gunpoint. This broke the legal chain of custody.\\n\\n🟢 DOCUMENTED: The autopsy was performed at Bethesda Naval Hospital by military pathologists Dr. James Humes and Dr. J. Thornton Boswell — neither of whom had forensic pathology experience or had ever performed a gunshot wound autopsy. The military controlled every aspect. Autopsy photos later shown to Parkland doctors were described as inconsistent with what they observed in the trauma room.\\n\\n🟢 DOCUMENTED: Dr. Humes admitted to burning his original autopsy notes in his fireplace, claiming they were stained with the president's blood. This destruction of primary forensic evidence in a presidential assassination has no innocent explanation.\\n\\n🟡 CREDIBLE: The Secret Service destroyed their protective survey reports for the Dallas trip — the documents that would have detailed what security measures were planned, implemented, and possibly overridden. This destruction was confirmed but the agency claimed it was routine records disposal.",
+    "evidence": [
+      {
+        "text": "Multiple Secret Service agents were confirmed drinking at The Cellar nightclub in Fort Worth until early morning hours of November 22, 1963, violating protection protocols before the Dallas motorcade.",
+        "tier": "documented",
+        "source": "Warren Commission testimony; Pat Kirkwood statements; Secret Service internal records"
+      },
+      {
+        "text": "Agent Henry Rybka was visibly waved off the rear of the presidential limousine by shift leader Emory Roberts at Love Field — captured on the Jefferies film showing Rybka's confused arm gestures.",
+        "tier": "documented",
+        "source": "Jefferies film footage; Vincent Palamara research and agent interviews"
+      },
+      {
+        "text": "JFK's body was forcibly removed from Parkland Hospital at gunpoint by Secret Service agents, violating Texas homicide law requiring local autopsy jurisdiction, breaking the chain of custody.",
+        "tier": "documented",
+        "source": "Dr. Earl Rose testimony; Parkland Hospital witnesses; Warren Commission records"
+      },
+      {
+        "text": "Dr. James Humes, the lead Bethesda autopsy pathologist, admitted to burning his original handwritten autopsy notes in his home fireplace.",
+        "tier": "documented",
+        "source": "ARRB deposition of Dr. Humes; Warren Commission testimony of Dr. Humes"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Warren Commission Testimony and Exhibits (1964)",
+        "url": "https://www.archives.gov/research/jfk/warren-commission-report"
+      },
+      {
+        "label": "Vincent Palamara — Survivor's Guilt: The Secret Service and the Failure to Protect President Kennedy (2013)",
+        "url": "https://www.vincentpalamara.com"
+      },
+      {
+        "label": "ARRB (Assassination Records Review Board) Depositions (1990s)",
+        "url": "https://www.archives.gov/research/jfk/review-board"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "jfk-warren-commission",
+    "branch": "media",
+    "ring": 2,
+    "title": "The Warren Commission: Constructing the Lone Gunman",
+    "description": "Allen Dulles — the CIA director JFK fired — appointed to investigate his murder. The single-bullet theory, suppressed evidence, and CIA's weaponization of 'conspiracy theory' to silence critics.",
+    "fullDescription": "The Warren Commission was not an investigation — it was a narrative construction project. Its conclusion was predetermined, its evidence curated, and its most influential member was the man with the greatest motive to cover up an intelligence community role.\\n\\n🟢 DOCUMENTED: Allen Welsh Dulles was fired as CIA Director by President Kennedy in November 1961 after the Bay of Pigs fiasco. JFK reportedly told an aide he wanted to \"splinter the CIA into a thousand pieces and scatter it to the winds.\" Thirteen months after JFK's assassination, the man he fired was appointed by Lyndon Johnson to the seven-member commission tasked with investigating the murder. This would be like appointing a fired employee to investigate the death of the boss who fired him.\\n\\n🟢 DOCUMENTED: Dulles dominated the Warren Commission's proceedings. He attended more sessions than any other commissioner — far more than Chief Justice Earl Warren himself. Dulles controlled the flow of CIA information to the Commission, personally deciding what the agency would and would not share. At one early session, Dulles distributed copies of a book arguing that American assassins are always lone nuts — setting the narrative framework before evidence was examined.\\n\\n🟢 DOCUMENTED: In 1997, declassified documents revealed that Commissioner Gerald Ford secretly altered the description of JFK's back wound, moving its location upward from \"the uppermost back\" to \"the back of the neck.\" This seemingly small change was critical — it made the single-bullet trajectory geometrically possible. Without this alteration, the \"magic bullet\" theory collapses because a bullet entering the upper back cannot exit the throat on a downward trajectory and then go on to wound Governor Connally.\\n\\n🟢 DOCUMENTED: The single-bullet theory (Commission Exhibit 399) requires that one bullet entered JFK's back/neck, exited his throat, entered Governor Connally's back, shattered his fifth rib, exited his chest, entered his right wrist, shattered his radius bone, exited his wrist, and embedded in his left thigh — causing seven wounds in two men. The bullet was found on a stretcher at Parkland Hospital in nearly pristine condition, having allegedly lost only 1.5% of its mass despite supposedly shattering two bones.\\n\\n🟢 DOCUMENTED: The House Select Committee on Assassinations (HSCA), convened in 1976-1979, concluded that President Kennedy \"was probably assassinated as a result of a conspiracy\" based on acoustic evidence from a Dallas police Dictabelt recording. The analysis indicated a 95% probability that a second shooter fired from the grassy knoll. This official US government conclusion of probable conspiracy has been largely memory-holed.\\n\\n🟢 DOCUMENTED (declassified): CIA Document 1035-960, dated January 1967, was an internal CIA dispatch titled \"Countering Criticism of the Warren Report.\" It instructed CIA media assets worldwide to deploy specific talking points against Warren Commission critics: question their motives, suggest they are financially motivated, cite the \"official evidence,\" accuse them of being wedded to theories before evidence, and label them \"conspiracy theorists.\" This document is the origin of \"conspiracy theory\" as a weaponized pejorative term. It was declassified through FOIA requests.\\n\\n🟡 CREDIBLE (methodology debated): In 1967, the London Sunday Times engaged an actuarial consultant to calculate the odds of 18 material witnesses to the assassination dying within three years. The calculated odds were approximately 100,000 trillion to one against such a pattern occurring by chance. While the methodology has been debated, the pattern of witness deaths — including gunshots, car accidents, suicides, and karate chops to the neck — remains statistically anomalous.\\n\\n🟢 DOCUMENTED: Abraham Zapruder's 8mm film — the most important visual evidence of the assassination — was purchased by Time-Life Inc. for $150,000 (over $1.4 million in today's dollars). Henry Luce's media empire locked the film in a vault for 12 years, publishing only selected individual frames. The American public was not allowed to see the film as a motion picture until March 6, 1975, when Geraldo Rivera broadcast a bootleg copy on ABC's Goodnight America. Henry Luce had a well-documented relationship with the CIA through Operation Mockingbird.\\n\\n🟡 CREDIBLE: At least 28 Warren Commission staff members and commissioners had CIA or intelligence community connections, according to researcher Lisa Pease and others. The Commission never seriously investigated a conspiracy angle — its internal memos reveal the mandate was to confirm the lone-gunman conclusion and prevent \"rumors\" of conspiracy from destabilizing US-Soviet relations.\\n\\n🟡 CREDIBLE: The Warren Commission's own general counsel, J. Lee Rankin, told commissioners in a January 1964 executive session that they had a problem: the FBI had concluded its investigation (finding Oswald acted alone) and the Commission's role was essentially to rubber-stamp that conclusion. The transcript reveals commissioners discussing how to appear independent while arriving at the predetermined conclusion.",
+    "evidence": [
+      {
+        "text": "Allen Dulles, fired as CIA Director by JFK in November 1961, was appointed by LBJ to the Warren Commission investigating JFK's murder — and attended more sessions than any other commissioner.",
+        "tier": "documented",
+        "source": "Warren Commission records; CIA personnel files; Commission session attendance records"
+      },
+      {
+        "text": "Gerald Ford secretly moved the description of JFK's back wound upward from 'uppermost back' to 'back of the neck' in the Warren Report, making the single-bullet trajectory geometrically possible — confirmed by declassified documents in 1997.",
+        "tier": "documented",
+        "source": "Declassified Ford handwritten edits (1997); Associated Press report, July 1997"
+      },
+      {
+        "text": "CIA Document 1035-960 (January 1967) instructed CIA media assets worldwide to deploy specific talking points against Warren Commission critics and weaponize the term 'conspiracy theorist' — declassified through FOIA.",
+        "tier": "documented",
+        "source": "CIA Document 1035-960 (declassified); FOIA release records"
+      },
+      {
+        "text": "The HSCA concluded in 1979 that JFK 'was probably assassinated as a result of a conspiracy' based on acoustic evidence showing 95% probability of a second shooter from the grassy knoll.",
+        "tier": "documented",
+        "source": "HSCA Final Report (1979); Bolt Beranek and Newman acoustic analysis"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Warren Commission Report (1964)",
+        "url": "https://www.archives.gov/research/jfk/warren-commission-report"
+      },
+      {
+        "label": "HSCA Final Report (1979)",
+        "url": "https://www.archives.gov/research/jfk/select-committee-report"
+      },
+      {
+        "label": "CIA Document 1035-960 (declassified)",
+        "url": "https://www.maryferrell.org/showDoc.html?docId=53510"
+      },
+      {
+        "label": "David Talbot — The Devil's Chessboard (2015)",
+        "url": "https://www.simonandschuster.com/books/The-Devils-Chessboard/David-Talbot/9780062276179"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "jfk-media-management",
+    "branch": "media",
+    "ring": 3,
+    "title": "JFK: Media Management & Cultural Control",
+    "description": "How the lone-gunman narrative was constructed and maintained — from Life Magazine locking away the Zapruder film to CIA Document 1035-960 weaponizing 'conspiracy theory' as a term of dismissal.",
+    "fullDescription": "The lone-gunman narrative was not maintained by evidence — it was maintained by media control. From Day One, the information ecosystem was managed to suppress contradictory evidence and marginalize questioners.\\n\\n🟢 DOCUMENTED: Life Magazine, owned by Henry Luce's Time-Life Inc., purchased the Zapruder film from Abraham Zapruder for $150,000 on November 25, 1963 — just three days after the assassination. The film was immediately locked in a vault. Life published only selected individual frames, carefully choosing which moments the public could see as still photographs. The film was never shown as a motion picture — the format that reveals the backward head snap at frame 313. For twelve years, the most important piece of visual evidence in the assassination was hidden from the American public.\\n\\n🟢 DOCUMENTED: Henry Luce, founder of Time, Life, and Fortune magazines, had a documented relationship with the CIA through Operation Mockingbird — the agency's program to influence domestic and foreign media. Luce provided cover for CIA operatives, published agency-approved content, and had direct relationships with senior CIA officials. His decision to lock away the Zapruder film served the agency's narrative interests perfectly.\\n\\n🟢 DOCUMENTED (declassified): CIA Document 1035-960, dispatched in January 1967, provided detailed instructions to CIA stations worldwide for countering criticism of the Warren Report. The document instructed assets to: (1) claim that no significant new evidence has emerged, (2) argue that critics are wedded to theories adopted before the evidence was in, (3) accuse critics of being financially motivated, (4) suggest that large-scale conspiracies are impossible to conceal, and (5) deploy the term \"conspiracy theorists\" as a pejorative label. This was a coordinated global propaganda campaign to suppress legitimate inquiry into a president's murder.\\n\\n🟡 CREDIBLE: In the years following the Warren Report, over 100 books were published attacking Warren Commission critics. Many of these authors had intelligence community connections, and the coordinated nature of the publishing campaign suggests organized effort beyond organic market demand.\\n\\n🟢 DOCUMENTED: New Orleans District Attorney Jim Garrison launched the only criminal prosecution related to the JFK assassination, charging CIA-connected businessman Clay Shaw with conspiracy in 1967. Before the trial, NBC broadcast an unprecedented prime-time special attacking Garrison's investigation — devoting an entire hour of network television to discrediting a local prosecutor. The Saturday Evening Post, Newsweek, and other major outlets ran coordinated hit pieces. Garrison later wrote: \"I finally understood that the function of the establishment press was to protect the establishment.\"\\n\\n🟢 DOCUMENTED: Clay Shaw denied under oath any connection to the CIA, and the media uniformly backed his denial. Garrison lost the case. Then in 1979, the CIA admitted to the HSCA that Shaw had been a CIA contact — exactly what Garrison had alleged and the media had ridiculed him for claiming. Richard Helms, former CIA Director, confirmed Shaw's CIA connection under oath. No major media outlet issued a correction or apologized for their attacks on Garrison.\\n\\n🟡 CREDIBLE: The HSCA's 1979 conclusion of \"probable conspiracy\" received minimal media coverage relative to its significance. An official US government investigation had overturned the Warren Commission's central finding, yet the media continued to treat the lone-gunman theory as settled fact. The acoustic evidence and conspiracy conclusion were quickly memory-holed.\\n\\n🟢 DOCUMENTED: Oliver Stone's 1991 film \"JFK\" triggered a massive coordinated media backlash — the Washington Post, New York Times, and other major outlets attacked the film before it was even released, with access to the script but not the film itself. However, the public response was so overwhelming that it directly led to the JFK Records Act of 1992, signed by President George H.W. Bush, which mandated the release of millions of pages of assassination-related documents.\\n\\n🟢 DOCUMENTED: Despite the JFK Records Act's mandate for full release by 2017, successive presidents — Obama, Trump, and Biden — delayed full disclosure, citing \"national security\" concerns more than 60 years after the event. If Oswald truly acted alone, what national security interest could possibly require continued secrecy?\\n\\n🟡 CREDIBLE: The media's role in maintaining the lone-gunman narrative for over six decades — despite the HSCA's official conspiracy conclusion, despite millions of declassified documents showing intelligence community involvement with Oswald, despite multiple confessions and deathbed statements — represents one of the most successful sustained information management operations in American history.",
+    "evidence": [
+      {
+        "text": "Life Magazine purchased the Zapruder film for $150,000 three days after the assassination and locked it in a vault for 12 years, preventing the public from seeing it as a motion picture until Geraldo Rivera's 1975 broadcast.",
+        "tier": "documented",
+        "source": "Time-Life corporate records; Zapruder family litigation records; ABC Goodnight America broadcast (March 6, 1975)"
+      },
+      {
+        "text": "CIA Document 1035-960 (January 1967) provided specific instructions to CIA stations worldwide to deploy the term 'conspiracy theorists' as a pejorative and attack Warren Commission critics using coordinated talking points.",
+        "tier": "documented",
+        "source": "CIA Document 1035-960 (declassified via FOIA); New York Times FOIA reporting"
+      },
+      {
+        "text": "Clay Shaw's CIA connection was denied by the agency and the media during Garrison's prosecution, then confirmed by CIA Director Richard Helms under oath to the HSCA in 1979.",
+        "tier": "documented",
+        "source": "HSCA testimony of Richard Helms; CIA personnel records; Garrison trial transcripts"
+      },
+      {
+        "text": "Oliver Stone's 'JFK' (1991) directly led to the JFK Records Act of 1992, mandating release of millions of pages of classified assassination records — demonstrating the power of cultural products to force institutional transparency.",
+        "tier": "documented",
+        "source": "JFK Records Act of 1992 (Public Law 102-526); Congressional Record; ARRB Final Report"
+      }
+    ],
+    "sources": [
+      {
+        "label": "CIA Document 1035-960 (declassified)",
+        "url": "https://www.maryferrell.org/showDoc.html?docId=53510"
+      },
+      {
+        "label": "Lance deHaven-Smith — Conspiracy Theory in America (2013)",
+        "url": "https://utpress.utexas.edu/9780292743793/"
+      },
+      {
+        "label": "Jim DiEugenio — Destiny Betrayed: JFK, Cuba, and the Garrison Case (2012)",
+        "url": "https://www.skyhorsepublishing.com/9781620870945/destiny-betrayed/"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "jfk-forensic-evidence",
+    "branch": "science",
+    "ring": 3,
+    "title": "JFK: Forensic & Ballistic Evidence",
+    "description": "Physical evidence contradicting the lone-gunman theory — frontal head snap on film, Parkland doctors' rear exit wound, the 'pristine' magic bullet, HSCA acoustic evidence, and a missing brain.",
+    "fullDescription": "The physical and forensic evidence in the JFK assassination does not support the lone-gunman conclusion. It contradicts it at nearly every turn. The evidence was altered, suppressed, or destroyed — and what survived tells a story fundamentally different from the Warren Report.\\n\\n🟢 DOCUMENTED (visible on film): Zapruder film frame 313 shows the moment of the fatal head shot. President Kennedy's head snaps violently backward and to the left — a movement consistent with a shot from the right front (the grassy knoll area), not from the Texas School Book Depository behind and above. The Warren Commission's explanation — a \"jet effect\" from exiting brain matter — was not supported by subsequent ballistic testing. This single frame is why Life Magazine locked the film in a vault for twelve years.\\n\\n🟢 DOCUMENTED (contemporaneous medical records): Parkland Memorial Hospital doctors who treated JFK in Trauma Room One described the head wound consistently and repeatedly. Dr. Robert McClelland, Dr. Malcolm Perry, Dr. Charles Carrico, Dr. Marion Jenkins, and others described a large avulsive wound in the occipital-parietal region — the rear of the head — consistent with an exit wound from a frontal entry. Dr. McClelland, who held the president's head, described the cerebellum falling out of the rear wound. Dr. Perry described the throat wound as an \"entrance wound\" at the initial press conference.\\n\\n🟢 DOCUMENTED: The Bethesda autopsy photographs, taken hours later under military control, show the wound at the top and right side of the head — fundamentally different from what the Parkland doctors described. This discrepancy between what experienced trauma surgeons saw under direct observation and what autopsy photographs later depicted has never been reconciled.\\n\\n🟢 DOCUMENTED: Commission Exhibit 399, the \"magic bullet,\" was found on a stretcher at Parkland Hospital in nearly pristine condition — its copper jacket virtually intact, its lands and grooves clearly visible. This bullet allegedly entered JFK's back, exited his throat, entered Governor Connally's back, shattered his fifth rib, exited his chest, entered his right wrist, shattered his radius bone, exited his wrist, and lodged in his left thigh. Seven wounds, two men, two shattered bones — and the bullet lost only 1.5% of its mass. Test bullets fired into cadaver wrists were severely deformed.\\n\\n🟢 DOCUMENTED (NAS later contested methodology): The House Select Committee on Assassinations commissioned Bolt Beranek and Newman to analyze a Dallas police Dictabelt recording from a motorcycle with an open microphone in the motorcade. The acoustic analysis found with 95% certainty that four shots were fired — three from the Texas School Book Depository and one from the grassy knoll. This was the basis for the HSCA's conclusion of \"probable conspiracy.\" The National Academy of Sciences later contested the methodology, but subsequent re-analyses by Dr. Donald Thomas and others have supported the original findings.\\n\\n🟢 DOCUMENTED (confirmed missing): President Kennedy's brain — the single most important piece of forensic evidence that could definitively determine the direction of the fatal shot — disappeared from the National Archives. It was reportedly placed in a locked cabinet after the autopsy but was gone when the Archives conducted an inventory. Robert Kennedy may have taken it to prevent it from becoming a macabre curiosity, but no confirmed chain of custody exists. The loss of this evidence is either the most consequential act of sentimentality in forensic history or a deliberate destruction of proof.\\n\\n🟡 CREDIBLE: Multiple witnesses to the autopsy — including autopsy photographer John Stringer and FBI agents Francis O'Neill and James Sibert — later stated that autopsy photographs shown to them did not match what they observed in the morgue. Stringer stated the brain photographs were not the ones he took. This suggests photographic alteration or substitution.\\n\\n🟢 DOCUMENTED: The chain of custody for critical physical evidence was broken repeatedly. The presidential limousine was cleaned and rebuilt before forensic examination was complete. Bullet fragments were handled by multiple people. JFK's clothing was not properly preserved. Governor Connally's clothing was dry-cleaned before examination. Each break in the chain compromises evidentiary integrity.\\n\\n🟢 DOCUMENTED: In 2007, researchers Erik Randich and Patrick Grant published a peer-reviewed study in the Journal of Forensic Sciences debunking the FBI's Neutron Activation Analysis (NAA) — the metallurgical evidence the government used to match bullet fragments to the \"magic bullet\" CE 399. The study demonstrated that the composition of Mannlicher-Carcano ammunition was too variable for the FBI's matching methodology to be valid. A central pillar of the physical evidence linking all fragments to Oswald's rifle was scientifically demolished.\\n\\n🟢 DOCUMENTED (witness statements compiled): Of 121 witnesses in Dealey Plaza whose statements were recorded, 51 reported that shots came from the grassy knoll area to the right front of the motorcade. This is 42% of earwitnesses — a substantial proportion pointing to a location inconsistent with the lone-gunman theory. Additional witnesses reported seeing smoke, smelling gunpowder, and seeing suspicious individuals behind the picket fence atop the knoll.",
+    "evidence": [
+      {
+        "text": "Zapruder film frame 313 shows JFK's head snapping violently backward and to the left upon the fatal impact — a movement consistent with a frontal shot from the grassy knoll area, not from the Book Depository behind.",
+        "tier": "documented",
+        "source": "Zapruder film (1963); frame-by-frame analysis published in multiple studies"
+      },
+      {
+        "text": "Parkland Hospital doctors (McClelland, Perry, Clark, Jenkins, Carrico) consistently described a large exit wound at the rear of JFK's head (occipital-parietal) and a throat entry wound — contradicting the Bethesda autopsy photographs showing a wound at the top-right of the skull.",
+        "tier": "documented",
+        "source": "Parkland Hospital medical records; Warren Commission testimony of attending physicians; ARRB depositions"
+      },
+      {
+        "text": "JFK's brain — the single most important forensic specimen for determining shot direction — is confirmed missing from the National Archives with no verified chain of custody.",
+        "tier": "documented",
+        "source": "National Archives inventory records; ARRB investigation; HSCA records"
+      },
+      {
+        "text": "The FBI's Neutron Activation Analysis matching bullet fragments to CE 399 was scientifically debunked by Randich and Grant's 2007 peer-reviewed study showing Mannlicher-Carcano ammunition composition was too variable for valid forensic matching.",
+        "tier": "documented",
+        "source": "Randich & Grant, Journal of Forensic Sciences (2007); Texas A&M University research"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Zapruder Film (1963) — Sixth Floor Museum / National Archives",
+        "url": "https://www.archives.gov/research/jfk"
+      },
+      {
+        "label": "HSCA Forensic Pathology Panel Report (1979)",
+        "url": "https://www.archives.gov/research/jfk/select-committee-report"
+      },
+      {
+        "label": "Parkland Hospital Medical Records — Warren Commission Volumes",
+        "url": "https://www.history-matters.com/archive/jfk/wc/wcvols/contents.htm"
+      },
+      {
+        "label": "Randich & Grant — NAA Bullet Lead Analysis Study, Journal of Forensic Sciences (2007)",
+        "url": "https://doi.org/10.1111/j.1556-4029.2006.00331.x"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "jfk-cui-bono",
+    "branch": "power",
+    "ring": 2,
+    "title": "JFK: Cui Bono — Who Benefited?",
+    "description": "Every major power faction JFK challenged gained from his death — LBJ reversed Vietnam withdrawal within days, the CIA survived, the military-industrial complex got its war, and organized crime escaped prosecution.",
+    "fullDescription": "The question \"cui bono\" — who benefits — is the oldest investigative principle. In the case of JFK's assassination, every single major institutional and personal adversary of Kennedy gained from his death. No other event in American history produced such a comprehensive reversal of one president's policies by his successor in so short a time.\\n\\n🟢 DOCUMENTED: Lyndon Baines Johnson assumed the presidency and within days reversed JFK's Vietnam withdrawal policy. NSAM 263, signed by Kennedy on October 11, 1963, ordered the withdrawal of 1,000 military advisors by end of 1963 and projected full withdrawal by 1965. NSAM 273, signed by LBJ on November 26, 1963 — just four days after the assassination — reversed this trajectory and set the stage for massive escalation. By 1968, over 500,000 American troops were in Vietnam.\\n\\n🟡 CREDIBLE: Madeleine Duncan Brown, LBJ's longtime mistress, testified that Johnson told her on the evening of November 21, 1963 — at a gathering at Clint Murchison's Dallas home attended by H.L. Hunt, J. Edgar Hoover, and others — \"After tomorrow, those Kennedys will never embarrass me again. That's not a threat — that's a promise.\" Brown's credibility has been debated, but her relationship with LBJ and the birth of their son Steven are documented.\\n\\n🟢 DOCUMENTED: The CIA was JFK's primary institutional adversary. After the Bay of Pigs disaster, Kennedy fired CIA Director Allen Dulles, Deputy Director Charles Cabell, and Deputy Director of Plans Richard Bissell — the entire top leadership. Kennedy reportedly told an aide (as reported by New York Times columnist Arthur Krock) that he wanted to \"splinter the CIA into a thousand pieces and scatter it to the winds.\" JFK created the Defense Intelligence Agency (DIA) to break the CIA's intelligence monopoly. After JFK's death, the CIA not only survived but expanded its power dramatically.\\n\\n🟢 DOCUMENTED: The military-industrial complex was the clearest beneficiary. President Eisenhower warned of its power in his January 1961 farewell address. The Vietnam War, which JFK was moving to end, became the defining conflict of the Cold War era — costing an estimated $738 billion in today's dollars, killing over 58,000 Americans and millions of Vietnamese. Defense contractors — Lockheed, General Dynamics, Bell Helicopter, Dow Chemical — reaped enormous profits.\\n\\n🟢 DOCUMENTED / 🟠 INFERENCE (debate on significance): On June 4, 1963, President Kennedy signed Executive Order 11110, which authorized the Treasury Department to issue silver certificates — United States Notes backed by silver, issued directly by the Treasury rather than through the Federal Reserve System. The order itself is documented fact. Its significance is debated: some researchers argue it represented a direct challenge to Federal Reserve authority that would have diminished private banking control over money creation; others contend it was merely a technical administrative measure related to silver policy. LBJ did not continue the silver certificate program.\\n\\n🟡 CREDIBLE / 🟢 DOCUMENTED (LBJ preserved it): Kennedy planned to eliminate the oil depletion allowance — a massive tax subsidy worth billions to Texas oil interests including H.L. Hunt (the richest man in America), Clint Murchison, and Sid Richardson. These men despised Kennedy for threatening their financial interests and had the resources to finance covert operations. LBJ preserved the oil depletion allowance throughout his presidency.\\n\\n🟢 DOCUMENTED: Robert F. Kennedy's aggressive prosecution of organized crime effectively ended with JFK's death. RFK had pursued Jimmy Hoffa (convicted 1964 but prosecutions initiated pre-assassination), Carlos Marcello (New Orleans Mafia boss deported by RFK), and Santos Trafficante (Tampa boss, CIA-Mafia plot participant) with unprecedented vigor. Prosecutions of organized crime dropped dramatically under LBJ — Marcello's deportation was reversed and he returned to full power.\\n\\n🟡 CREDIBLE: Carlos Marcello, the New Orleans Mafia boss who had been physically deported to Guatemala by Robert Kennedy, allegedly confessed to involvement in the JFK assassination to an FBI informant (codenamed CAMTEX) while in federal prison. According to the informant's report, Marcello stated: \"Yeah, I had the son of a bitch killed. I'm glad I did. I'm sorry I couldn't have done it myself.\" The CAMTEX reports were classified for decades.\\n\\n🟢 DOCUMENTED: Anti-Castro Cuban exiles felt profoundly betrayed by JFK's withdrawal of air support at the Bay of Pigs. Brigade 2506 survivors blamed Kennedy personally for the deaths of their comrades and the failure to liberate Cuba. This community provided a pool of motivated, trained, and violent individuals with intelligence community connections.\\n\\n🟢 DOCUMENTED: JFK opposed Israel's secret nuclear weapons program at Dimona. Kennedy wrote increasingly forceful letters to Israeli Prime Minister David Ben-Gurion demanding inspections of the Dimona facility, insisting Israel not develop nuclear weapons. Ben-Gurion resigned rather than comply. After JFK's death, LBJ completely reversed this policy, allowing Israel to develop nuclear weapons under a policy of deliberate ambiguity that continues to this day.\\n\\n🟡 CREDIBLE: LBJ reversed JFK's plan to award the TFX fighter-bomber contract (later the F-111) away from General Dynamics, a Texas-based defense contractor. Navy Secretary Fred Korth, a Fort Worth banker with financial ties to General Dynamics, had been forced to resign by JFK over the conflict of interest. The contract, worth billions, stayed with General Dynamics under LBJ.",
+    "evidence": [
+      {
+        "text": "NSAM 263 (Oct 11, 1963) ordered withdrawal of 1,000 advisors from Vietnam by end of 1963. NSAM 273 (Nov 26, 1963) — signed by LBJ four days after assassination — reversed the withdrawal trajectory and set the stage for escalation to 500,000 troops.",
+        "tier": "documented",
+        "source": "NSAM 263 and NSAM 273 (National Archives); The Pentagon Papers"
+      },
+      {
+        "text": "Executive Order 11110, signed by JFK on June 4, 1963, authorized the Treasury to issue silver certificates (United States Notes) — its significance in challenging Federal Reserve authority remains debated but the order itself is documented.",
+        "tier": "documented",
+        "source": "Executive Order 11110 (Federal Register, June 4, 1963); National Archives"
+      },
+      {
+        "text": "RFK's organized crime prosecution statistics dropped dramatically after JFK's assassination — Marcello's deportation was reversed, Hoffa prosecution momentum stalled, and LBJ showed no interest in continuing the anti-mob campaign.",
+        "tier": "documented",
+        "source": "Department of Justice prosecution records; FBI organized crime statistics; Robert Kennedy biographies"
+      },
+      {
+        "text": "JFK's letters to Israeli PM Ben-Gurion demanding Dimona nuclear inspections are documented — Ben-Gurion resigned rather than comply, and LBJ completely reversed Kennedy's non-proliferation policy toward Israel.",
+        "tier": "documented",
+        "source": "Kennedy-Ben-Gurion correspondence (declassified); Avner Cohen — Israel and the Bomb (1998)"
+      }
+    ],
+    "sources": [
+      {
+        "label": "NSAM 263 and NSAM 273 — National Archives",
+        "url": "https://www.archives.gov/research/jfk"
+      },
+      {
+        "label": "Executive Order 11110 — Federal Register",
+        "url": "https://www.archives.gov/federal-register/executive-orders/1963.html"
+      },
+      {
+        "label": "Church Committee — Select Committee to Study Governmental Operations (1975)",
+        "url": "https://www.intelligence.senate.gov/sites/default/files/94465.pdf"
+      },
+      {
+        "label": "Avner Cohen — Israel and the Bomb (1998)",
+        "url": "https://www.columbia.edu/cgi-bin/cul/resolve?clio5765274"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "covid-gain-of-function",
+    "branch": "health",
+    "ring": 2,
+    "title": "Gain-of-Function Research & Lab Origins",
+    "description": "The trail from NIH-funded gain-of-function research at the Wuhan Institute of Virology to the DEFUSE proposal, the furin cleavage site anomaly, and the systematic suppression of the lab-leak hypothesis.",
+    "fullDescription": "\ud83d\udfe2 DOCUMENTED: The Wuhan Institute of Virology (WIV) is a BSL-4 laboratory that was actively studying bat coronaviruses, located in the very city where the COVID-19 outbreak began. EcoHealth Alliance, led by Peter Daszak, funneled NIH/NIAID grants to the WIV \u2014 at least $600K in direct funding, with potentially more via sub-grants, as confirmed by NIH grant records.\\n\\n\ud83d\udfe2 DOCUMENTED: In 2018, the DEFUSE proposal was submitted to DARPA by EcoHealth Alliance. The proposal explicitly described inserting furin cleavage sites into SARS-like coronaviruses. DARPA rejected the proposal as too dangerous, but the research may have continued with other funding sources. These documents were leaked via the DRASTIC research group in 2021. The furin cleavage site found in SARS-CoV-2 is absent in all known close relatives (RaTG13, BANAL series), making it highly unusual for natural emergence according to genomic analysis.\\n\\n\ud83d\udfe2 DOCUMENTED: Ralph Baric at UNC Chapel Hill conducted chimeric virus research in 2015, creating a chimeric SARS-like virus capable of infecting human airway cells, published in Nature Medicine. This demonstrated the technical feasibility of engineering coronaviruses for enhanced human infectivity.\\n\\n\ud83d\udfe2 DOCUMENTED: The NIH imposed a moratorium on gain-of-function research from October 2014 to December 2017. When the moratorium was lifted under Fauci's NIAID, the replacement P3CO framework was significantly weakened. \ud83d\udfe1 CREDIBLE: The EcoHealth Alliance grant continued during the moratorium period \u2014 NIH claimed the work did not qualify as gain-of-function research.\\n\\n\ud83d\udfe2 DOCUMENTED: The \\\"Proximal Origin\\\" paper (Andersen et al., Nature Medicine, March 2020) publicly dismissed the lab leak hypothesis. However, FOIA'd Slack and email messages revealed that the authors privately believed a lab leak was \\\"highly likely\\\" during the Feb 1-2, 2020 teleconference. One Slack message read: \\\"I just can't figure out how this gets accomplished in nature.\\\" Fauci organized this Feb 1 teleconference after reading lab leak concerns; within days, participants reversed their positions.\\n\\n\ud83d\udfe2 DOCUMENTED: The Senate HELP Committee Minority Report (October 2022) concluded that a lab origin was \\\"most likely\\\" based on available evidence. The WIV database of bat virus sequences was taken offline in September 2019 \u2014 months before the official outbreak announcement and never restored. \ud83d\udfe1 CREDIBLE: Three WIV researchers were hospitalized with COVID-like symptoms in November 2019, according to a US intelligence assessment.",
+    "evidence": [
+      {
+        "text": "DEFUSE proposal submitted to DARPA in 2018 explicitly described inserting furin cleavage sites into SARS-like coronaviruses; rejected as too dangerous.",
+        "tier": "documented",
+        "source": "DARPA DEFUSE proposal, leaked via DRASTIC (2021)"
+      },
+      {
+        "text": "NIH grant records confirm at least $600K in funding flowed from EcoHealth Alliance to the Wuhan Institute of Virology for bat coronavirus research.",
+        "tier": "documented",
+        "source": "NIH RePORTER grant database"
+      },
+      {
+        "text": "Proximal Origin authors privately called lab leak \"highly likely\" in Slack messages during Feb 1-2, 2020 teleconference, then publicly dismissed it in their March 2020 paper.",
+        "tier": "documented",
+        "source": "FOIA'd Slack/email messages (2023)"
+      },
+      {
+        "text": "WIV's database of bat virus sequences was taken offline in September 2019, months before the official outbreak announcement, and has never been restored.",
+        "tier": "documented",
+        "source": "Internet archives and WIV institutional records"
+      },
+      {
+        "text": "Senate HELP Committee Minority Report concluded that a research-related incident at the WIV was the \"most likely\" origin of SARS-CoV-2.",
+        "tier": "documented",
+        "source": "Senate HELP Committee Minority Report (October 2022)"
+      }
+    ],
+    "sources": [
+      {
+        "label": "DEFUSE Proposal (DARPA, leaked 2021)",
+        "url": "https://drasticresearch.org/2021/09/20/the-defuse-project-documents/"
+      },
+      {
+        "label": "NIH Grant Records (RePORTER)",
+        "url": "https://reporter.nih.gov/"
+      },
+      {
+        "label": "Andersen et al. \"Proximal Origin\" + FOIA'd Communications",
+        "url": "https://www.nature.com/articles/s41591-020-0820-9"
+      },
+      {
+        "label": "Senate HELP Committee Report (2022)",
+        "url": "https://www.help.senate.gov/imo/media/doc/report_an_analysis_of_the_origins_of_covid-19_102722.pdf"
+      },
+      {
+        "label": "Baric et al. Nature Medicine (2015)",
+        "url": "https://www.nature.com/articles/nm.3985"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "covid-pharma-eua",
+    "branch": "health",
+    "ring": 2,
+    "title": "Pharma, EUAs & the Vaccine Rollout",
+    "description": "Emergency Use Authorization required no adequate alternative to exist — creating incentive to suppress early treatments. $100B+ in revenue, liability shields, revolving-door regulators, and 329,000 pages of trial data Pfizer wanted sealed for 75 years.",
+    "fullDescription": "\ud83d\udfe2 DOCUMENTED: The Emergency Use Authorization (EUA) legal framework under 21 USC \u00a7360bbb-3 requires that \\\"no adequate, approved, and available alternative\\\" exists for the condition in question. This created a structural incentive to suppress or discredit any early treatment protocols that might have qualified as an adequate alternative.\\n\\n\ud83d\udfe2 DOCUMENTED: The suppression of ivermectin and hydroxychloroquine (HCQ) as early treatments became deeply controversial. The Surgisphere study published in The Lancet \u2014 which was used to halt HCQ trials worldwide \u2014 was retracted after the underlying data was found to be fabricated. Despite this retraction, the damage to HCQ research momentum was already done.\\n\\n\ud83d\udfe2 DOCUMENTED: Pfizer's BNT162b2 trial reported 95% relative risk reduction (8 infections in 18,198 vaccinated vs. 162 in 18,325 placebo). However, the absolute risk reduction was only 0.84%, a framing distinction rarely communicated to the public. \ud83d\udfe1 CREDIBLE: The choice to emphasize relative over absolute risk reduction in public messaging was a deliberate communications strategy.\\n\\n\ud83d\udfe2 DOCUMENTED: Pfizer's 6-month follow-up data showed more all-cause deaths in the vaccine group (21) than in the placebo group (17). While not statistically significant, this finding raised questions that were largely ignored in mainstream coverage.\\n\\n\ud83d\udfe2 DOCUMENTED: Moderna's mRNA-1273 vaccine was designed in just 2 days (January 13, 2020) \u2014 before the virus was even officially sequenced publicly \u2014 raising questions about prior knowledge of the viral sequence. This timeline is confirmed in Moderna's SEC filings and CEO St\u00e9phane Bancel's testimony.\\n\\n\ud83d\udfe2 DOCUMENTED: The PREP Act (Public Readiness and Emergency Preparedness Act of 2005) grants manufacturers, distributors, and administrators broad immunity from liability during a declared public health emergency. Combined with EUA protections, vaccine makers faced essentially zero legal risk.\\n\\n\ud83d\udfe2 DOCUMENTED: Pfizer and Moderna generated over $100 billion in combined revenue from COVID vaccines, according to their financial reports. The revolving door between regulators and industry was stark: Scott Gottlieb served as FDA Commissioner (2017-2019) before joining Pfizer's board of directors; Stephen Hahn served as FDA Commissioner (2019-2021) before joining Flagship Pioneering, Moderna's founding venture firm.\\n\\n\ud83d\udfe2 DOCUMENTED: VAERS (Vaccine Adverse Event Reporting System) recorded an unprecedented volume of adverse event reports following COVID vaccination. The system's limitations \u2014 passive reporting, no causation determination \u2014 were used both to dismiss and elevate concerns depending on perspective.\\n\\n\ud83d\udfe2 DOCUMENTED: When PHMPT (Public Health and Medical Professionals for Transparency) sued the FDA for Pfizer's trial documents, the FDA initially proposed releasing them over 75 years. Federal Judge Mark Pittman ordered a rolling release of 329,000+ pages, calling the delay \\\"dystopian.\\\"\\n\\n\ud83d\udfe2 DOCUMENTED: The myocarditis signal in young males was initially denied by health authorities, then acknowledged by the CDC. Nordic studies showed elevated rates of myocarditis especially after the Moderna vaccine. Waning efficacy led to repeated booster recommendations, and the definition of \\\"fully vaccinated\\\" was changed multiple times.",
+    "evidence": [
+      {
+        "text": "EUA statute (21 USC §360bbb-3) explicitly requires that \"no adequate, approved, and available alternative\" exists, creating structural incentive to suppress early treatments.",
+        "tier": "documented",
+        "source": "21 USC §360bbb-3 — Federal Food, Drug, and Cosmetic Act"
+      },
+      {
+        "text": "The Lancet retracted the Surgisphere hydroxychloroquine study after fabricated data was exposed, but the study had already been used to halt HCQ trials worldwide.",
+        "tier": "documented",
+        "source": "The Lancet retraction notice (June 2020)"
+      },
+      {
+        "text": "Pfizer's 6-month trial data showed 21 all-cause deaths in the vaccine group vs. 17 in the placebo group.",
+        "tier": "documented",
+        "source": "Pfizer BNT162b2 6-month supplementary data (NEJM 2021)"
+      },
+      {
+        "text": "FDA/Pfizer sought to delay release of 329,000+ pages of trial documents for 75 years; federal judge ordered rolling release.",
+        "tier": "documented",
+        "source": "PHMPT v. FDA, Judge Mark Pittman order (Jan 2022)"
+      },
+      {
+        "text": "Moderna designed the mRNA-1273 vaccine sequence in 2 days (January 13, 2020), before the virus sequence was publicly available.",
+        "tier": "documented",
+        "source": "Moderna SEC filings and Stéphane Bancel congressional testimony"
+      }
+    ],
+    "sources": [
+      {
+        "label": "21 USC §360bbb-3 (EUA Statute)",
+        "url": "https://www.law.cornell.edu/uscode/text/21/360bbb-3"
+      },
+      {
+        "label": "Pfizer BNT162b2 Trial (NEJM 2020)",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2034577"
+      },
+      {
+        "label": "PREP Act (2005)",
+        "url": "https://www.congress.gov/109/plaws/publ148/PLAW-109publ148.htm"
+      },
+      {
+        "label": "PHMPT v. FDA Court Order",
+        "url": "https://phmpt.org/court-documents/"
+      },
+      {
+        "label": "Moderna SEC Filings",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001682852"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "covid-biodefense-complex",
+    "branch": "power",
+    "ring": 2,
+    "title": "The Biodefense-Industrial Complex",
+    "description": "From Fort Detrick to DARPA bio-programs to Event 201 — the institutional infrastructure that funded gain-of-function research, ran pandemic simulations months before COVID, and profited from the response.",
+    "fullDescription": "\ud83d\udfe2 DOCUMENTED: DARPA (Defense Advanced Research Projects Agency) has funded dual-use biological research programs since the 2000s, including programs like PREDICT, PREEMPT, and the controversial DEFUSE proposal. These programs blurred the line between biodefense and bioweapons capability development.\\n\\n\ud83d\udfe2 DOCUMENTED: Fort Detrick, Maryland has a long history as the center of US biological programs. The US offensive bioweapons program operated from 1943 to 1969, when it was officially converted to \\\"defensive\\\" research under Nixon's executive order. The facility still houses USAMRIID (United States Army Medical Research Institute of Infectious Diseases), one of the world's premier biodefense laboratories.\\n\\n\ud83d\udfe2 DOCUMENTED: The Project BioShield Act (2004) allocated $5.6 billion for biodefense countermeasures, enacted in the post-9/11 and post-anthrax attacks environment. BARDA (Biomedical Advanced Research and Development Authority) was subsequently created, channeling billions in contracts to pharmaceutical companies for pandemic preparedness.\\n\\n\ud83d\udfe2 DOCUMENTED: The Dual-Use Research of Concern (DURC) policy category was created to regulate research with both beneficial and harmful potential, but critics argue it effectively allowed dangerous research to continue under a regulatory veneer. \ud83d\udfe1 CREDIBLE: EcoHealth Alliance functioned as an NIH/NIAID/USAID/DOD cutout for international gain-of-function research, allowing work at foreign labs like the WIV that would face greater scrutiny domestically.\\n\\n\ud83d\udfe2 DOCUMENTED: Event 201, held on October 18, 2019 \u2014 just six weeks before the Wuhan outbreak \u2014 was a high-level pandemic tabletop exercise co-hosted by the Johns Hopkins Center for Health Security, the Bill & Melinda Gates Foundation, and the World Economic Forum. The scenario involved a novel coronavirus originating from bats, spreading globally, and included detailed recommendations for social media censorship of \\\"misinformation.\\\" The exercise's recommendations closely mirrored the actual COVID-19 response.\\n\\n\ud83d\udfe2 DOCUMENTED: Crimson Contagion was a multi-agency HHS exercise conducted from January to August 2019 that simulated an influenza pandemic originating in China. The draft report, obtained by the New York Times, found the US was severely unprepared for a pandemic response.\\n\\n\ud83d\udfe2 DOCUMENTED: The SPARS Pandemic scenario, published by Johns Hopkins in 2017, described a fictional novel coronavirus pandemic occurring in 2025-2028. The scenario detailed public backlash to a rushed vaccine, medical countermeasure controversies, and communication challenges that bore striking parallels to the actual COVID-19 experience.\\n\\n\ud83d\udfe2 DOCUMENTED: The Dark Winter exercise (June 2001) was a senior-level bioterrorism simulation. Participants included future key officials in the War on Terror. The exercise occurred just months before the actual anthrax attacks of September-October 2001.\\n\\n\ud83d\udfe2 DOCUMENTED: Billion-dollar biodefense contracts were awarded to companies like Emergent BioSolutions and SIGA Technologies, creating a lucrative industry incentivized to promote biodefense spending. \ud83d\udfe1 CREDIBLE: Metabiota, a pandemic risk company with financial ties to Hunter Biden's Rosemont Seneca Partners, operated in Ukrainian biolabs. The financial connections are confirmed through investment records, though the operational scope remains debated.",
+    "evidence": [
+      {
+        "text": "Event 201, co-hosted by Johns Hopkins, Gates Foundation, and WEF on October 18, 2019, simulated a coronavirus pandemic including social media censorship — six weeks before the Wuhan outbreak.",
+        "tier": "documented",
+        "source": "Johns Hopkins Center for Health Security Event 201 materials (2019)"
+      },
+      {
+        "text": "The SPARS Pandemic scenario (Johns Hopkins, 2017) described a fictional coronavirus pandemic in 2025-2028 with public backlash to a rushed vaccine.",
+        "tier": "documented",
+        "source": "Johns Hopkins Center for Health Security SPARS publication (2017)"
+      },
+      {
+        "text": "Project BioShield Act (2004) allocated $5.6 billion for biodefense countermeasures following the anthrax attacks and 9/11.",
+        "tier": "documented",
+        "source": "Project BioShield Act, Public Law 108-276 (2004)"
+      },
+      {
+        "text": "The Dark Winter bioterrorism exercise in June 2001 involved senior officials and occurred months before the actual anthrax attacks.",
+        "tier": "documented",
+        "source": "Dark Winter exercise after-action report (2001)"
+      },
+      {
+        "text": "Crimson Contagion (Jan-Aug 2019) simulated an influenza pandemic originating in China and found US preparedness severely lacking.",
+        "tier": "documented",
+        "source": "Crimson Contagion draft report (obtained by NYT, 2019)"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Event 201 (Johns Hopkins CHS, 2019)",
+        "url": "https://centerforhealthsecurity.org/our-work/tabletop-exercises/event-201-pandemic-tabletop-exercise"
+      },
+      {
+        "label": "Project BioShield Act (2004)",
+        "url": "https://www.congress.gov/108/plaws/publ276/PLAW-108publ276.htm"
+      },
+      {
+        "label": "SPARS Pandemic Scenario (Johns Hopkins, 2017)",
+        "url": "https://centerforhealthsecurity.org/our-work/publications/the-spars-pandemic-2025-2028-a-futuristic-scenario-to-facilitate-medical-countermeasure-communication"
+      },
+      {
+        "label": "Crimson Contagion Draft Report (NYT, 2019)",
+        "url": "https://www.nytimes.com/2020/03/19/us/politics/trump-coronavirus-outbreak.html"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "covid-emergency-powers",
+    "branch": "power",
+    "ring": 1,
+    "title": "Emergency Powers & the Biosecurity State",
+    "description": "COVID established the template for biosecurity governance — WHO declarations enabling lockdowns, vaccine mandates, digital health passes, bank account freezing, and proposals to make pandemic powers permanent through the WHO Pandemic Treaty.",
+    "fullDescription": "\ud83d\udfe2 DOCUMENTED: The WHO declared COVID-19 a Public Health Emergency of International Concern (PHEIC) on January 30, 2020, and a pandemic on March 11, 2020. These declarations enabled emergency powers across the globe, activating national emergency frameworks, regulatory waivers, and extraordinary executive authority.\\n\\n\ud83d\udfe2 DOCUMENTED: Lockdowns represented unprecedented peacetime restrictions on movement, assembly, worship, and commerce. There was no historical public health precedent for restrictions at this scale. Business closures devastated small businesses while large corporations such as Amazon and Walmart remained open as \\\"essential.\\\" According to Oxfam and Forbes data, billionaire wealth increased by $3.7 trillion during the pandemic \u2014 the largest wealth transfer in recorded history.\\n\\n\ud83d\udfe2 DOCUMENTED: Vaccine mandates were imposed through multiple channels: the OSHA employer mandate for businesses with 100+ employees (struck down by the Supreme Court in NFIB v. OSHA, January 2022), military mandates affecting all service branches, healthcare worker mandates via CMS, and federal contractor mandates. Millions faced the choice between vaccination and their livelihoods.\\n\\n\ud83d\udfe2 DOCUMENTED: Digital health certificates proliferated globally. The EU Digital COVID Certificate system processed hundreds of millions of certificates. Israel's Green Pass restricted access to public venues based on vaccination status. These systems created digital identity infrastructure that persists beyond the pandemic context.\\n\\n\ud83d\udfe2 DOCUMENTED: In February 2022, the Canadian government invoked the Emergencies Act against the trucker convoy protest in Ottawa. Bank accounts of protesters and donors were frozen without court orders. Financial institutions were directed to cease providing services to designated individuals. This marked the first use of the Emergencies Act since its passage in 1988.\\n\\n\ud83d\udfe2 DOCUMENTED: The PREP Act (2005) provided broad liability immunity to countermeasure manufacturers during declared public health emergencies. The PHEIC framework grants the WHO Director-General unilateral authority to declare international health emergencies.\\n\\n\ud83d\udfe2 DOCUMENTED: The proposed WHO Pandemic Treaty and amendments to the International Health Regulations (IHR) would expand WHO authority over member states during health emergencies. Negotiations remain ongoing, with significant sovereignty concerns raised by multiple nations.\\n\\n\ud83d\udfe2 DOCUMENTED: School closures affected 1.6 billion students worldwide, described by UNICEF as the \\\"largest disruption to education in history.\\\" Learning losses were disproportionately borne by disadvantaged communities.\\n\\n\ud83d\udfe0 INFERENCE: The combination of digital health IDs, vaccination status requirements, and financial access restrictions created infrastructure that parallels social credit systems \u2014 a framework for social compliance that could be repurposed for future crises. \ud83d\udfe1 CREDIBLE: As philosopher Giorgio Agamben observed, the \\\"state of exception\\\" has become a governance model \u2014 emergency measures implemented temporarily tend to become permanent features of the political landscape.",
+    "evidence": [
+      {
+        "text": "WHO declared COVID-19 a Public Health Emergency of International Concern (PHEIC) on January 30, 2020, enabling emergency powers globally.",
+        "tier": "documented",
+        "source": "WHO official declaration (January 30, 2020)"
+      },
+      {
+        "text": "Billionaire wealth increased by $3.7 trillion during the pandemic while small businesses were devastated by lockdown closures.",
+        "tier": "documented",
+        "source": "Oxfam Inequality Report (2022) and Forbes billionaire tracking"
+      },
+      {
+        "text": "Canadian government froze bank accounts of trucker convoy protesters and donors without court orders under the Emergencies Act (February 2022).",
+        "tier": "documented",
+        "source": "Canadian Emergencies Act invocation and parliamentary records (Feb 2022)"
+      },
+      {
+        "text": "Supreme Court struck down OSHA vaccine mandate for large employers in NFIB v. OSHA, ruling the agency exceeded its statutory authority.",
+        "tier": "documented",
+        "source": "National Federation of Independent Business v. OSHA, 595 U.S. 109 (2022)"
+      },
+      {
+        "text": "The EU Digital COVID Certificate system created continent-wide digital health ID infrastructure processing hundreds of millions of certificates.",
+        "tier": "documented",
+        "source": "European Commission Digital COVID Certificate regulation"
+      }
+    ],
+    "sources": [
+      {
+        "label": "WHO International Health Regulations",
+        "url": "https://www.who.int/health-topics/international-health-regulations"
+      },
+      {
+        "label": "NFIB v. OSHA (Supreme Court, 2022)",
+        "url": "https://www.supremecourt.gov/opinions/21pdf/21a244_hgci.pdf"
+      },
+      {
+        "label": "Canadian Emergencies Act Invocation (2022)",
+        "url": "https://www.canada.ca/en/department-justice/news/2022/02/canadas-emergencies-act.html"
+      },
+      {
+        "label": "Oxfam Inequality Report (2022)",
+        "url": "https://www.oxfam.org/en/research/inequality-kills"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "covid-censorship",
+    "branch": "media",
+    "ring": 2,
+    "title": "COVID-Era Censorship & Information Control",
+    "description": "Government-directed censorship at industrial scale — Twitter Files revealed White House flagging posts for removal, while the lab-leak hypothesis was labeled 'misinformation' until it became acceptable, and dissenting scientists faced professional destruction.",
+    "fullDescription": "\ud83d\udfe2 DOCUMENTED: The Twitter Files, released beginning in December 2022, consisted of internal company documents showing that government officials directly flagged specific social media content for removal or suppression. The FBI, DHS, State Department, and White House were all involved in communications with Twitter requesting or demanding content moderation actions.\\n\\n\ud83d\udfe2 DOCUMENTED: In August 2024, Mark Zuckerberg sent a letter to Congress admitting that the Biden administration \\\"pressured\\\" Facebook to censor COVID-related content, including humor and satire. Zuckerberg stated that Facebook should not have complied and called the censorship a mistake.\\n\\n\ud83d\udfe2 DOCUMENTED: YouTube implemented a policy of removing any content that contradicted WHO guidance on COVID-19, including videos produced by credentialed scientists and physicians with relevant expertise.\\n\\n\ud83d\udfe2 DOCUMENTED: The Virality Project, run by the Stanford Internet Observatory, monitored social media for \\\"anti-vaccine narratives.\\\" Internal documents revealed via the Twitter Files showed the project flagged \\\"true content which could fuel hesitancy\\\" \u2014 meaning factually accurate information was targeted for suppression because it might discourage vaccination.\\n\\n\ud83d\udfe2 DOCUMENTED: The Trusted News Initiative (TNI), a BBC-led consortium including Reuters, AP, the Washington Post, Google, Facebook, and Microsoft, coordinated to suppress what they defined as \\\"misinformation\\\" that deviated from the official public health narrative. This created an unprecedented media-tech alliance for narrative control.\\n\\n\ud83d\udfe2 DOCUMENTED: Murthy v. Missouri (originally Missouri v. Biden) alleged that the government coerced social media platforms into censorship. The Supreme Court dismissed the case on standing grounds in 2024, but the district court's extensive factual findings documented pervasive government pressure on platforms, including threats of regulatory action.\\n\\n\ud83d\udfe2 DOCUMENTED: The lab leak hypothesis trajectory illustrates the censorship cycle: labeled \\\"misinformation\\\" and \\\"conspiracy theory\\\" from February 2020 through early 2021; Facebook actively removed posts discussing it; then it became an \\\"acceptable\\\" hypothesis after President Biden ordered an intelligence community investigation in May 2021. The underlying facts had not changed \u2014 only the political environment.\\n\\n\ud83d\udfe2 DOCUMENTED: The Great Barrington Declaration (October 2020), signed by epidemiologists from Harvard, Stanford, and Oxford advocating focused protection of the vulnerable rather than universal lockdowns, was targeted for suppression. FOIA'd emails revealed NIH Director Francis Collins wrote to Fauci calling for a \\\"quick and devastating published takedown\\\" of the declaration's premises.\\n\\n\ud83d\udfe2 DOCUMENTED: The \\\"Disinformation Dozen\\\" campaign identified 12 individuals allegedly responsible for the majority of vaccine misinformation online, leading to coordinated deplatforming efforts. Medical license threats were brought against dissenting physicians including Dr. Peter McCullough and Dr. Robert Malone.\\n\\n\ud83d\udfe2 DOCUMENTED: The Spotify/Joe Rogan pressure campaign erupted after Rogan's interview with Dr. Robert Malone in late 2021, with musicians and public figures demanding Spotify remove the episode or their own content. \ud83d\udfe1 CREDIBLE: Amazon suppressed or removed books questioning the official COVID narrative from its marketplace.",
+    "evidence": [
+      {
+        "text": "Twitter Files internal documents showed FBI, DHS, State Department, and White House officials directly flagging specific posts for removal or suppression.",
+        "tier": "documented",
+        "source": "Twitter Files (Taibbi, Shellenberger, et al., December 2022 onward)"
+      },
+      {
+        "text": "Mark Zuckerberg admitted in an August 2024 letter to Congress that the Biden administration \"pressured\" Facebook to censor COVID content including humor and satire.",
+        "tier": "documented",
+        "source": "Zuckerberg letter to House Judiciary Committee (August 2024)"
+      },
+      {
+        "text": "NIH Director Francis Collins emailed Fauci calling for a \"quick and devastating published takedown\" of the Great Barrington Declaration.",
+        "tier": "documented",
+        "source": "Collins-Fauci FOIA'd email (October 2020, released 2021)"
+      },
+      {
+        "text": "The Virality Project flagged \"true content which could fuel hesitancy\" — targeting factually accurate information for suppression.",
+        "tier": "documented",
+        "source": "Stanford Internet Observatory Virality Project internal documents (via Twitter Files)"
+      },
+      {
+        "text": "The lab leak hypothesis was labeled \"misinformation\" and censored from Feb 2020, then became acceptable after Biden ordered an IC investigation in May 2021 — with no change in underlying evidence.",
+        "tier": "documented",
+        "source": "Facebook policy changes, presidential statements, media record (2020-2021)"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Twitter Files (Taibbi, Shellenberger, et al., 2022-23)",
+        "url": "https://twitterfiles.com/"
+      },
+      {
+        "label": "Zuckerberg Letter to Congress (Aug 2024)",
+        "url": "https://judiciary.house.gov/sites/evo-subsites/republicans-judiciary.house.gov/files/evo-media-document/zuckerberg-letter-072624.pdf"
+      },
+      {
+        "label": "Collins-Fauci FOIA Emails",
+        "url": "https://www.aier.org/article/fauci-emails-and-some-new-ones-exposed-the-great-barrington-declaration/"
+      },
+      {
+        "label": "Murthy v. Missouri District Court Record",
+        "url": "https://www.supremecourt.gov/opinions/23pdf/23-411_3dq3.pdf"
+      }
+    ],
+    "status": "researched"
+  },
+  {
+    "id": "covid-origins-investigation",
+    "branch": "science",
+    "ring": 3,
+    "title": "COVID Origins: Obstruction & Investigation",
+    "description": "China destroyed early samples and deleted the WIV database months before the official outbreak. The Lancet commission concluded US-funded research may have caused the pandemic, while investigators with conflicts of interest shaped the official narrative.",
+    "fullDescription": "\ud83d\udfe2 DOCUMENTED: China's National Health Commission ordered the destruction of early virus samples on January 3, 2020, as reported by the South China Morning Post and the Associated Press. This destruction of evidence occurred at a critical moment when independent verification of the virus's origins was still possible.\\n\\n\ud83d\udfe2 DOCUMENTED: The WIV's sequence database, containing records of bat virus samples collected over years of fieldwork, was taken offline in September 2019 \u2014 months before the official outbreak announcement. The database has never been restored, and its contents remain inaccessible to the international scientific community.\\n\\n\ud83d\udfe1 CREDIBLE: Evidence suggests the earliest COVID-19 cases may predate the Huanan Seafood Market cluster. Blood bank studies and satellite imagery analysis of Wuhan hospital parking lots suggest increased activity consistent with community spread as early as October-November 2019.\\n\\n\ud83d\udfe2 DOCUMENTED: The WHO investigation team that visited Wuhan in February 2021 was given severely limited access to key sites and data. Peter Daszak of EcoHealth Alliance \u2014 a direct collaborator with the WIV who had funneled US grant money to the lab \u2014 was included as an investigator despite his obvious conflict of interest. WHO Director-General Tedros Adhanom later acknowledged the investigation was insufficient.\\n\\n\ud83d\udfe2 DOCUMENTED: The Lancet COVID-19 Commission, chaired by economist Jeffrey Sachs, concluded after two years of investigation that the origin of SARS-CoV-2 \\\"remains unknown\\\" but that US-funded research \\\"could have been responsible\\\" for the pandemic. This was a remarkable statement from a commission hosted by one of the world's most prestigious medical journals.\\n\\n\ud83d\udfe2 DOCUMENTED: Sachs disbanded the commission's task force on origins after discovering undisclosed conflicts of interest among task force members who had ties to EcoHealth Alliance. Sachs publicly stated that the commission had been undermined by researchers with vested interests in obscuring potential US involvement.\\n\\n\ud83d\udfe2 DOCUMENTED: Peter Daszak's conflicts of interest were pervasive: he organized the February 2020 Lancet letter that branded the lab leak hypothesis a \\\"conspiracy theory\\\" while concealing his EcoHealth/WIV financial relationship. He then served on both the WHO and Lancet investigation teams, compromising the independence of both inquiries.\\n\\n\ud83d\udfe2 DOCUMENTED: The US intelligence community remains split on origins. The Department of Energy (low confidence) and the FBI (moderate confidence) favor a laboratory origin. Four agencies and the National Intelligence Council favor natural origin with low confidence. The CIA remained undecided. This assessment was declassified in 2023.\\n\\n\ud83d\udfe2 DOCUMENTED: FOIA revelations showed that Fauci and Collins emails documented a coordinated response to suppress lab leak discussion immediately following the February 1, 2020 teleconference where scientists privately expressed alarm about the virus's engineered features.\\n\\n\ud83d\udfe2 DOCUMENTED: The definition of \\\"gain-of-function\\\" research was changed mid-controversy. NIH altered its definition to exclude the EcoHealth/WIV work, after which Fauci told Congress under oath that \\\"NIH has not ever and does not now fund gain of function research.\\\" The definitional changes and timeline are extensively documented.\\n\\n\ud83d\udfe2 DOCUMENTED: Congressional investigations from 2023 onward, including the House Select Subcommittee on the Coronavirus Pandemic, produced interim reports concluding that a laboratory origin was the most likely explanation. EcoHealth Alliance's funding was finally terminated in May 2024, and the organization was proposed for government-wide debarment.\\n\\n\ud83d\udfe1 CREDIBLE: US State Department cables from 2018, sent by embassy officials who visited the WIV, warned of inadequate safety protocols at the laboratory, particularly regarding its work with bat coronaviruses. These cables were reported on before the pandemic's origins became politicized.",
+    "evidence": [
+      {
+        "text": "The WIV's bat virus sequence database was taken offline in September 2019, months before the official outbreak, and has never been restored.",
+        "tier": "documented",
+        "source": "Internet archives, WIV institutional records, independent researcher verification"
+      },
+      {
+        "text": "The Lancet COVID-19 Commission concluded after two years that SARS-CoV-2 origin \"remains unknown\" but US-funded research \"could have been responsible.\"",
+        "tier": "documented",
+        "source": "Lancet COVID-19 Commission final report (September 2022)"
+      },
+      {
+        "text": "Peter Daszak organized the Lancet letter branding lab leak a \"conspiracy theory\" while concealing his EcoHealth/WIV conflicts, then served on both WHO and Lancet investigation teams.",
+        "tier": "documented",
+        "source": "Lancet letter (Feb 2020), addendum disclosures, WHO/Lancet team records"
+      },
+      {
+        "text": "Fauci testified \"NIH has not ever and does not now fund gain of function research\" after NIH altered its definition of gain-of-function to exclude EcoHealth/WIV work.",
+        "tier": "documented",
+        "source": "Congressional testimony transcripts and NIH definitional change records"
+      },
+      {
+        "text": "EcoHealth Alliance funding was terminated and the organization proposed for debarment in May 2024 following congressional investigation.",
+        "tier": "documented",
+        "source": "HHS debarment notice (May 2024)"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Lancet COVID-19 Commission Report (2022)",
+        "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(22)01585-9/fulltext"
+      },
+      {
+        "label": "House Select Subcommittee Interim Reports (2023-24)",
+        "url": "https://oversight.house.gov/landing/covid-origins/"
+      },
+      {
+        "label": "ODNI Declassified Assessment (2023)",
+        "url": "https://www.dni.gov/files/ODNI/documents/assessments/Report-on-Potential-Links-Between-the-Wuhan-Institute-of-Virology-and-the-Origins-of-COVID-19-20230626.pdf"
+      },
+      {
+        "label": "State Department Cables (2018)",
+        "url": "https://www.washingtonpost.com/opinions/2020/04/14/state-department-cables-warned-safety-issues-wuhan-lab-studying-bat-coronaviruses/"
+      }
+    ],
+    "status": "researched"
+  }
 ];
 
 var CONNECTIONS = [
@@ -9637,5 +10300,52 @@ var QA_CONNECTIONS = [
   ["qa-01infinity", "cosmology-origins"],
   ["qa-dimensional-attention", "cosmology-nature"],
   ["qa-aesthetics", "consciousness-qualia"],
-  ["qa-education", "science-ai"]
+  ["qa-education", "science-ai"],
+  ["assassination-jfk", "jfk-oswald-intelligence"],
+  ["assassination-jfk", "jfk-forensic-evidence"],
+  ["assassination-jfk", "jfk-secret-service"],
+  ["assassination-jfk", "jfk-cui-bono"],
+  ["assassination-jfk", "jfk-anti-castro-ops"],
+  ["jfk-warren-commission", "jfk-media-management"],
+  ["jfk-warren-commission", "jfk-forensic-evidence"],
+  ["jfk-oswald-intelligence", "media-cia"],
+  ["jfk-oswald-intelligence", "operation-chaos"],
+  ["jfk-anti-castro-ops", "organized-crime-intel"],
+  ["jfk-anti-castro-ops", "drug-trafficking-intel"],
+  ["jfk-anti-castro-ops", "operation-phoenix"],
+  ["jfk-warren-commission", "media-narrative-coordination"],
+  ["jfk-warren-commission", "media-cia"],
+  ["jfk-media-management", "media-cia"],
+  ["jfk-media-management", "media-narrative-coordination"],
+  ["jfk-cui-bono", "military-industrial"],
+  ["jfk-cui-bono", "central-banking"],
+  ["jfk-forensic-evidence", "sept-11-wtc-demolition"],
+  ["jfk-secret-service", "sept-11-foreknowledge"],
+  ["jfk-secret-service", "unacknowledged-saps"],
+  ["jfk-cui-bono", "sept-11-pnac"],
+  ["covid-gain-of-function", "covid-origins-investigation"],
+  ["covid-gain-of-function", "covid-biodefense-complex"],
+  ["covid-pharma-eua", "covid-emergency-powers"],
+  ["covid-pharma-eua", "covid-censorship"],
+  ["covid-censorship", "covid-origins-investigation"],
+  ["covid-emergency-powers", "covid-censorship"],
+  ["covid-biodefense-complex", "covid-origins-investigation"],
+  ["covid-gain-of-function", "experiment-biological"],
+  ["covid-gain-of-function", "sept-11-anthrax"],
+  ["covid-biodefense-complex", "military-industrial"],
+  ["covid-biodefense-complex", "sept-11-war-profiteering"],
+  ["covid-biodefense-complex", "experiment-biological"],
+  ["covid-emergency-powers", "sept-11-patriot-act"],
+  ["covid-emergency-powers", "echelon-five-eyes"],
+  ["covid-emergency-powers", "media-digital-control"],
+  ["covid-censorship", "media-cia"],
+  ["covid-censorship", "media-digital-control"],
+  ["covid-censorship", "media-narrative-coordination"],
+  ["covid-censorship", "pentagon-analyst-program"],
+  ["covid-pharma-eua", "health-suppressed-healing"],
+  ["covid-pharma-eua", "health-regulatory"],
+  ["covid-pharma-eua", "experiment-mkultra-full"],
+  ["covid-origins-investigation", "sept-11-commission"],
+  ["covid-origins-investigation", "media-narrative-coordination"]
+
 ];
