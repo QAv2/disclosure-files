@@ -444,6 +444,27 @@ html, body {
   border-bottom: none;
 }
 
+.source-toggle-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 14px;
+  background: rgba(74, 158, 255, 0.08);
+  border: 1px solid rgba(74, 158, 255, 0.2);
+  color: #4a9eff;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.source-toggle-btn:hover {
+  background: rgba(74, 158, 255, 0.16);
+  border-color: rgba(74, 158, 255, 0.35);
+  color: #7cb8ff;
+}
+
 /* Description auto-links (keyword cross-references) */
 .desc-link {
   color: #c9a84c;

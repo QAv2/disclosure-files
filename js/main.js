@@ -801,10 +801,16 @@
 
     var sourcesHtml = "";
     if (node.sources && node.sources.length) {
-      sourcesHtml = '<div class="panel-section-label">Sources</div>';
-      node.sources.forEach(function (s) {
-        sourcesHtml += '<a class="source-link" href="' + escapeHtml(s.url) + '" target="_blank" rel="noopener">' + escapeHtml(s.label) + ' \u2197</a>';
+      var sourceLimit = 5;
+      var total = node.sources.length;
+      sourcesHtml = '<div class="panel-section-label">Sources (' + total + ')</div>';
+      node.sources.forEach(function (s, i) {
+        var hidden = i >= sourceLimit && total > sourceLimit ? ' style="display:none" data-source-extra' : '';
+        sourcesHtml += '<a class="source-link"' + hidden + ' href="' + escapeHtml(s.url) + '" target="_blank" rel="noopener">' + escapeHtml(s.label) + ' \u2197</a>';
       });
+      if (total > sourceLimit) {
+        sourcesHtml += '<button class="source-toggle-btn" data-expanded="false">Show ' + (total - sourceLimit) + ' more sources</button>';
+      }
     }
 
     panelInner.innerHTML =
@@ -824,6 +830,22 @@
         if (goto) selectNode(goto);
       });
     });
+
+    // Source "Show more" toggle
+    var toggleBtn = panelInner.querySelector(".source-toggle-btn");
+    if (toggleBtn) {
+      toggleBtn.addEventListener("click", function () {
+        var expanded = toggleBtn.getAttribute("data-expanded") === "true";
+        panelInner.querySelectorAll("[data-source-extra]").forEach(function (el) {
+          el.style.display = expanded ? "none" : "";
+        });
+        expanded = !expanded;
+        toggleBtn.setAttribute("data-expanded", String(expanded));
+        var total = node.sources.length;
+        var sourceLimit = 5;
+        toggleBtn.textContent = expanded ? "Show fewer sources" : "Show " + (total - sourceLimit) + " more sources";
+      });
+    }
   }
 
   function showBranchPanel(bKey) {
