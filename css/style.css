@@ -1,6 +1,6 @@
 /* ============================================================
    The Disclosure Files — WEF Transformation Map Styles
-   114 nodes · 8 branches · Qualia Algebra overlay
+   140 nodes · 8 branches
    ============================================================ */
 
 *, *::before, *::after {
@@ -64,8 +64,7 @@ html, body {
 }
 
 /* ---- Legend (top-right) ---- */
-.legend,
-.qa-legend {
+.legend {
   position: fixed;
   top: 24px;
   right: 32px;
@@ -90,8 +89,7 @@ html, body {
   margin-bottom: 2px;
 }
 
-.legend-item,
-.qa-legend-item {
+.legend-item {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -99,79 +97,11 @@ html, body {
   color: rgba(255,255,255,0.7);
 }
 
-.qa-legend-item {
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.qa-legend-item:hover {
-  color: #ffffff;
-}
-
 .legend-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   flex-shrink: 0;
-}
-
-/* ---- Tab Bar ---- */
-.tab-bar {
-  position: fixed;
-  top: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 150;
-  display: flex;
-  gap: 2px;
-  background: rgba(17,17,17,0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 10px;
-  padding: 4px;
-}
-
-.tab-bar .tab-btn {
-  background: transparent;
-  border: none;
-  color: rgba(255,255,255,0.5);
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 8px 20px;
-  border-radius: 7px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  white-space: nowrap;
-}
-
-.tab-bar .tab-btn:hover {
-  color: rgba(255,255,255,0.8);
-  background: rgba(255,255,255,0.04);
-}
-
-.tab-bar .tab-btn.active {
-  background: rgba(255,255,255,0.1);
-  color: #ffffff;
-}
-
-.tab-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.disclosure-dot {
-  background: #0065F2;
-}
-
-.qa-dot {
-  background: #c9a84c;
 }
 
 /* ---- Bottom Toolbar ---- */
@@ -574,25 +504,18 @@ html, body {
     font-size: 10px;
   }
 
-  .legend,
-  .qa-legend {
+  .legend {
     top: 14px;
     right: 16px;
     padding: 10px 12px;
     gap: 5px;
   }
-  .legend-item,
-  .qa-legend-item {
+  .legend-item {
     font-size: 9px;
   }
   .legend-dot {
     width: 6px;
     height: 6px;
-  }
-
-  .tab-bar {
-    top: auto;
-    bottom: 80px;
   }
 
   .toolbar {
@@ -619,13 +542,8 @@ html, body {
 }
 
 @media (max-width: 480px) {
-  .legend,
-  .qa-legend {
+  .legend {
     display: none !important;
-  }
-  .tab-bar .tab-btn {
-    font-size: 11px;
-    padding: 6px 12px;
   }
   .toolbar {
     bottom: 12px;

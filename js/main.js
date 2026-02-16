@@ -1,7 +1,7 @@
 // ============================================================
 // The Disclosure Files — SVG Radial Transformation Map Engine
 // Pure vanilla JS + SVG, no dependencies
-// v2 — Ring 3 support, QA tab, wider viewBox
+// v3 — Ring 3 support, wider viewBox
 // ============================================================
 
 (function () {
@@ -24,7 +24,6 @@
 
   // ---- State ----
   var state = {
-    currentTab: "disclosure",
     selectedNode: null,
     showConnections: true,
     zoom: 1,
@@ -64,27 +63,6 @@
   Object.keys(BRANCHES).forEach(function (b) { branchNodes[b] = []; });
   NODES.forEach(function (n) { branchNodes[n.branch].push(n); });
 
-  // ---- Build lookup maps (QA) ----
-  var qaNodeMap = {};
-  var qaConnectionsByNode = {};
-  var qaRingNodes = {};
-
-  if (typeof QA_NODES !== "undefined" && QA_NODES) {
-    QA_NODES.forEach(function (n) { qaNodeMap[n.id] = n; });
-    QA_NODES.forEach(function (n) { qaConnectionsByNode[n.id] = []; });
-    if (typeof QA_CONNECTIONS !== "undefined" && QA_CONNECTIONS) {
-      QA_CONNECTIONS.forEach(function (c) {
-        if (!qaConnectionsByNode[c[0]]) qaConnectionsByNode[c[0]] = [];
-        if (!qaConnectionsByNode[c[1]]) qaConnectionsByNode[c[1]] = [];
-        qaConnectionsByNode[c[0]].push(c[1]);
-        qaConnectionsByNode[c[1]].push(c[0]);
-      });
-    }
-    QA_NODES.forEach(function (n) {
-      if (!qaRingNodes[n.ring]) qaRingNodes[n.ring] = [];
-      qaRingNodes[n.ring].push(n);
-    });
-  }
 
   // ---- SVG helpers ----
   function svgEl(tag, attrs) {
@@ -174,38 +152,7 @@
     });
   }
 
-  // ---- Compute QA positions ----
-  function computeQAPositions() {
-    if (typeof QA_RINGS === "undefined" || !QA_RINGS) return;
-    if (typeof QA_NODES === "undefined" || !QA_NODES) return;
-
-    var ringKeys = Object.keys(QA_RINGS);
-
-    ringKeys.forEach(function (rKey) {
-      var ringDef = QA_RINGS[rKey];
-      var nodesInRing = qaRingNodes[rKey] || [];
-
-      if (ringDef.radius === 0 || rKey === "center") {
-        // Center node at origin
-        nodesInRing.forEach(function (n) {
-          state.nodePositions[n.id] = { x: CENTER_X, y: CENTER_Y };
-        });
-      } else {
-        // Distribute evenly around the ring
-        var count = nodesInRing.length;
-        nodesInRing.forEach(function (n, i) {
-          var angle = (360 / count) * i - 90; // Start from top
-          var rad = deg2rad(angle);
-          state.nodePositions[n.id] = {
-            x: CENTER_X + Math.cos(rad) * ringDef.radius,
-            y: CENTER_Y + Math.sin(rad) * ringDef.radius
-          };
-        });
-      }
-    });
-  }
-
-  // ---- Build SVG (Disclosure) ----
+  // ---- Build SVG ----
   function buildSVG() {
     var svg = document.getElementById("map-svg");
     var vb = state.viewBox;
@@ -597,363 +544,7 @@
     });
   }
 
-  // ---- Build QA SVG ----
-  function buildQASVG() {
-    if (typeof QA_RINGS === "undefined" || !QA_RINGS) return;
-    if (typeof QA_NODES === "undefined" || !QA_NODES) return;
-
-    var svg = document.getElementById("map-svg");
-    var vb = state.viewBox;
-    svg.setAttribute("viewBox", vb.x + " " + vb.y + " " + vb.w + " " + vb.h);
-
-    var defs = svgEl("defs");
-    svg.appendChild(defs);
-
-    // Radial gradient for QA central node
-    var qaGrad = svgEl("radialGradient", { id: "qaCenterGrad", cx: "40%", cy: "35%", r: "65%" });
-    var qaStop1 = svgEl("stop", { offset: "0%", "stop-color": QA_RINGS.center ? QA_RINGS.center.color : "#ffcc00" });
-    var qaStop2 = svgEl("stop", { offset: "100%", "stop-color": "#aa8800" });
-    qaGrad.appendChild(qaStop1);
-    qaGrad.appendChild(qaStop2);
-    defs.appendChild(qaGrad);
-
-    // Glow filters
-    var filterBig = svgEl("filter", { id: "glowBigQA", x: "-80%", y: "-80%", width: "260%", height: "260%" });
-    var feGauss2 = svgEl("feGaussianBlur", { stdDeviation: "18", result: "coloredBlur" });
-    var feMerge2 = svgEl("feMerge");
-    var fmn3 = svgEl("feMergeNode", { "in": "coloredBlur" });
-    var fmn4 = svgEl("feMergeNode", { "in": "SourceGraphic" });
-    feMerge2.appendChild(fmn3);
-    feMerge2.appendChild(fmn4);
-    filterBig.appendChild(feGauss2);
-    filterBig.appendChild(feMerge2);
-    defs.appendChild(filterBig);
-
-    // Create layer groups
-    var gRings = svgEl("g", { id: "layer-qa-rings" });
-    var gConnections = svgEl("g", { id: "layer-connections" });
-    var gNodes = svgEl("g", { id: "layer-nodes" });
-    var gLabels = svgEl("g", { id: "layer-labels" });
-
-    svg.appendChild(gRings);
-    svg.appendChild(gConnections);
-    svg.appendChild(gNodes);
-    svg.appendChild(gLabels);
-
-    // ---- Draw concentric ring circles ----
-    var ringKeys = Object.keys(QA_RINGS);
-    ringKeys.forEach(function (rKey) {
-      var ringDef = QA_RINGS[rKey];
-      if (ringDef.radius === 0 || rKey === "center") return;
-
-      // Dashed ring circle
-      var ringCircle = svgEl("circle", {
-        cx: CENTER_X, cy: CENTER_Y, r: ringDef.radius,
-        fill: "none",
-        stroke: ringDef.color,
-        "stroke-width": "1",
-        "stroke-opacity": "0.15",
-        "stroke-dasharray": "8 6"
-      });
-      gRings.appendChild(ringCircle);
-
-      // Ring label along the ring (at the top)
-      var ringLabel = svgEl("text", {
-        x: CENTER_X, y: CENTER_Y - ringDef.radius - 10,
-        "text-anchor": "middle",
-        fill: ringDef.color,
-        "fill-opacity": "0.5",
-        "font-size": "9",
-        "font-weight": "600",
-        "font-family": "'Helvetica Neue', Arial, sans-serif",
-        "letter-spacing": "1"
-      });
-      ringLabel.textContent = (ringDef.label || rKey).toUpperCase();
-      gRings.appendChild(ringLabel);
-    });
-
-    // ---- Draw QA connections ----
-    if (typeof QA_CONNECTIONS !== "undefined" && QA_CONNECTIONS) {
-      QA_CONNECTIONS.forEach(function (conn) {
-        var p1 = state.nodePositions[conn[0]];
-        var p2 = state.nodePositions[conn[1]];
-        if (!p1 || !p2) return;
-
-        var mx = (p1.x + p2.x) / 2;
-        var my = (p1.y + p2.y) / 2;
-        // Curve toward center
-        var cx = mx * 0.55;
-        var cy = my * 0.55;
-
-        var d = "M " + p1.x + " " + p1.y + " Q " + cx + " " + cy + " " + p2.x + " " + p2.y;
-        var path = svgEl("path", {
-          d: d,
-          fill: "none",
-          stroke: "rgba(211,211,211," + LINE_DEFAULT_OPACITY + ")",
-          "stroke-width": "1",
-          "data-from": conn[0],
-          "data-to": conn[1],
-          class: "cross-connection"
-        });
-        gConnections.appendChild(path);
-        state.connectionPaths.push(path);
-      });
-    }
-
-    // ---- Draw QA nodes ----
-    QA_NODES.forEach(function (node) {
-      var pos = state.nodePositions[node.id];
-      if (!pos) return;
-      var ringDef = QA_RINGS[node.ring] || { color: "#888888" };
-
-      // Skip center node here — drawn separately below
-      if (node.ring === "center") return;
-
-      var group = svgEl("g", {
-        class: "qa-node",
-        "data-id": node.id,
-        "data-ring": node.ring,
-        style: "cursor:pointer"
-      });
-
-      var r = 13;
-
-      // Node circle
-      var circle = svgEl("circle", {
-        cx: pos.x, cy: pos.y, r: r,
-        fill: ringDef.color,
-        "fill-opacity": "0.18",
-        stroke: ringDef.color,
-        "stroke-width": "1.5",
-        "stroke-opacity": "0.6",
-        class: "qa-circle"
-      });
-      group.appendChild(circle);
-
-      // Label
-      var labelOffY = r + 14;
-      var label = svgEl("text", {
-        x: pos.x,
-        y: pos.y + labelOffY,
-        "text-anchor": "middle",
-        fill: "rgba(255,255,255,0.55)",
-        "font-size": "8",
-        "font-weight": "500",
-        "font-family": "'Helvetica Neue', Arial, sans-serif",
-        class: "qa-label"
-      });
-
-      var title = node.label || node.id;
-      if (title.length > 22) {
-        var words = title.split(/[\s\u2014\u2192]+/);
-        var line1 = "";
-        var line2 = "";
-        var half = Math.ceil(words.length / 2);
-        words.forEach(function (w, i) {
-          if (i < half) line1 += (line1 ? " " : "") + w;
-          else line2 += (line2 ? " " : "") + w;
-        });
-        var tspan1 = svgEl("tspan", { x: pos.x, dy: "0" });
-        tspan1.textContent = line1;
-        var tspan2 = svgEl("tspan", { x: pos.x, dy: "11" });
-        tspan2.textContent = line2;
-        label.appendChild(tspan1);
-        label.appendChild(tspan2);
-      } else {
-        label.textContent = title;
-      }
-
-      gLabels.appendChild(label);
-      gNodes.appendChild(group);
-
-      state.nodeElements[node.id] = group;
-      state.labelElements[node.id] = label;
-
-      // Events
-      group.addEventListener("click", function (e) {
-        e.stopPropagation();
-        selectQANode(node.id);
-      });
-      group.addEventListener("mouseenter", function () {
-        if (state.selectedNode !== node.id) {
-          circle.setAttribute("fill-opacity", "0.35");
-          circle.setAttribute("r", r * 1.15);
-        }
-        if (!state.selectedNode) {
-          highlightNodeConnections(node.id, ringDef.color);
-        }
-      });
-      group.addEventListener("mouseleave", function () {
-        if (state.selectedNode !== node.id) {
-          circle.setAttribute("fill-opacity", "0.18");
-          circle.setAttribute("r", r);
-        }
-        if (!state.selectedNode) {
-          unhighlightHoverConnections();
-        }
-      });
-    });
-
-    // ---- Draw QA central node ----
-    var centerRing = QA_RINGS.center || { color: "#ffcc00", label: "[1,0,0,0]" };
-    var centerNodes = qaRingNodes["center"] || [];
-    var centerNodeData = centerNodes.length > 0 ? centerNodes[0] : null;
-
-    var centerGroup = svgEl("g", {
-      class: "center-node",
-      "data-id": centerNodeData ? centerNodeData.id : "qa-center",
-      style: "cursor:pointer"
-    });
-
-    // Background glow
-    var centerGlow = svgEl("circle", {
-      cx: CENTER_X, cy: CENTER_Y, r: CENTER_RADIUS + 30,
-      fill: centerRing.color,
-      "fill-opacity": "0.08",
-      filter: "url(#glowBigQA)"
-    });
-    centerGroup.appendChild(centerGlow);
-
-    // Outer ring
-    var centerOuter = svgEl("circle", {
-      cx: CENTER_X, cy: CENTER_Y, r: CENTER_RADIUS + 4,
-      fill: "none",
-      stroke: centerRing.color,
-      "stroke-width": "1.5",
-      "stroke-opacity": "0.3"
-    });
-    centerGroup.appendChild(centerOuter);
-
-    // Main circle
-    var centerCircle = svgEl("circle", {
-      cx: CENTER_X, cy: CENTER_Y, r: CENTER_RADIUS,
-      fill: "url(#qaCenterGrad)",
-      stroke: centerRing.color,
-      "stroke-width": "2.5"
-    });
-    centerGroup.appendChild(centerCircle);
-
-    // Center title — QA center label
-    var centerTitle = svgEl("text", {
-      x: CENTER_X, y: CENTER_Y - 10,
-      "text-anchor": "middle",
-      "dominant-baseline": "central",
-      fill: "#ffffff",
-      "font-size": "14",
-      "font-weight": "700",
-      "font-family": "'Helvetica Neue', Arial, sans-serif"
-    });
-    centerTitle.textContent = centerNodeData ? centerNodeData.label : centerRing.label;
-    centerGroup.appendChild(centerTitle);
-
-    // Center subtitle
-    var centerSub = svgEl("text", {
-      x: CENTER_X, y: CENTER_Y + 14,
-      "text-anchor": "middle",
-      "dominant-baseline": "central",
-      fill: "rgba(255,255,255,0.5)",
-      "font-size": "9",
-      "font-family": "'Helvetica Neue', Arial, sans-serif"
-    });
-    centerSub.textContent = centerNodeData ? (centerNodeData.subtitle || "I Exist \u2014 Axiom 0") : "I Exist \u2014 Axiom 0";
-    centerGroup.appendChild(centerSub);
-
-    gNodes.appendChild(centerGroup);
-    if (centerNodeData) {
-      state.nodeElements[centerNodeData.id] = centerGroup;
-    }
-
-    centerGroup.addEventListener("click", function (e) {
-      e.stopPropagation();
-      if (centerNodeData) {
-        selectQANode(centerNodeData.id);
-      }
-    });
-    centerGroup.addEventListener("mouseenter", function () {
-      centerCircle.setAttribute("filter", "url(#glowBigQA)");
-    });
-    centerGroup.addEventListener("mouseleave", function () {
-      centerCircle.removeAttribute("filter");
-    });
-
-    // ---- Click on background to deselect ----
-    svg.addEventListener("click", function () {
-      deselectAll();
-    });
-  }
-
-  // ---- QA Selection ----
-  function selectQANode(nodeId) {
-    var node = qaNodeMap[nodeId];
-    if (!node) return;
-    state.selectedNode = nodeId;
-
-    var connectedIds = qaConnectionsByNode[nodeId] ? qaConnectionsByNode[nodeId].slice() : [];
-    connectedIds.push(nodeId);
-
-    // Dim everything
-    dimAll();
-
-    // Highlight connected
-    connectedIds.forEach(function (id) {
-      brightenNode(id);
-    });
-
-    // Highlight connections
-    var ringDef = QA_RINGS[node.ring] || { color: "#888888" };
-    state.connectionPaths.forEach(function (path) {
-      var from = path.getAttribute("data-from");
-      var to = path.getAttribute("data-to");
-      if (from === nodeId || to === nodeId) {
-        path.setAttribute("stroke", ringDef.color);
-        path.setAttribute("stroke-opacity", LINE_HIGHLIGHT_OPACITY);
-        path.setAttribute("stroke-width", "1.8");
-      }
-    });
-
-    showQAPanel(nodeId);
-  }
-
-  function showQAPanel(nodeId) {
-    var node = qaNodeMap[nodeId];
-    if (!node) return;
-    var ringDef = QA_RINGS[node.ring] || { color: "#888888", label: node.ring };
-
-    var desc = node.description || "";
-
-    var connectedIds = qaConnectionsByNode[nodeId] ? qaConnectionsByNode[nodeId].slice() : [];
-    var chipsHtml = "";
-    if (connectedIds.length) {
-      chipsHtml = '<div class="panel-section-label">Connected Nodes (' + connectedIds.length + ')</div><div class="connected-chips">';
-      connectedIds.forEach(function (cId) {
-        var cn = qaNodeMap[cId];
-        if (!cn) return;
-        var cRing = QA_RINGS[cn.ring] || { color: "#888888" };
-        chipsHtml += '<div class="chip" data-goto-qa="' + cId + '"><span class="chip-dot" style="background:' + cRing.color + '"></span>' + escapeHtml(cn.label || cn.id) + '</div>';
-      });
-      chipsHtml += "</div>";
-    }
-
-    var subtitleHtml = node.subtitle ? '<p class="panel-description" style="margin-top:-4px;font-style:italic;opacity:0.7;">' + escapeHtml(node.subtitle) + '</p>' : '';
-
-    panelInner.innerHTML =
-      '<div class="panel-branch-tag" style="background:' + ringDef.color + '22;color:' + ringDef.color + '">' + escapeHtml(ringDef.label || node.ring) + '</div>' +
-      '<h2 class="panel-title">' + escapeHtml(node.label || node.id) + '</h2>' +
-      subtitleHtml +
-      '<p class="panel-description">' + linkifyDescription(desc, nodeId) + '</p>' +
-      chipsHtml;
-
-    panel.classList.add("open");
-
-    panelInner.querySelectorAll(".chip[data-goto-qa]").forEach(function (chip) {
-      chip.addEventListener("click", function () {
-        var goto = chip.getAttribute("data-goto-qa");
-        if (goto) selectQANode(goto);
-      });
-    });
-  }
-
-  // ---- Selection Logic (Disclosure) ----
+  // ---- Selection Logic ----
   function selectNode(nodeId) {
     var node = nodeMap[nodeId];
     if (!node) return;
@@ -1162,21 +753,8 @@
 
       e.stopPropagation();
 
-      // Determine which tab this target belongs to and navigate
-      var isQA = targetId.indexOf("qa-") === 0;
-      var targetTab = isQA ? "qa" : "disclosure";
-
-      // Switch tab if needed
-      if (targetTab !== state.currentTab) {
-        switchTab(targetTab);
-      }
-
       // Select the node
-      if (isQA) {
-        selectQANode(targetId);
-      } else {
-        selectNode(targetId);
-      }
+      selectNode(targetId);
 
       // Pan to the node after a brief delay to allow render
       setTimeout(function () {
@@ -1585,17 +1163,7 @@
         return false;
       }).map(function (n) { return { node: n, tab: "disclosure" }; });
 
-      var qaData = typeof QA_NODES !== "undefined" ? QA_NODES : [];
-      var qaMatches = qaData.filter(function (n) {
-        var title = (n.title || n.label || "").toLowerCase();
-        var desc = (n.description || "").toLowerCase();
-        var sub = (n.subtitle || "").toLowerCase();
-        return title.indexOf(q) >= 0 || desc.indexOf(q) >= 0 || sub.indexOf(q) >= 0 || n.id.toLowerCase().indexOf(q) >= 0;
-      }).map(function (n) { return { node: n, tab: "qa" }; });
-
-      // Show current tab results first, then other tab
-      var currentFirst = state.currentTab === "qa" ? qaMatches.concat(disclosureMatches) : disclosureMatches.concat(qaMatches);
-      var matches = currentFirst.slice(0, 12);
+      var matches = disclosureMatches.slice(0, 12);
 
       if (matches.length === 0) {
         results.innerHTML = '<div style="padding:14px 16px;color:rgba(255,255,255,0.4);font-size:13px;">No results found</div>';
@@ -1606,22 +1174,13 @@
       var html = "";
       matches.forEach(function (m) {
         var n = m.node;
-        var dotColor;
-        var tagLabel;
-        if (m.tab === "qa") {
-          var ringDef = (typeof QA_RINGS !== "undefined" && QA_RINGS[n.ring]) ? QA_RINGS[n.ring] : { color: "#888888", label: n.ring };
-          dotColor = ringDef.color;
-          tagLabel = ringDef.label || n.ring;
-        } else {
-          var b = BRANCHES[n.branch];
-          dotColor = b.color;
-          tagLabel = b.label;
-        }
+        var b = BRANCHES[n.branch];
+        var dotColor = b.color;
+        var tagLabel = b.label;
         var displayTitle = n.title || n.label || n.id;
-        var tabBadge = m.tab !== state.currentTab ? ' <span style="opacity:0.4;font-size:10px;margin-left:4px;">(' + (m.tab === "qa" ? "QA" : "Disclosure") + ')</span>' : "";
-        html += '<div class="search-result-item" data-id="' + n.id + '" data-tab="' + m.tab + '">' +
+        html += '<div class="search-result-item" data-id="' + n.id + '">' +
           '<span class="search-result-dot" style="background:' + dotColor + '"></span>' +
-          '<span class="search-result-title">' + escapeHtml(displayTitle) + tabBadge + '</span>' +
+          '<span class="search-result-title">' + escapeHtml(displayTitle) + '</span>' +
           '<span class="search-result-branch">' + escapeHtml(tagLabel) + '</span>' +
           '</div>';
       });
@@ -1631,22 +1190,13 @@
       results.querySelectorAll(".search-result-item").forEach(function (item) {
         item.addEventListener("click", function () {
           var id = item.getAttribute("data-id");
-          var targetTab = item.getAttribute("data-tab");
 
           container.classList.remove("open");
           input.value = "";
           results.innerHTML = "";
           results.classList.remove("has-results");
 
-          // Switch tab if needed, then select node
-          if (targetTab !== state.currentTab) {
-            switchTab(targetTab);
-          }
-          if (targetTab === "qa") {
-            selectQANode(id);
-          } else {
-            selectNode(id);
-          }
+          selectNode(id);
 
           // Pan to node after brief delay to allow render
           setTimeout(function () {
@@ -1706,66 +1256,17 @@
     });
   }
 
-  // ---- Tab Switching ----
-  function switchTab(tab) {
-    if (tab === state.currentTab) return;
-    state.currentTab = tab;
-    state.selectedNode = null;
-    closePanel();
-    clearSVG();
-
-    // Update tab buttons
-    document.querySelectorAll(".tab-bar .tab-btn").forEach(function (btn) {
-      btn.classList.toggle("active", btn.getAttribute("data-tab") === tab);
-    });
-
-    // Update legend visibility
-    var legend = document.querySelector(".legend");
-    if (legend) legend.style.display = tab === "disclosure" ? "" : "none";
-
-    // Update QA legend visibility
-    var qaLegend = document.querySelector(".qa-legend");
-    if (qaLegend) qaLegend.style.display = tab === "qa" ? "" : "none";
-
-    if (tab === "disclosure") {
-      initDisclosure();
-    } else {
-      initQA();
-    }
-  }
-
-  function initTabs() {
-    document.querySelectorAll(".tab-bar .tab-btn").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        switchTab(btn.getAttribute("data-tab"));
-      });
-    });
-  }
-
   // ---- Initialization ----
-  function initDisclosure() {
-    clearSVG();
-    computePositions();
-    buildSVG();
-    resetView();
-  }
-
-  function initQA() {
-    clearSVG();
-    computeQAPositions();
-    buildQASVG();
-    state.viewBox = { x: -800, y: -800, w: 1600, h: 1600 };
-    updateViewBox();
-  }
-
   function init() {
     initPanel();
     initPanZoom();
     initToolbar();
     initSearch();
     initKeyboard();
-    initTabs();
-    initDisclosure(); // Start with disclosure tab
+    clearSVG();
+    computePositions();
+    buildSVG();
+    resetView();
   }
 
   if (document.readyState === "loading") {

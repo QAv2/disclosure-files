@@ -5,7 +5,7 @@
 // Case-insensitive matching at render time
 // Do NOT link a term within its own node description
 // 200+ entries — covers named programs, people, frameworks,
-//   traditions, scientific terms, and cross-tab bridges
+//   traditions, and scientific terms
 // ============================================================
 
 var KEYWORD_LINKS = [
@@ -56,9 +56,7 @@ var KEYWORD_LINKS = [
   ["JFK Records Act", "jfk-media-management"],
   ["Coordinated Narrative Management", "media-narrative-coordination"],
   ["Political Protection Pattern", "epstein-political-protection"],
-  ["Integrated Information Theory", "qa-iit"],
   ["CIA Regime Change Template", "operation-ajax-pbsuccess"],
-  ["Contemplative Traditions", "qa-contemplative"],
   ["Contemplative Technologies", "consciousness-meditation"],
   ["Military-Industrial Complex", "military-industrial"],
   ["Manufacturing Consent for War", "sept-11-media-consent"],
@@ -71,7 +69,6 @@ var KEYWORD_LINKS = [
   ["Epstein Financial Network", "epstein-financial"],
   ["Epstein Academic Funding", "epstein-academic"],
   ["UAP Disclosure Legislation", "uap-legislation"],
-  ["Free Energy Principle", "qa-fep"],
   ["Biotechnology & Governance", "health-biotech"],
   ["Global Health Governance", "health-who"],
   ["Anomalous Health Incidents", "havana-syndrome"],
@@ -79,31 +76,16 @@ var KEYWORD_LINKS = [
   ["UAP Program Lineage", "uap-program-history"],
   ["Cyclical Models & Catastrophism", "cosmology-cycles"],
   ["Non-Human Intelligence", "cosmology-et"],
-  ["Consciousness Circuit", "qa-circuit"],
-  ["Observer Capacity Formula", "qa-cmax"],
   ["Digital Panopticon", "media-digital-control"],
   ["Propaganda Science", "media-propaganda"],
   ["Media Consolidation", "media-ownership"],
   ["Mystery School Traditions", "ritual-mystery-schools"],
   ["CIA Document 1035-960", "media-narrative-coordination"],
   ["Sacred Calendars", "ritual-calendar"],
-  ["Interest Function", "qa-interest-function"],
-  ["Dimensional Perception", "qa-dimensional-attention"],
-  ["Suppression Cost", "qa-suppression"],
-  ["State Transitions", "qa-consciousness-states"],
-  ["Pendulum Dynamics", "qa-pendulum"],
-  ["AI Moral Status", "qa-ai-ethics"],
   ["Food System Control", "health-food-system"],
   ["Lost Civilizations", "ancient-civilizations"],
   ["Hidden American History", "history-america"],
-  ["Prime Scalar Field", "qa-prime"],
   ["Medical Innovation & Regulation", "health-suppressed-healing"],
-  ["Zone of Proximal Development", "qa-education"],
-  ["Boredom & Fatigue", "qa-boredom-fatigue"],
-  ["Aesthetics & Beauty", "qa-aesthetics"],
-  ["Reciprocal System", "qa-rs2"],
-  ["AI Consciousness", "qa-ai"],
-  ["Neti Neti Test", "qa-ai"],
   ["Master Settlement Agreement", "tobacco-conspiracy"],
 
   // ── Named operations / programs (2–3 words) ──────────────────
@@ -194,8 +176,6 @@ var KEYWORD_LINKS = [
   ["Luis Elizondo", "uap-program-history"],
   ["Wernher von Braun", "operation-paperclip"],
   ["Frank Olson", "experiment-mkultra-full"],
-  ["Csikszentmihalyi", "qa-flow"],
-  ["Damon Dorsey", "qa-prime"],
 
   // ── Named organizations / entities ───────────────────────────
   ["Mega Group", "epstein-wexner"],
@@ -254,30 +234,8 @@ var KEYWORD_LINKS = [
   ["Waco", "waco-ruby-ridge"],
 
   // ── QA / scientific framework terms ──────────────────────────
-  ["Qualia Algebra", "qa-observer"],
-  ["Neti Neti", "qa-neti"],
-  ["Witness Space", "qa-witness"],
-  ["Personal Space", "qa-personal"],
-  ["Consensus Space", "qa-consensus"],
-  ["Potential Space", "qa-potential"],
-  ["Phase-Locking", "qa-phase-locking"],
-  ["phase-locking", "qa-phase-locking"],
-  ["Knot Theory", "qa-knot"],
-  ["Quaternion", "qa-quaternion"],
-  ["quaternion", "qa-quaternion"],
-  ["DO operators", "qa-do-operators"],
-  ["Flow States", "qa-flow"],
-  ["Kuramoto", "qa-phase-locking"],
-  ["C_max", "qa-cmax"],
-  ["0-1-\u221E", "qa-01infinity"],
-  ["IIT", "qa-iit"],
 
   // ── Consciousness traditions / terms ─────────────────────────
-  ["Vipassana", "qa-witness"],
-  ["Vedanta", "qa-witness"],
-  ["Advaita", "qa-witness"],
-  ["Dzogchen", "qa-witness"],
-  ["Kashmir Shaivism", "qa-witness"],
   ["Eleusis", "ritual-mystery-schools"],
   ["Mithras", "ritual-mystery-schools"],
   ["near-death experience", "consciousness-nde"],
@@ -304,7 +262,6 @@ var KEYWORD_LINKS = [
   ["Special Access Program", "unacknowledged-saps"],
   ["black budget", "unacknowledged-saps"],
   ["conspiracy theory", "media-narrative-coordination"],
-  ["Aha! Moments", "qa-aha"],
   ["Building 7", "sept-11-building7"],
   ["WTC 7", "sept-11-building7"],
   ["PNAC", "sept-11-pnac"],
