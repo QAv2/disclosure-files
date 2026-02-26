@@ -317,8 +317,8 @@ var NODES = [
     "branch": "power",
     "ring": 2,
     "title": "Supranational Bodies",
-    "description": "🟢 DOCUMENTED (Quigley 1949/1981; Reece Committee 1954; Schlesinger 1965).\n\nINSTITUTIONAL LINEAGE: Cecil Rhodes secret society (Feb 1891) → Round Table Groups (1910) → Royal Institute of International Affairs/Chatham House (1919) → Council on Foreign Relations (US branch). Quigley: Georgetown professor with insider access to Group papers documented this chain [🟡].\n\nRHODES SECRET SOCIETY: Founded Feb 1891 by Rhodes, W.T. Stead, Lord Esher.",
-    "fullDescription": "🟢 DOCUMENTED (Quigley 1949/1981; Reece Committee 1954; Schlesinger 1965).\n\nINSTITUTIONAL LINEAGE: Cecil Rhodes secret society (Feb 1891) → Round Table Groups (1910) → Royal Institute of International Affairs/Chatham House (1919) → Council on Foreign Relations (US branch). Quigley: Georgetown professor with insider access to Group papers documented this chain [🟡].\n\nRHODES SECRET SOCIETY: Founded Feb 1891 by Rhodes, W.T. Stead, Lord Esher. Inner circle (Society of the Elect) + outer circle (Association of Helpers). Six previous wills left fortune for this purpose. Seventh will created Rhodes Scholarships as public face [🟡 Quigley].\n\nRIIA/CHATHAM HOUSE: Founded 1919 by Milner Group. Quigley: Group 'founded the RIIA in 1919 and still controls it' [🟡].\n\nCFR: Reece Committee (1954) found CFR was 'in essence an agency of the United States Government' [🟢 Congressional finding]. Schlesinger Jr. confirmed: The American Establishment with front organizations the Rockefeller, Ford and Carnegie Foundations and the CFR [🟢 published 1965].\n\nFOUNDATION NETWORK: Carnegie, Rockefeller, Ford, Guggenheim as interlocking directorate. Ford Foundation president Gaither told investigator Dodd: 'We use our grant-making power so as to alter life in the United States that it can be comfortably merged with the Soviet Union' [🟡 Dodd testimony].\n\nCONCENTRIC RING STRUCTURE: Same architecture as Legal/Political Shield (Pattern #10). Documented independently 100 years apart.",
+    "description": "🟢 DOCUMENTED (Quigley 1949/1981; Reece Committee 1954; Schlesinger 1965).\n\nINSTITUTIONAL LINEAGE: Cecil Rhodes secret society (Feb 1891) → Round Table Groups (1910) → Royal Institute of International Affairs/Chatham House (1919) → Council on Foreign Relations (US branch). Quigley: Georgetown professor with insider access to Group papers documented this chain [🟡].\n\nRHODES SECRET SOCIETY: Founded Feb 1891 by Rhodes, W.T. Stead, Lord Esher.\n\nWORLD ECONOMIC FORUM / EPSTEIN (Feb 26, 2026): WEF President Børge Brende resigned after Epstein files revealed three business dinners + email/text exchanges with Jeffrey Epstein [🟢 Bloomberg/CNN/Fortune]. WEF co-chairs André Hoffmann and Larry Fink announced independent investigation found 'no additional concerns.' Second WEF chief to depart due to scandal.",
+    "fullDescription": "🟢 DOCUMENTED (Quigley 1949/1981; Reece Committee 1954; Schlesinger 1965).\n\nINSTITUTIONAL LINEAGE: Cecil Rhodes secret society (Feb 1891) → Round Table Groups (1910) → Royal Institute of International Affairs/Chatham House (1919) → Council on Foreign Relations (US branch). Quigley: Georgetown professor with insider access to Group papers documented this chain [🟡].\n\nRHODES SECRET SOCIETY: Founded Feb 1891 by Rhodes, W.T. Stead, Lord Esher. Inner circle (Society of the Elect) + outer circle (Association of Helpers). Six previous wills left fortune for this purpose. Seventh will created Rhodes Scholarships as public face [🟡 Quigley].\n\nRIIA/CHATHAM HOUSE: Founded 1919 by Milner Group. Quigley: Group 'founded the RIIA in 1919 and still controls it' [🟡].\n\nCFR: Reece Committee (1954) found CFR was 'in essence an agency of the United States Government' [🟢 Congressional finding]. Schlesinger Jr. confirmed: The American Establishment with front organizations the Rockefeller, Ford and Carnegie Foundations and the CFR [🟢 published 1965].\n\nFOUNDATION NETWORK: Carnegie, Rockefeller, Ford, Guggenheim as interlocking directorate. Ford Foundation president Gaither told investigator Dodd: 'We use our grant-making power so as to alter life in the United States that it can be comfortably merged with the Soviet Union' [🟡 Dodd testimony].\n\nCONCENTRIC RING STRUCTURE: Same architecture as Legal/Political Shield (Pattern #10). Documented independently 100 years apart.\n\nWORLD ECONOMIC FORUM — EPSTEIN FILES FALLOUT (Feb 26, 2026):\n\nBØRGE BRENDE RESIGNATION [🟢]: WEF President/CEO Børge Brende (former Norwegian Foreign Minister, 2013-2017) resigned February 26, 2026 after Epstein files revealed he had three business dinners with Jeffrey Epstein and communicated via email and text messages [🟢 Bloomberg, Al Jazeera, CNN, Fortune, Semafor, Axios]. WEF launched independent investigation by outside counsel — concluded with 'no additional concerns beyond what has been previously disclosed' [🟢 Fortune]. WEF co-chairs André Hoffmann and Larry Fink announced the investigation's completion. Brende stated: 'I believe now is the right moment for the Forum to continue its important work without distractions' [🟢 Fortune]. Brende claimed he only met Epstein in business settings and was unaware of criminal background.\n\nAlois Zwinggi appointed interim President/CEO. WEF board of trustees overseeing search for permanent replacement [🟢]. Brende is the second WEF chief to depart due to scandal [🟢 Semafor].\n\nNORWEGIAN EPSTEIN CONNECTIONS: Brende is one of several prominent Norwegians facing scrutiny following Epstein files release — others include a former PM, the Crown Princess, and a diplomat [🟢 Semafor].\n\nWEF-KISSINGER NEXUS: Henry Kissinger was instrumental in transforming the European Management Forum (founded 1971 by Klaus Schwab) into the global World Economic Forum. Kissinger served as key adviser to Schwab for decades and was a regular Davos attendee. Kissinger also appears in Epstein's black book with 2 phone numbers and 2 addresses [🟢]. This creates a documented Epstein-WEF connection predating Brende by decades.\n\nSUCCESSION POLITICS: Larry Fink (BlackRock CEO, WEF co-chair) reportedly favors Christine Lagarde (ECB head) as permanent WEF replacement [🟡 Semafor]. Fink's dual role as WEF co-chair who oversaw the Epstein investigation AND kingmaker for Brende's successor concentrates power.\n\nPATTERN: WEF follows the same institutional architecture as CFR, Bilderberg, Trilateral Commission — elite coordination mechanisms that claim transparency while operating through invitation-only access and public-private partnerships. The Epstein network's intersection with WEF leadership demonstrates how blackmail/compromise operations penetrate these supranational bodies at the executive level.",
     "evidence": [
       {
         "text": "Reece Committee declared CFR was \"in essence an agency of the United States Government\"",
@@ -334,6 +334,21 @@ var NODES = [
         "text": "Rhodes' six earlier wills explicitly funded a secret society for imperial expansion; seventh will created Rhodes Scholarships as the public face",
         "tier": "credible",
         "source": "Quigley, The Anglo-American Establishment (1981)"
+      },
+      {
+        "text": "WEF President Børge Brende resigned Feb 26, 2026 after Epstein files revealed three business dinners and email/text exchanges with Jeffrey Epstein",
+        "tier": "documented",
+        "source": "Bloomberg, CNN, Fortune, Al Jazeera, Semafor, Axios (Feb 26, 2026)"
+      },
+      {
+        "text": "WEF independent investigation by outside counsel found 'no additional concerns beyond what has been previously disclosed'",
+        "tier": "documented",
+        "source": "Fortune (Feb 26, 2026)"
+      },
+      {
+        "text": "Henry Kissinger was instrumental in transforming European Management Forum into global WEF; appears in Epstein's black book with 2 phone numbers",
+        "tier": "documented",
+        "source": "Epstein black book (leaked 2015); Kissinger-WEF history (multiple sources)"
       }
     ],
     "sources": [
@@ -352,6 +367,22 @@ var NODES = [
       {
         "label": "Quigley, Tragedy and Hope (1966)",
         "url": "https://archive.org/details/TragedyAndHopeAHistoryOfTheWorldInOurTime"
+      },
+      {
+        "label": "Bloomberg — WEF Chief Brende Steps Down Amid Epstein Links (Feb 26, 2026)",
+        "url": "https://www.bloomberg.com/news/articles/2026-02-26/world-economic-forum-chief-brende-steps-down-amid-epstein-links"
+      },
+      {
+        "label": "Al Jazeera — WEF Head Brende Quits After Epstein Links Revealed (Feb 26, 2026)",
+        "url": "https://www.aljazeera.com/news/2026/2/26/world-economic-forum-head-borge-brende-quits-after-epstein-links-revealed"
+      },
+      {
+        "label": "Fortune — WEF Head to Resign Over Epstein Ties (Feb 26, 2026)",
+        "url": "https://fortune.com/2026/02/26/world-economic-forum-head-to-resign-over-epstein-ties-borge-brende/"
+      },
+      {
+        "label": "Semafor — WEF Head Brende Resigns Over Epstein Ties (Feb 26, 2026)",
+        "url": "https://www.semafor.com/article/02/26/2026/world-economic-forum-head-brge-brende-resigns-over-epstein-ties"
       }
     ],
     "status": "researched"
