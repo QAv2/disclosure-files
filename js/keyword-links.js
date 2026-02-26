@@ -287,7 +287,25 @@ var KEYWORD_LINKS = [
   ["Zelikow", "sept-11-commission"],
   ["9/11 Commission", "sept-11-commission"],
   ["LSD", "experiment-mkultra-full"],
-  ["psychic driving", "experiment-mkultra-full"]
+  ["psychic driving", "experiment-mkultra-full"],
+
+  // ── UAP Disclosure Legal Architecture ────────────────────────
+  ["UAP Disclosure Legal Architecture", "uap-legal-architecture"],
+  ["New Paradigm Institute", "uap-legal-architecture"],
+  ["Christic Institute", "uap-legal-architecture"],
+  ["Daniel Sheehan", "uap-legal-architecture"],
+  ["Avirgan v. Hull", "uap-legal-architecture"],
+  ["Disclosure Project", "uap-legal-architecture"],
+  ["John Mack", "uap-legal-architecture"],
+  ["Karen Silkwood", "uap-legal-architecture"],
+  ["Secret Team", "uap-legal-architecture"],
+  ["Enhanced UAP Whistleblower Protection Act", "uap-legislation"],
+  ["Whistleblower Protection Act", "uap-legislation"],
+  ["David Grusch", "uap-legislation"],
+  ["Luis Elizondo", "uap-program-history"],
+  ["David Fravor", "uap-program-history"],
+  ["Ryan Graves", "uap-program-history"],
+  ["Steven Greer", "uap-legal-architecture"]
 ];
 
 // ============================================================

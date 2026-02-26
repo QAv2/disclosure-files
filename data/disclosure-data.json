@@ -6659,7 +6659,8 @@
           "epstein-maxwell-mossad",
           "organized-crime-intel",
           "roy-cohn",
-          "epstein-surveillance"
+          "epstein-surveillance",
+          "uap-legal-architecture"
         ]
       },
       {
@@ -7349,7 +7350,8 @@
           "cosmology-et",
           "intelligence",
           "military-industrial",
-          "science-physics"
+          "science-physics",
+          "uap-legal-architecture"
         ]
       },
       {
@@ -7584,7 +7586,8 @@
           "uap-program-history",
           "uap-wilson-davis",
           "intelligence",
-          "legal-judicial-capture"
+          "legal-judicial-capture",
+          "uap-legal-architecture"
         ]
       },
       {
@@ -7653,6 +7656,95 @@
           "military-industrial",
           "media-narrative-coordination",
           "area-51-groom-lake"
+        ]
+      },
+      {
+        "id": "uap-legal-architecture",
+        "label": "UAP Disclosure Legal Architecture",
+        "description": "RESEARCHED: The five-decade legal framework constructed by constitutional attorney Daniel Sheehan — from Pentagon Papers to modern UAP disclosure — revealing how courtroom strategies and legislative drafting became the primary mechanism for forcing transparency on unacknowledged programs.\n\nPENTAGON PAPERS TO SILKWOOD (1971-1979):\n🟢 DOCUMENTED: Sheehan represented the New York Times in New York Times Co. v. United States (1971), establishing the foundational First Amendment precedent against prior restraint of national security information [🟢 Supreme Court decision]. Subsequently led the Karen Silkwood case (1976), exposing CIA plutonium smuggling through the Israeli Desk — a nuclear safety case that revealed covert intelligence operations hidden behind classification [🟢 court records].\n\nCHRISTIC INSTITUTE — 'SECRET TEAM' (1980-1991):\n🟢 DOCUMENTED: Sheehan co-founded the Christic Institute (1980) and filed Avirgan v. Hull (1986) — a $24M RICO civil suit naming 28 defendants including Theodore Shackley, Thomas Clines, and Richard Secord, alleging a criminal enterprise encompassing arms/drug smuggling, money laundering, and the La Penca bombing [🟢 932 F.2d 1572, 11th Cir.]. Case dismissed 1988; Christic ordered to pay $1M in fees [🟢]. Despite legal defeat, the lawsuit publicly exposed the covert operations network later confirmed by the Iran-Contra congressional investigation [🟢]. The 'Secret Team' theory — that unaccountable parallel structures operate beyond Congressional oversight — became the template for understanding unacknowledged SAPs.\n\nPROJECT BLUE BOOK ACCESS (1977):\n🟡 CREDIBLE: While serving as special counsel under President Carter, Sheehan reportedly accessed classified Project Blue Book materials including photographs documenting military personnel engaged in live crash retrieval operations [🟡 Sheehan accounts, multiple interviews]. This experience reportedly transformed his understanding of the UAP issue and motivated his subsequent decades of disclosure work.\n\nJOHN MACK DEFENSE (1994-1995):\n🟢 DOCUMENTED: Harvard Medical School investigated Pulitzer Prize-winning psychiatrist Dr. John Mack for his clinical research on alien abduction experiences — the first time Harvard investigated a tenured professor in its history [🟢 Harvard Crimson]. Sheehan served as Mack's attorney and successfully defended his academic freedom. In August 1995, Harvard reaffirmed Mack's right to 'study what he wishes and state his opinions without impediment' [🟢 Harvard statement]. Established the precedent that non-human contact testimonies are a legitimate subject for clinical and academic research.\n\nDISCLOSURE PROJECT TO AATIP (2001-2017):\n🟢 DOCUMENTED: Sheehan served as General Counsel for Steven Greer's Disclosure Project, which produced the May 9, 2001 National Press Club event featuring 20+ military/intelligence witnesses [🟢 ABC News, video record]. After Luis Elizondo's resignation from AATIP in October 2017 and the NYT revelations, Sheehan served as Elizondo's legal counsel, helping file complaints against the Pentagon and strategizing the public disclosure campaign [🟡 multiple sources].\n\nNEW PARADIGM INSTITUTE (2023-PRESENT):\n🟢 DOCUMENTED: Founded the New Paradigm Institute as an initiative of the Romero Institute (successor to the Christic Institute). NPI drafted key provisions of the Schumer-Rounds UAP Disclosure Act [🟢 NPI publications]. The legislation's eminent domain provision — compelling private aerospace contractors to surrender recovered technologies of unknown origin — directly mirrors Sheehan's decades-long argument that unacknowledged programs operate illegally outside Congressional oversight [🟢 bill text]. Launched 'Citizens for Disclosure' grassroots campaign (2024) [🟢 press release]. Advocated for the Enhanced UAP Whistleblower Protection Act (H.R. 5060, 2025) [🟢 Congress.gov].\n\nTHE ARC: Pentagon Papers established the precedent (government cannot suppress truth by invoking national security). Silkwood proved intelligence agencies hide behind classification. Christic exposed the 'Secret Team' parallel structure. Mack legitimized non-human contact as an academic subject. Disclosure Project compiled the witnesses. AATIP/Elizondo brought Pentagon insiders. Grusch provided sworn testimony. The UAP Disclosure Act translates all of this into statutory law. One attorney — one legal theory — fifty years.",
+        "keyEvidence": [
+          {
+            "claim": "Sheehan represented the New York Times in NYT v. United States (1971), the landmark Supreme Court case establishing that the government cannot use prior restraint to suppress publication of classified information",
+            "classification": "🟢",
+            "source": "New York Times Co. v. United States, 403 U.S. 713 (1971)"
+          },
+          {
+            "claim": "Christic Institute filed Avirgan v. Hull (1986), a $24M RICO suit naming 28 defendants in the Iran-Contra 'Secret Team' — dismissed but exposed the network later confirmed by congressional investigation",
+            "classification": "🟢",
+            "source": "Avirgan v. Hull, 932 F.2d 1572 (11th Cir. 1991)"
+          },
+          {
+            "claim": "Harvard investigated Dr. John Mack (first tenured professor investigation in Harvard history) for abduction research; Sheehan successfully defended his academic freedom (1994-1995)",
+            "classification": "🟢",
+            "source": "Harvard Crimson, multiple articles (1995); Harvard Medical School statement (August 1995)"
+          },
+          {
+            "claim": "Sheehan served as General Counsel for the 2001 Disclosure Project National Press Club event with 20+ military/intelligence witnesses",
+            "classification": "🟢",
+            "source": "ABC News (May 2001); Disclosure Project video record"
+          },
+          {
+            "claim": "New Paradigm Institute drafted key provisions of the Schumer-Rounds UAP Disclosure Act, including the eminent domain clause for private contractor-held technologies",
+            "classification": "🟢",
+            "source": "New Paradigm Institute publications; S.Amdt.797 to S.2226"
+          },
+          {
+            "claim": "The Enhanced UAP Whistleblower Protection Act (H.R. 5060, 2025) challenges enforceability of NDAs tied to illegally funded unacknowledged programs — a direct application of Sheehan's legal theory",
+            "classification": "🟢",
+            "source": "H.R. 5060, 119th Congress (Congress.gov)"
+          }
+        ],
+        "sources": [
+          {
+            "label": "NYT v. United States — First Amendment Encyclopedia (MTSU)",
+            "url": "https://firstamendment.mtsu.edu/article/new-york-times-co-v-united-states/",
+            "type": "academic"
+          },
+          {
+            "label": "Avirgan v. Hull, 932 F.2d 1572 — CourtListener",
+            "url": "https://www.courtlistener.com/opinion/561240/tony-avirgan-and-martha-honey-v-john-hull-adolfo-calero-robert-owen/",
+            "type": "court"
+          },
+          {
+            "label": "Harvard Crimson — HMS Takes No Action Against 'UFO Doctor' (1995)",
+            "url": "https://www.thecrimson.com/article/1995/8/4/hms-takes-no-action-against-ufo/",
+            "type": "journalism"
+          },
+          {
+            "label": "ABC News — Disclosure Project Press Conference (2001)",
+            "url": "https://abcnews.go.com/Technology/story?id=98572&page=1",
+            "type": "journalism"
+          },
+          {
+            "label": "New Paradigm Institute — Official Site",
+            "url": "https://newparadigminstitute.org/",
+            "type": "other"
+          },
+          {
+            "label": "Schumer-Rounds UAP Disclosure Act — Full Text (NPI)",
+            "url": "https://newparadigminstitute.org/learn/library/uap-disclosure-act-of-2024-full-text/",
+            "type": "congressional"
+          },
+          {
+            "label": "H.R. 5060 — Enhanced UAP Whistleblower Protection Act (Congress.gov)",
+            "url": "https://www.congress.gov/bill/119th-congress/house-bill/5060",
+            "type": "congressional"
+          },
+          {
+            "label": "UAP Disclosure Act — NYU JLPP Academic Analysis",
+            "url": "https://nyujlpp.org/wp-content/uploads/2025/03/JLPP-27-2-Yang.pdf",
+            "type": "academic"
+          }
+        ],
+        "status": "researched",
+        "connections": [
+          "uap-legislation",
+          "uap-program-history",
+          "whistleblower-suppression",
+          "legal-judicial-capture",
+          "intelligence",
+          "cosmology-et",
+          "unacknowledged-saps"
         ]
       }
     ]
