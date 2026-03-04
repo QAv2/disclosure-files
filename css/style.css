@@ -465,6 +465,131 @@ html, body {
   color: #7cb8ff;
 }
 
+/* ---- Intel Entities Section ---- */
+.entity-section {
+  margin-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 20px;
+}
+
+.entity-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.entity-pill {
+  padding: 4px 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.entity-pill:hover {
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.8);
+}
+
+.entity-pill.active {
+  background: rgba(0,101,242,0.2);
+  border-color: rgba(0,101,242,0.4);
+  color: #4a9eff;
+}
+
+.entity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.entity-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+  text-decoration: none;
+}
+
+.entity-item:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.entity-type-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.entity-type-dot[data-type="person"] { background: #60a5fa; }
+.entity-type-dot[data-type="organization"] { background: #f472b6; }
+.entity-type-dot[data-type="agency"] { background: #f87171; }
+.entity-type-dot[data-type="program"] { background: #a78bfa; }
+.entity-type-dot[data-type="event"] { background: #fbbf24; }
+.entity-type-dot[data-type="facility"] { background: #34d399; }
+.entity-type-dot[data-type="legislation"] { background: #fb923c; }
+.entity-type-dot[data-type="publication"] { background: #94a3b8; }
+.entity-type-dot[data-type="foundation"] { background: #c084fc; }
+
+.entity-name {
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.entity-item:hover .entity-name {
+  color: #ffffff;
+}
+
+.entity-conn-count {
+  font-size: 10px;
+  color: rgba(255,255,255,0.3);
+  flex-shrink: 0;
+}
+
+.entity-link-icon {
+  font-size: 10px;
+  color: rgba(255,255,255,0.2);
+  flex-shrink: 0;
+}
+
+.entity-item:hover .entity-link-icon {
+  color: #4a9eff;
+}
+
+.entity-show-more {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 12px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.5);
+  font-size: 11px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.entity-show-more:hover {
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.8);
+}
+
 /* Description auto-links (keyword cross-references) */
 .desc-link {
   color: #c9a84c;

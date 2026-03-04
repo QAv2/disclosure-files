@@ -43,6 +43,107 @@
     branchGroups: {}
   };
 
+  // ---- Intel Console entity data (loaded async) ----
+  var entityTopicMap = null;  // {byTopic: {topicId: [entityIds]}, byEntity: {entityId: [topicIds]}}
+  var entitiesIndex = null;   // {entityId: {id, name, entity_type, connection_count, aliases}}
+  var IC_BASE_URL = "https://qav2.github.io/intel-console/";
+
+  function loadEntityData() {
+    var mapReq = fetch("data/topic-entity-map.json").then(function (r) { return r.json(); });
+    var idxReq = fetch("data/entities-index.json").then(function (r) { return r.json(); });
+    Promise.all([mapReq, idxReq]).then(function (results) {
+      entityTopicMap = results[0];
+      entitiesIndex = results[1];
+      console.log("Entity data loaded:", Object.keys(entityTopicMap.byTopic).length, "topics,", Object.keys(entitiesIndex).length, "entities");
+      addEntityBadges();
+    }).catch(function (err) {
+      console.warn("Entity data not available:", err.message);
+    });
+  }
+
+  function addEntityBadges() {
+    if (!entityTopicMap) return;
+    var gNodes = document.getElementById("layer-nodes");
+    if (!gNodes) return;
+
+    NODES.forEach(function (node) {
+      var count = getEntityCountForTopic(node.id);
+      if (count === 0) return;
+
+      var pos = state.nodePositions[node.id];
+      if (!pos) return;
+      var branch = BRANCHES[node.branch];
+      var r = node.ring === 1 ? SUBTOPIC_RADIUS : (node.ring === 2 ? SUBTOPIC_RADIUS - 2 : SUBTOPIC_RADIUS - 3);
+
+      // Badge position: top-right of node
+      var bx = pos.x + r * 0.7;
+      var by = pos.y - r * 0.7;
+      var badgeR = count >= 100 ? 8 : (count >= 10 ? 7 : 6);
+
+      var badgeGroup = svgEl("g", { class: "entity-badge", "data-id": node.id });
+
+      // Badge circle
+      var badgeCircle = svgEl("circle", {
+        cx: bx, cy: by, r: badgeR,
+        fill: branch.color,
+        "fill-opacity": "0.9",
+        stroke: "#111",
+        "stroke-width": "1"
+      });
+      badgeGroup.appendChild(badgeCircle);
+
+      // Badge text
+      var badgeText = svgEl("text", {
+        x: bx, y: by + 0.5,
+        "text-anchor": "middle",
+        "dominant-baseline": "central",
+        fill: "#ffffff",
+        "font-size": count >= 100 ? "6" : "7",
+        "font-weight": "700",
+        "font-family": "'Helvetica Neue', Arial, sans-serif"
+      });
+      badgeText.textContent = count;
+      badgeGroup.appendChild(badgeText);
+
+      // Add subtle glow ring for high-entity topics
+      if (count >= 10) {
+        var glowCircle = svgEl("circle", {
+          cx: pos.x, cy: pos.y, r: r + 3,
+          fill: "none",
+          stroke: branch.color,
+          "stroke-width": "1",
+          "stroke-opacity": String(Math.min(0.5, count / 100)),
+          class: "entity-glow"
+        });
+        // Insert glow behind the node group
+        var nodeEl = state.nodeElements[node.id];
+        if (nodeEl && nodeEl.parentNode) {
+          nodeEl.parentNode.insertBefore(glowCircle, nodeEl);
+        }
+      }
+
+      gNodes.appendChild(badgeGroup);
+    });
+  }
+
+  function getEntitiesForTopic(topicId) {
+    if (!entityTopicMap || !entitiesIndex) return [];
+    var entityIds = entityTopicMap.byTopic[topicId] || [];
+    var entities = [];
+    entityIds.forEach(function (eid) {
+      var e = entitiesIndex[String(eid)];
+      if (e) entities.push(e);
+    });
+    // Sort by connection count descending
+    entities.sort(function (a, b) { return (b.connection_count || 0) - (a.connection_count || 0); });
+    return entities;
+  }
+
+  function getEntityCountForTopic(topicId) {
+    if (!entityTopicMap) return 0;
+    return (entityTopicMap.byTopic[topicId] || []).length;
+  }
+
   // ---- Build lookup maps (Disclosure) ----
   var nodeMap = {};
   NODES.forEach(function (n) { nodeMap[n.id] = n; });
@@ -549,6 +650,7 @@
     var node = nodeMap[nodeId];
     if (!node) return;
     state.selectedNode = nodeId;
+    history.replaceState(null, "", "#" + nodeId);
 
     var connectedIds = getConnectedNodes(nodeId);
     connectedIds.push(nodeId);
@@ -640,6 +742,7 @@
     state.selectedNode = null;
     resetVisuals();
     closePanel();
+    history.replaceState(null, "", window.location.pathname);
   }
 
   function dimAll() {
@@ -813,13 +916,58 @@
       }
     }
 
+    // ---- Entity section ----
+    var entityHtml = "";
+    var entities = getEntitiesForTopic(nodeId);
+    if (entities.length) {
+      // Collect unique types for filter pills
+      var typeSet = {};
+      entities.forEach(function (e) { typeSet[e.entity_type] = (typeSet[e.entity_type] || 0) + 1; });
+      var types = Object.keys(typeSet).sort();
+
+      entityHtml = '<div class="entity-section">';
+      entityHtml += '<div class="panel-section-label">Intel Entities (' + entities.length + ')</div>';
+
+      // Type filter pills
+      if (types.length > 1) {
+        entityHtml += '<div class="entity-filter-pills">';
+        entityHtml += '<button class="entity-pill active" data-entity-filter="all">All</button>';
+        types.forEach(function (t) {
+          entityHtml += '<button class="entity-pill" data-entity-filter="' + t + '">' + t + ' (' + typeSet[t] + ')</button>';
+        });
+        entityHtml += '</div>';
+      }
+
+      // Entity list
+      var entityLimit = 15;
+      entityHtml += '<div class="entity-list">';
+      entities.forEach(function (e, i) {
+        var hidden = i >= entityLimit ? ' style="display:none" data-entity-extra' : '';
+        entityHtml += '<a class="entity-item" data-entity-type="' + e.entity_type + '"' + hidden +
+          ' href="' + IC_BASE_URL + '#entity/' + e.id + '" target="_blank" rel="noopener">' +
+          '<span class="entity-type-dot" data-type="' + e.entity_type + '"></span>' +
+          '<span class="entity-name">' + escapeHtml(e.name) + '</span>' +
+          '<span class="entity-conn-count">' + (e.connection_count || 0) + '</span>' +
+          '<span class="entity-link-icon">\u2197</span>' +
+          '</a>';
+      });
+      entityHtml += '</div>';
+
+      if (entities.length > entityLimit) {
+        entityHtml += '<button class="entity-show-more" data-entity-expanded="false">Show ' + (entities.length - entityLimit) + ' more entities</button>';
+      }
+
+      entityHtml += '</div>';
+    }
+
     panelInner.innerHTML =
       '<div class="panel-branch-tag" style="background:' + branch.color + '22;color:' + branch.color + '">' + escapeHtml(branch.label) + '</div>' +
       '<h2 class="panel-title">' + escapeHtml(node.title) + '</h2>' +
       '<p class="panel-description">' + linkifyDescription(desc, nodeId) + '</p>' +
       evidenceHtml +
       chipsHtml +
-      sourcesHtml;
+      sourcesHtml +
+      entityHtml;
 
     panel.classList.add("open");
 
@@ -844,6 +992,39 @@
         var total = node.sources.length;
         var sourceLimit = 5;
         toggleBtn.textContent = expanded ? "Show fewer sources" : "Show " + (total - sourceLimit) + " more sources";
+      });
+    }
+
+    // Entity filter pill handlers
+    panelInner.querySelectorAll(".entity-pill").forEach(function (pill) {
+      pill.addEventListener("click", function () {
+        var filter = pill.getAttribute("data-entity-filter");
+        // Update active state
+        panelInner.querySelectorAll(".entity-pill").forEach(function (p) { p.classList.remove("active"); });
+        pill.classList.add("active");
+        // Filter entity items
+        panelInner.querySelectorAll(".entity-item").forEach(function (item) {
+          if (filter === "all" || item.getAttribute("data-entity-type") === filter) {
+            item.style.display = "";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      });
+    });
+
+    // Entity "Show more" toggle
+    var entityToggle = panelInner.querySelector(".entity-show-more");
+    if (entityToggle) {
+      entityToggle.addEventListener("click", function () {
+        var expanded = entityToggle.getAttribute("data-entity-expanded") === "true";
+        panelInner.querySelectorAll("[data-entity-extra]").forEach(function (el) {
+          el.style.display = expanded ? "none" : "";
+        });
+        expanded = !expanded;
+        entityToggle.setAttribute("data-entity-expanded", String(expanded));
+        var entityLimit = 15;
+        entityToggle.textContent = expanded ? "Show fewer entities" : "Show " + (entities.length - entityLimit) + " more entities";
       });
     }
   }
@@ -1278,6 +1459,17 @@
     });
   }
 
+  // ---- Hash Routing ----
+  function handleHash() {
+    var hash = window.location.hash.slice(1);
+    if (!hash) return;
+    if (nodeMap[hash]) {
+      selectNode(hash);
+    } else if (BRANCHES[hash]) {
+      selectBranch(hash);
+    }
+  }
+
   // ---- Initialization ----
   function init() {
     initPanel();
@@ -1285,10 +1477,15 @@
     initToolbar();
     initSearch();
     initKeyboard();
+    loadEntityData();
     clearSVG();
     computePositions();
     buildSVG();
     resetView();
+
+    // Hash routing: select node from URL hash
+    handleHash();
+    window.addEventListener("hashchange", handleHash);
   }
 
   if (document.readyState === "loading") {
