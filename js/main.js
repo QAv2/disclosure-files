@@ -112,7 +112,7 @@
           fill: "none",
           stroke: branch.color,
           "stroke-width": "1",
-          "stroke-opacity": String(Math.min(0.5, count / 100)),
+          "stroke-opacity": String(Math.min(0.5, 0.15 + count / 120)),
           class: "entity-glow"
         });
         // Insert glow behind the node group
@@ -1002,14 +1002,25 @@
         // Update active state
         panelInner.querySelectorAll(".entity-pill").forEach(function (p) { p.classList.remove("active"); });
         pill.classList.add("active");
+        // Check expanded state
+        var eToggle = panelInner.querySelector(".entity-show-more");
+        var isExpanded = eToggle && eToggle.getAttribute("data-entity-expanded") === "true";
         // Filter entity items
         panelInner.querySelectorAll(".entity-item").forEach(function (item) {
-          if (filter === "all" || item.getAttribute("data-entity-type") === filter) {
-            item.style.display = "";
+          var matchesFilter = (filter === "all" || item.getAttribute("data-entity-type") === filter);
+          var isExtra = item.hasAttribute("data-entity-extra");
+          if (filter === "all") {
+            // Respect the 15-item cap unless expanded
+            item.style.display = (isExtra && !isExpanded) ? "none" : "";
           } else {
-            item.style.display = "none";
+            // Type filter: show all matching, hide non-matching
+            item.style.display = matchesFilter ? "" : "none";
           }
         });
+        // Hide show-more when type filter active, restore for "All"
+        if (eToggle) {
+          eToggle.style.display = (filter === "all") ? "" : "none";
+        }
       });
     });
 
