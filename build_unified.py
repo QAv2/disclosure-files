@@ -122,12 +122,10 @@ def build_mapping(keyword_links, df_nodes, ic_entities):
     # not covered by keyword-links.js (which maps DF cross-references, not IC entities)
     DESCRIPTION_SIGNALS = {
         # Epstein network
-        "epstein-wexner": ["wexner", "mega group", "les wexner", "limited brands"],
+        "epstein-wexner": ["wexner", "mega group", "les wexner", "limited brands", "epstein.*network", "epstein.*connect", "epstein.*associate"],
         "epstein-financial": ["epstein.*financ", "epstein.*bank", "epstein.*money", "bear stearns.*epstein", "deutsche bank.*epstein", "epstein.*hedge fund"],
         "epstein-political-protection": ["epstein.*plea", "epstein.*prosecut", "non-prosecution", "acosta.*epstein", "epstein.*plea deal"],
         "epstein-maxwell-mossad": ["maxwell", "mossad", "ghislaine", "robert maxwell", "promis software", "epstein.*intelligence", "epstein.*mossad"],
-        # Broad Epstein network catch-all — entities mentioning Epstein get mapped here
-        "epstein-wexner": ["epstein.*network", "epstein.*connect", "epstein.*associate"],
         "epstein-leon-black": ["leon black", "apollo global"],
         "epstein-academic": ["epstein.*harvard", "epstein.*mit", "epstein.*science"],
         "epstein-surveillance": ["epstein.*surveillance", "epstein.*camera", "epstein.*tape", "epstein.*blackmail"],
