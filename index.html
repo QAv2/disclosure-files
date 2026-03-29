@@ -7,9 +7,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a href="#map-svg" class="skip-link">Skip to map</a>
 
   <!-- SVG Canvas -->
-  <svg id="map-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+  <main>
+    <svg id="map-svg" xmlns="http://www.w3.org/2000/svg" tabindex="-1" role="img" aria-label="Network diagram of disclosure topics and connections"></svg>
+  </main>
 
   <!-- Header -->
   <div class="map-header">
@@ -31,14 +34,14 @@
   <div class="search-container">
     <div class="search-input-wrap">
       <span class="search-icon">&#x1F50D;</span>
-      <input type="text" placeholder="Search nodes... (press / to open)" autocomplete="off" spellcheck="false">
+      <input type="text" placeholder="Search nodes... (press / to open)" autocomplete="off" spellcheck="false" aria-label="Search nodes">
     </div>
     <div class="search-results"></div>
   </div>
 
   <!-- Content Panel -->
-  <div class="panel">
-    <button class="panel-close">&times;</button>
+  <div class="panel" role="complementary" aria-label="Node details" aria-hidden="true">
+    <button class="panel-close" aria-label="Close panel">&times;</button>
     <div class="panel-inner"></div>
   </div>
 

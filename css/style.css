@@ -20,6 +20,22 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ---- Skip Link ---- */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #4a9eff;
+  color: #0a0a0f;
+  padding: 8px 16px;
+  z-index: 10000;
+  text-decoration: none;
+  font-size: 14px;
+}
+.skip-link:focus {
+  top: 0;
+}
+
 /* ---- SVG Canvas ---- */
 #map-svg {
   width: 100%;
@@ -59,7 +75,7 @@ html, body {
 
 .map-header p {
   font-size: 12px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.55);
   font-weight: 400;
 }
 
@@ -85,7 +101,7 @@ html, body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.55);
   margin-bottom: 2px;
 }
 
@@ -94,7 +110,7 @@ html, body {
   align-items: center;
   gap: 8px;
   font-size: 11px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.8);
 }
 
 .legend-dot {
@@ -189,7 +205,7 @@ html, body {
 }
 
 .search-input-wrap input::placeholder {
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.55);
 }
 
 .search-input-wrap input:focus {
@@ -201,7 +217,7 @@ html, body {
   left: 14px;
   top: 50%;
   transform: translateY(-50%);
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.55);
   font-size: 16px;
   pointer-events: none;
 }
@@ -254,7 +270,7 @@ html, body {
 
 .search-result-branch {
   font-size: 11px;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.6);
   margin-left: auto;
 }
 
@@ -330,7 +346,7 @@ html, body {
 .panel-subtitle {
   font-size: 14px;
   font-weight: 500;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.55);
   margin-top: -10px;
   margin-bottom: 18px;
   font-style: italic;
@@ -339,7 +355,7 @@ html, body {
 .panel-description {
   font-size: 14px;
   line-height: 1.65;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.8);
   margin-bottom: 28px;
   white-space: pre-wrap;
 }
@@ -349,7 +365,7 @@ html, body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.55);
   margin-bottom: 12px;
 }
 
@@ -388,7 +404,7 @@ html, body {
   display: block;
   margin-top: 6px;
   font-size: 11px;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.55);
   font-style: italic;
 }
 
@@ -409,7 +425,7 @@ html, body {
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 20px;
   font-size: 11px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.8);
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -486,7 +502,7 @@ html, body {
   border-radius: 12px;
   font-size: 10px;
   font-weight: 500;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.55);
   cursor: pointer;
   transition: all 0.2s;
   font-family: inherit;
@@ -557,13 +573,13 @@ html, body {
 
 .entity-conn-count {
   font-size: 10px;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.55);
   flex-shrink: 0;
 }
 
 .entity-link-icon {
   font-size: 10px;
-  color: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.55);
   flex-shrink: 0;
 }
 
@@ -577,7 +593,7 @@ html, body {
   padding: 5px 12px;
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.55);
   font-size: 11px;
   border-radius: 6px;
   cursor: pointer;
@@ -592,9 +608,9 @@ html, body {
 
 /* Description auto-links (keyword cross-references) */
 .desc-link {
-  color: #c9a84c;
+  color: #d4b85c;
   cursor: pointer;
-  border-bottom: 1px dotted rgba(201, 168, 76, 0.4);
+  border-bottom: 1px dotted rgba(212, 184, 92, 0.4);
   transition: border-color 0.2s, color 0.2s;
 }
 .desc-link:hover {
@@ -700,4 +716,47 @@ html, body {
     font-size: 10px;
     padding: 5px 10px;
   }
+}
+
+/* Accessibility: focus indicators */
+.toolbar button:focus-visible,
+.panel-close:focus-visible {
+  outline: 2px solid #4a9eff;
+  outline-offset: 2px;
+}
+
+.search-result-item:focus-visible {
+  outline: 2px solid #4a9eff;
+  outline-offset: -1px;
+}
+
+.chip:focus-visible {
+  outline: 2px solid #4a9eff;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  .legend-item, .search-result-branch, .chip {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

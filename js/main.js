@@ -259,6 +259,15 @@
     var vb = state.viewBox;
     svg.setAttribute("viewBox", vb.x + " " + vb.y + " " + vb.w + " " + vb.h);
 
+    // Accessibility: add SVG title element
+    var svgTitle = document.createElementNS(SVG_NS, "title");
+    svgTitle.textContent = "Disclosure Files Network Map";
+    svg.insertBefore(svgTitle, svg.firstChild);
+
+    var svgDesc = document.createElementNS(SVG_NS, "desc");
+    svgDesc.textContent = "Interactive network map of disclosure topics with branches for intelligence, technology, finance, and power structures. Nodes can be selected to view detailed information with sourced evidence.";
+    svg.insertBefore(svgDesc, svgTitle.nextSibling);
+
     var defs = svgEl("defs");
     svg.appendChild(defs);
 
@@ -379,7 +388,10 @@
         class: "branch-node",
         "data-branch": bKey,
         "data-id": "branch-" + bKey,
-        style: "cursor:pointer"
+        style: "cursor:pointer",
+        tabindex: "0",
+        role: "button",
+        "aria-label": branch.label
       });
 
       // Outer ring
@@ -453,6 +465,12 @@
         e.stopPropagation();
         selectBranch(bKey);
       });
+      group.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          selectBranch(bKey);
+        }
+      });
       group.addEventListener("mouseenter", function () {
         if (!state.selectedNode) {
           circle.setAttribute("fill-opacity", "0.35");
@@ -478,7 +496,10 @@
         class: "topic-node",
         "data-id": node.id,
         "data-branch": node.branch,
-        style: "cursor:pointer"
+        style: "cursor:pointer",
+        tabindex: "0",
+        role: "button",
+        "aria-label": node.title
       });
 
       var r = node.ring === 1 ? SUBTOPIC_RADIUS : (node.ring === 2 ? SUBTOPIC_RADIUS - 2 : SUBTOPIC_RADIUS - 3);
@@ -540,6 +561,12 @@
         e.stopPropagation();
         selectNode(node.id);
       });
+      group.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          selectNode(node.id);
+        }
+      });
       group.addEventListener("mouseenter", function () {
         if (state.selectedNode !== node.id) {
           circle.setAttribute("fill-opacity", "0.35");
@@ -564,7 +591,10 @@
     var centerGroup = svgEl("g", {
       class: "center-node",
       "data-id": "center",
-      style: "cursor:pointer"
+      style: "cursor:pointer",
+      tabindex: "0",
+      role: "button",
+      "aria-label": "The Disclosure Files — central node"
     });
 
     // Background glow
@@ -631,6 +661,12 @@
     centerGroup.addEventListener("click", function (e) {
       e.stopPropagation();
       selectCenter();
+    });
+    centerGroup.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        selectCenter();
+      }
     });
     centerGroup.addEventListener("mouseenter", function () {
       centerCircle.setAttribute("filter", "url(#glowBig)");
@@ -739,9 +775,10 @@
   }
 
   function deselectAll() {
+    var previousNode = state.selectedNode;
     state.selectedNode = null;
     resetVisuals();
-    closePanel();
+    closePanel(previousNode);
     history.replaceState(null, "", window.location.pathname);
   }
 
@@ -970,6 +1007,7 @@
       entityHtml;
 
     panel.classList.add("open");
+    panel.setAttribute('aria-hidden', 'false');
 
     // Chip click handlers
     panelInner.querySelectorAll(".chip").forEach(function (chip) {
@@ -1059,6 +1097,7 @@
       nodesHtml;
 
     panel.classList.add("open");
+    panel.setAttribute('aria-hidden', 'false');
 
     panelInner.querySelectorAll(".chip").forEach(function (chip) {
       chip.addEventListener("click", function () {
@@ -1095,6 +1134,7 @@
       sourcesHtml;
 
     panel.classList.add("open");
+    panel.setAttribute('aria-hidden', 'false');
 
     panelInner.querySelectorAll(".chip[data-goto-branch]").forEach(function (chip) {
       chip.addEventListener("click", function () {
@@ -1104,8 +1144,16 @@
     });
   }
 
-  function closePanel() {
+  function closePanel(returnFocusTo) {
     panel.classList.remove("open");
+    panel.setAttribute('aria-hidden', 'true');
+    // Return focus to the previously selected node, or the SVG
+    var target = returnFocusTo && state.nodeElements[returnFocusTo];
+    if (target) {
+      target.focus();
+    } else {
+      document.getElementById("map-svg").focus();
+    }
   }
 
   function escapeHtml(str) {
@@ -1392,7 +1440,7 @@
         var dotColor = b.color;
         var tagLabel = b.label;
         var displayTitle = n.title || n.label || n.id;
-        html += '<div class="search-result-item" data-id="' + n.id + '">' +
+        html += '<div class="search-result-item" tabindex="0" data-id="' + n.id + '">' +
           '<span class="search-result-dot" style="background:' + dotColor + '"></span>' +
           '<span class="search-result-title">' + escapeHtml(displayTitle) + '</span>' +
           '<span class="search-result-branch">' + escapeHtml(tagLabel) + '</span>' +
@@ -1402,7 +1450,7 @@
       results.classList.add("has-results");
 
       results.querySelectorAll(".search-result-item").forEach(function (item) {
-        item.addEventListener("click", function () {
+        function activateResult() {
           var id = item.getAttribute("data-id");
 
           container.classList.remove("open");
@@ -1421,6 +1469,13 @@
               updateViewBox();
             }
           }, 50);
+        }
+        item.addEventListener("click", activateResult);
+        item.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            activateResult();
+          }
         });
       });
     });
