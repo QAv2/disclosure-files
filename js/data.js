@@ -9424,11 +9424,11 @@ var CONNECTIONS = [
     "tech-suppressed"
   ],
   [
-    "health-suppression",
+    "health-regulatory",
     "sackler-opioid-crisis"
   ],
   [
-    "health-suppression",
+    "health-regulatory",
     "tobacco-conspiracy"
   ],
   [
