@@ -39,55 +39,335 @@ var BRANCHES = {
   "history": {
     "label": "Hidden History",
     "color": "#b8763a",
-    "angle": 45,
+    "angle": 40,
     "icon": "◈",
     "description": "The story they didn't tell you — suppressed archaeological evidence, revisionist timelines, lost civilizations, and the deliberate rewriting of humanity's past."
   },
   "consciousness": {
     "label": "Consciousness & Metaphysics",
     "color": "#7a5aa0",
-    "angle": 90,
+    "angle": 80,
     "icon": "◉",
     "description": "The nature of reality itself — what consciousness is, how perception shapes existence, and why this understanding has been systematically suppressed."
   },
   "science": {
     "label": "Science & Technology",
     "color": "#4a7c9b",
-    "angle": 135,
+    "angle": 120,
     "icon": "⬢",
     "description": "What they don't teach in schools — suppressed technologies, alternative physics, free energy, and the corporate capture of scientific inquiry."
+  },
+  "physics": {
+    "label": "Reciprocal System",
+    "color": "#3388ff",
+    "angle": 160,
+    "icon": "⟳",
+    "description": "The suppressed strand of fundamental physics — Dewey Larson's Reciprocal System (a universe of motion, not matter), its RS2 reevaluation under Bruce Peret, the convergence with consciousness-first frameworks, and the classified spacetime-engineering physics of the AAWSAP DIRDs. Full lineage lives in the Reference Frame Engine capsule."
   },
   "ritual": {
     "label": "Ritual & Occult Systems",
     "color": "#9a5a6a",
-    "angle": 180,
+    "angle": 200,
     "icon": "◬",
     "description": "The ideological and symbolic frameworks behind power — not superstition, but operative systems of belief that the ruling class takes very seriously even if you don't."
   },
   "health": {
     "label": "Health & Biological Control",
     "color": "#5a8a6a",
-    "angle": 225,
+    "angle": 240,
     "icon": "⬟",
     "description": "The body as a control surface — pharmaceutical capture, food system manipulation, and the suppression of genuine healing modalities."
   },
   "media": {
     "label": "Media & Narrative Control",
     "color": "#4a8a8a",
-    "angle": 270,
+    "angle": 280,
     "icon": "◇",
     "description": "The construction of reality through narrative — who controls what you see, hear, and think, and the sophisticated machinery of perception management."
   },
   "cosmology": {
     "label": "Cosmology & Origins",
     "color": "#c9a84c",
-    "angle": 315,
+    "angle": 320,
     "icon": "✦",
     "description": "The biggest questions — what are we, where did we come from, what is this place, and why have the answers been kept from us?"
   }
 };
 
 var NODES = [
+  {
+    "id": "rs-larson-foundation",
+    "branch": "physics",
+    "ring": 1,
+    "title": "Dewey Larson & The Reciprocal System",
+    "description": "Dewey B. Larson (1898–1990) derived the periodic table, stellar evolution, and subatomic particle properties from two postulates alone — a universe of motion, not matter. He later posited consciousness as a fundamental third sector of reality.",
+    "fullDescription": "Dewey B. Larson (1898–1990) built the Reciprocal System from two postulates and no arbitrary constants: the universe is composed of motion, and space and time are reciprocal aspects of that motion. From this he derived the complete periodic table, stellar evolutionary sequences, and the properties of subatomic particles. The framework predicts that time has three dimensions reciprocal to space. In 'Beyond Space and Time' (1995, edited by Bruce Peret) Larson posited a non-physical third sector of metaphysical units — consciousness as fundamental to the universe's structure rather than emergent from matter. Organized research has continued for 40+ years through ISUS (1982) and its successor RSRS.",
+    "evidence": [
+      {
+        "text": "Larson derived the complete periodic table, stellar evolutionary sequences, and properties of subatomic particles from two postulates alone — no arbitrary constants or curve-fitting.",
+        "tier": "documented",
+        "source": "Larson, 'Nothing But Motion' (1979); 'Basic Properties of Matter' (1988)"
+      },
+      {
+        "text": "The Reciprocal System predicts that time has three dimensions reciprocal to space — the same domain covered by the 38 AAWSAP Defense Intelligence Reference Documents on warp drives, wormholes, and Alcubierre metrics.",
+        "tier": "credible",
+        "source": "Larson (1959–1988); AAWSAP DIRDs (2007–2012)"
+      },
+      {
+        "text": "Larson's 'Beyond Space and Time' (1995) posited a non-physical third sector — consciousness as fundamental to the universe's structure, not emergent from matter.",
+        "tier": "documented",
+        "source": "Larson, 'Beyond Space and Time' (1995, ed. Bruce Peret)"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Reciprocal System Lineage — Reference Frame Engine",
+        "url": "https://qav2.github.io/reference-frame-engine/"
+      },
+      {
+        "label": "Reciprocal System Research Society",
+        "url": "https://reciprocalsystem.org/"
+      },
+      {
+        "label": "ISUS Archive — Internet Archive Collection",
+        "url": "https://archive.org/details/the-reciprocal-system-of-theory-collection"
+      }
+    ]
+  },
+  {
+    "id": "rs2-peret-nehru",
+    "branch": "physics",
+    "ring": 1,
+    "title": "RS2 — Peret & Nehru Reevaluation",
+    "description": "Bruce Peret & KVK Nehru rebuilt the Reciprocal System on projective geometry and quaternion mathematics (RS2). Peret mentored the group — including Joseph Vanhorn — that relocated to Salt Lake City for the Sanctuary Project.",
+    "fullDescription": "From 1991, Bruce Peret and KVK Nehru reevaluated the Reciprocal System: RS2 replaced Euclidean with projective geometry and introduced quaternion mathematics to model Larson's double-rotating system — the structural roadmap later used by Qualia Algebra. Peret (as '--daniel' / Daniel Phoenix III) was David Wilcock's well-known 'super-insider' from 2004–2010. His electrogravitics work framed propulsion as manipulation of gravity's scalar-motion structure, directly relevant to the AAWSAP DIRD physics. A group including Joseph Vanhorn relocated to Salt Lake City to study directly under Peret on the Sanctuary Project. Peret died in 2020.",
+    "evidence": [
+      {
+        "text": "RS2 replaced Euclidean geometry with projective geometry and introduced quaternion mathematics to model Larson's double-rotating system — converging with Qualia Algebra's quaternion observer representation.",
+        "tier": "documented",
+        "source": "Peret, RS2 Tutorial Series (RS2-101 through RS2-109)"
+      },
+      {
+        "text": "Peret (as '--daniel' / Daniel Phoenix III) was David Wilcock's publicly identified 'super-insider' from 2004–2010.",
+        "tier": "documented",
+        "source": "Wilcock, divinecosmos.com; Twitter @david_wilcock (May 2019)"
+      },
+      {
+        "text": "A group including Joseph Vanhorn relocated to Salt Lake City to work directly with Peret on the Sanctuary Project and RS2 research.",
+        "tier": "documented",
+        "source": "Antiquatis forum records; personal testimony"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Reciprocal System Lineage — Reference Frame Engine",
+        "url": "https://qav2.github.io/reference-frame-engine/"
+      },
+      {
+        "label": "RS2 Tutorial Series — Bruce Peret",
+        "url": "https://reciprocalsystem.org/rs2-tutorial"
+      },
+      {
+        "label": "The --daniel Papers Archive",
+        "url": "https://www.rs2daniel.com/daniel-papers/"
+      }
+    ]
+  },
+  {
+    "id": "qa-convergence",
+    "branch": "physics",
+    "ring": 1,
+    "title": "Qualia Algebra — Ontological Parallel",
+    "description": "Joseph Vanhorn's Qualia Algebra derives 3D space, quaternion observer states, and consciousness-first ontology from the axiom 'I exist' — using RS2 as a structural roadmap, reaching the same architecture from a different foundation.",
+    "fullDescription": "Qualia Algebra (Vanhorn, 2025) derives 3D spatial emergence, quaternion observer states, and a consciousness-first ontology from the single axiom 'I exist,' using RS2's structural features as a roadmap — demonstrating the same architecture is reachable from a different ontological foundation across nine structural parallels. It shows a perfect mathematical equivalence (r = 1.000) between its temporal-asymmetry operator and Friston's Free Energy Principle, and generates 28 testable predictions with an 85% success rate across 13 core computational experiments — adjudicable within 1–2 years on standard neuroscience equipment.",
+    "evidence": [
+      {
+        "text": "Qualia Algebra derives 3D spatial emergence, quaternion observer states, and consciousness-first ontology from the axiom 'I exist,' using RS2 as a structural roadmap across 9 structural parallels.",
+        "tier": "documented",
+        "source": "Vanhorn, 'Qualia Algebra Comprehensive' (2025); DOI 10.5281/zenodo.17685406"
+      },
+      {
+        "text": "Perfect mathematical equivalence (r = 1.000) between QA's temporal-asymmetry operator and Friston's Free Energy Principle — independently derived frameworks producing identical structure.",
+        "tier": "documented",
+        "source": "QA computational validation; Friston (2010)"
+      },
+      {
+        "text": "QA generates 28 testable predictions with clear falsification criteria; 85% success across 13 core computational experiments.",
+        "tier": "documented",
+        "source": "Vanhorn, QA v2.0 (November 2025)"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Reciprocal System Lineage — Reference Frame Engine",
+        "url": "https://qav2.github.io/reference-frame-engine/"
+      },
+      {
+        "label": "Qualia Algebra — GitHub Repository",
+        "url": "https://github.com/qav2/qualia-algebra"
+      },
+      {
+        "label": "Qualia Algebra DOI (Zenodo)",
+        "url": "https://doi.org/10.5281/zenodo.17685406"
+      }
+    ]
+  },
+  {
+    "id": "tech-suppressed-physics",
+    "branch": "physics",
+    "ring": 1,
+    "title": "Classified Physics — The 38 DIRDs",
+    "description": "AAWSAP's 38 Defense Intelligence Reference Documents ($22M DIA program, 2007–2012) covered warp drives, wormholes, antigravity, and spacetime engineering — the exact domains the Reciprocal System addresses. Hal Puthoff authored several.",
+    "fullDescription": "The Advanced Aerospace Weapon System Applications Program (AAWSAP), a $22M DIA effort, produced 38 Defense Intelligence Reference Documents (2007–2012) covering warp drives, wormholes, antigravity, Alcubierre metrics, and quantum-vacuum energy extraction — the exact physics domains the Reciprocal System addresses. Alcubierre's 1994 warp metric (contracting space ahead, expanding behind) is functionally identical to Larson's scalar motion (motion OF space, not through it), derived 35 years earlier. Hal Puthoff — former NSA, director of SRI's remote-viewing program — authored DIRDs on engineering the spacetime metric. As of FY2025, 6,543 patent applications sit under active Invention Secrecy Act orders.",
+    "evidence": [
+      {
+        "text": "38 Defense Intelligence Reference Documents under AAWSAP ($22M DIA program) covered warp drives, wormholes, antigravity, Alcubierre metrics, and quantum-vacuum energy extraction.",
+        "tier": "documented",
+        "source": "AAWSAP contract records; publicly released DIRD titles; Congressional testimony"
+      },
+      {
+        "text": "Alcubierre's warp metric (1994) — contracting space ahead, expanding behind — is functionally identical to Larson's scalar motion concept derived 35 years earlier.",
+        "tier": "credible",
+        "source": "Alcubierre, Classical and Quantum Gravity (1994); Larson, 'Nothing But Motion' (1979)"
+      },
+      {
+        "text": "6,543 patent applications under active Invention Secrecy Act orders as of FY2025, with 356 new orders in FY2024 (documented count; RS connection is inference).",
+        "tier": "inference",
+        "source": "FAS/USPTO statistics"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Reciprocal System Lineage — Reference Frame Engine",
+        "url": "https://qav2.github.io/reference-frame-engine/"
+      },
+      {
+        "label": "AAWSAP DIRDs — Publicly Released Titles (Black Vault)",
+        "url": "https://www.theblackvault.com/documentarchive/the-advanced-aerospace-weapon-system-applications-program-aawsap-documentation/"
+      },
+      {
+        "label": "Alcubierre, 'The Warp Drive' (1994)",
+        "url": "https://arxiv.org/abs/gr-qc/0009013"
+      }
+    ]
+  },
+  {
+    "id": "rs-community-split",
+    "branch": "physics",
+    "ring": 2,
+    "title": "The ISUS Split — Three Factions",
+    "description": "The Reciprocal System community split three ways — Satz (orthodox/quantitative), Bundy (Larson Research Center), and the RS2 reevaluation that became dominant when ISUS rebranded as RSRS in 2016.",
+    "fullDescription": "Larson's successors diverged into three factions. Ronald Satz was Larson's direct mentee for 25 years (1965–1990), computerized the RS calculations, and held the orthodox quantitative interpretation. Douglas Bundy, a past ISUS president, founded the Larson Research Center in September 2006 after arguing 'scalar rotation is an oxymoron.' The RS2 reevaluation became the dominant ISUS direction, and the organization rebranded as the Reciprocal System Research Society (RSRS) on October 1, 2016.",
+    "evidence": [
+      {
+        "text": "Ronald Satz was Larson's direct personal mentee for 25 years (1965–1990), computerized all RS calculations, and maintained the orthodox quantitative interpretation.",
+        "tier": "documented",
+        "source": "Satz, 'The Unmysterious Universe' (1971); reciprocalsystem.org papers archive"
+      },
+      {
+        "text": "Douglas Bundy founded the Larson Research Center (2006) after arguing 'scalar rotation is an oxymoron' — a challenge to both Larson's and Peret's approaches.",
+        "tier": "documented",
+        "source": "LRC Charter (lrcphysics.com); Bundy, 'Wheel of Motion' (1998)"
+      },
+      {
+        "text": "The RS2 reevaluation became dominant; ISUS rebranded as the Reciprocal System Research Society (RSRS) on October 1, 2016.",
+        "tier": "documented",
+        "source": "RSRS bylaws (2016); reciprocalsystem.org"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Reciprocal System Lineage — Reference Frame Engine",
+        "url": "https://qav2.github.io/reference-frame-engine/"
+      },
+      {
+        "label": "LRC Charter — Douglas Bundy",
+        "url": "http://www.lrcphysics.com/lrc-charter/"
+      },
+      {
+        "label": "Ronald Satz Papers Archive",
+        "url": "https://reciprocalsystem.org/papers-for-author/38"
+      }
+    ]
+  },
+  {
+    "id": "rs-antiquatis-sanctuary",
+    "branch": "physics",
+    "ring": 2,
+    "title": "Antiquatis & The Sanctuary Project",
+    "description": "Bruce Peret's Antiquatis Institute (516 members, 5,849 posts) and the Sanctuary Project — his mission to evolve homo sapiens ethicus. Dr. Gopi Krishna Vijaya took over RSRS research after Peret's death.",
+    "fullDescription": "The Antiquatis Institute hosted 516 members and 5,849 posts dedicated to RS2 research, consciousness studies, and the Sanctuary Project — Bruce Peret's mission to evolve 'homo sapiens ethicus.' Joseph Vanhorn was part of the Antiquatis community and relocated to Salt Lake City to study directly under Peret. After Peret's death in 2020, Dr. Gopi Krishna Vijaya assumed Director of Research for RSRS, connecting RS2 to Goethean science, Steiner's anthroposophy, and Moral Technologies.",
+    "evidence": [
+      {
+        "text": "The Antiquatis Institute hosted 516 members and 5,849 posts on RS2 research, consciousness studies, and the Sanctuary Project — Peret's mission to evolve homo sapiens ethicus.",
+        "tier": "documented",
+        "source": "forum.antiquatis.org statistics; Antiquatis Institute Inc. registration"
+      },
+      {
+        "text": "Joseph Vanhorn relocated to Salt Lake City to study directly under Bruce Peret as part of the Sanctuary Project.",
+        "tier": "documented",
+        "source": "Antiquatis forum records; personal testimony"
+      },
+      {
+        "text": "Dr. Gopi Krishna Vijaya assumed Director of Research for RSRS after Peret's death, connecting RS2 to Goethean science and anthroposophy.",
+        "tier": "documented",
+        "source": "reciprocalsystem.org; MysTech organization"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Reciprocal System Lineage — Reference Frame Engine",
+        "url": "https://qav2.github.io/reference-frame-engine/"
+      },
+      {
+        "label": "Antiquatis Discussion Fora",
+        "url": "https://forum.antiquatis.org/"
+      },
+      {
+        "label": "Dr. Gopi Krishna Vijaya — Moral Technologies",
+        "url": "https://moraltechnologies.com.au/dr-gopi-krishna-vijaya/"
+      }
+    ]
+  },
+  {
+    "id": "dimensional-emergence",
+    "branch": "physics",
+    "ring": 2,
+    "title": "Dimensional Emergence — Convergence on 3",
+    "description": "Five independent frameworks — Reciprocal System, Qualia Algebra, knot theory, the Prime Scalar Field, and pendulum dynamics — all derive 3D as a critical emergent property rather than an assumed background.",
+    "fullDescription": "Five frameworks — the Reciprocal System, Qualia Algebra, knot theory, the Prime Scalar Field, and pendulum dynamics — independently derive three dimensions as a critical emergent property rather than an assumed background. Knot theory proves 3D is the unique critical dimension for binding complexity: knots cannot exist in 2D and are trivial in 4D+. QA further predicts that dimensional perception varies with attention state (flow ≈ 3.0D, normal ≈ 2.5D, meditation ≈ 3.5D+) — a testable claim. Observed UAP behavior (instantaneous acceleration, transmedium travel) follows naturally from physics treating space as emergent and manipulable.",
+    "evidence": [
+      {
+        "text": "Five frameworks — Reciprocal System, Qualia Algebra, knot theory, Prime Scalar Field, and pendulum dynamics — all derive 3D as a critical emergent property, a cross-framework convergence.",
+        "tier": "credible",
+        "source": "Larson (1959); Vanhorn (2025); topology; Dorsey (2023); dynamical systems theory"
+      },
+      {
+        "text": "Knot theory proves 3D is the unique critical dimension for binding complexity — knots cannot exist in 2D and are trivial in 4D+.",
+        "tier": "documented",
+        "source": "Mathematical topology (peer-reviewed)"
+      },
+      {
+        "text": "Observed UAP behavior — instantaneous acceleration, transmedium travel — follows naturally from physics treating space as emergent rather than fixed (Navy videos documented; RS/QA application is inference).",
+        "tier": "inference",
+        "source": "Navy UAP videos; RS/QA theoretical framework"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Reciprocal System Lineage — Reference Frame Engine",
+        "url": "https://qav2.github.io/reference-frame-engine/"
+      },
+      {
+        "label": "Qualia Algebra — Dimensional Emergence Derivation",
+        "url": "https://github.com/qav2/qualia-algebra"
+      },
+      {
+        "label": "Knot Theory and Dimensional Criticality",
+        "url": "https://en.wikipedia.org/wiki/Knot_theory"
+      }
+    ]
+  },
   {
     "id": "central-banking",
     "branch": "power",
@@ -7824,6 +8104,17 @@ var NODES = [
 ];
 
 var CONNECTIONS = [
+  ["rs-larson-foundation", "rs2-peret-nehru"],
+  ["rs2-peret-nehru", "qa-convergence"],
+  ["rs2-peret-nehru", "rs-community-split"],
+  ["rs2-peret-nehru", "rs-antiquatis-sanctuary"],
+  ["rs-larson-foundation", "rs-community-split"],
+  ["rs-larson-foundation", "tech-suppressed-physics"],
+  ["tech-suppressed-physics", "dimensional-emergence"],
+  ["qa-convergence", "dimensional-emergence"],
+  ["qa-convergence", "consciousness-qualia"],
+  ["tech-suppressed-physics", "science-energy"],
+  ["tech-suppressed-physics", "science-physics"],
   [
     "ancient-civilizations",
     "consciousness-ancient"
