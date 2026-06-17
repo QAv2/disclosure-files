@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suggest Research — The Disclosure Files</title>
+<meta name="description" content="The map is ongoing work. Spot a gap, a lead, a record we haven't followed? Send it to the research queue.">
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  :root{--accent:#4a9eff}
+  html,body{background:#111111;color:#fff;font-family:"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  body{min-height:100vh;display:flex;justify-content:center;padding:48px 20px}
+  .wrap{width:100%;max-width:640px}
+  .back{display:inline-block;color:rgba(255,255,255,.5);text-decoration:none;font-size:13px;margin-bottom:28px}
+  .back:hover{color:var(--accent)}
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+  h1{font-size:28px;font-weight:700;letter-spacing:.3px;margin-bottom:14px}
+  .intro{color:rgba(255,255,255,.62);font-size:15px;line-height:1.65;margin-bottom:6px}
+  .intro strong{color:rgba(255,255,255,.85);font-weight:600}
+  form{margin-top:30px}
+  .field{margin-bottom:22px}
+  label{display:block;font-size:13px;font-weight:600;letter-spacing:.02em;margin-bottom:8px;color:rgba(255,255,255,.9)}
+  label .opt{font-weight:400;color:rgba(255,255,255,.4)}
+  .hint{font-size:12.5px;color:rgba(255,255,255,.42);margin-top:6px;line-height:1.5}
+  input[type=text],input[type=url],textarea,select{
+    width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.13);
+    border-radius:8px;color:#fff;font:inherit;font-size:15px;padding:12px 14px;transition:border-color .15s}
+  textarea{min-height:120px;resize:vertical;line-height:1.6}
+  input:focus,textarea:focus,select:focus{outline:none;border-color:var(--accent)}
+  select{appearance:none;cursor:pointer;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='%234a9eff' d='M1 1l5 5 5-5'/></svg>");background-repeat:no-repeat;background-position:right 14px center}
+  .check{display:flex;align-items:flex-start;gap:10px;font-size:13.5px;color:rgba(255,255,255,.7);cursor:pointer;line-height:1.5}
+  .check input{margin-top:2px;accent-color:var(--accent);width:16px;height:16px;flex-shrink:0}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  button[type=submit]{background:var(--accent);color:#0a0a0f;border:none;border-radius:8px;font:inherit;font-size:15px;font-weight:700;padding:13px 28px;cursor:pointer;transition:opacity .15s}
+  button[type=submit]:hover{opacity:.88}
+  button[type=submit]:disabled{opacity:.5;cursor:default}
+  .note{font-size:12.5px;color:rgba(255,255,255,.4);margin-top:18px;line-height:1.6}
+  .done{display:none;border:1px solid rgba(74,158,255,.4);background:rgba(74,158,255,.07);border-radius:10px;padding:28px;text-align:center}
+  .done h2{font-size:20px;margin-bottom:10px}
+  .done p{color:rgba(255,255,255,.62);font-size:14.5px;line-height:1.6}
+  .done a{color:var(--accent);text-decoration:none}
+  .err{display:none;color:#f87171;font-size:13.5px;margin-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← back to the map</a>
+  <div class="eyebrow">The Disclosure Files</div>
+  <h1>Suggest a line of research</h1>
+  <p class="intro">This map was never meant to be finished by one person. If you've spotted a gap, a lead, a record, or a pattern it hasn't followed yet — <strong>drop it here.</strong> It goes straight to the research queue.</p>
+
+  <form id="f" method="POST" action="https://research-intake.qav2.workers.dev/submit">
+    <input type="hidden" name="source" value="files">
+    <div class="hp" aria-hidden="true"><label>Leave this blank<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+
+    <div class="field">
+      <label for="lead">What should we look into?</label>
+      <input type="text" id="lead" name="lead" maxlength="400" required placeholder="e.g. The link between [program] and [entity] in the 1990s">
+    </div>
+
+    <div class="field">
+      <label for="kind">What kind of lead is it?</label>
+      <select id="kind" name="kind">
+        <option value="rumor">A lead or rumor I heard</option>
+        <option value="document">A document or record</option>
+        <option value="account">A personal account / testimony</option>
+        <option value="pattern">A pattern I keep noticing</option>
+        <option value="other">Something else</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="detail">Details <span class="opt">— optional</span></label>
+      <textarea id="detail" name="detail" maxlength="6000" placeholder="Where it points, why it matters, anything you already know."></textarea>
+    </div>
+
+    <div class="field">
+      <label for="link">A link <span class="opt">— optional</span></label>
+      <input type="url" id="link" name="link" maxlength="600" placeholder="https://">
+      <div class="hint">A source, article, document, or anything we can start from.</div>
+    </div>
+
+    <div class="field">
+      <label for="credit">Your name or contact <span class="opt">— optional</span></label>
+      <input type="text" id="credit" name="credit" maxlength="200" placeholder="So we can follow up, if you'd like">
+      <div class="field" style="margin-top:12px;margin-bottom:0">
+        <label class="check"><input type="checkbox" name="consent_credit" value="on"> It's okay to credit me if this becomes part of the map.</label>
+      </div>
+    </div>
+
+    <button type="submit" id="submit">Send to the queue</button>
+    <div class="err" id="err">Something went wrong sending that. Try again in a moment.</div>
+    <p class="note">This goes <strong style="color:rgba(255,255,255,.6);font-weight:600">privately</strong> to the people tending the archive. Nothing you send posts publicly. Sharing your name is entirely optional.</p>
+  </form>
+
+  <div class="done" id="done">
+    <h2>Logged — thank you.</h2>
+    <p>Your lead is in the research queue. The work is ongoing, and now it isn't just one set of eyes on it.<br><br><a href="index.html">← back to the map</a></p>
+  </div>
+</div>
+
+<script>
+  const f = document.getElementById('f');
+  f.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('submit');
+    const err = document.getElementById('err');
+    err.style.display = 'none';
+    btn.disabled = true; btn.textContent = 'Sending…';
+    const data = Object.fromEntries(new FormData(f).entries());
+    data.consent_credit = f.consent_credit.checked;
+    data.__xhr = true;
+    try {
+      const r = await fetch(f.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const j = await r.json();
+      if (!r.ok || !j.ok) throw new Error(j.error || 'failed');
+      f.style.display = 'none';
+      document.getElementById('done').style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } catch (ex) {
+      err.style.display = 'block';
+      btn.disabled = false; btn.textContent = 'Send to the queue';
+    }
+  });
+</script>
+</body>
+</html>
