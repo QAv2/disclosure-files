@@ -220,6 +220,63 @@ def build_mapping(keyword_links, df_nodes, ic_entities):
         "waco-ruby-ridge": ["waco", "ruby ridge", "branch davidian"],
     }
 
+    # ── 2026-08 refresh: extra signals for the Aug-2026 Intel Console additions.
+    # Kept in a separate dict and MERGED (a duplicate key inside the literal above
+    # would silently replace the original list).
+    EXTRA_SIGNALS = {
+        # Intelligence leadership / 2025-26 operations
+        "intelligence": ["kash patel", "signalgate", "salt typhoon", "southcom", "southern spear",
+                          "director of national intelligence", "ratcliffe", "fisa 702", "section 702"],
+        "echelon-five-eyes": ["salt typhoon", "telecom.*breach", "wiretap.*data"],
+        # Wars & conflicts
+        "history-wars": ["russia-ukraine", "russia.ukraine war", "zelensky", "anchorage summit", "budapest memorandum",
+                         "invasion of ukraine", "operation epic fury", "roaring lion", "midnight hammer", "khamenei"],
+        # Media consolidation / platforms
+        "media-ownership": ["skydance", "ellison", "paramount", "tiktok", "bari weiss", "warner bros"],
+        "media-digital-control": ["tiktok", "fact-check", "community notes", "fcc"],
+        # Finance / crypto-political nexus
+        "central-banking": ["world liberty financial", "strategic bitcoin reserve", "genius act", "stablecoin",
+                            "kevin warsh", "fed chair"],
+        "corporate-capture": ["doge", "department of government efficiency", "energy transfer v", "greenpeace",
+                              "anduril", "f-47"],
+        "military-industrial": ["anduril", "f-47", "golden dome", "department of war", "boeing f-47"],
+        # Health
+        "health-regulatory": ["robert f. kennedy jr", "rfk jr", "hhs", "health and human services", "measles outbreak",
+                              "acip", "makary", "bhattacharya"],
+        "health-who": ["rfk jr", "withdrawal from the who", "world health organization"],
+        "health-pharma-funding": ["ig farben", "sugar research foundation", "flexner"],
+        "health-food-system": ["sugar research foundation", "primo brands", "nestl", "cargill"],
+        # Cosmology / origins / anomalous
+        "cosmology-origins": ["3i/atlas", "interstellar object", "oumuamua", "galileo project"],
+        "cosmology-et": ["3i/atlas", "galileo project", "avi loeb", "sol foundation", "non-human intelligence"],
+        "ancient-civilizations": ["karahan tepe", "gobekli", "göbekli", "flint dibble", "ancient apocalypse",
+                                  "younger dryas", "antiquities authority"],
+        "consciousness-ancient": ["theosophical society", "blavatsky", "alice bailey", "lucis trust"],
+        "ritual-mystery-schools": ["theosophical society", "esoteric"],
+        # Elite social / dynasties / ritual
+        "family-networks": ["rothschild", "mentmore", "ferri.res"],
+        "ritual-elite": ["eyes wide shut", "kubrick", "mentmore", "surrealist ball", "bezos.*wedding"],
+        # Energy / resource
+        "science-energy": ["pdvsa", "eni ", "royal dutch shell", "chris wright", "department of energy", "petroleum"],
+        "drug-trafficking-intel": ["sinaloa", "cartel", "foreign terrorist organization", "maduro"],
+        # UAP 2026 release cluster (nodes added 2026-08)
+        "uap-pursue-2026": ["pursue", "war.gov/ufo", "unsealing and reporting", "uap.*release", "ufo files"],
+        "uap-nara-rg615": ["record group 615", "rg-615", "uap records collection", "1841", "national archives.*uap"],
+        "uap-nasa-debriefs": ["apollo.*debrief", "mercury-atlas", "nasa.*audio", "apollo 11", "apollo 12", "apollo 16",
+                              "apollo 17", "cronkite"],
+        "uap-nsa-foia-2026": ["nsa.*foia", "top secret umbra", "nsa.*uap"],
+        "uap-program-history": ["aaro", "kosloski", "kirkpatrick", "uap task force", "uaptf"],
+        "uap-legislation": ["uap disclosure act", "schumer-rounds", "luna", "burchett", "burlison", "declassification of federal secrets"],
+        # Epstein files 2025-26 + JFK files 2025 (nodes added 2026-08)
+        "epstein-files-act-2026": ["epstein files transparency act", "epstein file release", "epstein library",
+                                   "doj epstein", "todd blanche", "ruemmler", "maxwell.*deposition", "andrew.*arrest"],
+        "epstein-political-protection": ["epstein files transparency act", "bondi", "blanche"],
+        "jfk-files-2025": ["executive order 14176", "jfk files release", "joannides", "assassination records",
+                           "task force on the declassification"],
+    }
+    for _topic, _pats in EXTRA_SIGNALS.items():
+        DESCRIPTION_SIGNALS.setdefault(_topic, []).extend(_pats)
+
     # Add description signals to keyword_to_topics
     for topic_id, patterns in DESCRIPTION_SIGNALS.items():
         for pat in patterns:

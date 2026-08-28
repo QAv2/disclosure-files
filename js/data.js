@@ -1,16 +1,16 @@
 // ============================================================
 // The Disclosure Files — Transformation Map Data
-// 140 disclosure nodes + 45 QA nodes across 8 branches
+// 153 disclosure nodes across 9 branches
 // Auto-generated from disclosure-data.json + qa-data.json
 // ============================================================
 
 var MAP_CONFIG = {
   "title": "The Disclosure Files",
-  "subtitle": "Mapping what was hidden in plain sight — 140 nodes · 8 branches",
+  "subtitle": "Mapping what was hidden in plain sight — 153 nodes · 9 branches",
   "centerNode": {
     "id": "center",
     "title": "The Disclosure Files",
-    "description": "A systematic research project mapping power networks through cross-referencing documentary evidence. 139 nodes across 8 branches: Power Structures, Hidden History, Consciousness & Metaphysics, Science & Technology, Ritual & Occult Systems, Health & Biological Control, Media & Narrative Control, Cosmology & Origins.",
+    "description": "A systematic research project mapping power networks through cross-referencing documentary evidence. 153 nodes across 9 branches: Power Structures, Hidden History, Consciousness & Metaphysics, Science & Technology, Reciprocal System, Ritual & Occult Systems, Health & Biological Control, Media & Narrative Control, Cosmology & Origins.",
     "sources": [
       {
         "label": "Church Committee Final Report (1976)",
@@ -430,7 +430,7 @@ var NODES = [
     "branch": "power",
     "ring": 1,
     "title": "Intelligence Apparatus",
-    "description": "CIA, MI6, Mossad, Five Eyes — the deep state as operational reality. RESEARCHED: FBI CHS memo (Oct 2020) states Epstein was \"a co-opted Mossad agent\" trained under Ehud Barak. Epstein's 2018 email acknowledges Robert Maxwell's Mossad relationship. Acosta reportedly told to \"leave it alone\" — Epstein \"belonged to intelligence.\" Pattern: INSLAW/PROMIS showed DOJ protecting intelligence operations; same pattern in Epstein NPA.",
+    "description": "CIA, MI6, Mossad, Five Eyes — the deep state as operational reality. 2025 leadership: Ratcliffe (CIA Dir, confirmed Jan 23, 2025), Patel (FBI Dir, confirmed Feb 20, 2025), Gabbard (DNI, confirmed Feb 12, 2025). FISA Section 702 lapsed midnight June 12, 2026 — first expiration since 2008 enactment — after House voted 218-198 against reauthorization. Signalgate (March 2025): classified Houthi strike plans exposed when a journalist was accidentally added to a Signal group chat with Ratcliffe, Rubio, Hegseth, and Waltz. RESEARCHED: FBI CHS memo (Oct 2020) states Epstein was 'a co-opted Mossad agent' trained under Ehud Barak. Epstein's 2018 email acknowledges Robert Maxwell's Mossad relationship. Acosta reportedly told to 'leave it alone' — Epstein 'belonged to intelligence.' Pattern: INSLAW/PROMIS showed DOJ protecting intelligence operations; same pattern in Epstein NPA.",
     "fullDescription": "CIA, MI6, Mossad, Five Eyes — the deep state as operational reality. RESEARCHED: FBI CHS memo (Oct 2020) states Epstein was \"a co-opted Mossad agent\" trained under Ehud Barak. Epstein's 2018 email acknowledges Robert Maxwell's Mossad relationship. Acosta reportedly told to \"leave it alone\" — Epstein \"belonged to intelligence.\" Pattern: INSLAW/PROMIS showed DOJ protecting intelligence operations; same pattern in Epstein NPA. KENNEDY-ERA DOCUMENTATION: Church Committee hearings confirmed CIA infiltrated \"entire media\" by 1960s, including Ramparts, Encounter, Partisan Review, Paris Review (Frances Stoner Saunders' work corroborates). Mary Pinchot Meyer (JFK mistress) was married to senior CIA officer Cord Meyer — diary seized by CIA after her 1964 death [🟢]. National Security Act 1947 created NSC/CIA infrastructure under Truman [🟢].\n\nCIA SEXUAL BLACKMAIL OPERATIONS (extracted Feb 2026 — Webb Part 2):\n\nLANSKY-HOOVER-ANGLETON NEXUS: Lansky obtained compromising photos of FBI Director Hoover [🟢]. CIA counterintel chief Angleton held copies + managed Mossad relationship [🟡]. Result: FBI refused to investigate organized crime for decades [🟢].\n\nEDWIN WILSON / ROBERT KEITH GRAY (1970s): Wilson (CIA/Naval Intel) ran sexual blackmail targeting Congress. His CIA partner Terpil: \"Wilson's Agency job was to subvert members of both houses by any means necessary...sexual fantasy in the flesh...permanently recorded via selected cameras...TSD\" [🟡 Terpil to Hougan]. Operated from George Town Club (Korean intel front [🟢 WaPo]). Robert Keith Gray (Hill+Knowlton CEO, Reagan deputy comms under Casey) was club president + CIA blackmail specialist per DeCamp [🟢 club role; 🟡 blackmail per DeCamp]. Navy review: Gray-Wilson \"unqualified trust\" [🟢].\n\nCRAIG SPENCE (1980s): DC lobbyist ran bugged apartments pimping children to power elite [🟢 Washington Times]. Boasted of CIA work; predicted CIA would kill him and \"make it look like suicide\" [🟢]. Entered Bush 41 White House with \"call boys\"; named NSA Donald Gregg (fmr CIA under Casey) as contact [🟢]. Party guests: Cohn, Casey, Safire [🟢]. Found dead Ritz Carlton, ruled suicide [🟢].\n\nFRANKLIN / COVENANT HOUSE (1980s): King (Franklin Credit Union) ran child trafficking connected to Spence under \"Bodies by God\" [🟡 DeCamp]. Covenant House Guatemala (CIA asset Alejos Arzu) allegedly procured children for US ring [🟡]. Both Iran-Contra connected: King funded Contras [🟢 Omaha World Herald]; Covenant House via AmeriCares (Bush family, Contra funding [🟢 Hartford Courant]).\n\nPATTERN: CIA sexual blackmail described by CIA's own agents (Terpil), documented by mainstream press (WashTimes), investigated by Congress (Church Committee \"love traps\"). Iran-Contra network ran covert arms/drugs AND child trafficking simultaneously.\n\nCHURCH COMMITTEE — PRIMARY SOURCE (extracted Feb 2026, Senate Report 94-755, 1976):\nEstablishes sexual blackmail as INSTITUTIONAL DOCTRINE, not aberration:\n• OPERATION MIDNIGHT CLIMAX: CIA-funded safe houses (SF + NYC) where prostitutes lured targets — rooms had two-way mirrors + recording equipment — targets given LSD without knowledge, filmed during sexual acts [🟢 Congressional investigation]\n• CIA Technical Services Division operated safe houses — same TSD division where Terpil worked [🟢]\n• DCI Helms ordered MKULTRA files destroyed 1973 — most records gone; Committee worked from surviving financial records [🟢]\n• COINTELPRO: 2,370 approved actions (1956-71). Sullivan (FBI Asst Dir): \"No holds were barred. We have used [these techniques] against Soviet agents... [Same methods] brought home against any organization... We did not differentiate\" [🟢 sworn testimony]\n• Sexual disruption as explicit technique: anonymous letters to spouses, surveillance-gathered kompromat, \"disseminating derogatory information to family, friends\" [🟢]\n• MLK targeted with comprehensive sexual surveillance → FBI lab-prepared sex tapes + \"suicide letter\" mailed to his wife [🟢]\n• AG Ramsey Clark: \"too busy to know what Bureau was doing\" [🟢]. AG Katzenbach: \"could not have stopped it anyway\" [🟢]\n• Programs continued AFTER formal 1971 termination — \"grey area\" between investigation and counterintelligence [🟢]\n• NSA Watch List included Church Committee members themselves (Church, Mondale, Baker) [🟢]\nCONTINUITY: Midnight Climax (1950s-60s) → COINTELPRO sexual ops (1956-71) → Wilson/Terpil/Gray (1970s) → Spence (1980s) → Epstein (1990s-2019). Same institutional practice, evolving operational methods.\n\nBCCI — CIA BANKING NEXUS (extracted Feb 2026, Kerry/Brown Senate Report 1992):\n• Kamal Adham (CIA principal Middle East liaison mid-1960s-1979): secretly lead front-man for BCCI takeover of First American (largest DC bank holding company) [🟢]\n• Adham appeared at Fed hearing April 23, 1981 — never disclosed intelligence background [🟢]\n• CIA station chief Raymond Close went to work for Adham upon leaving CIA [🟢]\n• Abdul Raouf Khalil (succeeded Adham as Saudi intel liaison): also BCCI shareholder/front-man; when regulators tried locating him (1991), found \"frequently in offices of CIA station chief in Saudi Arabia\" [🟢]\n• Casey-Abedi meetings: NBC (Feb 23, 1992) alleged secret meetings at Madison Hotel for 3 years [🟡]. CIA denial: \"no records.\" BCCI official deemed \"credible\" described meetings [🟡]\n• CIA legal explanation for no records: Casey acted as \"advisor to the President\" not DCI — therefore \"outside record keeping of the CIA, undocumented, fully deniable, effectively irretrievable\" [🟢 Senate report]\n• Helms (fmr CIA Dir): personally drafted legal language protecting BCCI front-man Irvani [🟢 Oct 20 1978 telex]. Later denied: \"totally untrue\" despite documentary evidence of his own telex [🟢]\n• CAPCOM (BCCI commodities affiliate): \"billions in largely anonymous trading\" with \"significant ties to US TELECOMMUNICATIONS INDUSTRY EXECUTIVES and FOREIGN INTELLIGENCE FIGURES\" [🟢]\nPATTERN: CIA's top Middle East assets doubled as BCCI front-men. Same people managing intelligence relationships managed criminal banking. Casey as operational nexus: daily calls with Cohn (blackmail) + Murdoch (propaganda) + Spence party guest (surveillance) + probable BCCI user (banking) + Iran-Contra architect.\n\nMENA AIRPORT/CLINTON CIA NEXUS (Webb Part 4, Session 11):\nArkansas Mena Airport used by CIA under Casey for Contra arms/drugs [🟢 Cockburn/St. Clair]. Barry Seal used SAT aircraft [🟢]. Clinton sent AR National Guard to Honduras to train Contras [🟢 UPI 1986]. Camp Robinson meeting: Barr (as Casey emissary) to Clinton re money laundering through AR bond business [🟡 Reed/Compromised]. Nine state/federal Mena probes — all failed [🟢 WSJ]. IRS investigator Duncan instructed to remove Mena files from AG office — AG was William Barr [🟢 1992 memo].\nSYSTEMATICS/PROMIS/ROSE LAW FIRM: Stephens-owned Systematics was 'primary vehicle for NSA to implant bugged software in world's major money-center banks' [🟡 Norman/Oil Card]. 1995 Inslaw document to Ken Starr: Systematics covertly implanted software 'at behest of NSA and its partner in Israeli intelligence' — also used for 'laundering of money, especially drug profits' [🟢 National Archives doc]. Israeli subsidiary operated by Mossad contractors [🟡]. Rose Law Firm (Hillary Clinton partner) represented both Systematics AND assisted BCCI's US entry [🟢]. Foster + Hubbell had financial interests in Systematics [🟢]. BCCI employed stolen PROMIS; First American Bank 'filtered PROMIS money' [🟡 Casolaro].\nARKANSAS→OHIO PIPELINE: Same networks migrated — Stephens/BCCI/SAT/intelligence from Clinton's Arkansas to Wexner's Ohio. SAT was literal vehicle. Clinton and Wexner represent bipartisan sides of same structure [🟠 Webb synthesis].\n\nMIND CONTROL PROGRAM DOCUMENTATION (Session 21 — Book Sources):\n• George H. Estabrooks (OSS hypnosis consultant, Colgate professor): documented 'super spy' creation via hypnotic programming for OSS during WWII — subjects given alternate personalities for covert tasks with no conscious memory. His 1971 Science Digest admission: 'I can hypnotize a man — without his knowledge or consent — into committing treason against the United States' [🟢 Estabrooks' published works]. Preceded and directly informed MKULTRA hypnosis sub-projects [🟡].\n• Walter Bowart, 'Operation Mind Control' (Researchers Edition, ~1994-95): comprehensive synthesis of ARTICHOKE, BLUEBIRD, MKULTRA, and successor programs through 1995, compiled from FOIA documents, Congressional testimony, and researcher interviews [🟡]. Originally expensive, now reprinted ~$40-50.\n• Carol Rutz, 'A Nation Betrayed' (1995): first-person account of childhood recruitment into MC programs from 1950s. Obtained own CIA files via FOIA confirming institutional contact during described period [🟡 — FOIA confirms contact, does not independently verify all claimed experiences].\n• Martin Cannon, 'The Controllers' (~80pp, late 1980s/early 1990s): argued UFO abduction cases parallel known MC techniques. CAVEAT: Author publicly retracted — 'I don't believe that anymore' — pattern consistent with researcher self-censorship under pressure [🟠].\nSee psychological-warfare-tech node for full technological documentation including Frey effect, Moscow Signal, and Project Pandora.",
     "evidence": [
       {
@@ -457,6 +457,11 @@ var NODES = [
         "text": "From 1982 to 1995, a secret CIA-DOJ Memorandum of Understanding exempted CIA from reporting drug crimes by assets and contractors",
         "tier": "documented",
         "source": "CIA Inspector General Report Vol. II (1998)"
+      },
+      {
+        "text": "China's Salt Typhoon operation exfiltrated 18 months of FBI wiretap data from compromised telecom CALEA infrastructure — a major counterintelligence blow to the FBI under both Wray and Patel. Section 702 of FISA was reauthorized for only two years in April 2024 (RISAA), then Congress passed a 45-day extension in April 2026, followed by the House voting 218-198 against reauthorization on June 11, 2026. Section 702 lapsed at midnight June 12, 2026 — the first expiration since its 2008 enactment. Existing FISA Court certifications remain in force until March 2027.",
+        "tier": "documented",
+        "source": "Congressional Record; RISAA (April 2024); House vote record (June 11, 2026)"
       }
     ],
     "sources": [
@@ -487,6 +492,10 @@ var NODES = [
       {
         "label": "Webb, One Nation Under Blackmail (2022)",
         "url": "https://www.thenation.com/article/politics/whitney-webb-one-nation-under-blackmail/"
+      },
+      {
+        "label": "FISA Section 702 Reauthorization History",
+        "url": "https://www.congress.gov/bill/118th-congress/senate-bill/3942"
       }
     ],
     "status": "researched"
@@ -598,7 +607,7 @@ var NODES = [
     "ring": 2,
     "title": "Supranational Bodies",
     "description": "🟢 DOCUMENTED (Quigley 1949/1981; Reece Committee 1954; Schlesinger 1965).\n\nINSTITUTIONAL LINEAGE: Cecil Rhodes secret society (Feb 1891) → Round Table Groups (1910) → Royal Institute of International Affairs/Chatham House (1919) → Council on Foreign Relations (US branch). Quigley: Georgetown professor with insider access to Group papers documented this chain [🟡].\n\nRHODES SECRET SOCIETY: Founded Feb 1891 by Rhodes, W.T. Stead, Lord Esher.\n\nWORLD ECONOMIC FORUM / EPSTEIN (Feb 26, 2026): WEF President Børge Brende resigned after Epstein files revealed three business dinners + email/text exchanges with Jeffrey Epstein [🟢 Bloomberg/CNN/Fortune]. WEF co-chairs André Hoffmann and Larry Fink announced independent investigation found 'no additional concerns.' Second WEF chief to depart due to scandal.",
-    "fullDescription": "🟢 DOCUMENTED (Quigley 1949/1981; Reece Committee 1954; Schlesinger 1965).\n\nINSTITUTIONAL LINEAGE: Cecil Rhodes secret society (Feb 1891) → Round Table Groups (1910) → Royal Institute of International Affairs/Chatham House (1919) → Council on Foreign Relations (US branch). Quigley: Georgetown professor with insider access to Group papers documented this chain [🟡].\n\nRHODES SECRET SOCIETY: Founded Feb 1891 by Rhodes, W.T. Stead, Lord Esher. Inner circle (Society of the Elect) + outer circle (Association of Helpers). Six previous wills left fortune for this purpose. Seventh will created Rhodes Scholarships as public face [🟡 Quigley].\n\nRIIA/CHATHAM HOUSE: Founded 1919 by Milner Group. Quigley: Group 'founded the RIIA in 1919 and still controls it' [🟡].\n\nCFR: Reece Committee (1954) found CFR was 'in essence an agency of the United States Government' [🟢 Congressional finding]. Schlesinger Jr. confirmed: The American Establishment with front organizations the Rockefeller, Ford and Carnegie Foundations and the CFR [🟢 published 1965].\n\nFOUNDATION NETWORK: Carnegie, Rockefeller, Ford, Guggenheim as interlocking directorate. Ford Foundation president Gaither told investigator Dodd: 'We use our grant-making power so as to alter life in the United States that it can be comfortably merged with the Soviet Union' [🟡 Dodd testimony].\n\nCONCENTRIC RING STRUCTURE: Same architecture as Legal/Political Shield (Pattern #10). Documented independently 100 years apart.\n\nWORLD ECONOMIC FORUM — EPSTEIN FILES FALLOUT (Feb 26, 2026):\n\nBØRGE BRENDE RESIGNATION [🟢]: WEF President/CEO Børge Brende (former Norwegian Foreign Minister, 2013-2017) resigned February 26, 2026 after Epstein files revealed he had three business dinners with Jeffrey Epstein and communicated via email and text messages [🟢 Bloomberg, Al Jazeera, CNN, Fortune, Semafor, Axios]. WEF launched independent investigation by outside counsel — concluded with 'no additional concerns beyond what has been previously disclosed' [🟢 Fortune]. WEF co-chairs André Hoffmann and Larry Fink announced the investigation's completion. Brende stated: 'I believe now is the right moment for the Forum to continue its important work without distractions' [🟢 Fortune]. Brende claimed he only met Epstein in business settings and was unaware of criminal background.\n\nAlois Zwinggi appointed interim President/CEO. WEF board of trustees overseeing search for permanent replacement [🟢]. Brende is the second WEF chief to depart due to scandal [🟢 Semafor].\n\nNORWEGIAN EPSTEIN CONNECTIONS: Brende is one of several prominent Norwegians facing scrutiny following Epstein files release — others include a former PM, the Crown Princess, and a diplomat [🟢 Semafor].\n\nWEF-KISSINGER NEXUS: Henry Kissinger was instrumental in transforming the European Management Forum (founded 1971 by Klaus Schwab) into the global World Economic Forum. Kissinger served as key adviser to Schwab for decades and was a regular Davos attendee. Kissinger also appears in Epstein's black book with 2 phone numbers and 2 addresses [🟢]. This creates a documented Epstein-WEF connection predating Brende by decades.\n\nSUCCESSION POLITICS: Larry Fink (BlackRock CEO, WEF co-chair) reportedly favors Christine Lagarde (ECB head) as permanent WEF replacement [🟡 Semafor]. Fink's dual role as WEF co-chair who oversaw the Epstein investigation AND kingmaker for Brende's successor concentrates power.\n\nPATTERN: WEF follows the same institutional architecture as CFR, Bilderberg, Trilateral Commission — elite coordination mechanisms that claim transparency while operating through invitation-only access and public-private partnerships. The Epstein network's intersection with WEF leadership demonstrates how blackmail/compromise operations penetrate these supranational bodies at the executive level.",
+    "fullDescription": "🟢 DOCUMENTED (Quigley 1949/1981; Reece Committee 1954; Schlesinger 1965).\n\nINSTITUTIONAL LINEAGE: Cecil Rhodes secret society (Feb 1891) → Round Table Groups (1910) → Royal Institute of International Affairs/Chatham House (1919) → Council on Foreign Relations (US branch). Quigley: Georgetown professor with insider access to Group papers documented this chain [🟡].\n\nRHODES SECRET SOCIETY: Founded Feb 1891 by Rhodes, W.T. Stead, Lord Esher. Inner circle (Society of the Elect) + outer circle (Association of Helpers). Six previous wills left fortune for this purpose. Seventh will created Rhodes Scholarships as public face [🟡 Quigley].\n\nRIIA/CHATHAM HOUSE: Founded 1919 by Milner Group. Quigley: Group 'founded the RIIA in 1919 and still controls it' [🟡].\n\nCFR: Reece Committee (1954) found CFR was 'in essence an agency of the United States Government' [🟢 Congressional finding]. Schlesinger Jr. confirmed: The American Establishment with front organizations the Rockefeller, Ford and Carnegie Foundations and the CFR [🟢 published 1965].\n\nFOUNDATION NETWORK: Carnegie, Rockefeller, Ford, Guggenheim as interlocking directorate. Ford Foundation president Gaither told investigator Dodd: 'We use our grant-making power so as to alter life in the United States that it can be comfortably merged with the Soviet Union' [🟡 Dodd testimony].\n\nCONCENTRIC RING STRUCTURE: Same architecture as Legal/Political Shield (Pattern #10). Documented independently 100 years apart.\n\nWORLD ECONOMIC FORUM — EPSTEIN FILES FALLOUT (Feb 26, 2026):\n\nBØRGE BRENDE RESIGNATION [🟢]: WEF President/CEO Børge Brende (former Norwegian Foreign Minister, 2013-2017) resigned February 26, 2026 after Epstein files revealed he had three business dinners with Jeffrey Epstein and communicated via email and text messages [🟢 Bloomberg, Al Jazeera, CNN, Fortune, Semafor, Axios]. WEF launched independent investigation by outside counsel — concluded with 'no additional concerns beyond what has been previously disclosed' [🟢 Fortune]. WEF co-chairs André Hoffmann and Larry Fink announced the investigation's completion. Brende stated: 'I believe now is the right moment for the Forum to continue its important work without distractions' [🟢 Fortune]. Brende claimed he only met Epstein in business settings and was unaware of criminal background.\n\nAlois Zwinggi appointed interim President/CEO. As of August 2026, Zwinggi continues in the role — over six months after Brende's resignation — with no permanent successor named. Reports indicate ECB President Christine Lagarde may be positioned to succeed him, possibly from 2027. Davos 2026 (January 19-23) convened for the first time without founder Klaus Schwab under the theme 'A Spirit of Dialogue.' Brende is the second WEF chief to depart due to scandal [🟢]. In April 2025, a WEF board investigation into whistleblower complaints against Schwab (alleging over $1 million in questionable expenses) cleared Schwab in August 2025 [🟢].\n\nNORWEGIAN EPSTEIN CONNECTIONS: Brende is one of several prominent Norwegians facing scrutiny following Epstein files release — others include a former PM, the Crown Princess, and a diplomat [🟢 Semafor].\n\nWEF-KISSINGER NEXUS: Henry Kissinger was instrumental in transforming the European Management Forum (founded 1971 by Klaus Schwab) into the global World Economic Forum. Kissinger served as key adviser to Schwab for decades and was a regular Davos attendee. Kissinger also appears in Epstein's black book with 2 phone numbers and 2 addresses [🟢]. This creates a documented Epstein-WEF connection predating Brende by decades.\n\nSUCCESSION POLITICS: Larry Fink (BlackRock CEO, WEF co-chair) reportedly favors Christine Lagarde (ECB head) as permanent WEF replacement [🟡 Semafor]. Fink's dual role as WEF co-chair who oversaw the Epstein investigation AND kingmaker for Brende's successor concentrates power.\n\nPATTERN: WEF follows the same institutional architecture as CFR, Bilderberg, Trilateral Commission — elite coordination mechanisms that claim transparency while operating through invitation-only access and public-private partnerships. The Epstein network's intersection with WEF leadership demonstrates how blackmail/compromise operations penetrate these supranational bodies at the executive level.",
     "evidence": [
       {
         "text": "Reece Committee declared CFR was \"in essence an agency of the United States Government\"",
@@ -699,6 +708,11 @@ var NODES = [
         "text": "Wexner now linked to three separate sexual abuse networks: Epstein (trafficking), Strauss (OSU), and Jeffries/A&F (trafficking charges)",
         "tier": "inference",
         "source": "Court records; Webb/MintPress pattern analysis"
+      },
+      {
+        "text": "Wexner deposition before House Oversight Committee conducted February 18, 2026 via closed session from Ohio, alongside subpoenas of estate executors Indyke (March 5) and Kahn (February 25). DOJ files released January 30, 2026 contained Wexner's name unredacted 1,000+ times across 3 million pages.",
+        "tier": "documented",
+        "source": "House Oversight Committee subpoena records; NBC4 (Jan 30, 2026)"
       }
     ],
     "sources": [
@@ -830,6 +844,16 @@ var NODES = [
         "text": "ALL Epstein survivors at hearing raised hands when asked if DOJ had met with them — none had",
         "tier": "documented",
         "source": "House Judiciary Hearing (Feb 11, 2026)"
+      },
+      {
+        "text": "Epstein Files Transparency Act signed November 19, 2025, requiring DOJ to publish all unclassified Epstein-related records. By January 2026, DOJ had released over 3.5 million pages from five primary source collections. The releases documented communications and financial relationships between Epstein and numerous prominent figures. Consequential fallout included: WEF President Brende resignation (Feb 2026), Larry Summers' departure from Harvard and OpenAI board (Nov 2025), Prince Andrew arrest (Feb 2026), and intensified French investigation of Jack Lang.",
+        "tier": "documented",
+        "source": "Epstein Files Transparency Act (Public Law); DOJ Epstein Library releases"
+      },
+      {
+        "text": "Trump fired AG Bondi on April 2, 2026. Maxwell invoked the Fifth at her February 2026 House Oversight deposition but offered testimony in exchange for presidential clemency; the Senate unanimously passed a resolution opposing clemency in July 2026.",
+        "tier": "documented",
+        "source": "Axios — Senate unanimously opposes Maxwell clemency (Jul 2026)"
       }
     ],
     "sources": [
@@ -860,6 +884,10 @@ var NODES = [
       {
         "label": "Epstein NPA Document (2007)",
         "url": "https://www.documentcloud.org/documents/1508273-non-prosecution-agreement"
+      },
+      {
+        "label": "Axios — Senate unanimously opposes Maxwell clemency (Jul 2026)",
+        "url": "https://www.axios.com/2026/07/29/ghislaine-maxwell-jeffrey-epstein-senate-pardon"
       }
     ],
     "status": "researched"
@@ -913,7 +941,7 @@ var NODES = [
     "branch": "power",
     "ring": 2,
     "title": "Military-Industrial Complex",
-    "description": "Eisenhower's warning realized. Defense contractors, black budgets, unacknowledged special access programs, and the war economy. RESEARCHED: Palantir (CIA In-Q-Tel funded) is the modern PROMIS — mass data integration for intelligence/military. Epstein brokered Barak↔Thiel/Palantir connection (documented audio, Feb 2013). Carbyne (Unit 8200 founded, Barak chairman, Epstein $1.5M investor) = surveillance tech pipeline.",
+    "description": "Eisenhower's warning realized. Defense contractors, black budgets, unacknowledged special access programs, and the war economy. On September 5, 2025 (announced August 25) an executive order restyled the DoD as the Department of War. RESEARCHED: Palantir (CIA In-Q-Tel funded) is the modern PROMIS — mass data integration for intelligence/military, now partnered with Anthropic to deploy Claude AI on defense platforms (Nov 2024). Epstein brokered Barak↔Thiel/Palantir connection (documented audio, Feb 2013). Carbyne (Unit 8200 founded, Barak chairman, Epstein $1.5M investor) = surveillance tech pipeline.",
     "fullDescription": "Eisenhower's warning realized. Defense contractors, black budgets, unacknowledged special access programs, and the war economy. RESEARCHED: Palantir (CIA In-Q-Tel funded) is the modern PROMIS — mass data integration for intelligence/military. Epstein brokered Barak↔Thiel/Palantir connection (documented audio, Feb 2013). Carbyne (Unit 8200 founded, Barak chairman, Epstein $1.5M investor) = surveillance tech pipeline. HISTORICAL ROOTS: 1933 Business Plot — Morgan/DuPont attempted coup against FDR, sworn Congressional testimony (McCormack-Dickstein Committee). Plan: feigned presidential illness + shadow \"general secretary\" with real executive power. Thwarted by Gen. Smedley Butler [🟢]. Richard Chichester du Pont died military plane crash Sept 11, 1943 (March Field army base, age 32, special assistant to Gen. Arnold/USAF); Joe Kennedy Jr. died military plane explosion Aug 1944 — oligarch-family sons in military aviation deaths [🟡]. Pentagon took control of JFK Jr. crash scene 1999, all press relations [🟢].",
     "evidence": [
       {
@@ -1722,7 +1750,7 @@ var NODES = [
         "source": "Citizen Lab forensic analyses; Amnesty International Security Lab device inspections; Washington Post and Guardian reporting with forensic verification"
       },
       {
-        "text": "A federal jury found NSO Group liable for hacking ~1,400 WhatsApp users and awarded $167.25 million in punitive damages (later reduced to ~$4 million by the judge).",
+        "text": "In May 2025, a federal jury found NSO Group liable for hacking ~1,400 WhatsApp users and awarded $167.25 million in punitive damages. In October 2025 the judge reduced punitive damages to $4 million but granted a permanent injunction barring NSO from hacking WhatsApp, effective January 28, 2026. In June 2026, WhatsApp detected a fresh Pegasus campaign launched within days of the injunction and filed a federal contempt motion.",
         "tier": "documented",
         "source": "WhatsApp Inc. v. NSO Group Technologies Ltd., U.S. District Court, Northern District of California, Case No. 3:19-cv-07123 (December 2024 liability ruling; May 2025 jury verdict)"
       },
@@ -1946,6 +1974,11 @@ var NODES = [
         "text": "Walter Lord (canonical Titanic account) was OSS; Robert Ballard (discovered wreckage) was Naval Intelligence — intelligence-connected individuals controlled both narrative and physical evidence",
         "tier": "documented",
         "source": "Wikipedia (Lord OSS); Ballard naval career records"
+      },
+      {
+        "text": "2025-2026 wars: Operation Midnight Hammer (June 2025) struck Iran's nuclear sites at Natanz, Fordow, and Isfahan. Operation Epic Fury (February 28, 2026) killed Supreme Leader Khamenei; ceasefire reached April 8, 2026. No Congressional AUMF for either operation. Russia-Ukraine: Anchorage Summit (August 15, 2025) produced no deal; negotiations continue through 2026 via Witkoff.",
+        "tier": "documented",
+        "source": "Intel Console — Operation Epic Fury / Midnight Hammer records"
       }
     ],
     "sources": [
@@ -1968,6 +2001,10 @@ var NODES = [
       {
         "label": "Butler, War Is a Racket (1935)",
         "url": "https://archive.org/details/WarIsARacket"
+      },
+      {
+        "label": "Intel Console — Operation Epic Fury / Midnight Hammer records",
+        "url": "https://qav2.github.io/intel-console/#entity/506"
       }
     ],
     "status": "researched"
@@ -1978,7 +2015,7 @@ var NODES = [
     "ring": 1,
     "title": "Maxwell → PROMIS → Epstein",
     "description": "🟢 DOCUMENTED (Webb/MintPress 2019; Hersh *Samson Option*; Gordon Thomas; Ostrovsky; Ben-Menashe; court records).\n\nROBERT MAXWELL — MOSSAD: MI6 classified him \"Zionist — loyal only to Israel\" [🟡 Thomas/Dillon]. Mossad agent per Hersh, Thomas, Ostrovsky [🟢 multiple independent sources]. Mossad financed ops from Maxwell pension fund (Ostrovsky) [🟡].",
-    "fullDescription": "🟢 DOCUMENTED (Webb/MintPress 2019; Hersh *Samson Option*; Gordon Thomas; Ostrovsky; Ben-Menashe; court records).\n\nROBERT MAXWELL — MOSSAD: MI6 classified him \"Zionist — loyal only to Israel\" [🟡 Thomas/Dillon]. Mossad agent per Hersh, Thomas, Ostrovsky [🟢 multiple independent sources]. Mossad financed ops from Maxwell pension fund (Ostrovsky) [🟡]. Mossad provided prostitutes during Israel visits; hotel bugged with cameras producing \"library of video footage of Maxwell in sexually compromising positions\" — Mossad blackmailed its own asset [🟡 Ostrovsky]. State funeral: 6 intelligence chiefs attended; PM Shamir: \"done more for Israel than can today be said\" [🟢]. Peres eulogized [🟢].\n\nPROMIS CHAIN: Earl Brian (Reagan aide) → Rafi Eitan (Mossad/Lekem) planted trapdoor [🟡 Ben-Menashe testimony]. Maxwell recruited as salesman — sold bugged PROMIS to Soviet intel, conspired with Sen. John Tower for Los Alamos adoption (paid Tower $200K) [🟡 Thomas]. Sold through Information on Demand (Maxwell-owned US front co) headed by daughter Christine Maxwell 1985-1991 [🟡 Webb]. Isabel also worked there [🟡]. Court found DOJ \"took, converted, stole\" PROMIS through \"trickery, fraud, deceit\" [🟢 court ruling]. AG Ed Meese enabled theft; wife invested in Brian's companies [🟡].\n\nMAXWELL CHILDREN CONTINUE THE BUSINESS:\n• Christine: Info on Demand CEO → Research on Demand → McKinley/Magellan search engine → Chiliad (data mining software) → partnered with CIA CIO Alan Wade post-9/11 → Chiliad powered FBI counterterrorism data warehouse [🟢 Wikipedia confirms FBI role; 🟡 Wade connection per Webb]\n• Isabel: Info on Demand → McKinley/Magellan → Israeli tech sector → Israel Venture Network → personal relationship with Bill Gates → CommTouch (Israel) [🟡 Webb]\n• Ghislaine: Magellan stakeholder → Epstein operation → procurement/blackmail\n• McKinley/Magellan powered Microsoft MSN search (1995) + on Netscape homepage [🟢]\n\n1991 DEATH CLUSTER: Danny Casolaro (Aug 10, investigating PROMIS/Main Core), Alan Standorf (NSA source, murdered months prior), Robert Maxwell (Nov 5, fell from yacht), John Tower (Apr 5, plane crash — helped Maxwell sell PROMIS to Los Alamos). Four PROMIS-connected deaths same year Mega Group founded [🟡 individual deaths documented; clustering is pattern observation].\n\nEpstein 2018 email acknowledges Maxwell threatened Mossad with exposure unless £400M [🟢 DOJ-released]. FBI opened counterintel investigation into Maxwell PROMIS role [🟢]. FBI has sought to hide Maxwell-PROMIS information [🟢 MuckRock FOIA].",
+    "fullDescription": "🟢 DOCUMENTED (Webb/MintPress 2019; Hersh *Samson Option*; Gordon Thomas; Ostrovsky; Ben-Menashe; court records).\n\nROBERT MAXWELL — MOSSAD: MI6 classified him \"Zionist — loyal only to Israel\" [🟡 Thomas/Dillon]. Mossad agent per Hersh, Thomas, Ostrovsky [🟢 multiple independent sources]. Mossad financed ops from Maxwell pension fund (Ostrovsky) [🟡]. Mossad provided prostitutes during Israel visits; hotel bugged with cameras producing \"library of video footage of Maxwell in sexually compromising positions\" — Mossad blackmailed its own asset [🟡 Ostrovsky]. State funeral: 6 intelligence chiefs attended; PM Shamir: \"done more for Israel than can today be said\" [🟢]. Peres eulogized [🟢].\n\nPROMIS CHAIN: Earl Brian (Reagan aide) → Rafi Eitan (Mossad/Lekem) planted trapdoor [🟡 Ben-Menashe testimony]. Maxwell recruited as salesman — sold bugged PROMIS to Soviet intel, conspired with Sen. John Tower for Los Alamos adoption (paid Tower $200K) [🟡 Thomas]. Sold through Information on Demand (Maxwell-owned US front co) headed by daughter Christine Maxwell 1985-1991 [🟡 Webb]. Isabel also worked there [🟡]. Court found DOJ \"took, converted, stole\" PROMIS through \"trickery, fraud, deceit\" [🟢 court ruling]. AG Ed Meese enabled theft; wife invested in Brian's companies [🟡].\n\nMAXWELL CHILDREN CONTINUE THE BUSINESS:\n• Christine: Info on Demand CEO → Research on Demand → McKinley/Magellan search engine → Chiliad (data mining software) → partnered with CIA CIO Alan Wade post-9/11 → Chiliad powered FBI counterterrorism data warehouse [🟢 Wikipedia confirms FBI role; 🟡 Wade connection per Webb]\n• Isabel: Info on Demand → McKinley/Magellan → Israeli tech sector → Israel Venture Network → personal relationship with Bill Gates → CommTouch (Israel) [🟡 Webb]\n• Ghislaine: Magellan stakeholder → Epstein operation → procurement/blackmail\n• McKinley/Magellan powered Microsoft MSN search (1995) + on Netscape homepage [🟢]\n\n1991 DEATH CLUSTER: Danny Casolaro (Aug 10, investigating PROMIS/Main Core), Alan Standorf (NSA source, murdered months prior), Robert Maxwell (Nov 5, fell from yacht), John Tower (Apr 5, plane crash — helped Maxwell sell PROMIS to Los Alamos). Four PROMIS-connected deaths same year Mega Group founded [🟡 individual deaths documented; clustering is pattern observation].\n\nEpstein 2018 email acknowledges Maxwell threatened Mossad with exposure unless £400M [🟢 DOJ-released]. FBI opened counterintel investigation into Maxwell PROMIS role [🟢]. FBI has sought to hide Maxwell-PROMIS information [🟢 MuckRock FOIA].\n\n2025-2026 MAXWELL STATUS: Supreme Court denied certiorari October 6, 2025, exhausting all direct appeals of her 20-year sentence. Transferred from FCI Tallahassee to minimum-security Federal Prison Camp Bryan, Texas, August 1, 2025. Deputy AG Todd Blanche conducted a two-day, nine-hour interview July 24-25, 2025; 329 pages of transcripts released August 22, 2025, in which Maxwell stated Trump was 'never inappropriate with anybody.' Deposed via closed-door virtual session February 10, 2026 by House Oversight Committee, where she invoked the Fifth Amendment on every substantive question. Her attorney stated she would cooperate if granted presidential clemency. The Senate unanimously passed a resolution in July 2026 opposing any clemency. On August 25, 2026, a federal judge rejected her pro se habeas corpus petition as 'demonstrably meritless.' Remains incarcerated at FPC Bryan [🟢].",
     "evidence": [
       {
         "text": "Robert Maxwell state funeral: 6 intelligence chiefs attended; PM Shamir eulogized \"done more for Israel than can today be said\"",
@@ -2275,6 +2312,11 @@ var NODES = [
         "text": "Jack Ruby had documented ties to CIA-Mafia anti-Castro assassination plots involving Trafficante, Marcello, and Giancana",
         "tier": "documented",
         "source": "Church Committee Vol. V (1976); HSCA Vol. IX"
+      },
+      {
+        "text": "Executive Order 14176 (signed January 23, 2025) ordered full declassification of JFK, RFK, and MLK assassination records. By January 2026, approximately 94,643 pages of JFK files were released without redactions — the largest single release in history. Speaker Johnson established the House Task Force on Declassification of Federal Secrets (February 2025), chaired by Rep. Anna Paulina Luna.",
+        "tier": "documented",
+        "source": "National Archives — 2025 Release of JFK Assassination Records"
       }
     ],
     "sources": [
@@ -2297,6 +2339,10 @@ var NODES = [
       {
         "label": "CIA Internal History — Robarge (declassified 2014)",
         "url": "https://nsarchive.gwu.edu/briefing-book/intelligence/2014-10-03/cias-internal-probe-cia-and-jfk-assassination"
+      },
+      {
+        "label": "National Archives — 2025 Release of JFK Assassination Records",
+        "url": "https://www.archives.gov/research/jfk/release2025"
       }
     ],
     "status": "researched"
@@ -4047,6 +4093,11 @@ var NODES = [
         "text": "Computing field traces to \"military intelligence and the psychology departments\" — Geoffrey Hinton → Atomic Energy Authority; Edinburgh AI co-founded by Donald Michie (Bletchley Park)",
         "tier": "credible",
         "source": "Genealogical and institutional records"
+      },
+      {
+        "text": "By late 2024, both OpenAI and Anthropic reversed prior military-use restrictions: Anthropic partnered with Palantir (Nov 2024) to deploy Claude on defense/intelligence platforms via AWS GovCloud (IL6 accreditation); OpenAI partnered with Anduril (Dec 2024) for counter-drone systems and secured additional DoD contracts through 2025.",
+        "tier": "documented",
+        "source": "Palantir–Anthropic partnership announcement (Nov 2024)"
       }
     ],
     "sources": [
@@ -4065,6 +4116,10 @@ var NODES = [
       {
         "label": "In-Q-Tel — AI/ML Investments",
         "url": "https://www.iqt.org/"
+      },
+      {
+        "label": "Palantir–Anthropic partnership announcement (Nov 2024)",
+        "url": "https://www.palantir.com/newsroom/press-releases/palantir-and-anthropic-partner-to-bring-claude-ai-models-to-aws-for-u-s-government-intelligence-and-defense-operations"
       }
     ],
     "status": "researched"
@@ -4504,6 +4559,11 @@ var NODES = [
         "text": "The Pentagon acquired a portable, backpack-sized device with Russian-origin components through an undercover operation funded at over eight figures, and has been testing its pulsed RF emissions for over a year.",
         "tier": "credible",
         "source": "CNN (January 2026); CBS News reporting; Scientific American"
+      },
+      {
+        "text": "A joint investigation by 60 Minutes, The Insider, and Der Spiegel identified GRU Unit 29155 as the prime suspect, finding unit members present at locations and times coinciding with reported incidents. The Pentagon acquired a portable, backpack-sized directed-energy device with Russian-origin components through an undercover operation and has been testing its pulsed RF emissions.",
+        "tier": "credible",
+        "source": "60 Minutes / The Insider / Der Spiegel joint investigation (2024); Pentagon acquisition reports"
       }
     ],
     "sources": [
@@ -4550,6 +4610,10 @@ var NODES = [
       {
         "label": "Scientific American — Pentagon Testing Radio Wave Device Linked to Havana Syndrome",
         "url": "https://www.scientificamerican.com/article/pentagon-reportedly-testing-radio-wave-device-linked-to-havana-syndrome/"
+      },
+      {
+        "label": "60 Minutes / The Insider / Der Spiegel — Havana Syndrome Investigation",
+        "url": "https://www.cbsnews.com/news/havana-syndrome-russia-gru-unit-29155-60-minutes/"
       }
     ],
     "status": "researched"
@@ -5006,6 +5070,11 @@ var NODES = [
         "text": "IHR Amendments adopted June 1, 2024 — expanding WHO authority during public health emergencies while critics argue insufficient accountability mechanisms",
         "tier": "documented",
         "source": "WHO 77th World Health Assembly records (June 2024)"
+      },
+      {
+        "text": "ert F. Kennedy Jr., confirmed as HHS Secretary February 13, 2025, dismissed all 17 ACIP members in June 2025 and oversaw the MAHA Commission report (May 2025), which was found to contain fictional citations. During the 2025 measles outbreak (2,255 cases, 3 deaths in Texas), he characterized vaccination as a 'personal choice.'",
+        "tier": "documented",
+        "source": "HHS — Robert F. Kennedy Jr. sworn in as Secretary (Feb 2025)"
       }
     ],
     "sources": [
@@ -5028,6 +5097,10 @@ var NODES = [
       {
         "label": "GAVI Funding Reports",
         "url": "https://www.gavi.org/investing-gavi/funding"
+      },
+      {
+        "label": "HHS — Robert F. Kennedy Jr. sworn in as Secretary (Feb 2025)",
+        "url": "https://www.hhs.gov/about/leadership/index.html"
       }
     ],
     "status": "researched"
@@ -5569,6 +5642,11 @@ var NODES = [
         "text": "Cohn controlled or leveraged virtually all major American media: NY Times (Rosenthal), NY Post (Murdoch), Condé Nast (Newhouse), National Enquirer (Pope), Hearst (Berlin), National Review (Buckley)",
         "tier": "documented",
         "source": "Webb, One Nation Under Blackmail (2022); NY Magazine"
+      },
+      {
+        "text": "In August 2025, Skydance Productions (David Ellison, son of Oracle's Larry Ellison) acquired Paramount Global. Within weeks, Paramount settled Trump's $16M CBS lawsuit. In October 2025, Ellison appointed Bari Weiss as CBS News Editor-in-Chief with no prior broadcast experience; ~100 employees were laid off, and The Late Show with Stephen Colbert was cancelled.",
+        "tier": "documented",
+        "source": "AP — Paramount-Skydance merger closes, David Ellison takes helm"
       }
     ],
     "sources": [
@@ -5587,6 +5665,10 @@ var NODES = [
       {
         "label": "Webb — Cohn Media Control Machine (One Nation Under Blackmail, 2022)",
         "url": "https://www.thenation.com/article/politics/whitney-webb-one-nation-under-blackmail/"
+      },
+      {
+        "label": "AP — Paramount-Skydance merger closes, David Ellison takes helm",
+        "url": "https://apnews.com/article/paramount-skydance-merger-david-ellison-media"
       }
     ],
     "status": "researched"
@@ -5789,6 +5871,11 @@ var NODES = [
         "text": "DOJ surveilled Congressional investigators' Epstein database search patterns — AG Bondi appeared at hearing with printout of Rep. Jayapal's search history",
         "tier": "documented",
         "source": "House Judiciary Hearing (Feb 11, 2026); CNBC photograph"
+      },
+      {
+        "text": "FCC Chairman Brendan Carr (confirmed January 2025) sent letters to major broadcasters including NBC/Comcast threatening license review over alleged news distortion. The FCC approved the Paramount-Skydance merger (July 24, 2025), and the new Paramount settled Trump's $16M CBS lawsuit within weeks — illustrating how regulatory and ownership levers operate in concert.",
+        "tier": "documented",
+        "source": "FCC press releases; Reuters (Paramount-Skydance); CBS/Trump settlement records"
       }
     ],
     "sources": [
@@ -5811,6 +5898,10 @@ var NODES = [
       {
         "label": "House Judiciary — DOJ Surveilling Congress (Feb 11, 2026)",
         "url": "https://judiciary.house.gov/hearing/oversight-department-justice"
+      },
+      {
+        "label": "FCC Chairman Carr Broadcast License Letters",
+        "url": "https://www.fcc.gov/"
       }
     ],
     "status": "researched"
@@ -5829,7 +5920,7 @@ var NODES = [
         "source": "DOJ IG investigation"
       },
       {
-        "text": "DOJ memo (July 2025) preemptively concluded \"no client list exists\" and \"no credible evidence\" of blackmail — before releasing most documents",
+        "text": "DOJ and FBI released a two-page unsigned memo (July 2025) preemptively concluding 'no client list exists' and 'no credible evidence' of blackmail, affirming suicide — before releasing most documents. This contradicted AG Bondi's prior assurances and provoked bipartisan outrage, contributing to the passage of the Epstein Files Transparency Act (signed November 19, 2025), which compelled release of all unclassified Epstein-related records.",
         "tier": "documented",
         "source": "DOJ memorandum (July 2025)"
       },
@@ -5837,6 +5928,11 @@ var NODES = [
         "text": "AP review found \"scant evidence\" supporting conspiracy theories — this must be weighed against documented institutional obstruction patterns",
         "tier": "documented",
         "source": "Associated Press investigation"
+      },
+      {
+        "text": "Ghislaine Maxwell: Supreme Court denied certiorari October 6, 2025. Transferred to minimum-security FPC Bryan, Texas, August 1, 2025. Invoked Fifth Amendment at February 2026 House Oversight deposition; offered cooperation in exchange for presidential clemency. Senate unanimously passed resolution opposing clemency (July 2026). Federal judge rejected habeas corpus petition as 'demonstrably meritless' (August 25, 2026).",
+        "tier": "documented",
+        "source": "Supreme Court docket 24-1073; House Oversight Committee; NPR; Senate resolution (July 2026)"
       }
     ],
     "sources": [
@@ -5851,6 +5947,10 @@ var NODES = [
       {
         "label": "AP — \"Scant Evidence\" Review",
         "url": "https://apnews.com/article/jeffrey-epstein-documents-sex-trafficking-investigation-df6b92b1aab88213e4f54f6db0f08c3e"
+      },
+      {
+        "label": "Maxwell Supreme Court Certiorari Denial",
+        "url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/24-1073.html"
       }
     ],
     "status": "researched"
@@ -6326,6 +6426,11 @@ var NODES = [
         "text": "NASA independent study (2023) appointed first Director of UAP Research; acknowledged \"a very small number\" of cases \"possibly representing truly anomalous UAP\"",
         "tier": "documented",
         "source": "NASA UAP Independent Study Report (Sept 2023)"
+      },
+      {
+        "text": "PURSUE — Presidential Unsealing and Reporting System for UAP Encounters — launched May 8, 2026 at war.gov/UFO. Three tranches released (May 8, May 22, June 12, 2026) comprising 275+ documents, 50+ audio recordings, 46+ videos, and artist renderings. Self-reported traffic: 1.7 billion hits by June 12. Interagency partners: White House, ODNI, DOE, AARO, NASA, FBI. The third tranche dropped the same day as the premiere of Steven Spielberg's 'Disclosure Day.'",
+        "tier": "documented",
+        "source": "war.gov/UFO; DoW press releases (Articles 4480582, 4499305, 4515408)"
       }
     ],
     "sources": [
@@ -6348,6 +6453,10 @@ var NODES = [
       {
         "label": "CIA CREST Archive — 12M Pages Declassified (Jan 2017)",
         "url": "https://www.cia.gov/readingroom/collection/crest-25-year-program-archive"
+      },
+      {
+        "label": "PURSUE Program — war.gov/UFO",
+        "url": "https://www.war.gov/UFO/"
       }
     ],
     "status": "researched"
@@ -6470,9 +6579,14 @@ var NODES = [
         "source": "ODNI, 'Preliminary Assessment: Unidentified Aerial Phenomena' (June 25, 2021)"
       },
       {
-        "text": "AARO established July 2022 under Dr. Sean Kirkpatrick with all-domain authority; released controversial Historical Report Vol. 1 in March 2024 finding no evidence of hidden programs",
+        "text": "AARO established July 2022 under Dr. Sean Kirkpatrick with all-domain authority; released controversial Historical Report Vol. 1 in March 2024 finding no evidence of hidden programs. Kirkpatrick departed December 1, 2023. Second director Jon Kosloski, appointed August 26, 2024, acknowledged analyzing 'true anomalies': 'there are interesting cases that I do not understand. And I do not know anybody else who understands them either' — a tonal shift from Kirkpatrick's dismissive posture.",
         "tier": "documented",
         "source": "DoD directive establishing AARO (July 2022); AARO Historical Report Vol. 1 (March 2024)"
+      },
+      {
+        "text": "The Department of Defense was formally restyled the Department of War by executive order on September 5, 2025. PURSUE is run by the Department of War (DOW) with support from ODNI. The DOW's AARO does coordination work, but the named authority is DOW + ODNI, not AARO as often reported in secondary press.",
+        "tier": "documented",
+        "source": "war.gov/UFO; Executive order on DoD rename (August 2025)"
       }
     ],
     "sources": [
@@ -6503,6 +6617,10 @@ var NODES = [
       {
         "label": "DIA Report — 1976 Tehran UFO Incident",
         "url": "https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/ufo/routing_sheet_ufo_iran.pdf"
+      },
+      {
+        "label": "Department of War — Official Site",
+        "url": "https://www.war.gov/"
       }
     ],
     "status": "researched"
@@ -6679,6 +6797,21 @@ var NODES = [
         "text": "Navy pilots Fravor and Graves testified under oath alongside Grusch, corroborating encounters with objects demonstrating beyond-known-technology capabilities",
         "tier": "documented",
         "source": "House Oversight Committee hearing transcript (July 26, 2023)"
+      },
+      {
+        "text": "NARA established the UAP Records Collection under NDAA FY2024 §§1841-1843, accessioned into Record Group 615. First records transferred April 24, 2025 from ODNI, OSD, FAA, and the NRC. Rolling accessions ongoing. This statutory lane operates independently of PURSUE.",
+        "tier": "documented",
+        "source": "NARA press release nr25-07 (April 24, 2025); archives.gov/research/topics/uaps"
+      },
+      {
+        "text": "February 19, 2026: Trump posted a directive on Truth Social directing the Secretary of War and other agencies to begin releasing UAP/UFO files. The program's own page cites no numbered executive order — the Federal Register PRESDOCU API returns zero UAP presidential documents. This is a directive, not an EO. The full Schumer-Rounds UAPDA Review Board and eminent domain provisions were absent from the enacted FY2024 and FY2026 NDAAs.",
+        "tier": "documented",
+        "source": "war.gov/UFO; Federal Register API (0 UAP presidential documents); NDAA FY2024 conference report"
+      },
+      {
+        "text": "Speaker Johnson established the House Task Force on Declassification of Federal Secrets (February 2025), chaired by Rep. Anna Paulina Luna. By September 2025, the task force expanded scope to include UAP transparency and whistleblower protection hearings, becoming the first standing congressional body dedicated to declassification oversight since the ARRB concluded in 1998.",
+        "tier": "documented",
+        "source": "House Oversight Committee; Rep. Luna press releases"
       }
     ],
     "sources": [
@@ -6709,6 +6842,18 @@ var NODES = [
       {
         "label": "Senate Armed Services UAP Hearings — Gillibrand",
         "url": "https://www.armed-services.senate.gov/hearings"
+      },
+      {
+        "label": "NARA UAP Records Collection — Record Group 615",
+        "url": "https://www.archives.gov/research/topics/uaps"
+      },
+      {
+        "label": "PURSUE Program — war.gov/UFO",
+        "url": "https://www.war.gov/UFO/"
+      },
+      {
+        "label": "House Task Force on Declassification of Federal Secrets",
+        "url": "https://oversight.house.gov/"
       }
     ],
     "status": "researched"
@@ -7717,7 +7862,7 @@ var NODES = [
     "ring": 2,
     "title": "Gain-of-Function Research & Lab Origins",
     "description": "The trail from NIH-funded gain-of-function research at the Wuhan Institute of Virology to the DEFUSE proposal, the furin cleavage site anomaly, and the systematic suppression of the lab-leak hypothesis.",
-    "fullDescription": "\ud83d\udfe2 DOCUMENTED: The Wuhan Institute of Virology (WIV) is a BSL-4 laboratory that was actively studying bat coronaviruses, located in the very city where the COVID-19 outbreak began. EcoHealth Alliance, led by Peter Daszak, funneled NIH/NIAID grants to the WIV \u2014 at least $600K in direct funding, with potentially more via sub-grants, as confirmed by NIH grant records.\\n\\n\ud83d\udfe2 DOCUMENTED: In 2018, the DEFUSE proposal was submitted to DARPA by EcoHealth Alliance. The proposal explicitly described inserting furin cleavage sites into SARS-like coronaviruses. DARPA rejected the proposal as too dangerous, but the research may have continued with other funding sources. These documents were leaked via the DRASTIC research group in 2021. The furin cleavage site found in SARS-CoV-2 is absent in all known close relatives (RaTG13, BANAL series), making it highly unusual for natural emergence according to genomic analysis.\\n\\n\ud83d\udfe2 DOCUMENTED: Ralph Baric at UNC Chapel Hill conducted chimeric virus research in 2015, creating a chimeric SARS-like virus capable of infecting human airway cells, published in Nature Medicine. This demonstrated the technical feasibility of engineering coronaviruses for enhanced human infectivity.\\n\\n\ud83d\udfe2 DOCUMENTED: The NIH imposed a moratorium on gain-of-function research from October 2014 to December 2017. When the moratorium was lifted under Fauci's NIAID, the replacement P3CO framework was significantly weakened. \ud83d\udfe1 CREDIBLE: The EcoHealth Alliance grant continued during the moratorium period \u2014 NIH claimed the work did not qualify as gain-of-function research.\\n\\n\ud83d\udfe2 DOCUMENTED: The \\\"Proximal Origin\\\" paper (Andersen et al., Nature Medicine, March 2020) publicly dismissed the lab leak hypothesis. However, FOIA'd Slack and email messages revealed that the authors privately believed a lab leak was \\\"highly likely\\\" during the Feb 1-2, 2020 teleconference. One Slack message read: \\\"I just can't figure out how this gets accomplished in nature.\\\" Fauci organized this Feb 1 teleconference after reading lab leak concerns; within days, participants reversed their positions.\\n\\n\ud83d\udfe2 DOCUMENTED: The Senate HELP Committee Minority Report (October 2022) concluded that a lab origin was \\\"most likely\\\" based on available evidence. The WIV database of bat virus sequences was taken offline in September 2019 \u2014 months before the official outbreak announcement and never restored. \ud83d\udfe1 CREDIBLE: Three WIV researchers were hospitalized with COVID-like symptoms in November 2019, according to a US intelligence assessment.",
+    "fullDescription": "🟢 DOCUMENTED: The Wuhan Institute of Virology (WIV) is a BSL-4 laboratory that was actively studying bat coronaviruses, located in the very city where the COVID-19 outbreak began. EcoHealth Alliance, led by Peter Daszak, funneled NIH/NIAID grants to the WIV — at least $600K in direct funding, with potentially more via sub-grants, as confirmed by NIH grant records.\\n\\n🟢 DOCUMENTED: In 2018, the DEFUSE proposal was submitted to DARPA by EcoHealth Alliance. The proposal explicitly described inserting furin cleavage sites into SARS-like coronaviruses. DARPA rejected the proposal as too dangerous, but the research may have continued with other funding sources. These documents were leaked via the DRASTIC research group in 2021. The furin cleavage site found in SARS-CoV-2 is absent in all known close relatives (RaTG13, BANAL series), making it highly unusual for natural emergence according to genomic analysis.\\n\\n🟢 DOCUMENTED: Ralph Baric at UNC Chapel Hill conducted chimeric virus research in 2015, creating a chimeric SARS-like virus capable of infecting human airway cells, published in Nature Medicine. This demonstrated the technical feasibility of engineering coronaviruses for enhanced human infectivity.\\n\\n🟢 DOCUMENTED: The NIH imposed a moratorium on gain-of-function research from October 2014 to December 2017. When the moratorium was lifted under Fauci's NIAID, the replacement P3CO framework was significantly weakened. 🟡 CREDIBLE: The EcoHealth Alliance grant continued during the moratorium period — NIH claimed the work did not qualify as gain-of-function research.\\n\\n🟢 DOCUMENTED: The \\\"Proximal Origin\\\" paper (Andersen et al., Nature Medicine, March 2020) publicly dismissed the lab leak hypothesis. However, FOIA'd Slack and email messages revealed that the authors privately believed a lab leak was \\\"highly likely\\\" during the Feb 1-2, 2020 teleconference. One Slack message read: \\\"I just can't figure out how this gets accomplished in nature.\\\" Fauci organized this Feb 1 teleconference after reading lab leak concerns; within days, participants reversed their positions.\\n\\n🟢 DOCUMENTED: The Senate HELP Committee Minority Report (October 2022) concluded that a lab origin was \\\"most likely\\\" based on available evidence. The WIV database of bat virus sequences was taken offline in September 2019 — months before the official outbreak announcement and never restored. 🟡 CREDIBLE: Three WIV researchers were hospitalized with COVID-like symptoms in November 2019, according to a US intelligence assessment.",
     "evidence": [
       {
         "text": "DEFUSE proposal submitted to DARPA in 2018 explicitly described inserting furin cleavage sites into SARS-like coronaviruses; rejected as too dangerous.",
@@ -7743,6 +7888,16 @@ var NODES = [
         "text": "Senate HELP Committee Minority Report concluded that a research-related incident at the WIV was the \"most likely\" origin of SARS-CoV-2.",
         "tier": "documented",
         "source": "Senate HELP Committee Minority Report (October 2022)"
+      },
+      {
+        "text": "The House Select Subcommittee on the Coronavirus Pandemic published its final report on December 2, 2024, concluding the pandemic 'most likely' originated from a lab-related incident and documenting that Fauci's senior advisor had deleted emails. Biden issued a preemptive pardon for Fauci on January 20, 2025, alongside Gen. Milley and January 6 Committee members, covering potential but unspecified federal charges.",
+        "tier": "documented",
+        "source": "House Select Subcommittee Final Report (Dec 2, 2024); Biden clemency grant (Jan 20, 2025)"
+      },
+      {
+        "text": "On January 20, 2025, President Biden issued a preemptive pardon for Fauci covering potential but unspecified federal charges. The incoming Trump administration upheld EcoHealth Alliance's May 2024 debarment from federal funding, permanently closing the NIH-to-WIV funding channel.",
+        "tier": "documented",
+        "source": "White House — Executive Grant of Clemency (Jan 20, 2025)"
       }
     ],
     "sources": [
@@ -7765,6 +7920,14 @@ var NODES = [
       {
         "label": "Baric et al. Nature Medicine (2015)",
         "url": "https://www.nature.com/articles/nm.3985"
+      },
+      {
+        "label": "House Coronavirus Pandemic Subcommittee Final Report",
+        "url": "https://oversight.house.gov/subcommittee/select-subcommittee-on-the-coronavirus-pandemic/"
+      },
+      {
+        "label": "White House — Executive Grant of Clemency (Jan 20, 2025)",
+        "url": "https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2025/01/20/"
       }
     ],
     "status": "researched"
@@ -7775,7 +7938,7 @@ var NODES = [
     "ring": 2,
     "title": "Pharma, EUAs & the Vaccine Rollout",
     "description": "Emergency Use Authorization required no adequate alternative to exist — creating incentive to suppress early treatments. $100B+ in revenue, liability shields, revolving-door regulators, and 329,000 pages of trial data Pfizer wanted sealed for 75 years.",
-    "fullDescription": "\ud83d\udfe2 DOCUMENTED: The Emergency Use Authorization (EUA) legal framework under 21 USC \u00a7360bbb-3 requires that \\\"no adequate, approved, and available alternative\\\" exists for the condition in question. This created a structural incentive to suppress or discredit any early treatment protocols that might have qualified as an adequate alternative.\\n\\n\ud83d\udfe2 DOCUMENTED: The suppression of ivermectin and hydroxychloroquine (HCQ) as early treatments became deeply controversial. The Surgisphere study published in The Lancet \u2014 which was used to halt HCQ trials worldwide \u2014 was retracted after the underlying data was found to be fabricated. Despite this retraction, the damage to HCQ research momentum was already done.\\n\\nEARLY TREATMENT SUPPRESSION \u2014 THE FULL PICTURE:\\n\\n\\ud83d\\udfe2 DOCUMENTED: Dr. Tess Lawrie (Evidence-Based Medicine Consultancy, WHO consultant) conducted a meta-analysis of ivermectin trials showing significant mortality reduction. She presented findings to Dr. Andrew Hill (WHO-contracted researcher, University of Liverpool). Hill initially agreed the evidence was compelling, then reversed his conclusion in his published paper. In a recorded Zoom call, Hill admitted his conclusion was influenced by Unitaid (a WHO-affiliated funder) and stated \\\"I'm in a tricky position\\\" when pressed on why he changed his findings.\\n\\n\\ud83d\\udfe2 DOCUMENTED: The TOGETHER Trial (2022) was presented as definitive evidence against ivermectin, but critics noted the treatment window (late-stage illness) didn't match ivermectin's proposed mechanism (early treatment), and the dosing protocol was lower than what proponents recommended. Pierre Kory's FLCCC Alliance compiled data from 93 ivermectin studies showing positive results when used early.\\n\\n\\ud83d\\udfe2 DOCUMENTED: India's Uttar Pradesh (population 230 million) distributed ivermectin kits widely in 2021 and saw dramatically lower case rates than comparable Indian states that did not. WHO did not investigate this natural experiment. \\ud83d\\udfe1 CREDIBLE: Multiple countries that used ivermectin widely (Peru regions, parts of Brazil, Mexico City) showed temporal correlations with reduced mortality, though confounders exist.\\n\\n\\ud83d\\udfe2 DOCUMENTED: The pattern was consistent: any treatment that threatened EUA status was systematically attacked. HCQ was killed by the fabricated Surgisphere study. Ivermectin was ridiculed as \\\"horse paste\\\" by media despite being on the WHO's List of Essential Medicines with over 4 billion human doses administered. Fluvoxamine, vitamin D, and monoclonal antibodies faced similar resistance or restricted access.\\n\\n\\ud83d\\udfe1 CREDIBLE: The financial math was stark: early treatment with generic drugs costing cents per dose would have eliminated the legal basis for EUAs on products generating $100B+ in revenue. This is not conspiracy theory \u2014 it is the literal text of the statute.\\n\\n\ud83d\udfe2 DOCUMENTED: Pfizer's BNT162b2 trial reported 95% relative risk reduction (8 infections in 18,198 vaccinated vs. 162 in 18,325 placebo). However, the absolute risk reduction was only 0.84%, a framing distinction rarely communicated to the public. \ud83d\udfe1 CREDIBLE: The choice to emphasize relative over absolute risk reduction in public messaging was a deliberate communications strategy.\\n\\n\ud83d\udfe2 DOCUMENTED: Pfizer's 6-month follow-up data showed more all-cause deaths in the vaccine group (21) than in the placebo group (17). While not statistically significant, this finding raised questions that were largely ignored in mainstream coverage.\\n\\n\ud83d\udfe2 DOCUMENTED: Moderna's mRNA-1273 vaccine was designed in just 2 days (January 13, 2020) \u2014 before the virus was even officially sequenced publicly \u2014 raising questions about prior knowledge of the viral sequence. This timeline is confirmed in Moderna's SEC filings and CEO St\u00e9phane Bancel's testimony.\\n\\n\ud83d\udfe2 DOCUMENTED: The PREP Act (Public Readiness and Emergency Preparedness Act of 2005) grants manufacturers, distributors, and administrators broad immunity from liability during a declared public health emergency. Combined with EUA protections, vaccine makers faced essentially zero legal risk.\\n\\n\ud83d\udfe2 DOCUMENTED: Pfizer and Moderna generated over $100 billion in combined revenue from COVID vaccines, according to their financial reports. The revolving door between regulators and industry was stark: Scott Gottlieb served as FDA Commissioner (2017-2019) before joining Pfizer's board of directors; Stephen Hahn served as FDA Commissioner (2019-2021) before joining Flagship Pioneering, Moderna's founding venture firm.\\n\\n\ud83d\udfe2 DOCUMENTED: VAERS (Vaccine Adverse Event Reporting System) recorded an unprecedented volume of adverse event reports following COVID vaccination. The system's limitations \u2014 passive reporting, no causation determination \u2014 were used both to dismiss and elevate concerns depending on perspective.\\n\\n\ud83d\udfe2 DOCUMENTED: When PHMPT (Public Health and Medical Professionals for Transparency) sued the FDA for Pfizer's trial documents, the FDA initially proposed releasing them over 75 years. Federal Judge Mark Pittman ordered a rolling release of 329,000+ pages, calling the delay \\\"dystopian.\\\"\\n\\n\ud83d\udfe2 DOCUMENTED: The myocarditis signal in young males was initially denied by health authorities, then acknowledged by the CDC. Nordic studies showed elevated rates of myocarditis especially after the Moderna vaccine. Waning efficacy led to repeated booster recommendations, and the definition of \\\"fully vaccinated\\\" was changed multiple times.",
+    "fullDescription": "🟢 DOCUMENTED: The Emergency Use Authorization (EUA) legal framework under 21 USC §360bbb-3 requires that \\\"no adequate, approved, and available alternative\\\" exists for the condition in question. This created a structural incentive to suppress or discredit any early treatment protocols that might have qualified as an adequate alternative.\\n\\n🟢 DOCUMENTED: The suppression of ivermectin and hydroxychloroquine (HCQ) as early treatments became deeply controversial. The Surgisphere study published in The Lancet — which was used to halt HCQ trials worldwide — was retracted after the underlying data was found to be fabricated. Despite this retraction, the damage to HCQ research momentum was already done.\\n\\nEARLY TREATMENT SUPPRESSION — THE FULL PICTURE:\\n\\n\\ud83d\\udfe2 DOCUMENTED: Dr. Tess Lawrie (Evidence-Based Medicine Consultancy, WHO consultant) conducted a meta-analysis of ivermectin trials showing significant mortality reduction. She presented findings to Dr. Andrew Hill (WHO-contracted researcher, University of Liverpool). Hill initially agreed the evidence was compelling, then reversed his conclusion in his published paper. In a recorded Zoom call, Hill admitted his conclusion was influenced by Unitaid (a WHO-affiliated funder) and stated \\\"I'm in a tricky position\\\" when pressed on why he changed his findings.\\n\\n\\ud83d\\udfe2 DOCUMENTED: The TOGETHER Trial (2022) was presented as definitive evidence against ivermectin, but critics noted the treatment window (late-stage illness) didn't match ivermectin's proposed mechanism (early treatment), and the dosing protocol was lower than what proponents recommended. Pierre Kory's FLCCC Alliance compiled data from 93 ivermectin studies showing positive results when used early.\\n\\n\\ud83d\\udfe2 DOCUMENTED: India's Uttar Pradesh (population 230 million) distributed ivermectin kits widely in 2021 and saw dramatically lower case rates than comparable Indian states that did not. WHO did not investigate this natural experiment. \\ud83d\\udfe1 CREDIBLE: Multiple countries that used ivermectin widely (Peru regions, parts of Brazil, Mexico City) showed temporal correlations with reduced mortality, though confounders exist.\\n\\n\\ud83d\\udfe2 DOCUMENTED: The pattern was consistent: any treatment that threatened EUA status was systematically attacked. HCQ was killed by the fabricated Surgisphere study. Ivermectin was ridiculed as \\\"horse paste\\\" by media despite being on the WHO's List of Essential Medicines with over 4 billion human doses administered. Fluvoxamine, vitamin D, and monoclonal antibodies faced similar resistance or restricted access.\\n\\n\\ud83d\\udfe1 CREDIBLE: The financial math was stark: early treatment with generic drugs costing cents per dose would have eliminated the legal basis for EUAs on products generating $100B+ in revenue. This is not conspiracy theory — it is the literal text of the statute.\\n\\n🟢 DOCUMENTED: Pfizer's BNT162b2 trial reported 95% relative risk reduction (8 infections in 18,198 vaccinated vs. 162 in 18,325 placebo). However, the absolute risk reduction was only 0.84%, a framing distinction rarely communicated to the public. 🟡 CREDIBLE: The choice to emphasize relative over absolute risk reduction in public messaging was a deliberate communications strategy.\\n\\n🟢 DOCUMENTED: Pfizer's 6-month follow-up data showed more all-cause deaths in the vaccine group (21) than in the placebo group (17). While not statistically significant, this finding raised questions that were largely ignored in mainstream coverage.\\n\\n🟢 DOCUMENTED: Moderna's mRNA-1273 vaccine was designed in just 2 days (January 13, 2020) — before the virus was even officially sequenced publicly — raising questions about prior knowledge of the viral sequence. This timeline is confirmed in Moderna's SEC filings and CEO Stéphane Bancel's testimony.\\n\\n🟢 DOCUMENTED: The PREP Act (Public Readiness and Emergency Preparedness Act of 2005) grants manufacturers, distributors, and administrators broad immunity from liability during a declared public health emergency. Combined with EUA protections, vaccine makers faced essentially zero legal risk.\\n\\n🟢 DOCUMENTED: Pfizer and Moderna generated over $100 billion in combined revenue from COVID vaccines, according to their financial reports. The revolving door between regulators and industry was stark: Scott Gottlieb served as FDA Commissioner (2017-2019) before joining Pfizer's board of directors; Stephen Hahn served as FDA Commissioner (2019-2021) before joining Flagship Pioneering, Moderna's founding venture firm.\\n\\n🟢 DOCUMENTED: VAERS (Vaccine Adverse Event Reporting System) recorded an unprecedented volume of adverse event reports following COVID vaccination. The system's limitations — passive reporting, no causation determination — were used both to dismiss and elevate concerns depending on perspective.\\n\\n🟢 DOCUMENTED: When PHMPT (Public Health and Medical Professionals for Transparency) sued the FDA for Pfizer's trial documents, the FDA initially proposed releasing them over 75 years. Federal Judge Mark Pittman ordered a rolling release of 329,000+ pages, calling the delay \\\"dystopian.\\\"\\n\\n🟢 DOCUMENTED: The myocarditis signal in young males was initially denied by health authorities, then acknowledged by the CDC. Nordic studies showed elevated rates of myocarditis especially after the Moderna vaccine. Waning efficacy led to repeated booster recommendations, and the definition of \\\"fully vaccinated\\\" was changed multiple times.",
     "evidence": [
       {
         "text": "EUA statute (21 USC §360bbb-3) explicitly requires that \"no adequate, approved, and available alternative\" exists, creating structural incentive to suppress early treatments.",
@@ -7833,7 +7996,7 @@ var NODES = [
     "ring": 2,
     "title": "The Biodefense-Industrial Complex",
     "description": "From Fort Detrick to DARPA bio-programs to Event 201 — the institutional infrastructure that funded gain-of-function research, ran pandemic simulations months before COVID, and profited from the response.",
-    "fullDescription": "\ud83d\udfe2 DOCUMENTED: DARPA (Defense Advanced Research Projects Agency) has funded dual-use biological research programs since the 2000s, including programs like PREDICT, PREEMPT, and the controversial DEFUSE proposal. These programs blurred the line between biodefense and bioweapons capability development.\\n\\n\ud83d\udfe2 DOCUMENTED: Fort Detrick, Maryland has a long history as the center of US biological programs. The US offensive bioweapons program operated from 1943 to 1969, when it was officially converted to \\\"defensive\\\" research under Nixon's executive order. The facility still houses USAMRIID (United States Army Medical Research Institute of Infectious Diseases), one of the world's premier biodefense laboratories.\\n\\n\ud83d\udfe2 DOCUMENTED: The Project BioShield Act (2004) allocated $5.6 billion for biodefense countermeasures, enacted in the post-9/11 and post-anthrax attacks environment. BARDA (Biomedical Advanced Research and Development Authority) was subsequently created, channeling billions in contracts to pharmaceutical companies for pandemic preparedness.\\n\\n\ud83d\udfe2 DOCUMENTED: The Dual-Use Research of Concern (DURC) policy category was created to regulate research with both beneficial and harmful potential, but critics argue it effectively allowed dangerous research to continue under a regulatory veneer. \ud83d\udfe1 CREDIBLE: EcoHealth Alliance functioned as an NIH/NIAID/USAID/DOD cutout for international gain-of-function research, allowing work at foreign labs like the WIV that would face greater scrutiny domestically.\\n\\n\ud83d\udfe2 DOCUMENTED: Event 201, held on October 18, 2019 \u2014 just six weeks before the Wuhan outbreak \u2014 was a high-level pandemic tabletop exercise co-hosted by the Johns Hopkins Center for Health Security, the Bill & Melinda Gates Foundation, and the World Economic Forum. The scenario involved a novel coronavirus originating from bats, spreading globally, and included detailed recommendations for social media censorship of \\\"misinformation.\\\" The exercise's recommendations closely mirrored the actual COVID-19 response.\\n\\n\ud83d\udfe2 DOCUMENTED: Crimson Contagion was a multi-agency HHS exercise conducted from January to August 2019 that simulated an influenza pandemic originating in China. The draft report, obtained by the New York Times, found the US was severely unprepared for a pandemic response.\\n\\n\ud83d\udfe2 DOCUMENTED: The SPARS Pandemic scenario, published by Johns Hopkins in 2017, described a fictional novel coronavirus pandemic occurring in 2025-2028. The scenario detailed public backlash to a rushed vaccine, medical countermeasure controversies, and communication challenges that bore striking parallels to the actual COVID-19 experience.\\n\\n\ud83d\udfe2 DOCUMENTED: The Dark Winter exercise (June 2001) was a senior-level bioterrorism simulation. Participants included future key officials in the War on Terror. The exercise occurred just months before the actual anthrax attacks of September-October 2001.\\n\\n\ud83d\udfe2 DOCUMENTED: Billion-dollar biodefense contracts were awarded to companies like Emergent BioSolutions and SIGA Technologies, creating a lucrative industry incentivized to promote biodefense spending. \ud83d\udfe1 CREDIBLE: Metabiota, a pandemic risk company with financial ties to Hunter Biden's Rosemont Seneca Partners, operated in Ukrainian biolabs. The financial connections are confirmed through investment records, though the operational scope remains debated.",
+    "fullDescription": "🟢 DOCUMENTED: DARPA (Defense Advanced Research Projects Agency) has funded dual-use biological research programs since the 2000s, including programs like PREDICT, PREEMPT, and the controversial DEFUSE proposal. These programs blurred the line between biodefense and bioweapons capability development.\\n\\n🟢 DOCUMENTED: Fort Detrick, Maryland has a long history as the center of US biological programs. The US offensive bioweapons program operated from 1943 to 1969, when it was officially converted to \\\"defensive\\\" research under Nixon's executive order. The facility still houses USAMRIID (United States Army Medical Research Institute of Infectious Diseases), one of the world's premier biodefense laboratories.\\n\\n🟢 DOCUMENTED: The Project BioShield Act (2004) allocated $5.6 billion for biodefense countermeasures, enacted in the post-9/11 and post-anthrax attacks environment. BARDA (Biomedical Advanced Research and Development Authority) was subsequently created, channeling billions in contracts to pharmaceutical companies for pandemic preparedness.\\n\\n🟢 DOCUMENTED: The Dual-Use Research of Concern (DURC) policy category was created to regulate research with both beneficial and harmful potential, but critics argue it effectively allowed dangerous research to continue under a regulatory veneer. 🟡 CREDIBLE: EcoHealth Alliance functioned as an NIH/NIAID/USAID/DOD cutout for international gain-of-function research, allowing work at foreign labs like the WIV that would face greater scrutiny domestically.\\n\\n🟢 DOCUMENTED: Event 201, held on October 18, 2019 — just six weeks before the Wuhan outbreak — was a high-level pandemic tabletop exercise co-hosted by the Johns Hopkins Center for Health Security, the Bill & Melinda Gates Foundation, and the World Economic Forum. The scenario involved a novel coronavirus originating from bats, spreading globally, and included detailed recommendations for social media censorship of \\\"misinformation.\\\" The exercise's recommendations closely mirrored the actual COVID-19 response.\\n\\n🟢 DOCUMENTED: Crimson Contagion was a multi-agency HHS exercise conducted from January to August 2019 that simulated an influenza pandemic originating in China. The draft report, obtained by the New York Times, found the US was severely unprepared for a pandemic response.\\n\\n🟢 DOCUMENTED: The SPARS Pandemic scenario, published by Johns Hopkins in 2017, described a fictional novel coronavirus pandemic occurring in 2025-2028. The scenario detailed public backlash to a rushed vaccine, medical countermeasure controversies, and communication challenges that bore striking parallels to the actual COVID-19 experience.\\n\\n🟢 DOCUMENTED: The Dark Winter exercise (June 2001) was a senior-level bioterrorism simulation. Participants included future key officials in the War on Terror. The exercise occurred just months before the actual anthrax attacks of September-October 2001.\\n\\n🟢 DOCUMENTED: Billion-dollar biodefense contracts were awarded to companies like Emergent BioSolutions and SIGA Technologies, creating a lucrative industry incentivized to promote biodefense spending. 🟡 CREDIBLE: Metabiota, a pandemic risk company with financial ties to Hunter Biden's Rosemont Seneca Partners, operated in Ukrainian biolabs. The financial connections are confirmed through investment records, though the operational scope remains debated.",
     "evidence": [
       {
         "text": "Event 201, co-hosted by Johns Hopkins, Gates Foundation, and WEF on October 18, 2019, simulated a coronavirus pandemic including social media censorship — six weeks before the Wuhan outbreak.",
@@ -7887,7 +8050,7 @@ var NODES = [
     "ring": 1,
     "title": "Emergency Powers & the Biosecurity State",
     "description": "COVID established the template for biosecurity governance — WHO declarations enabling lockdowns, vaccine mandates, digital health passes, bank account freezing, and proposals to make pandemic powers permanent through the WHO Pandemic Treaty.",
-    "fullDescription": "\ud83d\udfe2 DOCUMENTED: The WHO declared COVID-19 a Public Health Emergency of International Concern (PHEIC) on January 30, 2020, and a pandemic on March 11, 2020. These declarations enabled emergency powers across the globe, activating national emergency frameworks, regulatory waivers, and extraordinary executive authority.\\n\\n\ud83d\udfe2 DOCUMENTED: Lockdowns represented unprecedented peacetime restrictions on movement, assembly, worship, and commerce. There was no historical public health precedent for restrictions at this scale. Business closures devastated small businesses while large corporations such as Amazon and Walmart remained open as \\\"essential.\\\" According to Oxfam and Forbes data, billionaire wealth increased by $3.7 trillion during the pandemic \u2014 the largest wealth transfer in recorded history.\\n\\n\ud83d\udfe2 DOCUMENTED: Vaccine mandates were imposed through multiple channels: the OSHA employer mandate for businesses with 100+ employees (struck down by the Supreme Court in NFIB v. OSHA, January 2022), military mandates affecting all service branches, healthcare worker mandates via CMS, and federal contractor mandates. Millions faced the choice between vaccination and their livelihoods.\\n\\n\ud83d\udfe2 DOCUMENTED: Digital health certificates proliferated globally. The EU Digital COVID Certificate system processed hundreds of millions of certificates. Israel's Green Pass restricted access to public venues based on vaccination status. These systems created digital identity infrastructure that persists beyond the pandemic context.\\n\\n\ud83d\udfe2 DOCUMENTED: In February 2022, the Canadian government invoked the Emergencies Act against the trucker convoy protest in Ottawa. Bank accounts of protesters and donors were frozen without court orders. Financial institutions were directed to cease providing services to designated individuals. This marked the first use of the Emergencies Act since its passage in 1988.\\n\\n\ud83d\udfe2 DOCUMENTED: The PREP Act (2005) provided broad liability immunity to countermeasure manufacturers during declared public health emergencies. The PHEIC framework grants the WHO Director-General unilateral authority to declare international health emergencies.\\n\\n\ud83d\udfe2 DOCUMENTED: The proposed WHO Pandemic Treaty and amendments to the International Health Regulations (IHR) would expand WHO authority over member states during health emergencies. Negotiations remain ongoing, with significant sovereignty concerns raised by multiple nations.\\n\\n\ud83d\udfe2 DOCUMENTED: School closures affected 1.6 billion students worldwide, described by UNICEF as the \\\"largest disruption to education in history.\\\" Learning losses were disproportionately borne by disadvantaged communities.\\n\\nTHE SOCIAL DEVASTATION \u2014 WHAT LOCKDOWNS ACTUALLY DID:\\n\\n\\ud83d\\udfe2 DOCUMENTED: Over 200,000 US small businesses closed permanently during the pandemic (Federal Reserve data). Amazon's revenue grew 38% in 2020; Jeff Bezos's wealth increased by $75 billion. The top 1% captured more wealth in two years than the previous 14 combined. This was not an accident \u2014 it was the predictable consequence of declaring Walmart \\\"essential\\\" and your local bookstore a public health threat.\\n\\n\\ud83d\\udfe2 DOCUMENTED: The class divide was total. The \\\"laptop class\\\" worked from home, ordered DoorDash, and virtue-signaled about \\\"staying home to save lives.\\\" Essential workers \u2014 disproportionately low-income and minority \u2014 had no such luxury. Their children attended school on cracked phone screens while affluent kids had private tutors and pods. The people making lockdown policy were the people least affected by it.\\n\\n\\ud83d\\udfe2 DOCUMENTED: CDC data showed a 44% increase in mental health-related emergency department visits for adolescents in 2020-2021. Youth suicide attempts surged \u2014 girls aged 12-17 saw a 51% increase in suspected suicide attempt ED visits (CDC MMWR, June 2021). Substance abuse deaths hit record highs: over 100,000 overdose deaths in 12 months ending April 2021, a 28.5% increase.\\n\\n\\ud83d\\udfe2 DOCUMENTED: McKinsey estimated US students lost 1-3 years of learning, with low-income and minority students hit hardest. NAEP (\\\"Nation's Report Card\\\") 2022 scores showed the largest decline in reading in 30 years and the first-ever recorded decline in mathematics. An entire generation of children was sacrificed to protect adults from a virus with a 99.8%+ survival rate for those under 50.\\n\\n\\ud83d\\udfe2 DOCUMENTED: Churches, funerals, and AA meetings were shut down. Families could not visit dying relatives. People died alone while nurses held up iPads. Meanwhile, mass protests following George Floyd's death in June 2020 were declared acceptable by over 1,200 public health professionals who signed an open letter stating racial justice was more important than COVID restrictions \u2014 destroying the credibility of \\\"follow the science\\\" overnight.\\n\\n\\ud83d\\udfe2 DOCUMENTED: Australia built quarantine camps (Howard Springs, Wellcamp). Police in Melbourne fired rubber bullets at lockdown protesters. A pregnant woman was arrested in her home for a Facebook post about a planned protest. New Zealand sealed its borders for over two years. In Canada, pastors were jailed for holding church services.\\n\\n\ud83d\udfe0 INFERENCE: The combination of digital health IDs, vaccination status requirements, and financial access restrictions created infrastructure that parallels social credit systems \u2014 a framework for social compliance that could be repurposed for future crises. \ud83d\udfe1 CREDIBLE: As philosopher Giorgio Agamben observed, the \\\"state of exception\\\" has become a governance model \u2014 emergency measures implemented temporarily tend to become permanent features of the political landscape.",
+    "fullDescription": "🟢 DOCUMENTED: The WHO declared COVID-19 a Public Health Emergency of International Concern (PHEIC) on January 30, 2020, and a pandemic on March 11, 2020. These declarations enabled emergency powers across the globe, activating national emergency frameworks, regulatory waivers, and extraordinary executive authority.\\n\\n🟢 DOCUMENTED: Lockdowns represented unprecedented peacetime restrictions on movement, assembly, worship, and commerce. There was no historical public health precedent for restrictions at this scale. Business closures devastated small businesses while large corporations such as Amazon and Walmart remained open as \\\"essential.\\\" According to Oxfam and Forbes data, billionaire wealth increased by $3.7 trillion during the pandemic — the largest wealth transfer in recorded history.\\n\\n🟢 DOCUMENTED: Vaccine mandates were imposed through multiple channels: the OSHA employer mandate for businesses with 100+ employees (struck down by the Supreme Court in NFIB v. OSHA, January 2022), military mandates affecting all service branches, healthcare worker mandates via CMS, and federal contractor mandates. Millions faced the choice between vaccination and their livelihoods.\\n\\n🟢 DOCUMENTED: Digital health certificates proliferated globally. The EU Digital COVID Certificate system processed hundreds of millions of certificates. Israel's Green Pass restricted access to public venues based on vaccination status. These systems created digital identity infrastructure that persists beyond the pandemic context.\\n\\n🟢 DOCUMENTED: In February 2022, the Canadian government invoked the Emergencies Act against the trucker convoy protest in Ottawa. Bank accounts of protesters and donors were frozen without court orders. Financial institutions were directed to cease providing services to designated individuals. This marked the first use of the Emergencies Act since its passage in 1988.\\n\\n🟢 DOCUMENTED: The PREP Act (2005) provided broad liability immunity to countermeasure manufacturers during declared public health emergencies. The PHEIC framework grants the WHO Director-General unilateral authority to declare international health emergencies.\\n\\n🟢 DOCUMENTED: The proposed WHO Pandemic Treaty and amendments to the International Health Regulations (IHR) would expand WHO authority over member states during health emergencies. Negotiations remain ongoing, with significant sovereignty concerns raised by multiple nations.\\n\\n🟢 DOCUMENTED: School closures affected 1.6 billion students worldwide, described by UNICEF as the \\\"largest disruption to education in history.\\\" Learning losses were disproportionately borne by disadvantaged communities.\\n\\nTHE SOCIAL DEVASTATION — WHAT LOCKDOWNS ACTUALLY DID:\\n\\n\\ud83d\\udfe2 DOCUMENTED: Over 200,000 US small businesses closed permanently during the pandemic (Federal Reserve data). Amazon's revenue grew 38% in 2020; Jeff Bezos's wealth increased by $75 billion. The top 1% captured more wealth in two years than the previous 14 combined. This was not an accident — it was the predictable consequence of declaring Walmart \\\"essential\\\" and your local bookstore a public health threat.\\n\\n\\ud83d\\udfe2 DOCUMENTED: The class divide was total. The \\\"laptop class\\\" worked from home, ordered DoorDash, and virtue-signaled about \\\"staying home to save lives.\\\" Essential workers — disproportionately low-income and minority — had no such luxury. Their children attended school on cracked phone screens while affluent kids had private tutors and pods. The people making lockdown policy were the people least affected by it.\\n\\n\\ud83d\\udfe2 DOCUMENTED: CDC data showed a 44% increase in mental health-related emergency department visits for adolescents in 2020-2021. Youth suicide attempts surged — girls aged 12-17 saw a 51% increase in suspected suicide attempt ED visits (CDC MMWR, June 2021). Substance abuse deaths hit record highs: over 100,000 overdose deaths in 12 months ending April 2021, a 28.5% increase.\\n\\n\\ud83d\\udfe2 DOCUMENTED: McKinsey estimated US students lost 1-3 years of learning, with low-income and minority students hit hardest. NAEP (\\\"Nation's Report Card\\\") 2022 scores showed the largest decline in reading in 30 years and the first-ever recorded decline in mathematics. An entire generation of children was sacrificed to protect adults from a virus with a 99.8%+ survival rate for those under 50.\\n\\n\\ud83d\\udfe2 DOCUMENTED: Churches, funerals, and AA meetings were shut down. Families could not visit dying relatives. People died alone while nurses held up iPads. Meanwhile, mass protests following George Floyd's death in June 2020 were declared acceptable by over 1,200 public health professionals who signed an open letter stating racial justice was more important than COVID restrictions — destroying the credibility of \\\"follow the science\\\" overnight.\\n\\n\\ud83d\\udfe2 DOCUMENTED: Australia built quarantine camps (Howard Springs, Wellcamp). Police in Melbourne fired rubber bullets at lockdown protesters. A pregnant woman was arrested in her home for a Facebook post about a planned protest. New Zealand sealed its borders for over two years. In Canada, pastors were jailed for holding church services.\\n\\n🟠 INFERENCE: The combination of digital health IDs, vaccination status requirements, and financial access restrictions created infrastructure that parallels social credit systems — a framework for social compliance that could be repurposed for future crises. 🟡 CREDIBLE: As philosopher Giorgio Agamben observed, the \\\"state of exception\\\" has become a governance model — emergency measures implemented temporarily tend to become permanent features of the political landscape.",
     "evidence": [
       {
         "text": "WHO declared COVID-19 a Public Health Emergency of International Concern (PHEIC) on January 30, 2020, enabling emergency powers globally.",
@@ -7941,7 +8104,7 @@ var NODES = [
     "ring": 2,
     "title": "COVID-Era Censorship & Information Control",
     "description": "Government-directed censorship at industrial scale — Twitter Files revealed White House flagging posts for removal, while the lab-leak hypothesis was labeled 'misinformation' until it became acceptable, and dissenting scientists faced professional destruction.",
-    "fullDescription": "\ud83d\udfe2 DOCUMENTED: The Twitter Files, released beginning in December 2022, consisted of internal company documents showing that government officials directly flagged specific social media content for removal or suppression. The FBI, DHS, State Department, and White House were all involved in communications with Twitter requesting or demanding content moderation actions.\\n\\n\ud83d\udfe2 DOCUMENTED: In August 2024, Mark Zuckerberg sent a letter to Congress admitting that the Biden administration \\\"pressured\\\" Facebook to censor COVID-related content, including humor and satire. Zuckerberg stated that Facebook should not have complied and called the censorship a mistake.\\n\\n\ud83d\udfe2 DOCUMENTED: YouTube implemented a policy of removing any content that contradicted WHO guidance on COVID-19, including videos produced by credentialed scientists and physicians with relevant expertise.\\n\\n\ud83d\udfe2 DOCUMENTED: The Virality Project, run by the Stanford Internet Observatory, monitored social media for \\\"anti-vaccine narratives.\\\" Internal documents revealed via the Twitter Files showed the project flagged \\\"true content which could fuel hesitancy\\\" \u2014 meaning factually accurate information was targeted for suppression because it might discourage vaccination.\\n\\n\ud83d\udfe2 DOCUMENTED: The Trusted News Initiative (TNI), a BBC-led consortium including Reuters, AP, the Washington Post, Google, Facebook, and Microsoft, coordinated to suppress what they defined as \\\"misinformation\\\" that deviated from the official public health narrative. This created an unprecedented media-tech alliance for narrative control.\\n\\n\ud83d\udfe2 DOCUMENTED: Murthy v. Missouri (originally Missouri v. Biden) alleged that the government coerced social media platforms into censorship. The Supreme Court dismissed the case on standing grounds in 2024, but the district court's extensive factual findings documented pervasive government pressure on platforms, including threats of regulatory action.\\n\\n\ud83d\udfe2 DOCUMENTED: The lab leak hypothesis trajectory illustrates the censorship cycle: labeled \\\"misinformation\\\" and \\\"conspiracy theory\\\" from February 2020 through early 2021; Facebook actively removed posts discussing it; then it became an \\\"acceptable\\\" hypothesis after President Biden ordered an intelligence community investigation in May 2021. The underlying facts had not changed \u2014 only the political environment.\\n\\n\ud83d\udfe2 DOCUMENTED: The Great Barrington Declaration (October 2020), signed by epidemiologists from Harvard, Stanford, and Oxford advocating focused protection of the vulnerable rather than universal lockdowns, was targeted for suppression. FOIA'd emails revealed NIH Director Francis Collins wrote to Fauci calling for a \\\"quick and devastating published takedown\\\" of the declaration's premises.\\n\\n\ud83d\udfe2 DOCUMENTED: The \\\"Disinformation Dozen\\\" campaign identified 12 individuals allegedly responsible for the majority of vaccine misinformation online, leading to coordinated deplatforming efforts. Medical license threats were brought against dissenting physicians including Dr. Peter McCullough and Dr. Robert Malone.\\n\\n\ud83d\udfe2 DOCUMENTED: The Spotify/Joe Rogan pressure campaign erupted after Rogan's interview with Dr. Robert Malone in late 2021, with musicians and public figures demanding Spotify remove the episode or their own content. \ud83d\udfe1 CREDIBLE: Amazon suppressed or removed books questioning the official COVID narrative from its marketplace.",
+    "fullDescription": "🟢 DOCUMENTED: The Twitter Files, released beginning in December 2022, consisted of internal company documents showing that government officials directly flagged specific social media content for removal or suppression. The FBI, DHS, State Department, and White House were all involved in communications with Twitter requesting or demanding content moderation actions.\\n\\n🟢 DOCUMENTED: In August 2024, Mark Zuckerberg sent a letter to Congress admitting that the Biden administration \\\"pressured\\\" Facebook to censor COVID-related content, including humor and satire. Zuckerberg stated that Facebook should not have complied and called the censorship a mistake.\\n\\n🟢 DOCUMENTED: YouTube implemented a policy of removing any content that contradicted WHO guidance on COVID-19, including videos produced by credentialed scientists and physicians with relevant expertise.\\n\\n🟢 DOCUMENTED: The Virality Project, run by the Stanford Internet Observatory, monitored social media for \\\"anti-vaccine narratives.\\\" Internal documents revealed via the Twitter Files showed the project flagged \\\"true content which could fuel hesitancy\\\" — meaning factually accurate information was targeted for suppression because it might discourage vaccination.\\n\\n🟢 DOCUMENTED: The Trusted News Initiative (TNI), a BBC-led consortium including Reuters, AP, the Washington Post, Google, Facebook, and Microsoft, coordinated to suppress what they defined as \\\"misinformation\\\" that deviated from the official public health narrative. This created an unprecedented media-tech alliance for narrative control.\\n\\n🟢 DOCUMENTED: Murthy v. Missouri (originally Missouri v. Biden) alleged that the government coerced social media platforms into censorship. The Supreme Court dismissed the case on standing grounds in 2024, but the district court's extensive factual findings documented pervasive government pressure on platforms, including threats of regulatory action.\\n\\n🟢 DOCUMENTED: The lab leak hypothesis trajectory illustrates the censorship cycle: labeled \\\"misinformation\\\" and \\\"conspiracy theory\\\" from February 2020 through early 2021; Facebook actively removed posts discussing it; then it became an \\\"acceptable\\\" hypothesis after President Biden ordered an intelligence community investigation in May 2021. The underlying facts had not changed — only the political environment.\\n\\n🟢 DOCUMENTED: The Great Barrington Declaration (October 2020), signed by epidemiologists from Harvard, Stanford, and Oxford advocating focused protection of the vulnerable rather than universal lockdowns, was targeted for suppression. FOIA'd emails revealed NIH Director Francis Collins wrote to Fauci calling for a \\\"quick and devastating published takedown\\\" of the declaration's premises.\\n\\n🟢 DOCUMENTED: The \\\"Disinformation Dozen\\\" campaign identified 12 individuals allegedly responsible for the majority of vaccine misinformation online, leading to coordinated deplatforming efforts. Medical license threats were brought against dissenting physicians including Dr. Peter McCullough and Dr. Robert Malone.\\n\\n🟢 DOCUMENTED: The Spotify/Joe Rogan pressure campaign erupted after Rogan's interview with Dr. Robert Malone in late 2021, with musicians and public figures demanding Spotify remove the episode or their own content. 🟡 CREDIBLE: Amazon suppressed or removed books questioning the official COVID narrative from its marketplace.",
     "evidence": [
       {
         "text": "Twitter Files internal documents showed FBI, DHS, State Department, and White House officials directly flagging specific posts for removal or suppression.",
@@ -7949,7 +8112,7 @@ var NODES = [
         "source": "Twitter Files (Taibbi, Shellenberger, et al., December 2022 onward)"
       },
       {
-        "text": "Mark Zuckerberg admitted in an August 2024 letter to Congress that the Biden administration \"pressured\" Facebook to censor COVID content including humor and satire.",
+        "text": "Mark Zuckerberg admitted in an August 2024 letter to Congress that the Biden administration 'pressured' Facebook to censor COVID content including humor and satire. In January 2025, Meta announced the end of its third-party fact-checking program and rolled back content moderation policies, with Zuckerberg stating governments had pressured 'too much' censorship.",
         "tier": "documented",
         "source": "Zuckerberg letter to House Judiciary Committee (August 2024)"
       },
@@ -7995,7 +8158,7 @@ var NODES = [
     "ring": 3,
     "title": "COVID Origins: Obstruction & Investigation",
     "description": "China destroyed early samples and deleted the WIV database months before the official outbreak. The Lancet commission concluded US-funded research may have caused the pandemic, while investigators with conflicts of interest shaped the official narrative.",
-    "fullDescription": "\ud83d\udfe2 DOCUMENTED: China's National Health Commission ordered the destruction of early virus samples on January 3, 2020, as reported by the South China Morning Post and the Associated Press. This destruction of evidence occurred at a critical moment when independent verification of the virus's origins was still possible.\\n\\n\ud83d\udfe2 DOCUMENTED: The WIV's sequence database, containing records of bat virus samples collected over years of fieldwork, was taken offline in September 2019 \u2014 months before the official outbreak announcement. The database has never been restored, and its contents remain inaccessible to the international scientific community.\\n\\n\ud83d\udfe1 CREDIBLE: Evidence suggests the earliest COVID-19 cases may predate the Huanan Seafood Market cluster. Blood bank studies and satellite imagery analysis of Wuhan hospital parking lots suggest increased activity consistent with community spread as early as October-November 2019.\\n\\n\ud83d\udfe2 DOCUMENTED: The WHO investigation team that visited Wuhan in February 2021 was given severely limited access to key sites and data. Peter Daszak of EcoHealth Alliance \u2014 a direct collaborator with the WIV who had funneled US grant money to the lab \u2014 was included as an investigator despite his obvious conflict of interest. WHO Director-General Tedros Adhanom later acknowledged the investigation was insufficient.\\n\\n\ud83d\udfe2 DOCUMENTED: The Lancet COVID-19 Commission, chaired by economist Jeffrey Sachs, concluded after two years of investigation that the origin of SARS-CoV-2 \\\"remains unknown\\\" but that US-funded research \\\"could have been responsible\\\" for the pandemic. This was a remarkable statement from a commission hosted by one of the world's most prestigious medical journals.\\n\\n\ud83d\udfe2 DOCUMENTED: Sachs disbanded the commission's task force on origins after discovering undisclosed conflicts of interest among task force members who had ties to EcoHealth Alliance. Sachs publicly stated that the commission had been undermined by researchers with vested interests in obscuring potential US involvement.\\n\\n\ud83d\udfe2 DOCUMENTED: Peter Daszak's conflicts of interest were pervasive: he organized the February 2020 Lancet letter that branded the lab leak hypothesis a \\\"conspiracy theory\\\" while concealing his EcoHealth/WIV financial relationship. He then served on both the WHO and Lancet investigation teams, compromising the independence of both inquiries.\\n\\n\ud83d\udfe2 DOCUMENTED: The US intelligence community remains split on origins. The Department of Energy (low confidence) and the FBI (moderate confidence) favor a laboratory origin. Four agencies and the National Intelligence Council favor natural origin with low confidence. The CIA remained undecided. This assessment was declassified in 2023.\\n\\n\ud83d\udfe2 DOCUMENTED: FOIA revelations showed that Fauci and Collins emails documented a coordinated response to suppress lab leak discussion immediately following the February 1, 2020 teleconference where scientists privately expressed alarm about the virus's engineered features.\\n\\n\ud83d\udfe2 DOCUMENTED: The definition of \\\"gain-of-function\\\" research was changed mid-controversy. NIH altered its definition to exclude the EcoHealth/WIV work, after which Fauci told Congress under oath that \\\"NIH has not ever and does not now fund gain of function research.\\\" The definitional changes and timeline are extensively documented.\\n\\n\ud83d\udfe2 DOCUMENTED: Congressional investigations from 2023 onward, including the House Select Subcommittee on the Coronavirus Pandemic, produced interim reports concluding that a laboratory origin was the most likely explanation. EcoHealth Alliance's funding was finally terminated in May 2024, and the organization was proposed for government-wide debarment.\\n\\n\ud83d\udfe1 CREDIBLE: US State Department cables from 2018, sent by embassy officials who visited the WIV, warned of inadequate safety protocols at the laboratory, particularly regarding its work with bat coronaviruses. These cables were reported on before the pandemic's origins became politicized.",
+    "fullDescription": "🟢 DOCUMENTED: China's National Health Commission ordered the destruction of early virus samples on January 3, 2020, as reported by the South China Morning Post and the Associated Press. This destruction of evidence occurred at a critical moment when independent verification of the virus's origins was still possible.\\n\\n🟢 DOCUMENTED: The WIV's sequence database, containing records of bat virus samples collected over years of fieldwork, was taken offline in September 2019 — months before the official outbreak announcement. The database has never been restored, and its contents remain inaccessible to the international scientific community.\\n\\n🟡 CREDIBLE: Evidence suggests the earliest COVID-19 cases may predate the Huanan Seafood Market cluster. Blood bank studies and satellite imagery analysis of Wuhan hospital parking lots suggest increased activity consistent with community spread as early as October-November 2019.\\n\\n🟢 DOCUMENTED: The WHO investigation team that visited Wuhan in February 2021 was given severely limited access to key sites and data. Peter Daszak of EcoHealth Alliance — a direct collaborator with the WIV who had funneled US grant money to the lab — was included as an investigator despite his obvious conflict of interest. WHO Director-General Tedros Adhanom later acknowledged the investigation was insufficient.\\n\\n🟢 DOCUMENTED: The Lancet COVID-19 Commission, chaired by economist Jeffrey Sachs, concluded after two years of investigation that the origin of SARS-CoV-2 \\\"remains unknown\\\" but that US-funded research \\\"could have been responsible\\\" for the pandemic. This was a remarkable statement from a commission hosted by one of the world's most prestigious medical journals.\\n\\n🟢 DOCUMENTED: Sachs disbanded the commission's task force on origins after discovering undisclosed conflicts of interest among task force members who had ties to EcoHealth Alliance. Sachs publicly stated that the commission had been undermined by researchers with vested interests in obscuring potential US involvement.\\n\\n🟢 DOCUMENTED: Peter Daszak's conflicts of interest were pervasive: he organized the February 2020 Lancet letter that branded the lab leak hypothesis a \\\"conspiracy theory\\\" while concealing his EcoHealth/WIV financial relationship. He then served on both the WHO and Lancet investigation teams, compromising the independence of both inquiries.\\n\\n🟢 DOCUMENTED: The US intelligence community remains split on origins. The Department of Energy (low confidence) and the FBI (moderate confidence) favor a laboratory origin. Four agencies and the National Intelligence Council favor natural origin with low confidence. The CIA remained undecided. This assessment was declassified in 2023.\\n\\n🟢 DOCUMENTED: FOIA revelations showed that Fauci and Collins emails documented a coordinated response to suppress lab leak discussion immediately following the February 1, 2020 teleconference where scientists privately expressed alarm about the virus's engineered features.\\n\\n🟢 DOCUMENTED: The definition of \\\"gain-of-function\\\" research was changed mid-controversy. NIH altered its definition to exclude the EcoHealth/WIV work, after which Fauci told Congress under oath that \\\"NIH has not ever and does not now fund gain of function research.\\\" The definitional changes and timeline are extensively documented.\\n\\n🟢 DOCUMENTED: Congressional investigations from 2023 onward, including the House Select Subcommittee on the Coronavirus Pandemic, produced interim reports concluding that a laboratory origin was the most likely explanation. EcoHealth Alliance's funding was finally terminated in May 2024, and the organization was proposed for government-wide debarment.\\n\\n🟡 CREDIBLE: US State Department cables from 2018, sent by embassy officials who visited the WIV, warned of inadequate safety protocols at the laboratory, particularly regarding its work with bat coronaviruses. These cables were reported on before the pandemic's origins became politicized.",
     "evidence": [
       {
         "text": "The WIV's bat virus sequence database was taken offline in September 2019, months before the official outbreak, and has never been restored.",
@@ -8101,20 +8264,367 @@ var NODES = [
     ],
     "status": "researched"
   },
+  {
+    "id": "uap-pursue-2026",
+    "branch": "cosmology",
+    "ring": 1,
+    "title": "PURSUE — The 2026 Executive Disclosure",
+    "description": "PURSUE: Presidential Unsealing and Reporting System for UAP Encounters. Launched May 2026 at war.gov/UFO per Trump directive (not an EO). Three tranches. Dept of War + ODNI. Unresolved cases only.",
+    "fullDescription": "PURSUE — Presidential Unsealing and Reporting System for UAP Encounters — is a disclosure program hosted at war.gov/UFO, run by the Department of War (the September-2025-renamed DoD) with support from ODNI. It was founded by a Trump Truth Social directive dated February 19, 2026, directing the Secretary of War and other agencies to release UAP/UFO/extraterrestrial files. The official page cites no numbered executive order; the Federal Register PRESDOCU API returns zero UAP presidential documents. Three tranches were released: May 8 (1.2 GB docs, 1.3 GB video), May 22 (70.1 MB docs, 5.6 GB video, 222 documents, ~51 audio recordings), and June 12 (826 MB docs, 4.6 GB video, 53 documents from CIA, FBI, NASA, DoD). Traffic: 1.7 billion self-reported hits by June 12. PURSUE archives only unresolved cases and runs parallel to statutory reporting. The program 'welcomes the application of private-sector analysis.' Interagency partners: White House, ODNI, DOE, AARO, NASA, FBI. NARA is not a listed partner, confirming the executive and statutory lanes are distinct. Secretary of War Pete Hegseth: the files 'have long fueled justified speculation.' DNI Tulsi Gabbard: 'the first in what will be an ongoing joint declassification and release effort.' The third tranche dropped the same day as Spielberg's 'Disclosure Day' premiere.",
+    "evidence": [
+      {
+        "text": "PURSUE launched May 8, 2026 at war.gov/UFO. Three tranches released through June 12, 2026, comprising 275+ documents, 50+ audio recordings, 46+ videos, totaling 14+ GB of material from CIA, FBI, NASA, DoD, and other agencies.",
+        "tier": "documented",
+        "source": "war.gov/UFO; DoW press releases (Articles 4480582, 4499305, 4515408)"
+      },
+      {
+        "text": "The founding authority is a Trump Truth Social directive dated February 19, 2026. The program's own page cites no executive order number. The Federal Register PRESDOCU API returns zero UAP presidential documents. It is a directive, not an EO.",
+        "tier": "documented",
+        "source": "war.gov/UFO; Federal Register API search (0 results)"
+      },
+      {
+        "text": "PURSUE archives only unresolved cases and runs parallel to statutory reporting under NDAA FY2024 §§1841-1843. It 'welcomes the application of private-sector analysis.' NARA is not a listed partner.",
+        "tier": "documented",
+        "source": "war.gov/UFO (program description page)"
+      },
+      {
+        "text": "Tranche 3 (June 12, 2026) included CIA-UAP-017, a never-before-released July 2008 CIA report of a hovering object over Harare International Airport, Zimbabwe, routed to the White House Situation Room.",
+        "tier": "documented",
+        "source": "war.gov/UFO Release 3; CBS News; Newsweek"
+      },
+      {
+        "text": "Secretary of War Pete Hegseth, DNI Tulsi Gabbard, FBI Director Kash Patel, and NASA Administrator Jared Isaacman all issued supporting statements. Self-reported site traffic reached 1.7 billion hits by June 12, 2026.",
+        "tier": "documented",
+        "source": "DoW press releases; war.gov/UFO"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PURSUE Program — war.gov/UFO",
+        "url": "https://www.war.gov/UFO/"
+      },
+      {
+        "label": "DoW Release 1 (May 8, 2026)",
+        "url": "https://www.war.gov/News/Releases/Release/Article/4480582/"
+      },
+      {
+        "label": "DoW Release 2 (May 22, 2026)",
+        "url": "https://www.war.gov/News/Releases/Release/Article/4499305/"
+      },
+      {
+        "label": "DoW Release 3 (June 12, 2026)",
+        "url": "https://www.war.gov/News/Releases/Release/Article/4515408/"
+      },
+      {
+        "label": "CBS — Pentagon Third UFO File Release (June 12, 2026)",
+        "url": "https://www.cbsnews.com/news/ufo-files-pentagon-3rd-release-documents-videos/"
+      }
+    ]
+  },
+  {
+    "id": "uap-nara-rg615",
+    "branch": "cosmology",
+    "ring": 2,
+    "title": "NARA Record Group 615 — The Statutory Lane",
+    "description": "UAP Records Collection under NDAA FY2024 SS1841-1843 in NARA RG-615. First transfers April 2025. Rolling, independent of PURSUE. The statutory lane the stripped Review Board was to oversee.",
+    "fullDescription": "The National Archives established the Unidentified Anomalous Phenomena Records Collection per NDAA FY2024 (Public Law 118-31) §§1841-1843 — statute, not an executive order. Accessioned into Record Group 615, this is the legislated disclosure lane. §1841 establishes the collection, §1842 governs review and transmission, §1843 sets grounds for postponement. First records transferred April 24, 2025 from ODNI, OSD (Office of the Secretary of Defense), FAA, and the NRC, announced via NARA press release nr25-07. NARA adopted 'ongoing, rolling basis' language a full year before the Pentagon used the same framing for PURSUE. As of April 2025, NARA's topic page contains no mention of PURSUE, any EO, or named tranches, confirming the two mechanisms are distinct. The full Schumer-Rounds UAPDA Review Board and eminent domain provisions — the enforcement teeth meant to compel possession of privately held UAP materials — were stripped from the enacted FY2024 NDAA by HASC Chairman Turner and Speaker Johnson, and absent from FY2026. As of mid-December 2025 the legislative disclosure track was described as abandoned. The executive PURSUE program stepped into this gap.",
+    "evidence": [
+      {
+        "text": "NARA established the UAP Records Collection under NDAA FY2024 §§1841-1843, accessioned into Record Group 615. First records transferred April 24, 2025 from ODNI, OSD, FAA, and the NRC.",
+        "tier": "documented",
+        "source": "NARA press release nr25-07 (April 24, 2025); archives.gov/research/topics/uaps"
+      },
+      {
+        "text": "NARA's topic page contains no mention of PURSUE, any executive order, or named tranches — confirming the legislative and executive disclosure lanes are entirely distinct.",
+        "tier": "documented",
+        "source": "archives.gov/research/topics/uaps (as of April 2025 review date)"
+      },
+      {
+        "text": "The full UAPDA Review Board with subpoena power and eminent domain over privately held UAP materials was stripped from the enacted FY2024 NDAA and absent from FY2026, leaving RG-615 as the surviving statutory mechanism.",
+        "tier": "documented",
+        "source": "NDAA FY2024 conference report; Schumer Senate floor statement (Dec 13, 2023)"
+      },
+      {
+        "text": "An executive order is attached to the April 2025 NARA release in some coverage — EO 14176, the JFK/RFK/MLK assassination-records order — which is not a UAP order. Conflation trap: do not let it bleed into the UAP timeline.",
+        "tier": "documented",
+        "source": "archives.gov/press; EO 14176 text"
+      }
+    ],
+    "sources": [
+      {
+        "label": "NARA UAP Records Collection — Record Group 615",
+        "url": "https://www.archives.gov/research/topics/uaps"
+      },
+      {
+        "label": "NARA Press Release nr25-07 (April 24, 2025)",
+        "url": "https://www.archives.gov/press/press-releases/2025/nr25-07"
+      },
+      {
+        "label": "NARA Record Group 615 Index",
+        "url": "https://www.archives.gov/research/topics/uaps/rg-615"
+      },
+      {
+        "label": "NDAA FY2024 — Public Law 118-31",
+        "url": "https://www.congress.gov/bill/118th-congress/house-bill/2670"
+      }
+    ]
+  },
+  {
+    "id": "uap-nasa-debriefs",
+    "branch": "cosmology",
+    "ring": 2,
+    "title": "NASA Debrief Audio — The Priority Vein",
+    "description": "Seven+ NASA mission audio recordings across three PURSUE tranches: Apollo and Mercury astronauts on anomalies. Prosaic candidates documented. The gold is the handling. Cooper debunked his own sighting.",
+    "fullDescription": "Seven or more NASA mission audio recordings were released across all three PURSUE tranches, featuring the best-trained observers alive describing anomalies in real time. Tranche 1: Apollo 11 — Aldrin's 'little flashes' (likely a separation panel, per Aldrin himself); Apollo 12 — Bean's light-flashes; Apollo 17 — three-lights photo over lunar terrain. Tranche 2: seven NASA audio recordings including the Apollo 12 medical debrief (November 1969, unexplained light phenomena), Mercury-Atlas 7 (May 1962, Carpenter's 'snowflakes' moving faster than the capsule — later identified as ice venting), Mercury-Atlas 8 ('little white objects'). Also Sandia Base records 1948-50, documenting 209 sightings. Tranche 3: the 2+ hour Apollo 16 mission debrief (with an offhand 'alien starbase' remark) and a November 1962 Walter Cronkite interview with Gordon Cooper about UFOs. Cooper's documented record rests largely on his own later testimony: 1951 Germany sighting, May 1957 Edwards AFB landed-saucer film (his account, no verified footage), November 1978 UN letter ('extra-terrestrial vehicles are visiting this planet'), and the 2000 memoir Leap of Faith. The 'glowing green object over Muchea, Australia' story is false — Cooper himself denied it, writing that neither he nor the other astronauts saw UFOs in space. A lifelong believer who debunked his own alleged space sighting: the 'attribute, don't assert' discipline in one man. Several recordings have well-documented prosaic candidates — cosmic-ray phosphenes, ice venting, separation panels — and they stay in. The gold is the artifact of the debrief and the handling, not 'astronauts saw aliens.'",
+    "evidence": [
+      {
+        "text": "Seven+ NASA mission audio recordings released across three PURSUE tranches, spanning Mercury through Apollo programs (1962-1972), featuring astronauts describing anomalous phenomena during missions.",
+        "tier": "documented",
+        "source": "war.gov/UFO; DoW press releases (Articles 4480582, 4499305, 4515408)"
+      },
+      {
+        "text": "Several recordings have well-documented prosaic candidates: Carpenter identified 'snowflakes' as ice venting; Apollo light-flashes became NASA's studied cosmic-ray phosphene phenomenon; Aldrin has always said his object was likely a separation panel.",
+        "tier": "documented",
+        "source": "NASA mission records; Aldrin public statements; Carpenter memoir"
+      },
+      {
+        "text": "Gordon Cooper: the 'glowing green object over Muchea' story is false — Cooper himself denied it in Leap of Faith (2000), writing that neither he nor other astronauts saw UFOs in space. A lifelong believer who debunked his own most famous alleged sighting.",
+        "tier": "documented",
+        "source": "Cooper, Leap of Faith (2000); 1978 UN letter"
+      },
+      {
+        "text": "The November 1962 Cronkite-Cooper interview date is single-sourced to the 2026 release and uncorroborated by any pre-2026 record, but is plausible: NASA announced November 14, 1962 that Cooper would pilot the final Mercury flight, making late November a logical occasion for a Cronkite interview.",
+        "tier": "credible",
+        "source": "Fox/LiveNOW wire (June 2026); NASA Mercury-Atlas 9 announcement (Nov 14, 1962)"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PURSUE Program — NASA Audio Files",
+        "url": "https://www.war.gov/UFO/"
+      },
+      {
+        "label": "Cooper, Leap of Faith (2000)",
+        "url": "https://archive.org/details/leapoffaithastro0000coop"
+      },
+      {
+        "label": "Gordon Cooper — Wikipedia (1978 UN letter; Leap of Faith denial)",
+        "url": "https://en.wikipedia.org/wiki/Gordon_Cooper"
+      },
+      {
+        "label": "CBS — Third PURSUE Release Coverage",
+        "url": "https://www.cbsnews.com/news/ufo-files-pentagon-3rd-release-documents-videos/"
+      }
+    ]
+  },
+  {
+    "id": "uap-nsa-foia-2026",
+    "branch": "cosmology",
+    "ring": 3,
+    "title": "NSA FOIA Release (May 2026)",
+    "description": "May 18, 2026: NSA released 300+ pages of TOP SECRET UMBRA UAP material via FOIA. The forced lane — volunteered by no one, pried out against preference, unlike PURSUE or RG-615.",
+    "fullDescription": "On May 18, 2026, the National Security Agency released 300+ pages of TOP SECRET UMBRA material on unidentified anomalous phenomena via Freedom of Information Act request. This constitutes the 'forced lane' of the 2026 disclosure ecology — material pried out against the government's preference, volunteered by no one. The three-door structure of UAP disclosure in 2026 is: the legislated lane (NARA Record Group 615, slow, archival, librarian-run, rolling since April 2025); the executive lane (PURSUE at war.gov/UFO, PR-paced, tranches every few weeks, artist renderings included); and the forced lane (this NSA FOIA release plus any future litigation-compelled disclosures). The NSA material was classified at the TOP SECRET/UMBRA level, indicating signals intelligence sources and methods. The release occurred between PURSUE Tranches 2 and 3, further pressuring the information environment. The chronicler's posture: the door the information came through matters less than the fact it came through at all.",
+    "evidence": [
+      {
+        "text": "NSA released 300+ pages of TOP SECRET UMBRA material on UAP via FOIA on May 18, 2026 — signals intelligence material volunteered by no one, constituting the 'forced lane' of 2026 disclosure. (Page count and classification markings are reported in the FotW dossier's supporting claims and could not be byte-verified against nsa.gov.)",
+        "tier": "credible",
+        "source": "NSA FOIA release (May 18, 2026); multiple news outlets"
+      },
+      {
+        "text": "The three-door disclosure structure: legislated (NARA RG-615, statutory), executive (PURSUE, PR-paced), and forced (FOIA/litigation). Each lane operates independently with different mechanisms and incentives.",
+        "tier": "credible",
+        "source": "Structural analysis; archives.gov; war.gov/UFO; NSA FOIA records"
+      },
+      {
+        "text": "TOP SECRET/UMBRA classification indicates signals intelligence sources and methods — the NSA's highest compartmented classification for SIGINT material.",
+        "tier": "documented",
+        "source": "NSA classification guide; IC classification standards"
+      }
+    ],
+    "sources": [
+      {
+        "label": "NSA — Declassified UFO documents collection",
+        "url": "https://www.nsa.gov/Helpful-Links/NSA-FOIA/Declassification-Transparency-Initiatives/UFO/"
+      },
+      {
+        "label": "PURSUE Program — war.gov/UFO",
+        "url": "https://www.war.gov/UFO/"
+      }
+    ]
+  },
+  {
+    "id": "epstein-files-act-2026",
+    "branch": "power",
+    "ring": 1,
+    "title": "Epstein Files Transparency Act & DOJ Releases",
+    "description": "Epstein Files Transparency Act (Nov 2025) required DOJ to publish all unclassified Epstein records. 3.5M pages by Jan 2026. Fallout: Brende resigned, Summers out, Andrew arrested, Lang probed.",
+    "fullDescription": "The Epstein Files Transparency Act was signed into law on November 19, 2025, requiring the Department of Justice to publish all unclassified Epstein-related records. The Act was catalyzed by bipartisan outrage over a July 2025 unsigned DOJ/FBI memo that preemptively concluded 'no client list exists' and 'no credible evidence of blackmail,' contradicting AG Bondi's prior assurances that 'everything' would be brought to light. Deputy AG Todd Blanche oversaw the releases. The first tranche was released on the 30-day deadline of December 19, 2025, with a significant fifth release on January 30, 2026. Collectively termed the 'Epstein Library,' the releases comprised approximately 3.5 million pages from five primary source collections. The releases documented communications and financial relationships between Epstein and numerous prominent figures. Consequential fallout included: WEF President Borge Brende resigned February 26, 2026 after files revealed three business dinners with Epstein; Larry Summers departed Harvard and the OpenAI board in November 2025; intensified French investigation of Jack Lang; and contributed to the evidentiary basis for Prince Andrew's arrest on February 19, 2026, on suspicion of misconduct in public office — the first arrest of a British royal in approximately 400 years. Redaction controversies persisted: Congressmembers reported redactions remained in 'unredacted' reading room versions. DOJ released only ~50% of 6 million identified pages while claiming compliance. Deputy AG Blanche stated 'nothing in there allowed us to prosecute anybody' despite 3.5 million pages, 180,000 images, and 2,000 videos. DOJ also revealed a previously undisclosed DEA investigation of Epstein: Operation Chain Reaction.",
+    "evidence": [
+      {
+        "text": "Epstein Files Transparency Act signed November 19, 2025, requiring DOJ to publish all unclassified Epstein-related records. Catalyzed by the July 2025 unsigned DOJ/FBI memo that contradicted AG Bondi's assurances.",
+        "tier": "documented",
+        "source": "Epstein Files Transparency Act (Public Law); DOJ memorandum (July 2025)"
+      },
+      {
+        "text": "By January 2026, DOJ released approximately 3.5 million pages from five primary source collections. Deputy AG Blanche stated 'nothing in there allowed us to prosecute anybody.' DOJ released only ~50% of 6 million identified pages while claiming compliance.",
+        "tier": "documented",
+        "source": "DOJ Epstein Library; CNN (Blanche statement, Feb 1, 2026)"
+      },
+      {
+        "text": "Consequential fallout: WEF President Brende resignation (February 26, 2026), Larry Summers departure from Harvard and OpenAI board (November 2025), Prince Andrew arrest (February 19, 2026), intensified French investigation of Jack Lang.",
+        "tier": "documented",
+        "source": "Bloomberg, CNN (Brende); NYT (Summers); BBC (Andrew arrest); Le Monde (Lang)"
+      },
+      {
+        "text": "Prince Andrew Mountbatten-Windsor arrested February 19, 2026 by Thames Valley Police on suspicion of misconduct in public office — forwarding confidential UK trade envoy reports to Epstein. First arrest of a British royal in ~400 years. Investigation expanded to include sexual misconduct allegations.",
+        "tier": "documented",
+        "source": "Thames Valley Police; BBC; CPS records (charges not yet authorized as of August 2026)"
+      },
+      {
+        "text": "The releases revealed a previously undisclosed DEA investigation of Epstein: Operation Chain Reaction. All Epstein survivors at the February 2026 hearing raised hands when asked if DOJ had met with them — none had.",
+        "tier": "documented",
+        "source": "DOJ Epstein Library; House Judiciary Hearing (Feb 11, 2026)"
+      }
+    ],
+    "sources": [
+      {
+        "label": "DOJ Epstein Document Library",
+        "url": "https://www.justice.gov/epstein"
+      },
+      {
+        "label": "H.R. 4405 — Epstein Files Transparency Act — Congress.gov",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/4405"
+      },
+      {
+        "label": "DOJ — 3.5 million pages published under the Epstein Files Transparency Act",
+        "url": "https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files-transparency-act"
+      },
+      {
+        "label": "Bloomberg — WEF Chief Brende Steps Down (Feb 26, 2026)",
+        "url": "https://www.bloomberg.com/news/articles/2026-02-26/world-economic-forum-chief-brende-steps-down-amid-epstein-links"
+      },
+      {
+        "label": "NPR — Former Prince Andrew arrested on suspicion of misconduct in public office (Feb 19, 2026)",
+        "url": "https://www.npr.org/2026/02/19/nx-s1-5719098/former-prince-andrew-arrested-on-suspicion-of-misconduct-in-public-office"
+      },
+      {
+        "label": "ABC News — Maxwell invokes Fifth Amendment in House Oversight deposition (Feb 2026)",
+        "url": "https://abcnews.go.com/Politics/maxwell-expected-invoke-amendment-closed-virtual-house-oversight"
+      },
+      {
+        "label": "Al Jazeera — Ex-UK Prince Andrew arrested amid Epstein scandal (live, Feb 19, 2026)",
+        "url": "https://www.aljazeera.com/news/liveblog/2026/2/19/live-ex-uk-prince-andrew-arrested-amid-epstein-scandal"
+      }
+    ]
+  },
+  {
+    "id": "jfk-files-2025",
+    "branch": "history",
+    "ring": 2,
+    "title": "JFK Files 2025 — EO 14176 & Luna Task Force",
+    "description": "EO 14176 (Jan 23, 2025) ordered full JFK/RFK/MLK declassification. ~94,643 JFK pages released by Jan 2026, unredacted — the largest single release in history. Luna Task Force expanded to UAP transparency by Sept 2025.",
+    "fullDescription": "Executive Order 14176, signed by Donald Trump on January 23, 2025, ordered full declassification of records concerning the assassinations of President John F. Kennedy, Senator Robert F. Kennedy, and the Reverend Dr. Martin Luther King Jr. The DNI was directed to develop a JFK records release plan within 15 days and RFK/MLK plans within 45 days. Trump gave the signing pen to Robert F. Kennedy Jr. Implementation produced the largest single release of assassination records in history: approximately 94,643 pages of JFK files released between March 2025 and January 2026 without redactions, followed by RFK files in April through June 2025 and MLK files in July 2025. Speaker Mike Johnson established the House Task Force on Declassification of Federal Secrets in February 2025, chaired by Rep. Anna Paulina Luna (R-FL-13). Under Luna's leadership, the task force expanded scope beyond assassination records to include UAP transparency and whistleblower protection hearings by September 2025 — the first standing congressional body dedicated to declassification oversight since the Assassination Records Review Board concluded its work in 1998. Jefferson Morley, former Washington Post reporter and Mary Ferrell Foundation vice president, testified at the inaugural hearing. Luna received a report from Russian Ambassador Alexander Darchiev containing Russia's purported findings on the Kennedy assassination. George Joannides — the CIA officer who served as HSCA liaison while concealing his role as DRE case officer — remains the central figure in CIA obstruction of the JFK investigation. The newly released files may illuminate the extent of CIA knowledge about Oswald before November 22, 1963.",
+    "evidence": [
+      {
+        "text": "Executive Order 14176 (January 23, 2025) ordered full declassification of JFK, RFK, and MLK assassination records. Approximately 94,643 pages of JFK files released between March 2025 and January 2026 without redactions — the largest single release in history.",
+        "tier": "documented",
+        "source": "Executive Order 14176; NARA release records"
+      },
+      {
+        "text": "House Task Force on Declassification of Federal Secrets established February 2025 by Speaker Johnson, chaired by Rep. Luna. Expanded to UAP transparency and whistleblower hearings by September 2025.",
+        "tier": "documented",
+        "source": "House Oversight Committee; Rep. Luna press releases"
+      },
+      {
+        "text": "Jefferson Morley (Mary Ferrell Foundation VP, former WaPo reporter) testified at the task force's inaugural hearing on JFK records. The task force is the first standing congressional body for declassification oversight since the ARRB concluded in 1998.",
+        "tier": "documented",
+        "source": "House Task Force hearing records; Mary Ferrell Foundation"
+      },
+      {
+        "text": "George Joannides served as CIA liaison to HSCA while concealing his role as case officer for the DRE Cuban exile group that contacted Oswald — the central obstruction figure whose records the new releases may illuminate.",
+        "tier": "documented",
+        "source": "HSCA records; Morley v. CIA FOIA litigation"
+      },
+      {
+        "text": "Luna received a report from Russian Ambassador Darchiev containing Russia's purported findings on the Kennedy assassination, which she called 'of massive historical significance.'",
+        "tier": "documented",
+        "source": "Rep. Luna statements; task force records"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Executive Order 14176 — Declassification of Assassination Records (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Executive_Order_14176"
+      },
+      {
+        "label": "NARA — JFK Assassination Records Release",
+        "url": "https://www.archives.gov/research/jfk"
+      },
+      {
+        "label": "House Task Force on Declassification of Federal Secrets",
+        "url": "https://oversight.house.gov/"
+      },
+      {
+        "label": "Mary Ferrell Foundation — JFK Records Analysis",
+        "url": "https://www.maryferrell.org/"
+      },
+      {
+        "label": "George Joannides — Wikipedia (HSCA liaison / DRE case officer)",
+        "url": "https://en.wikipedia.org/wiki/George_Joannides"
+      },
+      {
+        "label": "National Archives — 2025 Release of JFK Assassination Records",
+        "url": "https://www.archives.gov/research/jfk/release2025"
+      }
+    ]
+  }
 ];
 
 var CONNECTIONS = [
-  ["rs-larson-foundation", "rs2-peret-nehru"],
-  ["rs2-peret-nehru", "qa-convergence"],
-  ["rs2-peret-nehru", "rs-community-split"],
-  ["rs2-peret-nehru", "rs-antiquatis-sanctuary"],
-  ["rs-larson-foundation", "rs-community-split"],
-  ["rs-larson-foundation", "tech-suppressed-physics"],
-  ["tech-suppressed-physics", "dimensional-emergence"],
-  ["qa-convergence", "dimensional-emergence"],
-  ["qa-convergence", "consciousness-qualia"],
-  ["tech-suppressed-physics", "science-energy"],
-  ["tech-suppressed-physics", "science-physics"],
+  [
+    "rs-larson-foundation",
+    "rs2-peret-nehru"
+  ],
+  [
+    "rs2-peret-nehru",
+    "qa-convergence"
+  ],
+  [
+    "rs2-peret-nehru",
+    "rs-community-split"
+  ],
+  [
+    "rs2-peret-nehru",
+    "rs-antiquatis-sanctuary"
+  ],
+  [
+    "rs-larson-foundation",
+    "rs-community-split"
+  ],
+  [
+    "rs-larson-foundation",
+    "tech-suppressed-physics"
+  ],
+  [
+    "tech-suppressed-physics",
+    "dimensional-emergence"
+  ],
+  [
+    "qa-convergence",
+    "dimensional-emergence"
+  ],
+  [
+    "qa-convergence",
+    "consciousness-qualia"
+  ],
+  [
+    "tech-suppressed-physics",
+    "science-energy"
+  ],
+  [
+    "tech-suppressed-physics",
+    "science-physics"
+  ],
   [
     "ancient-civilizations",
     "consciousness-ancient"
@@ -10271,96 +10781,484 @@ var CONNECTIONS = [
     "waco-ruby-ridge",
     "whistleblower-suppression"
   ],
-  ["sept-11-pnac", "sept-11-foreknowledge"],
-  ["sept-11-pnac", "sept-11-iraq-war"],
-  ["sept-11-pnac", "sept-11-war-profiteering"],
-  ["sept-11-foreknowledge", "sept-11-official"],
-  ["sept-11-foreknowledge", "sept-11-finance"],
-  ["sept-11-pentagon", "sept-11-official"],
-  ["sept-11-pentagon", "sept-11-wtc-demolition"],
-  ["sept-11-wtc-demolition", "sept-11-building7"],
-  ["sept-11-iraq-war", "sept-11-media-consent"],
-  ["sept-11-iraq-war", "sept-11-war-profiteering"],
-  ["sept-11-iraq-war", "sept-11-torture"],
-  ["sept-11-patriot-act", "sept-11-official"],
-  ["sept-11-patriot-act", "sept-11-anthrax"],
-  ["sept-11-media-consent", "sept-11-commission"],
-  ["sept-11-commission", "sept-11-official"],
-  ["sept-11-commission", "sept-11-foreknowledge"],
-  ["sept-11-anthrax", "sept-11-media-consent"],
-  ["sept-11-torture", "sept-11-patriot-act"],
-  ["sept-11-pnac", "military-industrial"],
-  ["sept-11-pnac", "operation-northwoods"],
-  ["sept-11-foreknowledge", "echelon-five-eyes"],
-  ["sept-11-foreknowledge", "operation-chaos"],
-  ["sept-11-pentagon", "unacknowledged-saps"],
-  ["sept-11-patriot-act", "echelon-five-eyes"],
-  ["sept-11-patriot-act", "media-digital-control"],
-  ["sept-11-war-profiteering", "military-industrial"],
-  ["sept-11-war-profiteering", "drug-trafficking-intel"],
-  ["sept-11-media-consent", "media-cia"],
-  ["sept-11-media-consent", "pentagon-analyst-program"],
-  ["sept-11-media-consent", "media-narrative-coordination"],
-  ["sept-11-iraq-war", "gulf-of-tonkin"],
-  ["sept-11-iraq-war", "operation-ajax-pbsuccess"],
-  ["sept-11-torture", "operation-phoenix"],
-  ["sept-11-torture", "experiment-mkultra-full"],
-  ["sept-11-anthrax", "experiment-biological"],
-  ["sept-11-commission", "media-narrative-coordination"],
-  ["sept-11-finance", "sept-11-war-profiteering"],
-  ["sept-11-finance", "sept-11-pnac"],
-  ["assassination-jfk", "jfk-oswald-intelligence"],
-  ["assassination-jfk", "jfk-forensic-evidence"],
-  ["assassination-jfk", "jfk-secret-service"],
-  ["assassination-jfk", "jfk-cui-bono"],
-  ["assassination-jfk", "jfk-anti-castro-ops"],
-  ["jfk-warren-commission", "jfk-media-management"],
-  ["jfk-warren-commission", "jfk-forensic-evidence"],
-  ["jfk-oswald-intelligence", "media-cia"],
-  ["jfk-oswald-intelligence", "operation-chaos"],
-  ["jfk-anti-castro-ops", "organized-crime-intel"],
-  ["jfk-anti-castro-ops", "drug-trafficking-intel"],
-  ["jfk-anti-castro-ops", "operation-phoenix"],
-  ["jfk-warren-commission", "media-narrative-coordination"],
-  ["jfk-warren-commission", "media-cia"],
-  ["jfk-media-management", "media-cia"],
-  ["jfk-media-management", "media-narrative-coordination"],
-  ["jfk-cui-bono", "military-industrial"],
-  ["jfk-cui-bono", "central-banking"],
-  ["jfk-forensic-evidence", "sept-11-wtc-demolition"],
-  ["jfk-secret-service", "sept-11-foreknowledge"],
-  ["jfk-secret-service", "unacknowledged-saps"],
-  ["jfk-cui-bono", "sept-11-pnac"],
-  ["covid-gain-of-function", "covid-origins-investigation"],
-  ["covid-gain-of-function", "covid-biodefense-complex"],
-  ["covid-pharma-eua", "covid-emergency-powers"],
-  ["covid-pharma-eua", "covid-censorship"],
-  ["covid-censorship", "covid-origins-investigation"],
-  ["covid-emergency-powers", "covid-censorship"],
-  ["covid-biodefense-complex", "covid-origins-investigation"],
-  ["covid-gain-of-function", "experiment-biological"],
-  ["covid-gain-of-function", "sept-11-anthrax"],
-  ["covid-biodefense-complex", "military-industrial"],
-  ["covid-biodefense-complex", "sept-11-war-profiteering"],
-  ["covid-biodefense-complex", "experiment-biological"],
-  ["covid-emergency-powers", "sept-11-patriot-act"],
-  ["covid-emergency-powers", "echelon-five-eyes"],
-  ["covid-emergency-powers", "media-digital-control"],
-  ["covid-censorship", "media-cia"],
-  ["covid-censorship", "media-digital-control"],
-  ["covid-censorship", "media-narrative-coordination"],
-  ["covid-censorship", "pentagon-analyst-program"],
-  ["covid-pharma-eua", "health-suppressed-healing"],
-  ["covid-pharma-eua", "health-regulatory"],
-  ["covid-pharma-eua", "experiment-mkultra-full"],
-  ["covid-origins-investigation", "sept-11-commission"],
-  ["covid-origins-investigation", "media-narrative-coordination"],
-  ["covid-protocol-manipulation", "covid-pharma-eua"],
-  ["covid-protocol-manipulation", "covid-emergency-powers"],
-  ["covid-protocol-manipulation", "covid-censorship"],
-  ["covid-protocol-manipulation", "covid-gain-of-function"],
-  ["covid-protocol-manipulation", "health-regulatory"],
-  ["covid-protocol-manipulation", "media-narrative-coordination"],
-  ["covid-protocol-manipulation", "tobacco-conspiracy"]
+  [
+    "sept-11-pnac",
+    "sept-11-foreknowledge"
+  ],
+  [
+    "sept-11-pnac",
+    "sept-11-iraq-war"
+  ],
+  [
+    "sept-11-pnac",
+    "sept-11-war-profiteering"
+  ],
+  [
+    "sept-11-foreknowledge",
+    "sept-11-official"
+  ],
+  [
+    "sept-11-foreknowledge",
+    "sept-11-finance"
+  ],
+  [
+    "sept-11-pentagon",
+    "sept-11-official"
+  ],
+  [
+    "sept-11-pentagon",
+    "sept-11-wtc-demolition"
+  ],
+  [
+    "sept-11-wtc-demolition",
+    "sept-11-building7"
+  ],
+  [
+    "sept-11-iraq-war",
+    "sept-11-media-consent"
+  ],
+  [
+    "sept-11-iraq-war",
+    "sept-11-war-profiteering"
+  ],
+  [
+    "sept-11-iraq-war",
+    "sept-11-torture"
+  ],
+  [
+    "sept-11-patriot-act",
+    "sept-11-official"
+  ],
+  [
+    "sept-11-patriot-act",
+    "sept-11-anthrax"
+  ],
+  [
+    "sept-11-media-consent",
+    "sept-11-commission"
+  ],
+  [
+    "sept-11-commission",
+    "sept-11-official"
+  ],
+  [
+    "sept-11-commission",
+    "sept-11-foreknowledge"
+  ],
+  [
+    "sept-11-anthrax",
+    "sept-11-media-consent"
+  ],
+  [
+    "sept-11-torture",
+    "sept-11-patriot-act"
+  ],
+  [
+    "sept-11-pnac",
+    "military-industrial"
+  ],
+  [
+    "sept-11-pnac",
+    "operation-northwoods"
+  ],
+  [
+    "sept-11-foreknowledge",
+    "echelon-five-eyes"
+  ],
+  [
+    "sept-11-foreknowledge",
+    "operation-chaos"
+  ],
+  [
+    "sept-11-pentagon",
+    "unacknowledged-saps"
+  ],
+  [
+    "sept-11-patriot-act",
+    "echelon-five-eyes"
+  ],
+  [
+    "sept-11-patriot-act",
+    "media-digital-control"
+  ],
+  [
+    "sept-11-war-profiteering",
+    "military-industrial"
+  ],
+  [
+    "sept-11-war-profiteering",
+    "drug-trafficking-intel"
+  ],
+  [
+    "sept-11-media-consent",
+    "media-cia"
+  ],
+  [
+    "sept-11-media-consent",
+    "pentagon-analyst-program"
+  ],
+  [
+    "sept-11-media-consent",
+    "media-narrative-coordination"
+  ],
+  [
+    "sept-11-iraq-war",
+    "gulf-of-tonkin"
+  ],
+  [
+    "sept-11-iraq-war",
+    "operation-ajax-pbsuccess"
+  ],
+  [
+    "sept-11-torture",
+    "operation-phoenix"
+  ],
+  [
+    "sept-11-torture",
+    "experiment-mkultra-full"
+  ],
+  [
+    "sept-11-anthrax",
+    "experiment-biological"
+  ],
+  [
+    "sept-11-commission",
+    "media-narrative-coordination"
+  ],
+  [
+    "sept-11-finance",
+    "sept-11-war-profiteering"
+  ],
+  [
+    "sept-11-finance",
+    "sept-11-pnac"
+  ],
+  [
+    "assassination-jfk",
+    "jfk-oswald-intelligence"
+  ],
+  [
+    "assassination-jfk",
+    "jfk-forensic-evidence"
+  ],
+  [
+    "assassination-jfk",
+    "jfk-secret-service"
+  ],
+  [
+    "assassination-jfk",
+    "jfk-cui-bono"
+  ],
+  [
+    "assassination-jfk",
+    "jfk-anti-castro-ops"
+  ],
+  [
+    "jfk-warren-commission",
+    "jfk-media-management"
+  ],
+  [
+    "jfk-warren-commission",
+    "jfk-forensic-evidence"
+  ],
+  [
+    "jfk-oswald-intelligence",
+    "media-cia"
+  ],
+  [
+    "jfk-oswald-intelligence",
+    "operation-chaos"
+  ],
+  [
+    "jfk-anti-castro-ops",
+    "organized-crime-intel"
+  ],
+  [
+    "jfk-anti-castro-ops",
+    "drug-trafficking-intel"
+  ],
+  [
+    "jfk-anti-castro-ops",
+    "operation-phoenix"
+  ],
+  [
+    "jfk-warren-commission",
+    "media-narrative-coordination"
+  ],
+  [
+    "jfk-warren-commission",
+    "media-cia"
+  ],
+  [
+    "jfk-media-management",
+    "media-cia"
+  ],
+  [
+    "jfk-media-management",
+    "media-narrative-coordination"
+  ],
+  [
+    "jfk-cui-bono",
+    "military-industrial"
+  ],
+  [
+    "jfk-cui-bono",
+    "central-banking"
+  ],
+  [
+    "jfk-forensic-evidence",
+    "sept-11-wtc-demolition"
+  ],
+  [
+    "jfk-secret-service",
+    "sept-11-foreknowledge"
+  ],
+  [
+    "jfk-secret-service",
+    "unacknowledged-saps"
+  ],
+  [
+    "jfk-cui-bono",
+    "sept-11-pnac"
+  ],
+  [
+    "covid-gain-of-function",
+    "covid-origins-investigation"
+  ],
+  [
+    "covid-gain-of-function",
+    "covid-biodefense-complex"
+  ],
+  [
+    "covid-pharma-eua",
+    "covid-emergency-powers"
+  ],
+  [
+    "covid-pharma-eua",
+    "covid-censorship"
+  ],
+  [
+    "covid-censorship",
+    "covid-origins-investigation"
+  ],
+  [
+    "covid-emergency-powers",
+    "covid-censorship"
+  ],
+  [
+    "covid-biodefense-complex",
+    "covid-origins-investigation"
+  ],
+  [
+    "covid-gain-of-function",
+    "experiment-biological"
+  ],
+  [
+    "covid-gain-of-function",
+    "sept-11-anthrax"
+  ],
+  [
+    "covid-biodefense-complex",
+    "military-industrial"
+  ],
+  [
+    "covid-biodefense-complex",
+    "sept-11-war-profiteering"
+  ],
+  [
+    "covid-biodefense-complex",
+    "experiment-biological"
+  ],
+  [
+    "covid-emergency-powers",
+    "sept-11-patriot-act"
+  ],
+  [
+    "covid-emergency-powers",
+    "echelon-five-eyes"
+  ],
+  [
+    "covid-emergency-powers",
+    "media-digital-control"
+  ],
+  [
+    "covid-censorship",
+    "media-cia"
+  ],
+  [
+    "covid-censorship",
+    "media-digital-control"
+  ],
+  [
+    "covid-censorship",
+    "media-narrative-coordination"
+  ],
+  [
+    "covid-censorship",
+    "pentagon-analyst-program"
+  ],
+  [
+    "covid-pharma-eua",
+    "health-suppressed-healing"
+  ],
+  [
+    "covid-pharma-eua",
+    "health-regulatory"
+  ],
+  [
+    "covid-pharma-eua",
+    "experiment-mkultra-full"
+  ],
+  [
+    "covid-origins-investigation",
+    "sept-11-commission"
+  ],
+  [
+    "covid-origins-investigation",
+    "media-narrative-coordination"
+  ],
+  [
+    "covid-protocol-manipulation",
+    "covid-pharma-eua"
+  ],
+  [
+    "covid-protocol-manipulation",
+    "covid-emergency-powers"
+  ],
+  [
+    "covid-protocol-manipulation",
+    "covid-censorship"
+  ],
+  [
+    "covid-protocol-manipulation",
+    "covid-gain-of-function"
+  ],
+  [
+    "covid-protocol-manipulation",
+    "health-regulatory"
+  ],
+  [
+    "covid-protocol-manipulation",
+    "media-narrative-coordination"
+  ],
+  [
+    "covid-protocol-manipulation",
+    "tobacco-conspiracy"
+  ],
+  [
+    "uap-pursue-2026",
+    "uap-legislation"
+  ],
+  [
+    "uap-pursue-2026",
+    "uap-program-history"
+  ],
+  [
+    "uap-pursue-2026",
+    "roswell-1947"
+  ],
+  [
+    "uap-pursue-2026",
+    "cosmology-et"
+  ],
+  [
+    "uap-pursue-2026",
+    "intelligence"
+  ],
+  [
+    "uap-pursue-2026",
+    "media-narrative-coordination"
+  ],
+  [
+    "uap-pursue-2026",
+    "uap-nara-rg615"
+  ],
+  [
+    "uap-pursue-2026",
+    "uap-nasa-debriefs"
+  ],
+  [
+    "uap-pursue-2026",
+    "uap-nsa-foia-2026"
+  ],
+  [
+    "uap-nara-rg615",
+    "uap-legislation"
+  ],
+  [
+    "uap-nara-rg615",
+    "uap-program-history"
+  ],
+  [
+    "uap-nara-rg615",
+    "jfk-files-2025"
+  ],
+  [
+    "uap-nasa-debriefs",
+    "area-51-groom-lake"
+  ],
+  [
+    "uap-nasa-debriefs",
+    "cosmology-et"
+  ],
+  [
+    "uap-nsa-foia-2026",
+    "echelon-five-eyes"
+  ],
+  [
+    "uap-nsa-foia-2026",
+    "intelligence"
+  ],
+  [
+    "uap-nsa-foia-2026",
+    "whistleblower-suppression"
+  ],
+  [
+    "epstein-files-act-2026",
+    "epstein-political-protection"
+  ],
+  [
+    "epstein-files-act-2026",
+    "epstein-wexner"
+  ],
+  [
+    "epstein-files-act-2026",
+    "epstein-death"
+  ],
+  [
+    "epstein-files-act-2026",
+    "legal-judicial-capture"
+  ],
+  [
+    "epstein-files-act-2026",
+    "whistleblower-suppression"
+  ],
+  [
+    "epstein-files-act-2026",
+    "supranational"
+  ],
+  [
+    "epstein-files-act-2026",
+    "epstein-maxwell-mossad"
+  ],
+  [
+    "epstein-files-act-2026",
+    "epstein-barak"
+  ],
+  [
+    "jfk-files-2025",
+    "assassination-jfk"
+  ],
+  [
+    "jfk-files-2025",
+    "jfk-oswald-intelligence"
+  ],
+  [
+    "jfk-files-2025",
+    "jfk-warren-commission"
+  ],
+  [
+    "jfk-files-2025",
+    "intelligence"
+  ]
 ];
-
