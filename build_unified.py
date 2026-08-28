@@ -260,7 +260,7 @@ def build_mapping(keyword_links, df_nodes, ic_entities):
         "science-energy": ["pdvsa", "eni ", "royal dutch shell", "chris wright", "department of energy", "petroleum"],
         "drug-trafficking-intel": ["sinaloa", "cartel", "foreign terrorist organization", "maduro"],
         # UAP 2026 release cluster (nodes added 2026-08)
-        "uap-pursue-2026": ["pursue", "war.gov/ufo", "unsealing and reporting", "uap.*release", "ufo files"],
+        "uap-pursue-2026": ["pursue program", "pursue release", "pursue \\(presidential", "presidential unsealing", "war.gov", "unsealing and reporting", "uap file release", "uap records release", "ufo files", "uap.*tranche"],
         "uap-nara-rg615": ["record group 615", "rg-615", "uap records collection", "1841", "national archives.*uap"],
         "uap-nasa-debriefs": ["apollo.*debrief", "mercury-atlas", "nasa.*audio", "apollo 11", "apollo 12", "apollo 16",
                               "apollo 17", "cronkite"],
